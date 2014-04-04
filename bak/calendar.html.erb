@@ -2,7 +2,7 @@
 pageable: true
 ---
 <h1>Archive for
-  <% case page_type
+  <% case nil #page_type # Causing exception when disabled
      when 'day' %>
     <%= Date.new(year, month, day).strftime('%b %e %Y') %>
   <% when 'month' %>
