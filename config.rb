@@ -171,16 +171,3 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-
-
-activate :deploy do |deploy|
-  # Automatically build your static content during `middleman deploy`
-  deploy.build_before = false #true # default: false
-  
-  # Deploy using Github pages
-  deploy.method = :git
-  # Optional Settings
-  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch   = "custom-branch" # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-end
