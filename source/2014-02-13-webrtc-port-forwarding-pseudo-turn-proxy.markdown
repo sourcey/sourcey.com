@@ -2,7 +2,9 @@
 title: WebRTC Port Forwarding Pseudo TURN Proxy
 date: 2014-02-13 04:00:41
 tags: ice, libsourcey, programming, proxy, turn, webrtc
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # WebRTC Port Forwarding Pseudo TURN Proxy
 

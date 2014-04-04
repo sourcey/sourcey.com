@@ -2,7 +2,9 @@
 title: Twitter Follow Unfollow Retweeter Ruby Bot
 date: 2014-01-26 04:34:22
 tags: ausca, bot, gem, programming, ruby, twitter
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Twitter Follow Unfollow Retweeter Ruby Bot
 
@@ -14,7 +16,7 @@ The results were pretty impressive - I had a 33% followback rate on an establish
 
 The code for using the bot is as follows:
 
-```ruby
+~~~ ruby
 require 'ausca'
 
 # Instantiate the bot
@@ -31,7 +33,7 @@ bot = Ausca::Twitter::Bot.new({
 
 # Run the bot once
 bot.run
-```
+~~~ 
 
 The best idea would be to configure `cron` to run the script to run at a reasonable hourly interval - otherwise Twitter might suspend your account.
 

@@ -2,7 +2,9 @@
 title: 5 Tips To Optimize for SEO 2.0 in 2014
 date: 2014-03-26 07:36:18
 tags: business, promotions, seo, strategy
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # 5 Tips To Optimize for SEO 2.0 in 2014
 

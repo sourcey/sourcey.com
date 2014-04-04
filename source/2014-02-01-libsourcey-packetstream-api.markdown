@@ -1,8 +1,10 @@
 ---
 title: LibSourcey PacketStream API
 date: 2014-02-01 11:42:50
-tags: c, libsourcey, packetstream, programming
-layout: blogs
+tags: c++, libsourcey, packetstream, programming
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # LibSourcey PacketStream API
 
@@ -12,7 +14,7 @@ One particular class that is used extensively throughout LibSourcey to simplify 
 
 Take a look at the pseudo code below which takes a video device input, applies a motion filter to it, encodes the filtered video as H.264, and broadcasts the encoded media to delegates listening in on the output PacketSignal:
 
-```cpp  
+~~~ cpp  
 // create the stream
 PacketStream stream;
 
@@ -42,11 +44,11 @@ stream.attach(encoder, 5, true);
 
 // start the stream and encoding
 stream.start();
-```
+~~~ 
 
 Pretty cool huh? PacketStreams can also be forked so each output stream can be processed independently. This might be useful if we want to take a single encoder output, and packetise the data separately for broadcasting to multiple destinations:
 
-```cpp
+~~~ cpp
 // root stream
 PacketStream stream;
 
@@ -70,7 +72,7 @@ fork2->attach(&amp;_stream, false, false);
 
 // start pumping data into the delegate chain
 stream.start();
-```
+~~~ 
 
 As you can see this method of processing data is very flexible. By default the PacketStream doesn't copy any data, unless an internal PacketQueue is employed to buffer and synchronise output packets with different threads, or simply defer processing from the source thread.
 

@@ -2,7 +2,9 @@
 title: Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 date: 2014-03-15 02:49:02
 tags: programming, rails, ruby, thumbnails
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 
@@ -12,7 +14,7 @@ There are a few third party APIs out there, Bluga.net, Websnapr and ShrinkTheWeb
 
 I ended up using a combination of <a href="https://github.com/markevans/dragonfly" target="_blank">Dragonfly</a> and <a href="http://wkhtmltopdf.org" target="_blank">wkhtmltoimage</a> to get the job done. The basic ideas is we use wkhtmltoimage to generate and store the thumbnail it in a temp location, then we pass the file to Dragonfly for processing. I'm currently generating the URL inside a validator, so if it fails then the URL entity will not be saved, and we can say to the user "well what's up with this dodgey URL?". This might not be the most scalable way of handling this (ie. not deferred), but it's OK for now as I'm using a thread based server, and again, because it's validatable! Code follows...
 
-```ruby
+~~~ ruby
 class MySexyModel < ActiveRecord::Base
 
   ... stuff
@@ -59,6 +61,6 @@ class MySexyModel < ActiveRecord::Base
     File.delete(temp_thumbnail_path) rescue 0
   end
 end
-```
+~~~ 
 
 And with that we are peachy - no need for any third party services at all! Don't forget to show your love if this helped you.

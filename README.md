@@ -4,10 +4,11 @@ This repository contains the http://sourcey.com website, which is powered the aw
 
 ## TODO
 
-# post metadata time and authorship 
-# gh-pages
-# social icons on posts and pages
-# disqus on posts
+post metadata time and authorship 
+gh-pages
+social icons on posts and pages
+disqus export
 
-# no code markup for feed.xml
-# /feed.xml /feed alias
+relative paths for img tags
+no code markup for feed.xml
+/feed.xml /feed alias

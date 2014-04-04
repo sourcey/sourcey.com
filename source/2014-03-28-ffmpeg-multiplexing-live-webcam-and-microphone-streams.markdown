@@ -2,7 +2,9 @@
 title: FFmpeg Multiplexing Live Webcam and Microphone Streams
 date: 2014-03-28 10:53:27
 tags: encoding, ffmpeg, programming
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # FFmpeg Multiplexing Live Webcam and Microphone Streams
 
@@ -16,7 +18,7 @@ As with all my C++ media encoding goodies, they end up in LibSourcey. The soluti
 
 **livestreamencoder.cpp**
 
-```cpp
+~~~ cpp
 //
 // LibSourcey
 // Copyright (C) 2005, Sourcey <http://sourcey.com>
@@ -190,11 +192,11 @@ void LiveStreamEncoder::onStreamStateChange(const PacketStreamState& state)
 
 
 #endif
-```
+~~~ 
 
 **livestreamencoder.h**
 
-```cpp
+~~~ cpp
 //
 // LibSourcey
 // Copyright (C) 2005, Sourcey <http://sourcey.com>
@@ -259,4 +261,4 @@ protected:
 
 #endif
 #endif
-```
+~~~ 

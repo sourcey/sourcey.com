@@ -2,7 +2,9 @@
 title: Combining Multiple RSS Feeds
 date: 2014-03-26 03:58:20
 tags: ausca, programming, rss, ruby
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Combining Multiple RSS Feeds
 
@@ -14,7 +16,7 @@ Ausca uses `nokogiri` which makes short work of parsing HTML and XML, therefore 
 
 The API is very simple:
 
-```ruby
+~~~ ruby
 require "ausca"
 
 # Instantiate the RSS::Joiner
@@ -32,4 +34,4 @@ rss = Ausca::RSS::Joiner.new({
 
 # Fetch source feeds and generate the output
 rss.generate
-```
+~~~ 

@@ -2,6 +2,7 @@
 title: LibSourcey
 date: 2014-01-29 00:45:47
 tags: 
+layout: page
 ---
 # LibSourcey
 
@@ -27,10 +28,7 @@ tags:
   </dl>           
 </div>  
   
-  
-<img src="/images/libsourcey-logo-120.png" title="LibSourcey Logo" alt="LibSourcey Logo" class="logo alignleft" />  
- 
-LibSourcey is a collection of open source cross platform C++11 modules and classes which provide developers with a flexible, high performance arsenal for the rapid development of real-time communication and media streaming applications. 
+![LibSourcey Logo](libsourcey-logo-120.png "LibSourcey Logo"){: .align-left} LibSourcey is a collection of open source cross platform C++11 modules and classes which provide developers with a flexible, high performance arsenal for the rapid development of real-time communication and media streaming applications. 
 
 Modern design principles and event-based asynchronous IO based on Node.js's underlying libuv library are utilised throughout LibSourcey in to minimise concurrency reliance and increase performance for mission critical server side applications.
 

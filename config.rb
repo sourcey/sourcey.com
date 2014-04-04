@@ -4,6 +4,10 @@
 
 # Time.zone = "UTC"
 
+set :protocol, "http://"  
+set :host, "sourcey.com"  
+set :port, 80
+  
 def setup_summary_generator(
     separator = /(READMORE)/i,
     readmore_text = 'read &rarr;') 
@@ -78,7 +82,7 @@ compass_config do |config|
   # output_style = :expanded or :nested or :compact or :compressed
 
   # To enable relative paths to assets via compass helper functions. Uncomment:
-  # relative_assets = true
+  relative_assets = true
 
   # To disable debugging comments that display the original location of your selectors. Uncomment:
   # line_comments = false
@@ -126,6 +130,22 @@ helpers do
   def nav_active(page)
     @page_id == page ? {:class => "active"} : {}
   end
+  
+  def host_with_port
+    [host, optional_port].compact.join(':')
+  end
+
+  def optional_port
+    port unless port.to_i == 80
+  end
+
+  def image_url(source)
+    protocol + host_with_port + image_path(source)
+  end
+
+  def current_url
+    protocol + host_with_port + current_page.url #image_path(source)
+  end
 end
 
 # Add bower's directory to sprockets asset path
@@ -151,23 +171,33 @@ ready do
   sprockets.import_asset 'foundation-icon-fonts/foundation-icons.woff'
 end
 
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
-set :markdown_engine, :redcarpet
+#set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+#set :markdown_engine, :redcarpet
+set :markdown_engine, :kramdown
+
+
+# Development-specific configuration
+configure :development do  
+  # Used for generating absolute URLs
+  #set :host, Middleman::PreviewServer.host
+  #set :port, Middleman::PreviewServer.port
+end  
 
 # Build-specific configuration
+
 configure :build do
   # For example, change the Compass output style for deployment
-  activate :minify_css
+  # activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
-  set :relative_links, true
+  #activate :relative_assets
+  #set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

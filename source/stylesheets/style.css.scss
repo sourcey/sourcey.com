@@ -2,6 +2,16 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: #c00;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: yellow;
+  text-decoration: none;
+}
+
 
 /*
   Layout
@@ -134,6 +144,24 @@ body {
 #rotate-article .prev {}
 #rotate-article .next {
   float: right;
+}
+
+#disqus_thread {
+  margin: 45px 0 25px;
+}
+
+.social-buttons {
+  list-style-type: none;
+  width: 300px;
+  height: 90px;
+  margin: 45px auto 10px;
+}
+
+.social-buttons li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  float: left;
 }
 
 /*
@@ -345,8 +373,14 @@ body.index #projects a.budokin .icon {
   text-transform: lowercase;
 }
 
-#main h1 { 
-  font-size: 28px;
+#main dl { 
+  margin-left: 1em;
+}
+#main dl dt { 
+  text-transform: lowercase;
+}
+#main dl dd {
+  margin-bottom: 1.625em;
 }
 
 #main h1:first-of-type { 
@@ -376,17 +410,18 @@ body.index #projects a.budokin .icon {
   padding-top: 1.625em;
 }
 
-#main time {
+#main time {}
+
+#main .align-left {
+  float: left;
+  margin-right: 1.625em;
+  margin-bottom: 0.625em;
 }
 
-#main a {
-  color: #c00;
-  text-decoration: none;
-}
-
-#main a:hover {
-  background-color: yellow;
-  text-decoration: none;
+#main .align-right {
+  float: right;
+  margin-left: 1.625em;
+  margin-bottom: 0.625em;
 }
 
 #main h1 a,
@@ -395,24 +430,14 @@ body.index #projects a.budokin .icon {
 	color: #000;
 	text-decoration: none;
 }
+#main .meta {
+  color: #888;
+  clear: both;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
 
-/*
-.entry-title {
-	clear: both;
-	color: #000;
-	font-size: 26px;
-	font-weight: normal;
-	padding-bottom: .3em;
-  text-transform: lowercase;
-}
-.entry-title,
-.entry-title a {
-}
-.entry-title a:hover,
-.entry-title a:focus,
-.entry-title a:active {
-}
-*/
 .entry-title time {
   display: none;
   font-size: 14px;
@@ -431,10 +456,6 @@ body.index #projects a.budokin .icon {
 	*/
   font-size: 11px;
 }
-.entry-meta a {
-	/* font-weight: bold; */
-}
-
 
 pre, code {
   font-family: 'Monaco', courier, monospace;

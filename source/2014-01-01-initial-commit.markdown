@@ -1,8 +1,10 @@
 ---
 title: Initial commit!
 date: 2014-01-01 01:08:52
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
 tags: promotions
-layout: blogs
+layout: article
 ---
 # Initial commit!
 

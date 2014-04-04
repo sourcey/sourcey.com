@@ -2,7 +2,9 @@
 title: Rails 4 OmniAuth using Devise with Twitter, Facebook and Linkedin
 date: 2014-03-26 04:41:47
 tags: oauth, programming, rails, ruby
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 There are quite a few OAuth solutions out there, but I want to share the one we use, as it allows you to intelligently link multiple OAuth identities with a single user entity. If you use 90% of the code examples on the internet you will wind up with a new user entity each time the user signs in with a different OAuth provider, and a bunch of very confused users.
 
@@ -11,18 +13,18 @@ The OAuth provider that throws a spanner in the works and adds convolution to ou
 So, without further ado, here is the code:
 
 #### Gemfile
-```ruby
+~~~ ruby
 gem 'cancan'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
-```
+~~~ 
 
 #### Generate migrations and models
 
-```ruby
+~~~ ruby
 rails generate devise:install
 rails generate devise user
 rails g migration add_name_to_users name:string
@@ -30,10 +32,10 @@ rails g model identity user:references provider:string uid:string oauth_token:st
 
 # Modify the db/migrate/[timestamp]_add_devise_to_users.rb to configure the Devise modules you will use.
 # We usually enable the "confirmable" module when enabling email signups.
-```
+~~~ 
 
 #### app/models/identity.rb
-```rubyclass Identity < ActiveRecord::Base
+~~~ rubyclass Identity < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :user_id, :uid, :provider
   validates_uniqueness_of :uid, :scope => :provider
@@ -46,20 +48,20 @@ rails g model identity user:references provider:string uid:string oauth_token:st
     identity
   end
 end
-```
+~~~ 
 
 #### app/config/initializers/devise.rb
-```rubyDevise.setup do |config|
+~~~ rubyDevise.setup do |config|
 ...
   config.omniauth :facebook, "KEY", "SECRET"
   config.omniauth :twitter, "KEY", "SECRET"
   config.omniauth :linked_in, "KEY", "SECRET"
 ...
 end
-```
+~~~ 
 
 #### config/environments/[environment].rb
-```ruby
+~~~ ruby
 ...
   # Email
   config.action_mailer.delivery_method = :smtp
@@ -75,10 +77,10 @@ end
     domain => 'somedomain.com'
   }
 ...
-```
+~~~ 
 
 #### app/controllers/omniauth_callbacks_controller.rb
-```ruby
+~~~ ruby
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def twitter
     @user = User.find_for_oauth(env["omniauth.auth"], current_user)
@@ -113,17 +115,17 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 end
-```
+~~~ 
 
 #### config/routes.rb
-```ruby
+~~~ ruby
 ...
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 ...
-```
+~~~ 
 
 #### app/models/user.rb
-```ruby
+~~~ ruby
 class User < ActiveRecord::Base
   TEMP_EMAIL = 'change@me.com'
   TEMP_EMAIL_REGEX = /change@me.com/
@@ -166,19 +168,19 @@ class User < ActiveRecord::Base
     user
   end
 end
-```
+~~~ 
 
 The next steps are optional to get an email address from Twitter users.
 
 #### config/routes.rb
-```ruby
+~~~ ruby
 ...
   get '/users/:id/add_email' => 'users#add_email', via: [:get, :patch, :post], :as => :add_user_email
 ...
-```
+~~~ 
 
 #### app/controllers/application_controller.rb
-```ruby
+~~~ ruby
   # This filter could go anywhere the user needs to have a valid email address to access
   before_filter :ensure_valid_email
 
@@ -192,10 +194,10 @@ The next steps are optional to get an email address from Twitter users.
       redirect_to add_user_email_path(current_user)
     end
   end  
-```
+~~~ 
 
 #### app/controllers/users_controller.rb
-```ruby
+~~~ ruby
 class UsersController < ApplicationController
   before_action :set_user, :add_email
   ...
@@ -215,10 +217,10 @@ class UsersController < ApplicationController
     end
   end
 end
-```
+~~~ 
 
 #### app/views/users/add_user.html.rb
-```ruby
+~~~ ruby
 <div id="add-email" class="container">
   ## Add Email
   <%= form_for(@user, :as => 'user', :url => add_user_email_path(@user), :html => { role: 'form'}) do |f| %>
@@ -241,6 +243,6 @@ end
     </div>
   <% end %>
 </div>
-```
+~~~ 
 
 Well that's pretty much it! If I left anything out please give me a shout and I will update the article. Cheers!

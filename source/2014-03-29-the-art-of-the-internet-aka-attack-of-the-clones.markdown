@@ -2,7 +2,9 @@
 title: The Art of the Internet AKA. Attack of the Clones
 date: 2014-03-29 02:23:53
 tags: art, business, internet, psychology, rants, startups 
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # The Art of the Internet AKA. Attack of the Clones
 

@@ -2,6 +2,7 @@
 title: Mesh
 date: 2014-01-29 00:58:07
 tags: 
+layout: page
 ---
 # Mesh
 
@@ -22,9 +23,7 @@ tags:
   </dl>         
 </div>  
   
-<img src="/images/mesh-logo-120.png" title="Mesh Logo" alt="Mesh Logo" class="logo alignleft" />       
-
-Mesh is a modular CSS3 layout framework designed for building web sites that take advantage of the latest CSS3 and HTML5 capabilities while still providing fallback support for older browsers.
+![Mesh Logo](mesh-logo-120.png "Mesh Logo"){: .align-left} Mesh is a modular CSS3 layout framework designed for building web sites that take advantage of the latest CSS3 and HTML5 capabilities while still providing fallback support for older browsers.
 
 Mesh consists of a number of separate modules which may be optionally included in your projects:    
     
@@ -44,7 +43,7 @@ Mesh consists of a number of separate modules which may be optionally included i
     A system for laying out 100% height elements as part of a grid. 
     This module utilises display:table CSS properties therefore it won't work on < IE8 without the JavaScript module enabled.
     The JavaScript module detects support for display:table and enforces compliance.
-    <!-- -->
+    -->
   </dd> 
   <dt>Portal</dt>
   <dd>
@@ -88,7 +87,7 @@ Mesh consists of a number of separate modules which may be optionally included i
 ## Extending
 Mesh uses a simple modular API which makes it dead easy to extend it with your own modules:
 
-```javascript
+~~~ javascript
 Mesh.extend('grid', {
   // an optional init method.
   // will be called on Mesh.init()
@@ -97,7 +96,7 @@ Mesh.extend('grid', {
   
   // other methods
 }); 
-```
+~~~ 
 
 ## Compiling
 Mesh uses <a href="https://github.com/gruntjs/grunt" title="Grunt.js" target="_blank">Grunt.js</a> for build automation.

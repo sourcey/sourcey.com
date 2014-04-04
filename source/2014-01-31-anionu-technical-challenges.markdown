@@ -2,7 +2,9 @@
 title: Anionu Technical Challenges
 date: 2014-01-31 00:24:36
 tags: css3, html5, programming, symple, web-development
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Anionu Technical Challenges
 The purpose of this post is to share, and sometimes rant, about the technical challenges that we faced and overcame while developing Anionu.

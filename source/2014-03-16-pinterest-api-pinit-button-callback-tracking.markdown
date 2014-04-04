@@ -2,7 +2,9 @@
 title: Pinterest API Pinit Button Callback Tracking
 date: 2014-03-16 09:23:33
 tags: api, pinterest, programming, rails
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Pinterest API Pinit Button Callback Tracking
 
@@ -20,14 +22,14 @@ To break it down a little more the workflow is like this:
 
 Here is some pseudo Ruby code that we have used successfully in a recent Rails project.
 
-```ruby
+~~~ ruby
   # routes.rb
 
   resources :interactions
   get '/interactions/verify/:action_id/:user_id/:entity_id(.:format)' => 'interactions#verify', :as => :verify_interaction
-```
+~~~ 
 
-```ruby
+~~~ ruby
   # interactions_controller.rb
 
   # POST /interactions
@@ -80,4 +82,4 @@ Here is some pseudo Ruby code that we have used successfully in a recent Rails p
     Rails.logger.info "*** Interaction not verified: #{params.inspect}"
     render nothing: true, status: :not_found     
   end
-```
+~~~ 

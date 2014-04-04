@@ -2,6 +2,7 @@
 title: Pacman
 date: 2014-01-29 00:18:53
 tags: 
+layout: page
 ---
       
 <!-- 
@@ -27,9 +28,7 @@ TODO: compare to current package managers
   </dl>             
 </div>  
     
-<img src="/images/pacman-logo-120.png" title="Pacman Logo" alt="Pacman Logo" class="logo float-left alignleft" />      
-
-Pacman is a redistributable package manager written C++ that speaks JSON with the server.
+![Pacman Logo](pacman-logo-120.png "Pacman Logo"){: .align-left} Pacman is a redistributable package manager written C++ that speaks JSON with the server.
 It is designed to be embedded within an application to make easy work of installing, updating and uninstalling packages and plug-ins.
 
 There are no shortage or open source <a href="http://en.wikipedia.org/wiki/List_of_software_package_management_systems">package managers</a> out there, but none of them quite fit the bill for a simple embeddable package manager that we could integrate with our native and web platform. We have fallen short on this requirement a number of times over the years, so we decided to build Pacman.
@@ -40,7 +39,7 @@ Pacman is a default module in the LibSourcey repository. Please download and com
 
 The Pacman API is vey easy use. Some examples are illustrated below:
       
-```cpp
+~~~ cpp
 `PackageManager::Options options;
 // configuration options go here...
 PackageManager pacman(options);
@@ -83,7 +82,7 @@ pacman.updateAllPackages();
 // uninstall a package.
 // uninstallPackages() can also be used for multiple packages.
 pacman.uninstallPackage("SomePackageName");
-```
+~~~ 
 
 Pretty tidy huh? That covers basic Pacman usage. 
 
@@ -99,7 +98,7 @@ All that is required on the part of the server is to list packages using Pacman'
 An example of a server response to a Pacman query is illustrated below. 
 Pacman will send a HTTP GET request to the server which will reply with a JSON response that looks like:
       
-```javascript
+~~~ javascript
 [ { "assets" : [ { "extension" : "zip",
           "file-name" : "Spot-1.0-win32-bin.zip",
           "file-size" : "3261705",
@@ -164,7 +163,7 @@ Pacman will send a HTTP GET request to the server which will reply with a JSON r
     "type" : "Plugin"
   }
 ]
-```      
+~~~       
 ## Things to do
 
 There are a few features we have not had time to implement yet which are listed in the TODO file in the source folder.

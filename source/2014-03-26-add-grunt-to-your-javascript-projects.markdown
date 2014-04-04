@@ -2,7 +2,9 @@
 title: Add Grunt To Your JavaScript Projects
 date: 2014-03-26 05:43:37
 tags: automation, grunt, javascript, programming
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Add Grunt To Your JavaScript Projects
 
@@ -14,21 +16,21 @@ I recently incorporated Grunt into <a href="http://sourcey.com/mesh/" title="Mes
 
 Lets say you have a basic project layout like so:
 
-```
+~~~ 
 my-project
 |-- src
   |-- *.css
   |-- *.js
 |-- dist
-```
+~~~ 
 
 First things first, install Grunt:
 
-```npm install grunt-cli```
+~~~ npm install grunt-cli~~~ 
 
 Create a `package.json` file in your root folder using this file as a template:
 
-```javascript
+~~~ javascript
 {
     "name" : "my-project",
     "version" : "0.0.1",
@@ -40,11 +42,11 @@ Create a `package.json` file in your root folder using this file as a template:
         "grunt-contrib-uglify" : "~0.2.0"
     }
 }
-```
+~~~ 
 
 Now create a `Gruntfile.js` in your root folder and insert the following:
 
-```javascript
+~~~ javascript
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -86,7 +88,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js']);
 };
-```
+~~~ 
 
 This simple `Gruntfile` tells Grunt to combine and minify the CSS and JS files from the `src/` folder, and save the result to the `dist/` folder.
 
@@ -94,6 +96,6 @@ Notice that we also included the watch plugin, which tells Grunt us to watch the
 
 In order to start the watcher execute the following command from the source directory:
 
-```grunt watch```
+~~~ grunt watch~~~ 
 
 Didn't I tell you it was easy? Now go forth and create :)

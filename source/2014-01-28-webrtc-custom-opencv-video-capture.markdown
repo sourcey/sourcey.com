@@ -1,8 +1,10 @@
 ---
 title: WebRTC Custom OpenCV Video Capture
 date: 2014-01-28 08:32:11
-tags: c, opencv, programming, video-capture, webrtc
-layout: blogs
+tags: c++, opencv, programming, video-capture, webrtc
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # WebRTC Custom OpenCV Video Capture
 
@@ -11,7 +13,7 @@ WebRTC comes with an video device capture implementations for most platforms inc
 Bear in mind that these classes are just for testing, and are by no means 100% complete. For example pixel format handling and conversion is fixed to I420, but this can be easily implemented as the logic is already in place.
 
 ### videocapturerocv.h
-```cpp
+~~~ cpp
 #ifndef SCY_VideoCaturerOCV_H
 #define SCY_VideoCaturerOCV_H
 
@@ -74,10 +76,10 @@ public:
 
 
 #endif
-```
+~~~ 
 
 ### videocapturerocv.cpp
-```cpp
+~~~ cpp
 #include "videocapturerocv.h"
 
 
@@ -198,11 +200,11 @@ bool VideoCapturerOCV::IsScreencast() const
 
 
 } // namespace scy
-```
+~~~ 
 
 The VideoCapturerOCV class can now be used like so:
 
-```cpp
+~~~ cpp
 bool PeerConnectionClient::InitConnection() 
 {
     peer_connection_ = peer_connection_factory_->CreatePeerConnection(
@@ -254,6 +256,6 @@ cricket::VideoCapturer* PeerConnectionClient::OpenVideoCaptureDevice()
     }
     return capturer;
 }
-```
+~~~ 
 
 Happy coding!

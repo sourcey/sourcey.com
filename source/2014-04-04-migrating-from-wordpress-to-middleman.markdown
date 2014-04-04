@@ -2,7 +2,9 @@
 title: Migrating from Wordpress to Middleman
 date: 2014-04-04 10:09:32
 tags: programming, symple, video, webrtc
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 Sourcey has been running on a Wordpress (2013-2014) for the better part of year now, but for me as a developer there has always been a nagging feeling that there is a better way. Static websites wre all the rage recently, especially for smaller sites, and with good reason! There's something satisfying about a static website; one less thing to break, and one less security vulnerability to worry about. Nice! Geeks love optimisation, and when it comes to websites you don't just any more optimised than (well written :P) static HTML. 
 Anyway, whats the point of using a dynamic scripting language for serving blog atricles and documentation? 
@@ -28,7 +30,7 @@ Add the `bower.json` and `.bowerrc` files to your middleman folder.
 
 ##### bower.json
 
-```
+~~~ 
 {
   "name": "your-app-name",
   "version": "0.0.1",
@@ -37,26 +39,26 @@ Add the `bower.json` and `.bowerrc` files to your middleman folder.
     "foundation": "zurb/bower-foundation"
   }
 }
-```
+~~~ 
 
 ##### .bowerrc
 
-```
+~~~ 
 {
   "directory" : "source/bower_components"
 }
-```
+~~~ 
 
 Don't forget to add bower's directory to the sprockets asset path by adding the following to the end of your `config.rb` file:
 
-```
+~~~ 
 ...
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
-```
+~~~ 
 
 OK, we're ready to run $ `bower install` to install Foundation and friends.
 
@@ -64,24 +66,24 @@ Now go ahead and create the following files:
 
 ##### source/javascripts/modernizr.js
 
-```
+~~~ 
 //= require modernizr/modernizr
-```
+~~~ 
 
 ##### source/javascripts/app.js
 
-```
+~~~ 
 $(document).foundation();
-```
+~~~ 
 
 ##### source/javascripts/all.js
 
-```
+~~~ 
 //= require jquery/dist/jquery
 //= require foundation/js/foundation.min
 
 //= require app
-```
+~~~ 
 
 The next step is to setup our stylesheets.
 
@@ -89,14 +91,14 @@ At this point it's a good idea to copy `source/bower_components/foundation/scss/
 
 ##### source/stylesheets/app.css.scss
 
-```
+~~~ 
 @import "settings";
 @import "foundation.scss";
-```
+~~~ 
 
 Now to update our HTML layout file to work with Zurb and the changes we have made:
 
-```
+~~~ 
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -114,64 +116,56 @@ Now to update our HTML layout file to work with Zurb and the changes we have mad
     <%= javascript_include_tag  "all" %>
   </body>
 </html>
-```
+~~~ 
 
 ## Migrating from Wordpress
 
 Migrating from Wordpress to Middleman wasn't too painful with the help of the `wp2middleman` gem, which can be installed as follows:
 
-```
+~~~ 
 git clone http://github.com/mdb/wp2middleman
 cd wp2middleman
 bundle install
 rake install
-```
+~~~ 
 
 If you havent exported your Wordpress posts yet do so now as per [the official guide](http://en.support.wordpress.com/export/). 
 
 Now to export your Wordpress XML file just use the `wp2mm` command. 
 
-```
+~~~ 
 wp2mm your_wordpress_export.xml
-```
+~~~ 
 
 Be sure to check out the Github page for export configuration options: https://github.com/mdb/wp2middleman
 
 ## Deploying on Gitbub Pages
 
-We chose to deploy our site on Github pages since it is free and easy. For this we used the `middleman-deploy` gem.
+We chose to deploy our site on Github pages since it is free and easy. Initially I chose `middleman-deploy`, but all my pages started returning 404, so I checked out the alternative `middleman-gh-pages` which worked a treat after some Windows niggles which I posted a fix for https://github.com/neo/middleman-gh-pages/pull/21
+
 Add this to your Gemfile:
 
-```
-gem "middleman-deploy"
-```
+~~~ 
+gem "middleman-gh-pages"
+~~~ 
+
+You'll also need to require the gem in your Rakefile:
+~~~ 
+require 'middleman-gh-pages'
+~~~ 
 
 Now run `bundle install`
 
-The process for deploying your site will be as follows:
+If you haven't already created your git Github repository, do that now and `git push` your changes.
 
-```
-$ middleman build [--clean]
-$ middleman deploy [--build-before]
-```
+The process for deploying your site with Middleman Github Pages as follows:
 
-Now configure your `config.rb` file:
+~~~ 
+rake build    # Compile all static files into the build directory
+rake publish  # Build and publish to Github Pages
+~~~ 
 
-```ruby
-activate :deploy do |deploy|
-  # Automatically build your static content during `middleman deploy`
-  deploy.build_before = true # default: false
-  
-  # Deploy using Github pages
-  deploy.method = :git
-  # Optional Settings
-  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch   = "custom-branch" # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
-end
-```
-
-For a full list of deployment options using rsync, ftp, sftp, and git, check out the documentation at https://github.com/tvaughan/middleman-deploy
+Visit https://github.com/neo/middleman-gh-pages for a full list of configuration options.
 
 ## Static Bliss
 

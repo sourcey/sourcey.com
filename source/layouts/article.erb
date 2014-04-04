@@ -12,7 +12,17 @@
           <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
         <% end %>
       </div>
-      <%= yield %>
+      <%= yield %>    
+      <%= partial "social" %>      
+      <div class="meta">
+        Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by 
+        <% if current_article.data.author_site %>
+          <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
+        <% else %>
+          <%= current_article.data.author %>
+        <% end %>. Tagged: <%= current_article.tags.join(', ') %>.
+      </div>       
+      <%= partial "comments" %>  
     </div>
     <%= partial "footer" %>
   </body>

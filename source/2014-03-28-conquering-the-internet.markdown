@@ -2,7 +2,9 @@
 title: Conquering the Internet
 date: 2014-03-28 15:02:16
 tags: marketing, philosophy, promotions, rants, seo
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Conquering the Internet
 

@@ -2,7 +2,9 @@
 title: Symple WebRTC Video Chat Demo
 date: 2014-04-03 01:41:32
 tags: programming, symple, video, webrtc
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Symple WebRTC Video Chat Demo
 
@@ -12,7 +14,9 @@ Symple's client side libraries already have most of the functions required to bu
 
 So without further ado, check out the live demo, and by all means keep reading to find out more about what's happening under the hood. If you're into code geekery, the entire source code is available on Github. Enjoy!
 
-View The Demo
+<center>
+<a href="http://symple.sourcey.com" class="button success radius" style="margin:20px auto;display:inline-block" target="_blank">View the demo</a>
+</center>
 
 ## Using the Demo
 For those of you who have used a chat application it should be pretty straight forward. Just choose a handle/username to login. for testing you can just open another browser window and login again to have a conversation with yourself (I'm pretty sure it doesn't mean you're crazy).

@@ -2,11 +2,11 @@
 title: Anionu
 date: 2014-01-29 01:09:06
 tags: 
+layout: page
 ---
 # Anionu
 
-<img src="/images/anionu-logo-120.png" title="Anionu Logo" alt="Anionu Logo" class="logo alignleft" />
-In 2010, Sourcey acquired private funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a solution to both personal and property security which has the potential change the industry. This document transparency addresses some key points regarding Anionu for both investors and customers.
+![Anionu Logo](anionu-logo-120.png "Anionu Logo"){: .align-left} In 2010, Sourcey acquired private funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a solution to both personal and property security which has the potential change the industry. This document transparency addresses some key points regarding Anionu for both investors and customers.
 
 ## What is Anionu?
 Anionu, pronounced "an-eye-on-you", is a video surveillance web application for savy home owners, business owners and security companies. 
@@ -61,34 +61,35 @@ This is a very exciting prospect, and a great use for the Internet - which is no
 Information pending. For full details and early access visit <a href="https://anionu.com" title="Cloud Video Surveillance Software for Home and Business">anionu.com</a>
 
 
-      
-       is not to rave about Anionu, however, 
-      
-                  
-      Anionu is a breath of fresh air for the surveillance industry, n 
-      Anionu is a breath of fresh air in a stagnating 
-      The purpose of this document is to share, and sometimes rant about, the technical challenges we faced and overcame while developing Anionu.
-      ## Technical Decisions
-      Anionu is designed with accessibility and flexibility in mind; it works anywhere, on any device, with any camera.      
-      will fill a hole in the market for
-      was originally intended as a easy to use surveillance system that anyone can use to protect their home and business.  that they can't afford -->
-      <!-- Accessibility is the way of the ; use it on any device, with any camera, 
-      Accessibility is very imp       
-      The idea is Accessibility; use it anywhere, on any device, with any camera.
-    
-    <p>
-      Building cross-platform software is fraught with challenges, compatibility issues and restrictions imposed by the systems we work with.
-      We like to share, and sometimes rant a little, so here is a summary of some of the challenges we faced and overcame during the development of Anionu.
-    </p>
 
-      We are happy to announce that that there is an alternative.
-    <p>
-      It is low cost; you can use it with any kind of camera; there are evil contracts or hidden extra costs; and setup only takes a minute.       
-      Oh, and best of all it is run by a small firm that know the business inside out and keep your best interests at heart.
-    </p>
-      Here we are going to explain a few technical aspects related to the development of Anionu,
-      are not of a technical mind and wish
-      firmly
-      The fact is way too many property owners are still paying top dollar for expensive, redundant surveillance and security systems.
-      <li>Ongoing service changes</li>web standards
-    <!-- -->
+is not to rave about Anionu, however, 
+
+    
+Anionu is a breath of fresh air for the surveillance industry, n 
+Anionu is a breath of fresh air in a stagnating 
+The purpose of this document is to share, and sometimes rant about, the technical challenges we faced and overcame while developing Anionu.
+## Technical Decisions
+Anionu is designed with accessibility and flexibility in mind; it works anywhere, on any device, with any camera.      
+will fill a hole in the market for
+was originally intended as a easy to use surveillance system that anyone can use to protect their home and business.  that they can't afford
+-->
+<!-- Accessibility is the way of the ; use it on any device, with any camera, 
+Accessibility is very imp       
+The idea is Accessibility; use it anywhere, on any device, with any camera.
+
+<p>
+Building cross-platform software is fraught with challenges, compatibility issues and restrictions imposed by the systems we work with.
+We like to share, and sometimes rant a little, so here is a summary of some of the challenges we faced and overcame during the development of Anionu.
+</p>
+
+We are happy to announce that that there is an alternative.
+<p>
+It is low cost; you can use it with any kind of camera; there are evil contracts or hidden extra costs; and setup only takes a minute.       
+Oh, and best of all it is run by a small firm that know the business inside out and keep your best interests at heart.
+</p>
+Here we are going to explain a few technical aspects related to the development of Anionu,
+are not of a technical mind and wish
+firmly
+The fact is way too many property owners are still paying top dollar for expensive, redundant surveillance and security systems.
+<li>Ongoing service changes</li>web standards
+-->

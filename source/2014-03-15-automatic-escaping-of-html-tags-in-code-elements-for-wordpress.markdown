@@ -2,13 +2,15 @@
 title: Automatic Escaping of HTML Tags in Code Elements for Wordpress 
 date: 2014-03-15 07:43:17
 tags: php, programming, regex, wordpress
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Automatic Escaping of HTML Tags in Code Elements for Wordpress 
 
 For those of you who are using wordpress and don't want to manually escape or mangle HTML tags inside your "code" elements, just add the below code to your functions.php to save you from a hair-pulling experience. You can also escape code in "pre" or other elements by modifying the regex string.
 
-```php
+~~~ php
 // Escape HTML tags in post content
 add_filter('the_content', 'escape_code_fragments');
 
@@ -31,4 +33,4 @@ function escape_code_fragments($source) {
   else
     return $source;
 }
-```
+~~~ 

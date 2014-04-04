@@ -2,7 +2,9 @@
 title: JavaScript Object to Flash SWF ExternalInterface Bridge
 date: 2014-03-27 08:54:36
 tags: flash, javascript, oop, programming, swf
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # JavaScript Object to Flash SWF ExternalInterface Bridge
 
@@ -10,7 +12,7 @@ Have you ever wanted to bind your ActionScript ExternalInterface callbacks to Ja
 
 To get started include the JFlashBridge object somewhere in your JavaScript.
 
-```javascript
+~~~ javascript
 var JFlashBridge = {
     items: {},
 
@@ -44,11 +46,11 @@ var JFlashBridge = {
         return document[movieName];
     }
 };
-```
+~~~ 
 
 And include this ActionScript file in your Flash project (SWF):
 
-```javascript
+~~~ javascript
 package sourcey.util
 {
 	import flash.events.TimerEvent;
@@ -176,11 +178,11 @@ package sourcey.util
 		}
 	}
 }
-```
+~~~ 
 
 Add the following lines to your main ActionScript class:
 
-```javascript
+~~~ javascript
 package
 {
 	import sourcey.util.JFlashBridge;
@@ -216,12 +218,12 @@ package
                 }
         }		
 }
-```
+~~~ 
 
 Below is the JavaScript object that will be communicating with your SWF.
 Be sure to change the path member to point to your SWF location on the server.
 
-```javascript
+~~~ javascript
 function MyClass() {
     this.path = "/my-swf.swf" // The SWF path
     this.id = "my-swf"        // The SWF ID
@@ -261,15 +263,15 @@ MyClass.prototype = {
         console.log("onCallback: ", data);
     }
 }
-```
+~~~ 
 
 The implementation would look something like this:
 
-```javascript
+~~~ javascript
 var obj = new MyClass()
 obj.setup()
 
 // Call obj.someMethod and "hello flash" will be echoed 
 // back via the onCallback method of the MyClass instance
 obj.someMethod("hello flash")
-```
+~~~ 

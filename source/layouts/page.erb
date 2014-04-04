@@ -1,0 +1,12 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <%= partial "head" %>    
+  <body class="blog <%= page_classes %>">
+    <%= partial "header" %>    
+    <div id="main" role="main">
+      <!--<h1 class="title"><%= current_article.data.title %></h1>-->
+      <%= yield %> 
+    </div>
+    <%= partial "footer" %>
+  </body>
+</html>

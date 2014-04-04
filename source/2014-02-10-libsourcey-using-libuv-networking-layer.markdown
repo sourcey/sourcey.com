@@ -1,8 +1,10 @@
 ---
 title: LibSourcey Using Libuv Networking Layer
 date: 2014-02-10 00:23:26
-tags: c, libsourcey, libuv, node-js, programming
-layout: blogs
+tags: c, libsourcey, libuv, node.js, programming
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # LibSourcey Using Libuv Networking Layer
 

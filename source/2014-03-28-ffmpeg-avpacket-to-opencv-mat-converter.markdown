@@ -1,13 +1,15 @@
 ---
 title: FFmpeg AVPacket to OpenCV Mat Converter
 date: 2014-03-28 10:47:46
-tags: c, ffmpeg, opencv, programming
-layout: blogs
+tags: c++, ffmpeg, opencv, programming
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 When building computer vision projects in C++, you may find yourself in need for an FFmpeg to OpenCV packet converter. 
 The good news is you don't need to look any further because it's all contained within this open source header file, which is a included in <a href="http://sourcey.com/libsourcey/" title="LibSourcey">LibSourcey</a>.
 
-```cpp
+~~~ cpp
 //
 // LibSourcey
 // Copyright (C) 2005, Sourcey <http://sourcey.com>
@@ -135,4 +137,4 @@ public:
 
 #endif
 #endif
-```
+~~~ 

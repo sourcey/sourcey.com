@@ -13,23 +13,23 @@
     
     <section class="top-bar-section" style="left: 0%;">      
       <ul class="left">
-        <li class="has-dropdown not-click"><a href="/">Menu</a>
+        <li class="has-dropdown not-click"><%= link_to "Menu", "/" %>
           <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
             <!--<li><label>Menu</label></li>-->
-            <li><a href="/#blog">Blog</a></li>
-            <li class="has-dropdown not-click"><a href="/#projects">Projects</a>
+            <li><%= link_to "Blog", "/", fragment: "blog" %></li>
+            <li class="has-dropdown not-click"><%= link_to "Projects", "/", fragment: "projects" %>
               <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
                 <li><label>Projects</label></li>
-                <li><a href="/libsourcey">LibSourcey</a></li>
-                <li><a href="/anionu">Anionu</a></li>
-                <li><a href="/symple">Symple</a></li>
-                <li><a href="/mesh">Mesh</a></li>
-                <li><a href="/pacman">Pacman</a></li>
+                <li><%= link_to "LibSourcey", "/libsourcey" %></li>
+                <li><%= link_to "Anionu", "/anionu" %></li>
+                <li><%= link_to "Symple", "/symple" %></li>
+                <li><%= link_to "Mesh", "/mesh" %></li>
+                <li><%= link_to "Pacman", "/pacman" %></li>
               </ul>
             </li>
             <li class="divider"></li>
-            <li><a href="/archives">Archives</a></li>
-            <li><a href="/feed.xml">Feed</a></li>
+            <li><%= link_to "Archives", "/archives" %></li>
+            <li><%= link_to "Feed", "/feed.xml" %></li>
             <li class="divider"></li>
             <li><a href="mailto:hello@sourcey.com">Contact</a></li>
           </ul>
@@ -39,6 +39,8 @@
     </section></nav>
     
     <header id="header">
-      <h1 id="logo" class="site-title"><a href="http://sourcey.com/" title="Sourcey" rel="home"><img src="/images/logo-250.png" height="150" width="150" title="Sourcey" alt="Sourcey"></a></h1>
+      <h1 id="logo">
+        <%= link_to(image_tag("logo-250.png", height: 150, width: 150, title: "Sourcey", alt: "Sourcey"), "http://sourcey.com", title: "Sourcey", rel: "home") %>
+      </h1>
       <!--<h2 class="site-description">Open Source Developer Collective</h2>-->
     </header>

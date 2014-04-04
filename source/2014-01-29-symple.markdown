@@ -2,6 +2,7 @@
 title: Symple
 date: 2014-01-29 01:03:56
 tags: 
+layout: page
 ---
 # Symple
 
@@ -20,10 +21,8 @@ tags:
     </dd> 
   </dl>           
 </div>
-
-<img src="/images/symple-logo-120.png" title="Symple Logo" alt="Symple Logo" class="logo alignleft" />        
-
-Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for seamless communication between desktop and browser applications.
+ 
+![Symple Logo](symple-logo-120.png "Symple Logo"){: .align-left} Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for seamless communication between desktop and browser applications.
 
 Symple is an unrestrictive peer messaging and presence protocol.
 As the name would suggest; Symple is a very minimal and flexible protocol, which is more suited to a "do-it-yourself" developer mentality.   
@@ -49,7 +48,7 @@ Nested or polymorphic objects are identified using a message's "type" attribute.
 Presently the underlying messaging system.
 ,
 and <a class="external" href="https://bitbucket.org/sourcey/libsourcey">LibSourcey</a> includes a native C++ client and samples
-<!-- -->
+-->
     
 ## Client implementations
        
@@ -119,56 +118,51 @@ A Symple ID is the destination address of a group user or peer node on the serve
 It consists of 3 namespace segments, each segment that is included in a message's destination address refines the delivery scope for that message.
 The purpose of namespacing peer addresses is so peers can be privately grouped.
     
-<dl>
-  <dt>Group</dt>
-  <dd>
-    Each peer on the Symple server belongs to a group namespace. 
-    A message directed to the group namespace will be dispatched to all nodes belonging to that group.
-    <br>**Example:** `{ to: "group" }`
-  </dd>
+Group
+: Each peer on the Symple server belongs to a group namespace. 
+  A message directed to the group namespace will be dispatched to all nodes belonging to that group.
+  
+  _Example:_ ``{ to: "group" }``
 
-  <dt>User</dt>
-  <dd>
-    Each peer on the Symple sever has an associated user name for the purposes of authentication and node grouping.
-    A message directed to the user namespace will be dispatched to nodes belonging to that user.
-    When directing a message to a user namespace, the group namespace MUST be included beforehand.
-    <br>**Example:** `{ to: "group@user" }`
-  </dd>
+User
+: Each peer on the Symple sever has an associated user name for the purposes of authentication and node grouping.
+  A message directed to the user namespace will be dispatched to nodes belonging to that user.
+  When directing a message to a user namespace, the group namespace MUST be included beforehand.
+  
+  _Example:_ `{ to: "group@user" }`
 
-  <dt>Session ID</dt>
-  <dd>
-    Each peer on the Symple sever has a session ID. The session ID acts is a unique identifier for each peer session.
-    Messages may be directed to a specific peer by including the node ID in the destination address.
-    When directing a message to a node ID, the node's group and user namespaces MUST be included beforehand.
-    <br>**Example:** `{ to: "group@user/sessionid" }`
-  </dd>
-</dl>
+Session ID
+: Each peer on the Symple sever has a session ID. The session ID acts is a unique identifier for each peer session.
+  Messages may be directed to a specific peer by including the node ID in the destination address.
+  When directing a message to a node ID, the node's group and user namespaces MUST be included beforehand.
+  
+  _Example:_ `{ to: "group@user/sessionid" }`
 
 ### Message
 
 A symple message is a JSON object which acts as a container for data that is sent over the wire. 
 There are 3 required message attributes:
     
-```javascript
+~~~ javascript
 {
   "to": "group@recipient/sessionid",      // Recipient @see Symple ID (may be full or partial ID)
   "from": "group@sender/sessionid",       // Sender @see Symple ID (always full ID)
   "type": "message",                      // The type of message being sent, maybe a polymorphic type.
 }
-```
+~~~ 
     
 Other frequently used but optional attributes include:
     
-```javascript
+~~~ javascript
 {
   "data": {},                             // We recommend placing arbitrary message data inside a "data" attribute, but this is optional.  
   "notes": [                              // Notes can be added to messages like so.
     {
       "type": "info",                     // Note types: "info", "warn", "error"
-      "text": "errrr..."
+      "text": "ummm..."
     }
 }          
-```
+~~~ 
 
 From these meagre beginnings we can rapidly develop just about any kind of messaging system we want.
 As long as this simple message structure is adhered to data can be broadcast between scoped peers.
@@ -179,7 +173,7 @@ Command messages allow us to send arbitrary commands peer.
 They are suited for sending either short or long running commands, and allow for status callbacks.
 A command request looks like this:
     
-```javascript
+~~~ javascript
 {
   "to": "responder",                      // Responder
   "from": "initiator",                    // Initiator
@@ -187,11 +181,11 @@ A command request looks like this:
   "node": "some:node",                    // The target command node or namespace
   "action": "execute"                     // An optional command action
 }
-```
+~~~ 
     
 A command response looks like this:
     
-```javascript
+~~~ javascript
 {
   "to": "initiator",                      // Initiator
   "from": "responder",                    // Responder
@@ -199,7 +193,7 @@ A command response looks like this:
   "node": "some:node",
   "status": 200                           // HTTP status codes are employed to describe the status of the command.
 }                                         // HTTP codes are generally 200, 202, 404, 406, 500 *
-```
+~~~ 
 
 <p class="note">
 * Command status callbacks for long running commands should use status 202 (Accepted) and 406 (Not accepted) to describe the command's running status.
@@ -210,13 +204,13 @@ All other status codes will result in completion and termination of the command 
 
 Events allow peers to broadcast information about their running state to other peers.
     
-```javascript{
+~~~ javascript{
   "to": "recipient",                      // Recipient
   "from": "sender",                       // Sender
   "type": "event",
   "node": "some:node"                     // The target event node
 }
-```
+~~~ 
 
 ### Form
 
@@ -228,18 +222,18 @@ A basic form session is illustrated below:
 
 A form session is requested by the initiator:
 
-```javascript
+~~~ javascript
 {
   "to": "responder",                      // Responder
   "from": "initiator",                    // Initiator
   "type": "command"
   "node": "some:node:config"
 }
-```
+~~~ 
 
 The responder returns an empty form.
 
-```javascript
+~~~ javascript
 {
   "to": "initiator",                      // Initiator
   "from": "responder",                    // Responder
@@ -270,13 +264,13 @@ The responder returns an empty form.
     ]
   }
 }
-```
+~~~ 
     
 The initiator receives and displays the form the responder. 
 Once complete and the form data is updated an submit back to responder for processing and validation.
 Note the only fields that change here are the form's "type" attribute which is set to "submit", status code is removed, and the field value now equals "key2".
     
-```javascript
+~~~ javascript
 {
   "to": "responder",                      // Responder
   "from": "initiator",                    // Initiator
@@ -307,14 +301,14 @@ Note the only fields that change here are the form's "type" attribute which is s
     ]
   }
 }
-```   
+~~~    
 
 The responder receives and and processes the form data. 
 If any errors are encountered during validation, an error message may added to the field and form returned to the requester for review.
 
 For the purpose of our example validation failed and case the responder was unable to set the value to key2
 
-```javascript
+~~~ javascript
 {
   "to": "initiator",                      // Initiator
   "from": "responder",                    // Responder
@@ -346,12 +340,12 @@ For the purpose of our example validation failed and case the responder was unab
     ]
   }
 }
-```  
+~~~   
     
 The requester receives the form and displays the errors to the user.
 Once rectified the user submits the form again, this time selecting "key3".
     
-```javascript
+~~~ javascript
 {
   "to": "responder",                      // Responder
   "from": "initiator",                    // Initiator
@@ -381,13 +375,13 @@ Once rectified the user submits the form again, this time selecting "key3".
     ]
   }
 }
-```
+~~~ 
     
 Finally both peers have come to an agreement, the info is valid, contracts are signed, and the data is saved.
 
 The responding peer terminates the session by saying thanks:
     
-```javascript
+~~~ javascript
 {
   "to": "initiator",                      // Initiator
   "from": "responder",                    // Responder
@@ -402,4 +396,4 @@ The responding peer terminates the session by saying thanks:
     }
   ]
 }
-```
+~~~ 

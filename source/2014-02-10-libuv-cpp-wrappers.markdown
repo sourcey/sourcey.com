@@ -2,7 +2,9 @@
 title: Libuv C++ Wrappers
 date: 2014-02-10 04:06:56
 tags: programming
-layout: blogs
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
 ---
 # Libuv C++ Wrappers
 
