@@ -1,0 +1,12 @@
+---
+title: Licence
+date: 2014-01-29 06:15:57
+tags: 
+---
+# Licence
+
+<center><p>Our licencing structure is very simple. We release our code as open source for the purpose of strengthening the open source initiative that benefits us so much. Our software is not only our passion, it is also our bread and butter. If you intend on using our code, especially in closed source or commercial applications, we provide an "optional" developers developers licence which can be obtained with a minimal one time payment. </p>
+
+<p>As well as the satisfaction that you are supporting quality open source software, we will give you exposure through our blog and social media channels, providing your product is consistent with our own ethics and objectives.</p>
+
+<p><span class="contact"><a href="mailto:mail@sourcey.com">Contact us regarding a developers licence</a></span></p></center>

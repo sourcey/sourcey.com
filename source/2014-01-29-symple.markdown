@@ -1,0 +1,405 @@
+---
+title: Symple
+date: 2014-01-29 01:03:56
+tags: 
+---
+# Symple
+
+<div class="status">  
+  <dl>
+    <dt>Repository</dt>
+    <dd>
+      <a class="external" href="https://github.com/sourcey/symple-client">https://github.com/sourcey/symple-client</a><br>
+      <a class="external" href="https://github.com/sourcey/symple-server-node">https://github.com/sourcey/symple-server-node</a><br>
+      <a class="external" href="https://github.com/sourcey/libsourcey">https://github.com/sourcey/libsourcey</a>
+    </dd>
+
+    <dt>Licence</dt>
+    <dd>
+      LGPL, <a href="/licensing">Sourcey Licence</a>
+    </dd> 
+  </dl>           
+</div>
+
+<img src="/images/symple-logo-120.png" title="Symple Logo" alt="Symple Logo" class="logo alignleft" />        
+
+Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for seamless communication between desktop and browser applications.
+
+Symple is an unrestrictive peer messaging and presence protocol.
+As the name would suggest; Symple is a very minimal and flexible protocol, which is more suited to a "do-it-yourself" developer mentality.   
+   
+The message format is closely modelled after XMPP, but uses a vastly simplified syntax, and also uses JSON instead of XML for encoding messages.  
+Symple has built-in support signalling support for messages, commands, forms and presence.
+
+The flexible nature of the JSON format also make it great for remoting and serializing data structures such as nested polymorphic objects.
+
+<!-- 
+identified by a "type" attribute.
+in that it supports broadcasting abritraty data structures and nested or polymorphic objects identified by a "type" attribute
+ scalable and 
+
+If you are familiar with XMPP then you have a good head start, 
+Symple uses similar, but simpler semantics, and JSON instead of XML for encoding messages.
+It's no secret, we use JSON for everything.    
+The Symple protocol includes basic specifications for messaging, presence, commands, events and forms. 
+Symple naturally supports broadcasting any data structure to peers, which also makes Symple great for remoting. 
+Nested or polymorphic objects are identified using a message's "type" attribute.
+
+    
+Presently the underlying messaging system.
+,
+and <a class="external" href="https://bitbucket.org/sourcey/libsourcey">LibSourcey</a> includes a native C++ client and samples
+<!-- -->
+    
+## Client implementations
+       
+The <a class="external" href="https://bitbucket.org/sourcey/symple">Symple</a> repository includes client implementations in Ruby and JavaScript.
+
+The Ruby client is a single drop-in module that is perfect for server-side integration with a web framework like Rails or Sinatra.
+
+The JavaScript client provides a flexible interface for receiving standard and arbitrary message types.
+       
+<a class="external" href="https://bitbucket.org/sourcey/libsourcey">LibSourcey</a> also contains includes a native C++ client and samples. 
+The native client is built on top of LibSourcey and libuv architecture for super fast C++ event-based networking.
+
+## Server implementations
+ 
+The <a class="external" href="https://bitbucket.org/sourcey/symple">Symple</a> repository includes sample server is implemented on a node.js stack.
+
+The server supports easy SSL configuration, groups, users, x-real-ip detection, and pre-arranged sessions using short-term authentication tokens via Redis.
+  
+## Why Symple
+
+If you've had the pleasure of building a system to complex specifications then no doubt you'll be familiar with the bloat indicative of such systems.
+
+In some cases it's a necessity, but when it comes to a task like messaging, we prefer freedom of implemention rather than incumbent structure.
+        
+Symple was created as a result of our work with Anionu, where the requirement was real-time messaging and presence between the native and web applications.   
+ 
+Anionu began it's life speaking the XMPP protocol, 
+but while still in it's infancy the child fell terminally ill with a case of unwanted complexity on the client and server sides, and also suffered stiffness from early arthritis attributed to restrictive protocols.    
+
+At this point the need for something Sympler became apparent. Before all hope was lost, and the satisfaction associated with the knowledge that one is creating a streamlined and intuitive system dissolved entirely into the rabbit warrens of unmaintainable code, Symple was given life!
+        
+
+<!--at Sourcey 
+
+, Further extensions may be added tobut the way messages are formed is entirely up to the implementation.
+ 
+JSON is used for encoding messages
+In the messaging world XMPP comes to mind; a solid protocol, 
+
+around XMPP or similar protocols you will no doubt be familiar with the incumbent bloat indicative of systems adherent to complex specifications.
+
+
+If you've had the pleasure of building a system around XMPP or similar protocols you will no doubt be familiar with the incumbent bloat indicative of systems adherent to complex specifications.
+Now there is absolutely nothing wrong with that, and i    determinest reason
+
+at Sourcey we prefer to work with a bare-bones platform that allows for rapid development in any given direction.      
+The end result is generally a more streamlined and intuative application (provided you know what you're doing of course).
+We actually started building 
+thus Symple was given life.
+Anionu with XMPP as the messaging protocol, but it became evident quite early on that we were introducing too much unwanted complexity on the client and server sides, and the feeling of satisfaction 
+associated with the knowledge that one is creating a streamlined and intuitive system dissipaters into the rabbit warrens of unmaintainable code.
+At this point that the need for something sympler became apparent, thus Symple was given life.
+
+
+The choice of JSON as the underlying protocol was natural given our trend towards web centric applications. JSON's smaller message size, reasonably fast processing and vast array of client libraries sealed the deal. 
+It's no secret, we use JSON for just about everything.
+        
+--> 
+
+## Protocol Specifications        
+
+Below are the protocol specifications for Symple's core message types.
+
+### Address
+
+A Symple ID is the destination address of a group user or peer node on the server. 
+It consists of 3 namespace segments, each segment that is included in a message's destination address refines the delivery scope for that message.
+The purpose of namespacing peer addresses is so peers can be privately grouped.
+    
+<dl>
+  <dt>Group</dt>
+  <dd>
+    Each peer on the Symple server belongs to a group namespace. 
+    A message directed to the group namespace will be dispatched to all nodes belonging to that group.
+    <br>**Example:** `{ to: "group" }`
+  </dd>
+
+  <dt>User</dt>
+  <dd>
+    Each peer on the Symple sever has an associated user name for the purposes of authentication and node grouping.
+    A message directed to the user namespace will be dispatched to nodes belonging to that user.
+    When directing a message to a user namespace, the group namespace MUST be included beforehand.
+    <br>**Example:** `{ to: "group@user" }`
+  </dd>
+
+  <dt>Session ID</dt>
+  <dd>
+    Each peer on the Symple sever has a session ID. The session ID acts is a unique identifier for each peer session.
+    Messages may be directed to a specific peer by including the node ID in the destination address.
+    When directing a message to a node ID, the node's group and user namespaces MUST be included beforehand.
+    <br>**Example:** `{ to: "group@user/sessionid" }`
+  </dd>
+</dl>
+
+### Message
+
+A symple message is a JSON object which acts as a container for data that is sent over the wire. 
+There are 3 required message attributes:
+    
+```javascript
+{
+  "to": "group@recipient/sessionid",      // Recipient @see Symple ID (may be full or partial ID)
+  "from": "group@sender/sessionid",       // Sender @see Symple ID (always full ID)
+  "type": "message",                      // The type of message being sent, maybe a polymorphic type.
+}
+```
+    
+Other frequently used but optional attributes include:
+    
+```javascript
+{
+  "data": {},                             // We recommend placing arbitrary message data inside a "data" attribute, but this is optional.  
+  "notes": [                              // Notes can be added to messages like so.
+    {
+      "type": "info",                     // Note types: "info", "warn", "error"
+      "text": "errrr..."
+    }
+}          
+```
+
+From these meagre beginnings we can rapidly develop just about any kind of messaging system we want.
+As long as this simple message structure is adhered to data can be broadcast between scoped peers.
+
+### Command
+
+Command messages allow us to send arbitrary commands peer. 
+They are suited for sending either short or long running commands, and allow for status callbacks.
+A command request looks like this:
+    
+```javascript
+{
+  "to": "responder",                      // Responder
+  "from": "initiator",                    // Initiator
+  "type": "command",                      // Message type
+  "node": "some:node",                    // The target command node or namespace
+  "action": "execute"                     // An optional command action
+}
+```
+    
+A command response looks like this:
+    
+```javascript
+{
+  "to": "initiator",                      // Initiator
+  "from": "responder",                    // Responder
+  "type": "command",
+  "node": "some:node",
+  "status": 200                           // HTTP status codes are employed to describe the status of the command.
+}                                         // HTTP codes are generally 200, 202, 404, 406, 500 *
+```
+
+<p class="note">
+* Command status callbacks for long running commands should use status 202 (Accepted) and 406 (Not accepted) to describe the command's running status.
+All other status codes will result in completion and termination of the command session.
+</p>
+
+### Event
+
+Events allow peers to broadcast information about their running state to other peers.
+    
+```javascript{
+  "to": "recipient",                      // Recipient
+  "from": "sender",                       // Sender
+  "type": "event",
+  "node": "some:node"                     // The target event node
+}
+```
+
+### Form
+
+Forms allow for peers to engage in configuration sessions.
+The forms data structure is designed to be easily interpreted by GUI renderers.
+Our JavaScript library includes support for displaying Symple forms as HTML.
+Forms objects generally piggyback on command messages. 
+A basic form session is illustrated below:
+
+A form session is requested by the initiator:
+
+```javascript
+{
+  "to": "responder",                      // Responder
+  "from": "initiator",                    // Initiator
+  "type": "command"
+  "node": "some:node:config"
+}
+```
+
+The responder returns an empty form.
+
+```javascript
+{
+  "to": "initiator",                      // Initiator
+  "from": "responder",                    // Responder
+  "type": "command",
+  "node": "some:node:config",
+  "status": 202,                          // Status 202 indicates the session is in progress
+  "form": {
+    "type": "form",                       // Type "forms" identifies the object 
+    "action": "form",                     // Actions: "form", "submit", "result"
+    "elements": [                         // Forms support nested element arrays
+      {
+        "type": "page",                   // Form fields optionally belong to a "page" or "section" element 
+        "label": "page 1",                // Every element has a label
+        "elements": [
+          {
+            "id": "field1",               // Uniquely identified this form field (like HTML's "name" attribute)
+            "type": "text",               // Form field types are as follows: 
+            "label": "field 1",           //  "text", "text-multi", "list", "list-multi", "boolean", "media", "custom"              
+            "options": {                                            
+              "key1": "value1",           // The options hash holds key value data for "list" and "list-multi" types.             
+              "key2": "value2",        
+              "key3": "value3",                
+            }
+          }
+        ],
+        "values": [ "key1" ]              // The values array include the current value(s) for this field.
+      }
+    ]
+  }
+}
+```
+    
+The initiator receives and displays the form the responder. 
+Once complete and the form data is updated an submit back to responder for processing and validation.
+Note the only fields that change here are the form's "type" attribute which is set to "submit", status code is removed, and the field value now equals "key2".
+    
+```javascript
+{
+  "to": "responder",                      // Responder
+  "from": "initiator",                    // Initiator
+  "type": "command",
+  "node": "some:node:config",
+  "status": 202,                          // Status 202 indicates the session is in progress
+  "form": {
+    "type": "form",
+    "action": "submit",
+    "elements": [
+      {
+        "type": "page",
+        "label": "page 1",
+        "elements": [
+          {
+            "id": "field1",
+            "type": "text",
+            "label": "field 1",
+            "options": {                                            
+              "key1": "value1",
+              "key2": "value2",
+              "key3": "value3",
+            }
+          }
+        ],
+        "values": [ "key2" ]              // The values now equals "key2".
+      }
+    ]
+  }
+}
+```   
+
+The responder receives and and processes the form data. 
+If any errors are encountered during validation, an error message may added to the field and form returned to the requester for review.
+
+For the purpose of our example validation failed and case the responder was unable to set the value to key2
+
+```javascript
+{
+  "to": "initiator",                      // Initiator
+  "from": "responder",                    // Responder
+  "type": "command",
+  "node": "some:node:config",
+  "status": 202,                          // Status 202 indicates the session is in progress
+  "form": {
+    "type": "form",
+    "action": "result",
+    "elements": [
+      {
+        "type": "page",
+        "label": "page 1",
+        "elements": [
+          {
+            "id": "field1",
+            "type": "page",
+            "label": "text",
+            "error": "key2 is invalid",   // An error message described the problem 
+            "options": {                                            
+              "key1": "value1",
+              "key2": "value2",     
+              "key3": "value3",                
+            }
+          }
+        ],
+        "values": [ "key1" ]              // The values now equals "key1" again since validation failed.
+      }
+    ]
+  }
+}
+```  
+    
+The requester receives the form and displays the errors to the user.
+Once rectified the user submits the form again, this time selecting "key3".
+    
+```javascript
+{
+  "to": "responder",                      // Responder
+  "from": "initiator",                    // Initiator
+  "type": "command",
+  "node": "some:node:config",
+  "form": {
+    "type": "form",
+    "action": "submit",
+    "elements": [
+      {
+        "type": "page",
+        "label": "page 1",
+        "elements": [
+          {
+            "id": "field1",
+            "type": "page",
+            "label": "text",
+            "options": {                                            
+              "key1": "value1",
+              "key2": "value2",
+              "key3": "value3",                
+            }
+          }
+        ],
+        "values": [ "key3" ]              // The values now equals "key3"
+      }
+    ]
+  }
+}
+```
+    
+Finally both peers have come to an agreement, the info is valid, contracts are signed, and the data is saved.
+
+The responding peer terminates the session by saying thanks:
+    
+```javascript
+{
+  "to": "initiator",                      // Initiator
+  "from": "responder",                    // Responder
+  "type": "command",
+  "node": "some:node:config",
+  "form": { ... }                         // Form data is included in the response with "result" action.
+  "status": 200                           // Status 200 signifies the session has ended in success. 
+  "notes": [                              // Status 404 or 500 would signify an unrecoverable session error.
+    {
+      "type": "info",                     
+      "text": "Form saved successfully!"
+    }
+  ]
+}
+```

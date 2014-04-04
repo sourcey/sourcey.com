@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <%= partial "head" %>    
+  <body class="blog <%= page_classes %>">
+    <%= partial "header" %>    
+    <div id="main" role="main">
+      <div id="rotate-article">
+        <% if current_article.next_article %>
+          <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
+        <% end %>
+        <% if current_article.previous_article %>
+          <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
+        <% end %>
+      </div>
+      <%= yield %>
+    </div>
+    <%= partial "footer" %>
+  </body>
+</html>

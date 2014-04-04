@@ -1,0 +1,475 @@
+body {
+  line-height: 1.5;
+}
+
+
+/*
+  Layout
+*/
+    
+/* Header */
+#header {
+  padding: 125px 0 50px;
+  text-align: center;
+}
+#header #logo a {
+  height: 150px;
+  width: 150px;
+  display: inline-block;	
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+#header #logo a:hover {
+  border: 1px dashed #c00;
+  background-color: none;
+}
+
+#header #logo img {
+  height: 150px;
+  width: 150px;
+  border: 1px solid transparent;
+}
+
+#header #logo:hover img {
+  border: 1px dashed #FCEBA1;
+}
+
+#social {
+  position: absolute;
+  right: 14px;
+  font-size: 24px;
+  top: 2px;
+  z-index: 1;
+}
+#social a {
+  color: #ccc;
+  color: #8D5F5F;
+  margin-left: 2px;
+}
+#social a:hover {
+  color: #c00;
+  color: #fff;
+}
+
+.top-bar {
+  position: fixed;
+  left: 0;
+  right: 0; 
+  z-index: 1;
+}
+.top-bar .toggle-topbar.menu-icon {
+}
+.top-bar .toggle-topbar.menu-icon {
+  right: auto;
+  padding-left: 20px;
+  margin-top: -18px;
+}
+/* 
+.top-bar .toggle-topbar.menu-icon a {
+  float: left;
+}
+.top-bar {
+  background: none;
+}
+.top-bar .title-area {
+  background: none;
+}
+.top-bar.expanded .title-area {
+  background: #333333;
+}
+.top-bar .toggle-topbar.menu-icon a::after {
+  width: 30px;
+  box-shadow: 0 10px 0 2px #666, 0 18px 0 2px #666, 0 26px 0 2px #666;
+}
+.top-bar.expanded .toggle-topbar.menu-icon a::after {
+  box-shadow: 0 10px 0 2px #ccc, 0 18px 0 2px #ccc, 0 26px 0 2px #ccc;
+} */
+
+/* Main */
+#main {
+  max-width: 620px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Footer */
+#footer {
+  margin: 0 auto;
+  padding: 30px 15px 30px;
+  text-align: center;
+  max-width: 520px;
+}
+#footer p {
+  color: #aaa;
+  font-size: 11px;
+}
+
+
+/* 
+  Blog
+.blog {
+}
+.blog h1 {
+  display: none;
+}
+.blog h1.title {
+  display: block !important;
+}
+  font-weight: bold;
+*/
+.blog #rotate-article {
+  margin: -15px 0 20px;
+}
+.blog #rotate-article a {
+  font-size: 12px;
+  font-style: italic;
+  color: #ccc;
+}
+.blog #rotate-article a:hover {
+  color: #c00;
+}
+#rotate-article .prev {}
+#rotate-article .next {
+  float: right;
+}
+
+/*
+  Home Page 
+*/
+
+/* Banner */
+
+body.index #main {  
+  max-width: 940px;
+}
+
+/* Welcome */
+body.index #welcome {
+  padding: 0px 20px 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1.625em;
+  text-transform: lowercase;
+}
+body.index #welcome span {
+  clear: left;
+}
+body.index #welcome em {
+  color: #c00;
+}
+
+
+/* Posts */
+
+body.index .page-title {
+  text-align: center;
+  margin: 5.5em 0 0em;
+}
+
+body.index #blog {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+body.index #blog > h2 {
+  display: none;
+}
+
+body.index #blog ol {
+  list-style-type: none;
+  margin: 0 0 20px;
+}
+
+body.index #blog li {
+  border-bottom: 1px solid #e5e5e5;  
+  padding: 25px 15px;
+}
+
+body.index #blog li h2 {
+  font-size: 24px;
+  margin: 15px 0 10px;
+}
+/*
+body.index #blog li h2.entry-title a {
+  color: black;
+}
+
+
+body.index #blog .entry-summary {
+  padding-top: 1em;
+}
+*/
+
+body.index #blog li p {
+  color: #666;
+  font-size: 13px;
+}
+
+
+
+
+/* Showcase */
+body.index #projects {
+  text-align: center;
+  margin: 0 auto 30px;
+  padding: 0;
+  font-size: 0;  
+}
+
+body.index #projects .columns {
+  padding: 0;
+}
+body.index #projects a {
+  text-decoration: none;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #f4f4f4;  
+  display:block;
+  
+  margin: 0;
+  padding: 20px;
+  background: transparent;
+  line-height: 1.4;
+  /* http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/
+  display:-moz-inline-stack;
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+  width: 302px;
+  height: 190px;
+  height: 190px;
+  
+   */
+}
+
+body.index #projects .faux {
+  display:block;
+  padding: 20px;
+}
+
+body.index #projects a:hover {
+  background: transparent;
+  -moz-box-shadow: 0 0 50px rgba(0,0,0,0.1) inset;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.1) inset;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1) inset;
+  box-shadow: 2px 2px 6px #ccc, 0 0 50px #eee inset;
+}
+
+body.index #projects a:focus {
+    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+body.index #projects a .icon {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+
+body.index #projects a span.title {
+  display: block;
+  /* font-family: Georgia;
+  font-size: 22px; */
+  color: #000;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: lowercase;
+}
+body.index #projects a span.strap {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #c00;
+  margin-bottom: 6px;
+  text-transform: lowercase;
+}
+body.index #projects a span.intro {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Icons */
+body.index #projects a.symple .icon {
+  background: url(/images/symple-logo.png) no-repeat;	
+}
+body.index #projects a.anionu .icon {
+  width: 100px;
+  background: url(/images/anionu-logo.png) no-repeat;	
+}
+body.index #projects a.pacman .icon {
+  background: url(/images/pacman-logo.png) no-repeat;	
+}
+body.index #projects a.libsourcey .icon {
+  background: url(/images/libsourcey-logo.png) no-repeat;	
+}
+body.index #projects a.mesh .icon {
+  background: url(/images/mesh-logo.png) no-repeat;	
+}
+body.index #projects a.stompstart .icon {
+  background: url(/images/stompstart-logo.png) no-repeat;	
+}
+body.index #projects a.gardn .icon {
+  background: url(/images/gardn-logo.png) no-repeat;	
+}
+body.index #projects a.budokin .icon {
+  background: url(/images/budokin-logo.png) no-repeat;	
+}
+
+@media only screen and (min-width: 64.063em) {
+  .columns a {
+    height: 190px;
+  }
+}
+
+
+/*
+  Styles 
+*/
+
+#main h1,
+#main h2,
+#main h3 {
+	clear: both;
+	color: #000;
+	font-weight: normal;
+	padding-bottom: .3em;
+  text-transform: lowercase;
+}
+
+#main h1 { 
+  font-size: 28px;
+}
+
+#main h1:first-of-type { 
+  text-align: center;
+  color: #000;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 42px;
+  margin-bottom: 25px;
+}
+
+#main h2 { 
+	font-size: 24px;
+  margin: 35px 0 15px;
+}
+
+#main h3 { 
+  color: #b00;
+  font-size: 22px;
+  margin: 35px 0 15px;
+}
+
+#main .status {
+  margin-bottom: 35px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding-top: 1.625em;
+}
+
+#main time {
+}
+
+#main a {
+  color: #c00;
+  text-decoration: none;
+}
+
+#main a:hover {
+  background-color: yellow;
+  text-decoration: none;
+}
+
+#main h1 a,
+#main h2 a,
+#main h3 a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*
+.entry-title {
+	clear: both;
+	color: #000;
+	font-size: 26px;
+	font-weight: normal;
+	padding-bottom: .3em;
+  text-transform: lowercase;
+}
+.entry-title,
+.entry-title a {
+}
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+}
+*/
+.entry-title time {
+  display: none;
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+}
+.entry-meta {
+	color: #888;
+	clear: both;
+	line-height: 18px;
+	font-style: italic;
+  /*
+	color: #666;
+	font-size: 12px;
+	text-transform: uppercase;	
+	*/
+  font-size: 11px;
+}
+.entry-meta a {
+	/* font-weight: bold; */
+}
+
+
+pre, code {
+  font-family: 'Monaco', courier, monospace;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+}
+code {
+  color: inherit;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  max-width: 100%;
+  display: inline-block;
+  overflow: auto;
+  vertical-align: middle;
+  /* 
+  font-size: 14px;
+  font-size: 14px;
+  line-height: 1.3; */
+  padding: 0;
+}
+code:before,
+code:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+pre {
+  background: #272822;
+  word-wrap: break-word;
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  padding: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}

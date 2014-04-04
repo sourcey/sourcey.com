@@ -1,0 +1,107 @@
+---
+title: Mesh
+date: 2014-01-29 00:58:07
+tags: 
+---
+# Mesh
+
+<div class="status">    
+  <dl>
+    <dt>Repository</dt>
+    <dd>
+      <a class="external" href="https://github.com/sourcey/mesh">https://github.com/sourcey/mesh</a>
+    </dd> 
+    <dt>Licence</dt>
+    <dd>
+      MIT
+    </dd>      
+    <dt>Dependencies</dt>
+    <dd>
+      Some modules depend on JQuery
+    </dd> 
+  </dl>         
+</div>  
+  
+<img src="/images/mesh-logo-120.png" title="Mesh Logo" alt="Mesh Logo" class="logo alignleft" />       
+
+Mesh is a modular CSS3 layout framework designed for building web sites that take advantage of the latest CSS3 and HTML5 capabilities while still providing fallback support for older browsers.
+
+Mesh consists of a number of separate modules which may be optionally included in your projects:    
+    
+<dl>
+  <dt>Core</dt>
+  <dd>
+    Core JavaScript module and API. 
+  </dd> 
+  <dt>Reset</dt>
+  <dd>
+    A stylesheet which resets default browser style declarations so your layout displays correctly across browsers.
+  </dd> 
+  <dt>Grid</dt>
+  <dd>
+    CSS3 stylesheet that uses display:table for implementing flexible grid based websites.
+    <!--
+    A system for laying out 100% height elements as part of a grid. 
+    This module utilises display:table CSS properties therefore it won't work on < IE8 without the JavaScript module enabled.
+    The JavaScript module detects support for display:table and enforces compliance.
+    <!-- -->
+  </dd> 
+  <dt>Portal</dt>
+  <dd>
+    CSS3 stylesheet for 100% height layouts.
+  </dd> 
+  <dt>Forms</dt>
+  <dd>
+    Tames and beautifies forms across browsers using degradable HTML5 and CSS3.
+    The JavaScript module adds HTML5 validation capabilities for non HTML5 compliant browsers.
+  </dd> 
+  <dt>Buttons</dt>
+  <dd>
+    Fantastic looking degradable CSS3 buttons and button sets.
+  </dd> 
+  <dt>Fullscreen</dt>
+  <dd>
+    A polyfill for HTML5 fullscreen API.
+  </dd> 
+  <dt>Geo</dt>
+  <dd>
+    Our own implementation for GPS tracking using HTML5 geolocation.
+  </dd> 
+  <dt>Hint</dt>
+  <dd>
+    A CSS3 tooltip library.
+  </dd> 
+  <dt>Hint</dt>
+  <dd>
+    OA cross-browser history implementation for HTML5 history with hashbang fallback.
+  </dd> 
+  <dt>Cookie</dt>
+  <dd>
+    A simple and convenient class handling cookies in JavaScript.
+  </dd> 
+  <dt>Browser</dt>
+  <dd>
+    A browser detector which displays browser names and adds browser names to the body tag (like Modernizr)
+  </dd> 
+</dl>      
+
+## Extending
+Mesh uses a simple modular API which makes it dead easy to extend it with your own modules:
+
+```javascript
+Mesh.extend('grid', {
+  // an optional init method.
+  // will be called on Mesh.init()
+  init: function() {
+  }
+  
+  // other methods
+}); 
+```
+
+## Compiling
+Mesh uses <a href="https://github.com/gruntjs/grunt" title="Grunt.js" target="_blank">Grunt.js</a> for build automation.
+
+If you don't have Grunt.js installed yet follow <a href="http://gruntjs.com/getting-started" target="_blank">these instructions</a>. Whenever you make any changes to the source files just run `grunt` from the source directory to compile minified JavaScript and CSS files for production use. 
+
+Alternatively, you can run `grunt watch` to automatically recompile scripts whenever the source file content changes.

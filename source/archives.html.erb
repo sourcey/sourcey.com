@@ -1,0 +1,13 @@
+<h1>Archives</h1>
+
+<% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+  <h2><%= year %>
+    <%= #link_to "#{year} (#{articles.size})", blog_year_path(year) 
+    %>
+  </h2>
+  <ul>
+    <% page_articles.each_with_index do |article, i| %>
+      <li><%= link_to article.title, article %> <time><%= article.date.strftime('%b %e') %></time></li>
+    <% end %>    
+  </ul>
+<% end %>
