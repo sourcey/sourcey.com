@@ -8,11 +8,13 @@ layout: article
 ---
 # Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 
-I had a joyous time the other day trying to get a new rails app to take thumbnail snapshots of remote websites for http://gardn.net... Actually I lied, it wasn't really that fun, in fact it was a real pain in the ass - but you know how it is being a developer ;)
+I had a joyous time the other day trying to get a new rails app to take thumbnail snapshots of remote websites for http://gardn.net... Actually I lied, it wasn't that fun, in fact it was a real pain in the ass - but you know how it is being a developer ;)
 
-There are a few third party APIs out there, Bluga.net, Websnapr and ShrinkTheWeb to name a few, but they all cost money - and why pay for it when we can build it ourselves? So the idea is to generate our own thumbnails without using any third party services.
+There are a few third-party APIs out there, Bluga.net, Websnapr and ShrinkTheWeb to name a few, but they all cost money - and why pay for it when we can build it ourselves? Obviously the ideas solution is to generate our own thumbnails without having to rely on third party services.
 
-I ended up using a combination of <a href="https://github.com/markevans/dragonfly" target="_blank">Dragonfly</a> and <a href="http://wkhtmltopdf.org" target="_blank">wkhtmltoimage</a> to get the job done. The basic ideas is we use wkhtmltoimage to generate and store the thumbnail it in a temp location, then we pass the file to Dragonfly for processing. I'm currently generating the URL inside a validator, so if it fails then the URL entity will not be saved, and we can say to the user "well what's up with this dodgey URL?". This might not be the most scalable way of handling this (ie. not deferred), but it's OK for now as I'm using a thread based server, and again, because it's validatable! Code follows...
+I ended up using a combination of <a href="https://github.com/markevans/dragonfly" target="_blank">Dragonfly</a> and <a href="http://wkhtmltopdf.org" target="_blank">wkhtmltoimage</a> to get the job done. The reason for these two tools is so we can use wkhtmltoimage to generate and store the full size screenshot it in a temporary location, then we pass the file to Dragonfly for processing and creating thumbnails. 
+
+As you can see in the example below, I generate the URL and thumbnail inside a validator during the ``after_save`` callback. This way we can validate the domain, and if anything fails we know the domain or the connection is faulty, and we can say to the user, "well what's up with this dodgey URL?". There are more scalable way of handling this (using deferred or async processing), but it will server our purposes for now. Keep reading for the code...
 
 ~~~ ruby
 class MySexyModel < ActiveRecord::Base
@@ -63,4 +65,5 @@ class MySexyModel < ActiveRecord::Base
 end
 ~~~ 
 
-And with that we are peachy - no need for any third party services at all! Don't forget to show your love if this helped you.
+As you can see it's pretty straight forward, and we didn't use any third party services whatsoever!
+If this post made your life more peachy, then don't forget to show your love.

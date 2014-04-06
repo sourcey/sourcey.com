@@ -10,7 +10,7 @@ layout: article
 
 The other day I had a tough time trying to get multiple FFmpeg codecs to behave consistently with live variable framerate stream sources, such as a microphone and a webcam. It didn't take too long before I realised that the encoder was not multiplexing properly when fed frames at irregular intervals, even when specifying the correct PTS (presentation timestamp). 
 
-Some of the affects were crackly audio and sped up video (when not enough frames, even with correct timestamp) - from memory h264 was especially touchy.
+Some of the effects were crackly audio and sped up video (when not enough frames, even with correct timestamp) - from memory h264 was especially touchy.
 
 Anyway, I decided to mirror the behaviour of FFmpeg's output-example.c (which is now <a href="https://github.com/FFmpeg/FFmpeg/blob/master/doc/examples/transcoding.c" target="_blank">transcoding.c</a>), and try buffering and doubling up video frames (video is most unreliable, and often slower than the audio) to ensure consistency, and bam, problem solved!
 

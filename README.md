@@ -1,14 +1,9 @@
 # Sourcey.com Website 
 
-This repository contains the http://sourcey.com website, which is powered the awesome http://middlemanapp.com and `gh-pages`. 
+This repository contains the http://sourcey.com website.
+The site itself is powered the brilliant http://middlemanapp.com, and hosted by the awesome `gh-pages`. 
 
 ## TODO
 
-post metadata time and authorship 
-gh-pages
-social icons on posts and pages
-disqus export
-
-relative paths for img tags
-no code markup for feed.xml
+add photos to webrtc demo
 /feed.xml /feed alias

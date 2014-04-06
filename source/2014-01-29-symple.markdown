@@ -6,29 +6,21 @@ layout: page
 ---
 # Symple
 
-<div class="status">  
-  <dl>
-    <dt>Repository</dt>
-    <dd>
-      <a class="external" href="https://github.com/sourcey/symple-client">https://github.com/sourcey/symple-client</a><br>
-      <a class="external" href="https://github.com/sourcey/symple-server-node">https://github.com/sourcey/symple-server-node</a><br>
-      <a class="external" href="https://github.com/sourcey/libsourcey">https://github.com/sourcey/libsourcey</a>
-    </dd>
+Repositories
+: Node.js Server: [https://github.com/sourcey/symple-server-node](https://github.com/sourcey/symple-server-node)  
+  JavaScript Client: [https://github.com/sourcey/symple-client](https://github.com/sourcey/symple-client)  
+  Ruby Client: [https://github.com/sourcey/symple-client-ruby](https://github.com/sourcey/symple-client-ruby)  
+  C++ Client: [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
 
-    <dt>Licence</dt>
-    <dd>
-      LGPL, <a href="/licensing">Sourcey Licence</a>
-    </dd> 
-  </dl>           
-</div>
+Licence
+: LGPL, <a href="/licence">Pro Licence</a>
+{: .status}
  
-![Symple Logo](symple-logo-120.png "Symple Logo"){: .align-left} Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for seamless communication between desktop and browser applications.
+![Symple Logo](symple-logo-120.png "Symple Logo"){: .align-left} Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for fast real-time communication between native desktop and browser applications.
 
-Symple is an unrestrictive peer messaging and presence protocol.
-As the name would suggest; Symple is a very minimal and flexible protocol, which is more suited to a "do-it-yourself" developer mentality.   
+Symple is an unrestrictive peer messaging and presence protocol, as the name would suggest, it's a minimal and flexible protocol that is well suited to a "do-it-yourself" developer mentality.   
    
-The message format is closely modelled after XMPP, but uses a vastly simplified syntax, and also uses JSON instead of XML for encoding messages.  
-Symple has built-in support signalling support for messages, commands, forms and presence.
+The message format is semantically similar to XMPP, except that it uses a vastly simplified syntax, and it uses JSON instead of XML for encoding messages. Symple has built-in support signalling support for messages, commands, forms and presence.
 
 The flexible nature of the JSON format also make it great for remoting and serializing data structures such as nested polymorphic objects.
 
@@ -47,48 +39,38 @@ Nested or polymorphic objects are identified using a message's "type" attribute.
     
 Presently the underlying messaging system.
 ,
-and <a class="external" href="https://bitbucket.org/sourcey/libsourcey">LibSourcey</a> includes a native C++ client and samples
+and <a class="external" href="https://github.com/sourcey/libsourcey">LibSourcey</a> includes a native C++ client and samples
 -->
     
 ## Client implementations
-       
-The <a class="external" href="https://bitbucket.org/sourcey/symple">Symple</a> repository includes client implementations in Ruby and JavaScript.
 
-The Ruby client is a single drop-in module that is perfect for server-side integration with a web framework like Rails or Sinatra.
+There are currently three Symple client implementations, one in Ruby, one in JavaScript, and one in C++.
 
-The JavaScript client provides a flexible interface for receiving standard and arbitrary message types.
+The [Ruby client](https://github.com/sourcey/symple-client-ruby) is a single drop-in module that is perfect for server-side integration with a web framework like Rails or Sinatra.
+
+The [JavaScript client](https://github.com/sourcey/symple-client) provides a flexible interface for receiving standard and arbitrary message types. The client also includes a web player interface which enables Symple to be used in conjunction with MJPEG, FLV, h264 and WebRTC for live video streaming.
        
-<a class="external" href="https://bitbucket.org/sourcey/libsourcey">LibSourcey</a> also contains includes a native C++ client and samples. 
-The native client is built on top of LibSourcey and libuv architecture for super fast C++ event-based networking.
+[LibSourcey](https://github.com/sourcey/libsourcey) also contains includes a native C++ client and including samples for using Symple in native applications.
 
 ## Server implementations
  
-The <a class="external" href="https://bitbucket.org/sourcey/symple">Symple</a> repository includes sample server is implemented on a node.js stack.
+The [Symple node.js server](https://github.com/sourcey/symple) repository includes sample server is implemented on a node.js stack.
 
-The server supports easy SSL configuration, groups, users, x-real-ip detection, and pre-arranged sessions using short-term authentication tokens via Redis.
+The server supports SSL configuration, groups, users, `x-real-ip` detection, and pre-arranged sessions using short-term authentication tokens via Redis.
   
 ## Why Symple
 
 If you've had the pleasure of building a system to complex specifications then no doubt you'll be familiar with the bloat indicative of such systems.
 
-In some cases it's a necessity, but when it comes to a task like messaging, we prefer freedom of implemention rather than incumbent structure.
+In some cases it's a necessity, but when it comes to a task like messaging, we prefer freedom of implementation rather than incumbent structure.
         
-Symple was created as a result of our work with Anionu, where the requirement was real-time messaging and presence between the native and web applications.   
+Symple was created as a result of our work with [Anionu](https://anionu.com), for which we require real-time messaging, presence and command sharing between the native Spot client and online dashboard. Beyond that we hope to see Symple continue to adapt and develop as a great open source messaging solution.
  
-Anionu began it's life speaking the XMPP protocol, 
-but while still in it's infancy the child fell terminally ill with a case of unwanted complexity on the client and server sides, and also suffered stiffness from early arthritis attributed to restrictive protocols.    
+<!--
+Anionu began it's life speaking the XMPP protocol, but while still in it's infancy the child fell terminally ill with a case of unwanted complexity on the client and server sides, and also suffered stiffness from early arthritis attributed to restrictive protocols.    
 
-At this point the need for something Sympler became apparent. Before all hope was lost, and the satisfaction associated with the knowledge that one is creating a streamlined and intuitive system dissolved entirely into the rabbit warrens of unmaintainable code, Symple was given life!
-        
+At this point the need for something simpler became apparent. Before all hope was lost, and the satisfaction associated with the knowledge that one is creating a streamlined and intuitive system dissolved entirely into the rabbit warrens of unmaintainable code, Symple was given life!
 
-<!--at Sourcey 
-
-, Further extensions may be added tobut the way messages are formed is entirely up to the implementation.
- 
-JSON is used for encoding messages
-In the messaging world XMPP comes to mind; a solid protocol, 
-
-around XMPP or similar protocols you will no doubt be familiar with the incumbent bloat indicative of systems adherent to complex specifications.
 
 
 If you've had the pleasure of building a system around XMPP or similar protocols you will no doubt be familiar with the incumbent bloat indicative of systems adherent to complex specifications.
@@ -102,10 +84,7 @@ Anionu with XMPP as the messaging protocol, but it became evident quite early on
 associated with the knowledge that one is creating a streamlined and intuitive system dissipaters into the rabbit warrens of unmaintainable code.
 At this point that the need for something sympler became apparent, thus Symple was given life.
 
-
-The choice of JSON as the underlying protocol was natural given our trend towards web centric applications. JSON's smaller message size, reasonably fast processing and vast array of client libraries sealed the deal. 
-It's no secret, we use JSON for just about everything.
-        
+The choice of JSON as the underlying protocol was natural given our trend towards web centric applications. JSON's smaller message size, reasonably fast processing and vast array of client libraries sealed the deal. It's no secret, we use JSON for just about everything.        
 --> 
 
 ## Protocol Specifications        
@@ -195,16 +174,17 @@ A command response looks like this:
 }                                         // HTTP codes are generally 200, 202, 404, 406, 500 *
 ~~~ 
 
-<p class="note">
-* Command status callbacks for long running commands should use status 202 (Accepted) and 406 (Not accepted) to describe the command's running status.
-All other status codes will result in completion and termination of the command session.
-</p>
+<div class="panel callout radius">
+Command status callbacks for long running commands should use status 202 (Accepted) and 406 (Not accepted) to describe the command's running status.
+All other response status codes will result in completion and termination of the command session.
+</div>
 
 ### Event
 
 Events allow peers to broadcast information about their running state to other peers.
     
-~~~ javascript{
+~~~ javascript
+{
   "to": "recipient",                      // Recipient
   "from": "sender",                       // Sender
   "type": "event",
@@ -397,3 +377,15 @@ The responding peer terminates the session by saying thanks:
   ]
 }
 ~~~ 
+
+## Contributing
+
+1. Fork it on Github
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Issues
+
+If you come across any bugs or issues then please use the Github issue tracker.

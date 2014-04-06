@@ -54,12 +54,13 @@ a:hover {
 }
 #social a {
   color: #ccc;
-  color: #8D5F5F;
+  color: #917272;
   margin-left: 2px;
 }
 #social a:hover {
   color: #c00;
   color: #fff;
+  background: none;
 }
 
 .top-bar {
@@ -147,7 +148,7 @@ a:hover {
 }
 
 #disqus_thread {
-  margin: 45px 0 25px;
+  margin: 25px 0 25px;
 }
 
 .social-buttons {
@@ -242,7 +243,7 @@ body.index #blog li p {
 /* Showcase */
 body.index #projects {
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
   padding: 0;
   font-size: 0;  
 }
@@ -365,7 +366,9 @@ body.index #projects a.budokin .icon {
 
 #main h1,
 #main h2,
-#main h3 {
+#main h3,
+#main h4,
+#main h5 {
 	clear: both;
 	color: #000;
 	font-weight: normal;
@@ -401,6 +404,14 @@ body.index #projects a.budokin .icon {
   color: #b00;
   font-size: 22px;
   margin: 35px 0 15px;
+  margin: 25px 0 0px;
+}
+
+#main h4 { 
+  /* color: #b00; font-size: 22px;
+  font-weight: bold; */
+  font-size: 20px;  
+  margin: 15px 0 0px;
 }
 
 #main .status {
@@ -408,6 +419,11 @@ body.index #projects a.budokin .icon {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   padding-top: 1.625em;
+}
+
+#main .action-button {
+  margin:20px auto;
+  display:inline-block;
 }
 
 #main time {}

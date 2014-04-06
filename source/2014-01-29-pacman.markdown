@@ -11,36 +11,29 @@ TODO: compare to current package managers
 
 # Pacman
 
-<div class="status">    
-  <dl>
-    <dt>Repository</dt>
-    <dd>
-      <a class="external" href="https://bitbucket.org/sourcey/libsourcey">https://bitbucket.org/sourcey/libsourcey</a>
-    </dd> 
-    <dt>Licence</dt>
-    <dd>
-      LGPL, <a href="/licensing">Sourcey Licence</a>
-    </dd>         
-    <dt>Dependencies</dt>
-    <dd>
-      LibSourcey (base, uv, net, json, http, archo), libuv, JsonCpp
-    </dd>
-  </dl>             
-</div>  
+Repository
+: [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
+
+Licence
+: LGPL, <a href="/licence">Pro Licence</a>
+
+Dependencies
+: LibSourcey (base, uv, net, json, http, archo), libuv, JsonCpp
+{: .status}
     
 ![Pacman Logo](pacman-logo-120.png "Pacman Logo"){: .align-left} Pacman is a redistributable package manager written C++ that speaks JSON with the server.
 It is designed to be embedded within an application to make easy work of installing, updating and uninstalling packages and plug-ins.
 
-There are no shortage or open source <a href="http://en.wikipedia.org/wiki/List_of_software_package_management_systems">package managers</a> out there, but none of them quite fit the bill for a simple embeddable package manager that we could integrate with our native and web platform. We have fallen short on this requirement a number of times over the years, so we decided to build Pacman.
+There is no shortage or open source [package managers](http://en.wikipedia.org/wiki/List_of_software_package_management_systems) out there, but none of them quite fit the bill for an embeddable native package manager that could be controlled from the cloud. Rather than continue building with a square wheel, we decided to build a new one.
     
-Pacman is a default module in the LibSourcey repository. Please download and compile <a class="external" href="/projects/libsourcey">LibSourcey</a> to use Pacman.
+Pacman is included a default module in the LibSourcey repository, so please download and compile [LibSourcey](libsourcey) in order to use Pacman.
 
 ## Usage examples
 
 The Pacman API is vey easy use. Some examples are illustrated below:
       
 ~~~ cpp
-`PackageManager::Options options;
+PackageManager::Options options;
 // configuration options go here...
 PackageManager pacman(options);
 pacman.initialize();
@@ -86,17 +79,13 @@ pacman.uninstallPackage("SomePackageName");
 
 Pretty tidy huh? That covers basic Pacman usage. 
 
-These are more methods and features available, feel free to use the method definitions in the source as a reference.
+These are mplenty ore methods and features available, just check out the documentation for the method definitions in the [source code](https://github.com/sourcey/libsourcey/blob/master/src/pacman/include/scy/pacman/packagemanager.h) for a reference.
 
 ## Client server protocol
 
-The Pacman core does not include a server module, but it should be easy to implement using your chosen web framework. 
+The Pacman core does not include a server module, but it should be easy to implement using your chosen web framework. All that is required on the server side is to list packages using Pacman's simple JSON protocol. We generally use Rails for easy serialization of database objects. 
 
-We generally use Rails for easy serialization of database objects.
-All that is required on the part of the server is to list packages using Pacman's simple protocol and facilitate downloads. 
-
-An example of a server response to a Pacman query is illustrated below. 
-Pacman will send a HTTP GET request to the server which will reply with a JSON response that looks like:
+An example of a server response to a Pacman query is illustrated below. Pacman will send a HTTP GET request to the server which will reply with a JSON response that looks like:
       
 ~~~ javascript
 [ { "assets" : [ { "extension" : "zip",
@@ -163,9 +152,24 @@ Pacman will send a HTTP GET request to the server which will reply with a JSON r
     "type" : "Plugin"
   }
 ]
-~~~       
+~~~    
+
+## Contributing
+
+1. [Fork LibSourcey on Github](https://github.com/sourcey/libsourcey)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Issues
+
+If you come across any bugs or issues then please use the new Github issue tracker: [https://github.com/sourcey/libsourcey/issues](https://github.com/sourcey/libsourcey/issues)
+
+<!--   
 ## Things to do
 
 There are a few features we have not had time to implement yet which are listed in the TODO file in the source folder.
 If you're able to implement any of the those features then send a push request our way. 
+-->
 

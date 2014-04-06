@@ -139,6 +139,10 @@ helpers do
     port unless port.to_i == 80
   end
 
+  def site_url
+    protocol + host_with_port
+  end
+
   def image_url(source)
     protocol + host_with_port + image_path(source)
   end

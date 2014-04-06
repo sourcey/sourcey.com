@@ -1,6 +1,7 @@
 <h1>Archives</h1>
 
 <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+  <% next if article.data.layout != 'article' %>
   <h2><%= year %>
     <%= #link_to "#{year} (#{articles.size})", blog_year_path(year) 
     %>

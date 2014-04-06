@@ -46,7 +46,7 @@ During the early development phase we found ourselves writing more code for vend
 
 The time comes when you need to decide where you stand with your projects; is it a future technology, or not? When we dropped support for Internet Explorer, not only did our lives and relationships take a turn for the better, our code base became lighter by 50%, and the responsiveness of the new interface felt great. No more JavaScript transitions and effects, and no more pesky workarounds to ruin some poor developer's day some time in the near future. As developers we should feel good about the code we write - it's time to take a stand!
 
-That's not to say everything was roses once we switched to HTML5 and CSS3 - these are still very much emerging technologies. We created <a href="/projects/mesh">Mesh</a> as a result of our research into HTML5 and CSS3, and it is now used extensively throughout the Anionu interface to get it to play nicely with all modern browsers.
+That's not to say everything was roses once we switched to HTML5 and CSS3 - these are still very much emerging technologies. We created <a href="/mesh">Mesh</a> as a result of our research into HTML5 and CSS3, and it is now used extensively throughout the Anionu interface to get it to play nicely with all modern browsers.
 
 ## Interface Design
 
@@ -75,7 +75,7 @@ Having Spot to do the heavy lifting has some vital benefits:
 </ul>      
 
 Spot is based on a very simple, modular architecture, so it can be easily extended via <a href="https://anionu.com/plugins">plugins</a>, using the <a href="https://anionu.com/documents/sdk-overview">open source C++ SDK and API</a>.
-Spot comes with a number of official plugins, including Surveillance Mode, Recording Mode, Media Plugin and WebRTC Streaming - the source code for all of which can be found in the <a href="http://bitbucket.org/sourcey/anionu-sdk">Anionu C++ SDK repository</a>.
+Spot comes with a number of official plugins, including Surveillance Mode, Recording Mode, Media Plugin and WebRTC Streaming - the source code for all of which can be found in the <a href="http://github.com/sourcey/anionu-sdk">Anionu C++ SDK repository</a>.
 
 We release most of our code as open source, but the Spot client itself is currently closed source in the interests of maintaining the highest level of security. This may change in the future after internal review, but for now, even though no sensitive information is shared between the server and Spot, that's the decision. The SDK and API are released under the GPL licence so as to keep public plugins open source for consumer protection.  
 
@@ -131,7 +131,7 @@ XMPP is a mature technology, which offers a wide range of existing client server
 The flipside here is that these specifications also introduces a lot of bloat on the client and server sides, 
 not to mention the use of XML with it's ridiculous message size overhead.
     
-With this in mind we set about creating <a href="/projects/symple">Symple</a>. Symple is essentially a bare-bones messaging protocol based on XMPP that uses JSON instead of XML. With the help of libuv on the native client side, and node.js (also based on libuv) on the server side, we had a blazing fast messaging protocol which enabled us to share arbitrary presence and message data between our native and browser applications. 
+With this in mind we set about creating <a href="/symple">Symple</a>. Symple is essentially a bare-bones messaging protocol based on XMPP that uses JSON instead of XML. With the help of libuv on the native client side, and node.js (also based on libuv) on the server side, we had a blazing fast messaging protocol which enabled us to share arbitrary presence and message data between our native and browser applications. 
 Symple has helped us increase the speed and efficiency of our real-time communications tenfold. Nice.
 
 ## Conclusion
