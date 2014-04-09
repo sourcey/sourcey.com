@@ -8,10 +8,9 @@ layout: page
 
 Repository
 : [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
-<!--<a class="external" href="https://github.com/sourcey/libsourcey">https://github.com/sourcey/libsourcey</a>-->
 
 Licence
-: LGPL, <a href="/licence">Pro Licence</a>
+: LGPL, [Pro Licence](licence)
 
 Required Dependencies
 : libuv, cmake, C++11 compiler
@@ -26,32 +25,14 @@ LibSourcey was been used in private production by Sourcey since 2005, and was op
 
 Since version 0.92, C++11 and event-based asynchronous IO powered by Node.js's underlying libuv library are utilised throughout LibSourcey in to maximise performance and minimise concurrency reliance for building mission critical server side applications.
 
-LibSourcey provides a simple and flexible method of capturing live audio/video streams (_OpenCV/FFmpeg_), processing, filtering and encoding them to any video format (_FFmpeg_), and broadcasting the result over the Internet (_libuv_). This is made possible by providing a thin unified layer over the top of FFmpeg, OpenCV and libuv. 
-
-The only true third-party dependency LibSourcey relies on is libuv, and that is included in the local source and compiled automatically. All others dependencies are optional. Check out the [PacketStream API](libsourcey-packetstream-api) article to get an idea for the LibSourcey way of doing things.
+LibSourcey provides a simple and flexible method of capturing live audio/video streams (_OpenCV/FFmpeg_), processing, filtering and encoding them using any video format (_FFmpeg_), and broadcasting the result over the Internet (_libuv_). This is made possible by implementing a thin layer over the top of some brilliant open source projects, such as FFmpeg, OpenCV and libuv. The only required third-party dependency is libuv, and that is included in the local source and compiled automatically. All others dependencies are optional. 
 
 LibSourcey has full support for the following protocols: **TCP**, **SSL**, **UDP**, **HTTP**, **JSON**, **XML**, **STUN**, **SDP**, **SocketIO**. 
-
-Partial or non-standard support is implemented for the following porotcols: **WebSockets**, **TURN**, **ICE**, **RTP**, and **XMPP**.
+Partial or non-standard support is implemented for the following protocols: **WebSockets**, **TURN**, **ICE**, **RTP**, and **XMPP**.
 
 <center>
 <a href="#install-libsourcey" class="action-button button radius" style="margin:20px auto;display:inline-block">install libsourcey</a>
 </center>
-
-
-<!--
-1. Install CMake and Git
-2. 
-
-```
-git clone https://sourcey@github.com/sourcey/libsourcey.git
-```
-
-currentlyimplementations
-has been completely ported to C++11, and native
- LibSourcey in an open source library which includes components and modules for the primary purpose of facilitating communication between cross platform native and browser based web applications. 
--->
- 
 
 ## Public Modules
 
@@ -74,26 +55,26 @@ _dependencies:_ libuv, OpenCV, FFmpeg, RtAudio
 Wrappers around FFmpeg and OpenCV for device capture, encoding, recording and streaming. The Media API makes extensive use of the PacketStream classes so that encoders, processors and packetisers can be dynamically added and removed from a media source.             
 
 ### STUN
-<a href="http://tools.ietf.org/rfc/rfc5389">RFC 5389</a> implementation which includes support for ICE and TURN and TURN TCP messages. 
+[RFC 5389](http://tools.ietf.org/rfc/rfc5389) implementation which includes support for ICE and TURN and TURN TCP messages. 
 
 ### TURN
 _dependencies:_ libuv  
-Server and client stack which supports both <a href="http://tools.ietf.org/rfc/rfc5766">RFC 5766 (Traversal Using Relays around NAT)</a> and <a href="http://tools.ietf.org/rfc/rfc6062">RFC 6062 (Traversal Using Relays around NAT Extensions for TCP Allocations)</a> specifications. 
+Server and client stack which supports both [RFC 5766 (Traversal Using Relays around NAT)](http://tools.ietf.org/rfc/rfc5766) and [RFC 6062 (Traversal Using Relays around NAT Extensions for TCP Allocations)](http://tools.ietf.org/rfc/rfc6062) specifications. 
 
 ### SDP
-<a href="http://tools.ietf.org/rfc/rfc4566">RFC 4566</a> implementation which includes extra support for ICE headers. 
+[RFC 4566](http://tools.ietf.org/rfc/rfc4566) implementation which includes extra support for ICE headers. 
   
 ### SocketIO
 _dependencies:_ libuv, JsonCpp  
-SocketIO C++ client. Read more about <a href="http://socketIO">SocketIO</a>. 
+SocketIO C++ client. Read more about [SocketIO](http://socket.io). 
 
 ### Symple
 _dependencies:_ libuv, JsonCpp  
-Client implementation of Sourcey's home grown real time messaging and presence protocol. <a href="/symple">More about Symple</a>. 
+Client implementation of Sourcey's home grown real time messaging and presence protocol. [More about Symple](<http://sourcey.com/symple). 
 
 ### Pacman
 _dependencies:_ libuv, JsonCpp  
-Pacman is an embeddable package manager which speaks JSON with the server. <a href="/pacman">More about Pacman</a>.    
+Pacman is an embeddable package manager which speaks JSON with the server. [More about Pacman](http://sourcey.com/pacman).    
 
 ### UVPP
 _dependencies:_ libuv  
@@ -110,7 +91,7 @@ Please contact us if you are interested in using any of them in your projects.
 
 ### ICE
 _dependencies:_ libuv  
-The ICE module is a complete implementation of <a href="http://tools.ietf.org/html/rfc5245">RFC 5245</a> (Interactive Connectivity Establishment) based on LibSourcey architecture.
+The ICE module is a complete implementation of [RFC 5245 (Interactive Connectivity Establishment)](http://tools.ietf.org/html/rfc5245) based on LibSourcey architecture.
 ICE is a protocol for Network Address Translator (NAT) Traversal for Offer/Answer protocols.
 This module is currently not open source. Please contact us if you are interested in using it.
 
@@ -139,15 +120,10 @@ The Anionu module includes a REST client interface for communicating with the An
 
 ### ISpot
 _dependencies:_ JsonCpp
-ISpot is a complete C++ SDK and API for building <a href="http://anionu.com/spot">Spot</a> based applications and plug-ins. 
-Spot is a part of <a href="http://anionu.com/spot">Anionu's</a> surveillance serivice.
-
+ISpot is a complete C++ SDK and API for building [Spot](http://anionu.com/spot) based applications and plug-ins. 
+Spot is a part of the [Anionu surveillance serivice](http://anionu.com).
 
 ## Install LibSourcey
-
-<div class="panel callout radius">
-If you are deploying server side on Ubuntu 12.04 then you're in luck, we have created `Capistrano` deploy recipies which make it a sinch to automate the LibSourcey build process including FFmpeg and OpenCV dependencies. Clone this [this repository](#) to download the scripts.
-</div>
 
 Install Git
  : * _Windows users_: Install [TortoiseGit](http://code.google.com/p/tortoisegit/), a convenient git front-end, which integrates right into Windows Explorer. MinGW users can use [msysgit]( from <a class="external" href="http://code.google.com/p/msysgit/downloads/list"></a>).
@@ -224,6 +200,10 @@ For an exhaustive list of options check the `CMakeLists.txt` in the main directo
 * Generate Xcode project using CMake, as described above.
 * Launch Xcode, locate and open LibSourcey.xcodeproj. Select "Debug", build the BUILD_ALL target (Cmd-B), select "Release" and build it too.
 
+## Examples
+
+There is also plenty of examples available in the `samples` and `tests` folder of each module for you to sink your teeth into. Also, check out the [PacketStream API](http://sourcey.com/libsourcey-packetstream-api) article to get a feel for the LibSourcey way of doing things. 
+
 ## Contributing
 
 1. [Fork LibSourcey on Github](https://github.com/sourcey/libsourcey)
@@ -234,4 +214,4 @@ For an exhaustive list of options check the `CMakeLists.txt` in the main directo
 
 ## Issues
 
-If you come across any bugs or issues then please use the new Github issue tracker: [https://github.com/sourcey/libsourcey/issues](https://github.com/sourcey/libsourcey/issues)
+If you find any bugs or issues please use the new [Github issue tracker](https://github.com/sourcey/libsourcey/issues).

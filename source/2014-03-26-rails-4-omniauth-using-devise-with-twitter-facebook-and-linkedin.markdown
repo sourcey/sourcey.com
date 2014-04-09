@@ -6,6 +6,9 @@ author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
+
+# Rails 4 OmniAuth using Devise with Twitter, Facebook and Linkedin
+
 There are quite a few OAuth solutions out there, but I want to share the one we use, as it allows you to intelligently link multiple OAuth identities with a single user entity. If you use 90% of the code examples on the internet you will wind up with a new user entity each time the user signs in with a different OAuth provider, and a bunch of very confused users.
 
 The OAuth provider that throws a spanner in the works and adds convolution to our code is Twitter. Twitter doesn't share their user's email address, so we need to add an extra step to get it from the user. Note that we do not ask Twitter users to "confirm" their email address, since they have already associated their Twitter account, and we don't want to be too much of a pain in the ass and remove all the joy from OAuth altogether.
@@ -14,7 +17,6 @@ So, without further ado, here is the code:
 
 #### Gemfile
 ~~~ ruby
-gem 'cancan'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
@@ -35,6 +37,7 @@ rails g model identity user:references provider:string uid:string oauth_token:st
 ~~~ 
 
 #### app/models/identity.rb
+
 ~~~ rubyclass Identity < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :user_id, :uid, :provider
@@ -51,6 +54,7 @@ end
 ~~~ 
 
 #### app/config/initializers/devise.rb
+
 ~~~ rubyDevise.setup do |config|
 ...
   config.omniauth :facebook, "KEY", "SECRET"
@@ -61,6 +65,7 @@ end
 ~~~ 
 
 #### config/environments/[environment].rb
+
 ~~~ ruby
 ...
   # Email
@@ -80,6 +85,7 @@ end
 ~~~ 
 
 #### app/controllers/omniauth_callbacks_controller.rb
+
 ~~~ ruby
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def twitter
@@ -118,6 +124,7 @@ end
 ~~~ 
 
 #### config/routes.rb
+
 ~~~ ruby
 ...
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
@@ -125,6 +132,7 @@ end
 ~~~ 
 
 #### app/models/user.rb
+
 ~~~ ruby
 class User < ActiveRecord::Base
   TEMP_EMAIL = 'change@me.com'
@@ -173,6 +181,7 @@ end
 The next steps are optional to get an email address from Twitter users.
 
 #### config/routes.rb
+
 ~~~ ruby
 ...
   get '/users/:id/add_email' => 'users#add_email', via: [:get, :patch, :post], :as => :add_user_email
@@ -180,6 +189,7 @@ The next steps are optional to get an email address from Twitter users.
 ~~~ 
 
 #### app/controllers/application_controller.rb
+
 ~~~ ruby
   # This filter could go anywhere the user needs to have a valid email address to access
   before_filter :ensure_valid_email
@@ -197,6 +207,7 @@ The next steps are optional to get an email address from Twitter users.
 ~~~ 
 
 #### app/controllers/users_controller.rb
+
 ~~~ ruby
 class UsersController < ApplicationController
   before_action :set_user, :add_email
@@ -220,6 +231,7 @@ end
 ~~~ 
 
 #### app/views/users/add_user.html.rb
+
 ~~~ ruby
 <div id="add-email" class="container">
   ## Add Email

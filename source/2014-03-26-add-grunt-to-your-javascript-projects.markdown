@@ -96,6 +96,8 @@ Notice that we also included the watch plugin, which tells Grunt us to watch the
 
 In order to start the watcher execute the following command from the source directory:
 
-~~~ grunt watch~~~ 
+~~~ 
+$ grunt watch
+~~~ 
 
 Didn't I tell you it was easy? Now go forth and create :)
