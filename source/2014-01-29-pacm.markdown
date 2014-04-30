@@ -1,5 +1,5 @@
 ---
-title: Pacman
+title: Pacm
 date: 2014-01-29 00:18:53
 tags: 
 layout: page
@@ -9,7 +9,7 @@ layout: page
 TODO: compare to current package managers
  -->
 
-# Pacman
+# Pacm
 
 Repository
 : [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
@@ -21,28 +21,28 @@ Dependencies
 : LibSourcey (base, uv, net, json, http, archo), libuv, JsonCpp
 {: .status}
     
-![Pacman Logo](pacman-logo-120.png "Pacman Logo"){: .align-left} Pacman is a redistributable package manager written C++ that speaks JSON with the server.
+![Pacm Logo](pacm-logo-120.png "Pacm Logo"){: .align-left} Pacm is a redistributable package manager written C++ that speaks JSON with the server.
 It is designed to be embedded within an application to make easy work of installing, updating and uninstalling packages and plug-ins.
 
 There is no shortage or open source [package managers](http://en.wikipedia.org/wiki/List_of_software_package_management_systems) out there, but none of them quite fit the bill for an embeddable native package manager that could be controlled from the cloud. Rather than continue building with a square wheel, we decided to build a new one.
     
-Pacman is included a default module in the LibSourcey repository, so please download and compile [LibSourcey](libsourcey) in order to use Pacman.
+Pacm is included a default module in the LibSourcey repository, so please download and compile [LibSourcey](libsourcey) in order to use Pacm.
 
 ## Usage examples
 
-The Pacman API is vey easy use. Some examples are illustrated below:
+The Pacm API is vey easy use. Some examples are illustrated below:
       
 ~~~ cpp
 PackageManager::Options options;
 // configuration options go here...
-PackageManager pacman(options);
-pacman.initialize();
+PackageManager pacm(options);
+pacm.initialize();
         
 // query the server for the latest packages
-pacman.queryRemotePackages();                
+pacm.queryRemotePackages();                
         
 // list local (installed) packages
-auto litems = pacman.localPackages().items();
+auto litems = pacm.localPackages().items();
 for (auto it = litems.begin(); it != litems.end(); ++it) {				
   cout << "Package: " << it->first << endl;
 }
@@ -57,35 +57,35 @@ for (auto it = ritems.begin(); it != ritems.end(); ++it) {
 }                
         
 // install a package
-pacman.installPackage("SomePackageName");
+pacm.installPackage("SomePackageName");
 
 // update a package (will install if it doesn't exist)
-pacman.updatePackage("SomePackageName");
+pacm.updatePackage("SomePackageName");
 
 // update / install a list of packages.
 // package states are availalbe via callback events
 std::vector<std::string> packages;
 packages.push_back("SomePackageName");
-packages.push_back("IThoughtPacmanWasAGame");        
-pacman.installPackages(packages);
+packages.push_back("IThoughtPacmWasAGame");        
+pacm.installPackages(packages);
 
 // update all packages
-pacman.updateAllPackages();
+pacm.updateAllPackages();
 
 // uninstall a package.
 // uninstallPackages() can also be used for multiple packages.
-pacman.uninstallPackage("SomePackageName");
+pacm.uninstallPackage("SomePackageName");
 ~~~ 
 
-Pretty tidy huh? That covers basic Pacman usage. 
+Pretty tidy huh? That covers basic Pacm usage. 
 
-These are mplenty ore methods and features available, just check out the documentation for the method definitions in the [source code](https://github.com/sourcey/libsourcey/blob/master/src/pacman/include/scy/pacman/packagemanager.h) for a reference.
+These are plenty of other methods and features available, just check out the documentation for the method definitions in the [source code](https://github.com/sourcey/libsourcey/blob/master/src/pacm/include/scy/pacm/packagemanager.h) for a reference.
 
 ## Client server protocol
 
-The Pacman core does not include a server module, but it should be easy to implement using your chosen web framework. All that is required on the server side is to list packages using Pacman's simple JSON protocol. We generally use Rails for easy serialization of database objects. 
+The Pacm core does not include a server module, but it should be easy to implement using your chosen web framework. All that is required on the server-side is to list packages using Pacm's simple JSON protocol. We generally use Rails for easy serialization of database objects. 
 
-An example of a server response to a Pacman query is illustrated below. Pacman will send a HTTP GET request to the server which will reply with a JSON response that looks like:
+An example of a server response to a Pacm query is illustrated below. Pacm will send a HTTP GET request to the server which will reply with a JSON response that looks like:
       
 ~~~ javascript
 [ { "assets" : [ { "extension" : "zip",
@@ -164,7 +164,7 @@ An example of a server response to a Pacman query is illustrated below. Pacman w
 
 ## Issues
 
-If you come across any bugs or issues then please use the new Github issue tracker: [https://github.com/sourcey/libsourcey/issues](https://github.com/sourcey/libsourcey/issues)
+If you find any bugs or issues please use the new [Github issue tracker](https://github.com/sourcey/libsourcey/issues).
 
 <!--   
 ## Things to do

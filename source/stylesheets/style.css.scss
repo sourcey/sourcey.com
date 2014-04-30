@@ -217,21 +217,10 @@ body.index #blog li {
   padding: 25px 15px;
 }
 
-body.index #blog li h2 {
+body.index #blog li .title {
   font-size: 24px;
   margin: 15px 0 10px;
 }
-/*
-body.index #blog li h2.entry-title a {
-  color: black;
-}
-
-
-body.index #blog .entry-summary {
-  padding-top: 1em;
-}
-*/
-
 body.index #blog li p {
   color: #666;
   font-size: 13px;
@@ -275,10 +264,6 @@ body.index #projects a {
    */
 }
 
-body.index #projects .faux {
-  display:block;
-  padding: 20px;
-}
 
 body.index #projects a:hover {
   background: transparent;
@@ -334,8 +319,8 @@ body.index #projects a.anionu .icon {
   width: 100px;
   background: url(/images/anionu-logo.png) no-repeat;	
 }
-body.index #projects a.pacman .icon {
-  background: url(/images/pacman-logo.png) no-repeat;	
+body.index #projects a.pacm .icon {
+  background: url(/images/pacm-logo.png) no-repeat;	
 }
 body.index #projects a.libsourcey .icon {
   background: url(/images/libsourcey-logo.png) no-repeat;	
@@ -356,6 +341,11 @@ body.index #projects a.budokin .icon {
 @media only screen and (min-width: 64.063em) {
   .columns a {
     height: 190px;
+  }
+  
+  body.index #projects .faux {
+    display:block;
+    padding: 20px;
   }
 }
 
@@ -454,7 +444,7 @@ body.index #projects a.budokin .icon {
   text-align: center;
 }
 
-.entry-title time {
+.title time {
   display: none;
   font-size: 14px;
   color: #999;

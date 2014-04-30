@@ -16,14 +16,14 @@ Required Dependencies
 : libuv, cmake, C++11 compiler
 
 Optional Dependencies
-: FFmpeg, OpenCV, WebRTC, OpenSSL, RtAudio, JsonCpp
+: FFmpeg, OpenCV, WebRTC, OpenSSL (> 1.0.1g), RtAudio, JsonCpp
 {: .status}
   
 ![LibSourcey Logo](libsourcey-logo-120.png "LibSourcey Logo"){: .align-left} LibSourcey is a collection of open source cross platform C++11 modules and classes which provide developers with a flexible high performance arsenal for the rapid development of real-time messaging and live media streaming applications. 
 
 LibSourcey was been used in private production by Sourcey since 2005, and was open sourced in 2013 under the LGPL licence to promote development of real-time native and web applications.
 
-Since version 0.92, C++11 and event-based asynchronous IO powered by Node.js's underlying libuv library are utilised throughout LibSourcey in to maximise performance and minimise concurrency reliance for building mission critical server side applications.
+Since version 0.92, C++11 and event-based asynchronous IO powered by Node.js's underlying libuv library are utilised throughout LibSourcey in to maximise performance and minimise concurrency reliance for building mission critical server-side applications.
 
 LibSourcey provides a simple and flexible method of capturing live audio/video streams (_OpenCV/FFmpeg_), processing, filtering and encoding them using any video format (_FFmpeg_), and broadcasting the result over the Internet (_libuv_). This is made possible by implementing a thin layer over the top of some brilliant open source projects, such as FFmpeg, OpenCV and libuv. The only required third-party dependency is libuv, and that is included in the local source and compiled automatically. All others dependencies are optional. 
 
@@ -72,9 +72,9 @@ SocketIO C++ client. Read more about [SocketIO](http://socket.io).
 _dependencies:_ libuv, JsonCpp  
 Client implementation of Sourcey's home grown real time messaging and presence protocol. [More about Symple](<http://sourcey.com/symple). 
 
-### Pacman
+### Pacm
 _dependencies:_ libuv, JsonCpp  
-Pacman is an embeddable package manager which speaks JSON with the server. [More about Pacman](http://sourcey.com/pacman).    
+Pacm is an embeddable package manager which speaks JSON with the server. [More about Pacm](http://sourcey.com/pacm).    
 
 ### UVPP
 _dependencies:_ libuv  

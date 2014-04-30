@@ -16,6 +16,7 @@ The OAuth provider that throws a spanner in the works and adds convolution to ou
 So, without further ado, here is the code:
 
 #### Gemfile
+
 ~~~ ruby
 gem 'devise'
 gem 'omniauth'
@@ -38,7 +39,8 @@ rails g model identity user:references provider:string uid:string oauth_token:st
 
 #### app/models/identity.rb
 
-~~~ rubyclass Identity < ActiveRecord::Base
+~~~ ruby
+class Identity < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :user_id, :uid, :provider
   validates_uniqueness_of :uid, :scope => :provider
@@ -55,7 +57,8 @@ end
 
 #### app/config/initializers/devise.rb
 
-~~~ rubyDevise.setup do |config|
+~~~ ruby
+Devise.setup do |config|
 ...
   config.omniauth :facebook, "KEY", "SECRET"
   config.omniauth :twitter, "KEY", "SECRET"
@@ -227,6 +230,11 @@ class UsersController < ApplicationController
       end
     end
   end
+  
+  private
+    def set_user
+      @user = User.find(params[:id])
+    end
 end
 ~~~ 
 

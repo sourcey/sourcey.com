@@ -8,7 +8,7 @@
 
   <div class="row">
     <div class="large-4 columns"> 
-      <a href="/libsourcey" class="libsourcey">
+      <a href="/libsourcey" class="libsourcey" title="LibSourcey: C++ networking evolved">
         <span class="icon"></span>
         <span class="title">LibSourcey</span>
         <span class="strap">C++ networking evolved</span>
@@ -16,7 +16,7 @@
      </a>
    </div>
     <div class="large-4 columns">
-      <a href="/anionu" class="anionu">
+      <a href="/anionu" class="anionu" title="Anionu: Cloud video surveillance">
         <span class="icon"></span>
         <span class="title">Anionu</span>
         <span class="strap">Cloud video surveillance</span>
@@ -24,7 +24,7 @@
       </a>
     </div>
     <div class="large-4 columns">
-      <a href="http://gardn.net" target="_blank" class="gardn">
+      <a href="http://gardn.net" target="_blank" class="gardn" title="Gardn: SEO 2.0 super juice">
         <span class="icon"></span>
         <span class="title">Gardn</span>
         <span class="strap">SEO 2.0 super juice</span>
@@ -34,7 +34,7 @@
   </div>
   <div class="row">
     <div class="large-4 columns">
-      <a href="http://stompstart.com" target="_blank" class="stompstart">
+      <a href="http://stompstart.com" target="_blank" class="stompstart" title="StompStart: Promote your startup">
         <span class="icon"></span>
         <span class="title">StompStart</span>
         <span class="strap">Promote your startup</span>
@@ -42,7 +42,7 @@
       </a>
     </div>
     <div class="large-4 columns">  
-      <a href="http://budokin.com" rel="nofollow" target="_blank" class="budokin">
+      <a href="http://budokin.com" rel="nofollow" target="_blank" class="budokin" title="BudoKin: Redefining martial arts">
         <span class="icon"></span>
         <span class="title">BudoKin</span>
         <span class="strap">Redefining martial arts</span>
@@ -50,18 +50,18 @@
       </a>
     </div>
     <div class="large-4 columns">  
-      <a href="/pacman" class="pacman">
+      <a href="/pacm" class="pacm" title="Pacm: Redistributable package manager">
         <span class="icon"></span>
-        <span class="title">Pacman</span>
+        <span class="title">Pacm</span>
         <span class="strap">Redistributable package manager</span>
-        <span class="intro">Pacman is a redistributable package manager written in C++ that speaks JSON with the server. We even use it ourselves.</span>                         
+        <span class="intro">Pacm is a redistributable package manager written in C++ that speaks JSON with the server. We even use it ourselves.</span>                         
       </a>
     </div>
   </div>
   <div class="row">
     <div class="large-2 columns"><span class="faux"></span></div>
     <div class="large-4 columns"> 
-      <a href="/mesh" class="mesh">
+      <a href="/mesh" class="mesh" title="Mesh: Elegant, modern design">
         <span class="icon"></span>
         <span class="title">Mesh</span>
         <span class="strap">Elegant, modern design</span>
@@ -69,7 +69,7 @@
       </a>
     </div>
     <div class="large-4 columns">
-      <a href="/symple" class="symple">
+      <a href="/symple" class="symple" title="Symple: Messaging made symple">
         <span class="icon"></span>
         <span class="title">Symple</span>
         <span class="strap">Messaging made symple</span>
@@ -86,7 +86,7 @@
     <% blog.articles.each do |article| %>
       <% next if article.data.layout != 'article' %>
       <li>
-        <h2 class="entry-title"><%= link_to article.title, article %><time><%= article.date.strftime('%b %e') %></time></h2>
+        <h3 class="title"><%= link_to article.title, article %><time><%= article.date.strftime('%b %e') %></time></h3>
         <%= article.summary(250) %>
       </li>
     <% end %>

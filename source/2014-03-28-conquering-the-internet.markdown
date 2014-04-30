@@ -9,28 +9,32 @@ layout: article
 
 # Conquering the Internet
 
-Everyone with an entrepreneurial spark is trying to claim their piece of Internet glory, yet only a select few will have any measure of success. 
+Everyone with an entrepreneurial spark is trying to claim their piece of Internet glory, yet only a small number will have any measure of success. 
 
 When a warlord conquers a country, he not only does so with supreme force of will, he does so with an army. Despite his brutality, the warlords also has a certain kind of honour. The Internet differs from the battlefield in this respect, because of the enormous potential for cloak and dagger. In this brave new world of Internet marketing, it's the Internet warrior who succeeds with honour and dignity who's the real victor.
 
 <!--
 To conquer the Internet is a dream held by many, yet its easy to forget what's important along the treacherous path to victory. 
 , and what you will have to give and take.
+
+and build unrealistic expectations of success. 
 -->
 
 ## Meditation
 
-Before you set out your hero's journey, you would be well served to calm and prepare your mind for what's coming. It's easy to be blinded by the entrepreneurial fervour, so most have unrealistic expectations of success. Make sure you know what you're in for, and that you're willing to accept the long term effects and responsibilities of your undertaking. 
+When launching a new enterprise it's your entrepreneurial passion that will drive you, and delude you from the truth. This is why its important to calm and prepare your mind for what's coming before you setting out on your hero's journey. 
+
+Don't be blinded by the entrepreneurial fervour, and or loose sight of the reality of your choices. Make sure you know what you're in for, and that you're willing to accept the long term effects and responsibilities of your undertaking. 
 
 Take the time to detach yourself, and view your goals with an objective and critical mind. Ask yourself the difficult questions, and if you can't be 100% honest, then find someone who will.
 
-* Do I have the manpower and resources?
 * Have I researched the market properly?
+* Do I have the manpower and resources?
 * Is my project worthy of financial investment?
 * Am I ready to spend the next few years doing this?
 * Have I spoken to the right people?
 
-In this world full by quick fix pop culture and black-hat morals, genuine quality has become something of a rarity. Stay true to your purpose, don't be guiled into believing the hollow promises and hype, and eventually you will cultivate a loyal and credible following. What's rare is also valuable. Your success won't be instantaneous, but it will be hard earned and well rewarded. 
+In this world full by quick fix pop culture and black-hat morals, genuine quality has become something of a rarity. Stay true to your purpose, don't be guiled into believing the hollow promises and hype, and eventually you will cultivate a loyal and credible following. What's rare is also valuable, and even though your success won't be instantaneous, it will be well earned and rewarded. 
 
 ## Building your Castle
 

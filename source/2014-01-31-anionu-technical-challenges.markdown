@@ -137,4 +137,5 @@ Symple has helped us increase the speed and efficiency of our real-time communic
 ## Conclusion
 
 There is many other aspects of development which haven't been covered here, but hopefully our challenges and insights can help others on the same path.
-It's been an epic journey, but with hard work and perseverance amazing things can be achieved. If you want more information about any other aspects of Anionu's  development then drop us a line. Happy coding!
+
+It's been an epic journey, but with hard work and perseverance amazing things can be achieved. If you want more information about any other aspects of Anionu's development then drop us a line. Happy coding!

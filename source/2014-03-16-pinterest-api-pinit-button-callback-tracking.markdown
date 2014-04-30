@@ -10,7 +10,7 @@ layout: article
 
 Unlike the Facebook and Twitter button APIs, the Pinterest button does not provide us with any callback tracking capabilities. So how do we verify that a user has completed a Pinit action? 
 
-The solution is a little trickier than the other buttons, which give us client side callbacks, but it's still pretty straight forward. To track Pinterest action events we need to pass the necessary parameters to the media URL we give to Pinterest, and point it to a server side script for verification. This way when Pinterest makes a request for the media URL, we can track and verify the Pinit action as completed. Get the gist?
+The solution is a little trickier than the other buttons, which give us client side callbacks, but it's still pretty straight forward. To track Pinterest action events we need to pass the necessary parameters to the media URL we give to Pinterest, and point it to a server-side script for verification. This way when Pinterest makes a request for the media URL, we can track and verify the Pinit action as completed. Get the gist?
 
 To break it down a little more the workflow is like this:
 <ul>
