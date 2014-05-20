@@ -16,15 +16,18 @@ The first is how to render Pinterest buttons loaded dynamically using JavaScript
 
 The most common way to achieve this, although it's not my preferred way, is by using the "data-pin-build" attribute of the script tag to map the function for rendering dynamic buttons.
 
-~~~ <script defer="defer" src="//assets.pinterest.com/js/pinit.js" data-pin-build="parsePins"></script>~~~ ruby
+~~~ 
+<script defer="defer" src="//assets.pinterest.com/js/pinit.js" data-pin-build="parsePins"></script>
+~~~
 
 Buttons can now be rendered as follows:
 
-~~~ javascript  // render buttons inside a scoped DOM element
-  window.parsePins(pbtn[0]);
+~~~ javascript  
+// render buttons inside a scoped DOM element
+window.parsePins(pbtn[0]);
 
-  // render the whole page
-  window.parsePins();
+// render the whole page
+window.parsePins();
 ~~~ 
 
 ### Method two

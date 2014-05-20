@@ -23,7 +23,7 @@ Check out the live demo, and if you want to find what's happening under the hood
 
 If you've used any sort of chat application before then this should be super easy for you! From the 'Login' panel just choose a handle/username to login. If you're testing then open another browser window and login again in order to have a conversation with yourself (I'm pretty sure it doesn't mean you're crazy).
 
-A full list of users will be displayed on the left hand sidebar when you have logged in. 
+A full list of users will be displayed on the left hand sidebar when you're logged in. 
 
 ### Video Chat
 
@@ -38,9 +38,8 @@ Follow these steps to make a video call:
 5. When video is flowing from the caller to the callee, the callee can hot the 'Start video' button to start sending video to the caller. Again be sure to enable browser access to the video capture device (as above).
 6. WebRTC FTW!
 
-<div class="panel callout radius">
 Note that if you are attempting to make a call to a remote endpoint, and both users are behind a NAT or firewall, then the call will probably fail. In production you would use a TURN relay server which would facilitate a relayed connection between both endpoints, but that is beyond the scope of this demo.
-</div>
+{: .panel .callout .radius}
 
 ### Instant Messaging
 

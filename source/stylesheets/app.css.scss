@@ -1,31 +1,4 @@
 @import "settings";
 @import "foundation.scss";
-@import "foundation-icon-fonts/foundation-icons.scss";
-
-/*
-header {
-  @include grid-row;
-
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
-}
-
-
-.main-content {
-  @include grid-row;
-
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
-  }
-
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
-}
-*/
+@import "style";
+@import "highlight/darkly";

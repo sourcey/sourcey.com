@@ -12,26 +12,32 @@ TODO: compare to current package managers
 # Pacm
 
 Repository
-: [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
+: [https://github.com/sourcey/pacm](https://github.com/sourcey/pacm)
 
 Licence
 : LGPL, <a href="/licence">Pro Licence</a>
 
 Dependencies
-: LibSourcey (base, uv, net, json, http, archo), libuv, JsonCpp
+: LibSourcey (base, uv, net, json, http, archo)
 {: .status}
     
-![Pacm Logo](pacm-logo-120.png "Pacm Logo"){: .align-left} Pacm is a redistributable package manager written C++ that speaks JSON with the server.
-It is designed to be embedded within an application to make easy work of installing, updating and uninstalling packages and plug-ins.
+![Pacm Logo](pacm-logo-120.png "Pacm Logo"){: .align-left} Pacm is a front-end package manager written in C++ that can be embedded or redistributed with native applications to make short work of the following tasks:
 
-There is no shortage or open source [package managers](http://en.wikipedia.org/wiki/List_of_software_package_management_systems) out there, but none of them quite fit the bill for an embeddable native package manager that could be controlled from the cloud. Rather than continue building with a square wheel, we decided to build a new one.
-    
-Pacm is included a default module in the LibSourcey repository, so please download and compile [LibSourcey](libsourcey) in order to use Pacm.
+* Auto-Updates
+* Version Constrained Package Management
+* Dependency Management
+* Remote Plugin Management
 
-## Usage examples
+There are a lot of open source [package managers](http://en.wikipedia.org/wiki/List_of_software_package_management_systems) out there, but none of them quite fit the bill for a minimal and flexible native package manager that could be easily distributed with our apps, so we built Pacm.
 
-The Pacm API is vey easy use. Some examples are illustrated below:
-      
+The Pacm codebase is kept quite small and readable thanks to LibSourcey which handles and abstracts all the complex cross-platform tasks such as networking, filesystem and cryptography.
+
+Pacm speaks to the server using a basic [client-server JSON protocol](#client-server-protocol) which is very straight forward to integrate with your existing web server architecture. 
+
+## Embedding Pacm
+
+If you have some basic C++ nouse then you'll discover that Pacm is very easy to embed and use within your own applications. Some examples of the Pacm API are illustrated below:
+
 ~~~ cpp
 PackageManager::Options options;
 // configuration options go here...
@@ -43,17 +49,17 @@ pacm.queryRemotePackages();
         
 // list local (installed) packages
 auto litems = pacm.localPackages().items();
-for (auto it = litems.begin(); it != litems.end(); ++it) {				
-  cout << "Package: " << it->first << endl;
+for (auto it = litems.begin(); it != litems.end(); ++it) {        
+  std::cout << "Package: " << it->first << std::endl;
 }
 
 // list remote (available) packages
 auto ritems = app.remotePackages().items();
-for (auto it = ritems.begin(); it != ritems.end(); ++it) {				
-  cout << "Package: " << it->first << endl;          
+for (auto it = ritems.begin(); it != ritems.end(); ++it) {        
+  std::cout << "Package: " << it->first << std::endl;          
   
-  // output the lastest asset information
-  it->second->latestAsset().print(cout);	
+  // output the latest asset information
+  it->second->latestAsset().print(std::cout); 
 }                
         
 // install a package
@@ -63,10 +69,10 @@ pacm.installPackage("SomePackageName");
 pacm.updatePackage("SomePackageName");
 
 // update / install a list of packages.
-// package states are availalbe via callback events
+// package states are available via callback events
 std::vector<std::string> packages;
 packages.push_back("SomePackageName");
-packages.push_back("IThoughtPacmWasAGame");        
+packages.push_back("SomeOtherPackage");        
 pacm.installPackages(packages);
 
 // update all packages
@@ -77,86 +83,158 @@ pacm.updateAllPackages();
 pacm.uninstallPackage("SomePackageName");
 ~~~ 
 
-Pretty tidy huh? That covers basic Pacm usage. 
+If you're planning on using the native API then the best place to start is the source code of the [Pacm command line tool](https://github.com/sourcey/pacm/blob/master/applications/pacmconsole/src/main.cpp), which can be easily reverse engineered and modified for your own purposes.
 
-These are plenty of other methods and features available, just check out the documentation for the method definitions in the [source code](https://github.com/sourcey/libsourcey/blob/master/src/pacm/include/scy/pacm/packagemanager.h) for a reference.
+For all method definitions and further documentation the [source code](https://github.com/sourcey/pacm/blob/master/include/scy/pacm/packagemanager.h) is always the best reference.
 
-## Client server protocol
+## Redistributable Command Line Tool
 
-The Pacm core does not include a server module, but it should be easy to implement using your chosen web framework. All that is required on the server-side is to list packages using Pacm's simple JSON protocol. We generally use Rails for easy serialization of database objects. 
+Pacm comes with a redistributable command-line tool which can be compiled and redistributed with your existing applications. In many ways this is preferable to embedding Pacm as it allows you to decouple complex version management code from your main application, but depending on which platforms you are targeting there may also be security constraints to consider.
 
-An example of a server response to a Pacm query is illustrated below. Pacm will send a HTTP GET request to the server which will reply with a JSON response that looks like:
+### Examples
+
+Print help:
+
+~~~ bash
+pacm --help
+~~~
+
+Install the Anionu `surveillancemodeplugin`:
+
+~~~ bash
+pacm --endpoint https://anionu.com --uri /packages.json --print --install surveillancemodeplugin
+~~~
+
+Uninstall the Anionu `surveillancemodeplugin`:
+
+~~~ bash
+pacm --endpoint https://anionu.com --uri /packages.json --print --install surveillancemodeplugin
+~~~
+
+Update installed packages to the latest version:
+
+~~~ bash
+pacm --endpoint https://anionu.com --uri /packages.json --print --update
+~~~
+
+### Supported Commands
+
+The following commands are implemented by the redistributable application. This is likely to be expanded upon in the near future, and in the mean time pull requests are very welcome:
+
+~~~
+General commands:
+
+  --help           Print help
+  --logfile        Log file output path
+
+Server commands:
+
+  --endpoint       HTTP server endpoint
+  --uri            HTTP server package JSON index URI
+
+Package commands:
+
+  --install        Packages to install (comma separated)
+  --uninstall      Packages to uninstall (comma separated)
+  --update         Update all packages
+  --print          Print all local and remote packages on exit
+  --checksum-alg   Checksum algorithm for verifying packages (MDS/SHA1)
+
+Filesystem commands:
+
+  --install-dir    Directory where packages will be installed
+  --data-dir       Directory where package manifests will be stored
+  --temp-dir       Directory where intermediate package files will be stored
+~~~
+
+## Client-Server Protocol
+
+The Pacm repository does not currently include a server module, but since everything is in JSON it should be a sinch to implement using your existing web framework. All that is required on the server-side is to list packages and facilitate downloads.
+
+An example of a server response to a Pacm query is illustrated below. Pacm will send a HTTP GET request to the server which will reply with a JSON response that looks like this:
       
 ~~~ javascript
-[ { "assets" : [ { "extension" : "zip",
-          "file-name" : "Spot-1.0-win32-bin.zip",
-          "file-size" : "3261705",
-          "mirrors" : [ "http://localhost:3000/archives/417/Spot-1.0-win32-bin.zip" ],
-          "name" : "Spot",
-          "platform" : "win32",
-          "standalone" : "true",
-          "type" : "bin",
-          "version" : "1.0"
-        },
-        { "extension" : "zip",
-          "file-name" : "Spot-1.1-win32-bin.zip",
-          "file-size" : "3261705",
-          "mirrors" : [ "http://localhost:3000/archives/418/Spot-1.1-win32-bin.zip" ],
-          "name" : "Spot",
-          "platform" : "win32",
-          "standalone" : "true",
-          "type" : "bin",
-          "version" : "1.1"
-        }
-      ],
-    "author" : "Sourcey",
-    "id" : 9,
-    "name" : "Spot",
-    "title" : "Spot",
-    "type" : "Project"
-  },
-  { "assets" : [ { "extension" : "zip",
-          "file-name" : "SurveillanceMode-0.9.0-Spot-1.0-win32-bin.zip",
-          "file-size" : "761951",
-          "mirrors" : [ "http://localhost:3000/archives/439/SurveillanceMode-0.9.0-Spot-1.0-win32-bin.zip" ],
-          "name" : "SurveillanceMode",
-          "platform" : "win32",
-          "project-name" : "Spot",
-          "project-version" : "1.0",
-          "standalone" : "false",
-          "type" : "bin",
-          "version" : "0.9.0"
-        } ],
-    "author" : "Sourcey",
-    "id" : 7,
-    "name" : "SurveillanceMode",
-    "title" : "Surveillance Mode Plugin",
-    "type" : "Plugin"
-  },
-  { "assets" : [ { "extension" : "zip",
-          "file-name" : "MediaProvider-0.9.0-Spot-1.0-win32-bin.zip",
-          "file-size" : "136459",
-          "mirrors" : [ "http://localhost:3000/archives/435/MediaProvider-0.9.0-Spot-1.0-win32-bin.zip" ],
-          "name" : "MediaProvider",
-          "platform" : "win32",
-          "project-name" : "Spot",
-          "project-version" : "1.0",
-          "standalone" : "false",
-          "type" : "bin",
-          "version" : "0.9.0"
-        } ],
-    "author" : "Sourcey",
-    "id" : 19,
-    "name" : "MediaProvider",
-    "title" : "Media Provider",
-    "type" : "Plugin"
-  }
-]
+[{
+    "id": "surveillancemodeplugin",
+    "type": "Plugin",
+    "name": "Surveillance Mode Plugin",
+    "author": "Sourcey",
+    "description": "Surveillance mode provides Spot with real-time motion detection capabilities. Surveillance mode is ideal for when you are away from the surveilled premises, and want to protect yourself against unwanted intruders. You can also configure SMS alerts and record videos during intervals of motion.",
+    "assets": [{
+        "version": "0.9.3",
+        "sdk-version": "0.6.2",
+        "platform": "win32",
+        "file-name": "surveillancemodeplugin-0.9.4-sdk-0.6.2-win32.zip",
+        "file-size": 432321,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/surveillancemodeplugin/download/surveillancemodeplugin-0.9.4-sdk-0.6.2-win32.zip"
+        }]
+    }, {
+        "version": "0.9.3",
+        "sdk-version": "0.6.0",
+        "platform": "win32",
+        "file-name": "surveillancemodeplugin-0.9.3-sdk-0.6.0-win32-debug.zip",
+        "file-size": 432221,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/surveillancemodeplugin/download/surveillancemodeplugin-0.9.3-sdk-0.6.0-win32-debug.zip"
+        }]
+    }]
+}, {
+    "id": "mediaplugin",
+    "type": "Plugin",
+    "name": "Media Plugin",
+    "author": "Sourcey",
+    "description": "The Media Plugin implements audio and video encoders for recording and real-time media streaming. If you want to enable different media formats in Spot, you can do so by modifying this plugin.",
+    "assets": [{
+        "version": "0.8.9",
+        "sdk-version": "0.6.2",
+        "platform": "win32",
+        "file-name": "mediaplugin-0.8.9-sdk-0.6.2-win32.zip",
+        "file-size": 1352888,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/mediaplugin/download/mediaplugin-0.8.9-sdk-0.6.2-win32.zip"
+        }]
+    }, {
+        "version": "0.8.8",
+        "sdk-version": "0.6.0",
+        "platform": "win32",
+        "file-name": "mediaplugin-0.8.8-sdk-0.6.0-win32-debug.zip",
+        "file-size": 1352818,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/mediaplugin/download/mediaplugin-0.8.8-sdk-0.6.0-win32-debug.zip"
+        }]
+    }]
+}, {
+    "id": "webrtcplugin",
+    "type": "Plugin",
+    "name": "WebRTC Plugin",
+    "author": "Sourcey",
+    "description": "This plugin provides Spot with WebRTC support, so you can view high quality video surveillance streams in a modern web browser.",
+    "assets": [{
+        "version": "0.1.1",
+        "sdk-version": "0.6.2",
+        "platform": "win32",
+        "file-name": "webrtcplugin-0.1.1-sdk-0.6.2-win32.zip",
+        "file-size": 0,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/webrtcplugin/download/webrtcplugin-0.1.1-sdk-0.6.2-win32.zip"
+        }]
+    }, {
+        "version": "0.1.0",
+        "sdk-version": "0.6.0",
+        "platform": "win32",
+        "file-name": "webrtcplugin-0.1.0-sdk-0.6.0-win32-debug.zip",
+        "file-size": 3888157,
+        "mirrors": [{
+            "url": "https://anionu.com/packages/webrtcplugin/download/webrtcplugin-0.1.0-sdk-0.6.0-win32-debug.zip"
+        }]
+    }]
+}]
 ~~~    
 
 ## Contributing
 
-1. [Fork LibSourcey on Github](https://github.com/sourcey/libsourcey)
+1. [Fork Pacm on Github](https://github.com/sourcey/pacm)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -164,12 +242,4 @@ An example of a server response to a Pacm query is illustrated below. Pacm will 
 
 ## Issues
 
-If you find any bugs or issues please use the new [Github issue tracker](https://github.com/sourcey/libsourcey/issues).
-
-<!--   
-## Things to do
-
-There are a few features we have not had time to implement yet which are listed in the TODO file in the source folder.
-If you're able to implement any of the those features then send a push request our way. 
--->
-
+If you find any bugs or issues please use the new [Github issue tracker](https://github.com/sourcey/pacm/issues).

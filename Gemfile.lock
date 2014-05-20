@@ -18,6 +18,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -26,6 +27,8 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
+    htmlcompressor (0.1.1)
+    http_parser.rb (0.5.3)
     http_parser.rb (0.5.3-x86-mingw32)
     i18n (0.6.9)
     json (1.8.1)
@@ -62,6 +65,9 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-minify-html (3.3.0)
+      htmlcompressor (~> 0.1.0)
+      middleman-core (>= 3.2)
     middleman-sprockets (3.3.2)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -72,6 +78,8 @@ GEM
       rouge (~> 1.0)
     mini_portile (0.5.3)
     multi_json (1.9.2)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     nokogiri (1.6.1-x86-mingw32)
       mini_portile (~> 0.5.0)
     rack (1.5.2)
@@ -117,6 +125,7 @@ DEPENDENCIES
   middleman (~> 3.2.2)
   middleman-blog (~> 3.5.2)
   middleman-livereload (~> 3.1.0)
+  middleman-minify-html
   middleman-syntax
   nokogiri
   redcarpet

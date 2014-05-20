@@ -72,10 +72,6 @@ SocketIO C++ client. Read more about [SocketIO](http://socket.io).
 _dependencies:_ libuv, JsonCpp  
 Client implementation of Sourcey's home grown real time messaging and presence protocol. [More about Symple](<http://sourcey.com/symple). 
 
-### Pacm
-_dependencies:_ libuv, JsonCpp  
-Pacm is an embeddable package manager which speaks JSON with the server. [More about Pacm](http://sourcey.com/pacm).    
-
 ### UVPP
 _dependencies:_ libuv  
 UVPP is a set of C++ wrappers for Joyent's fantastic libuv library. 
@@ -114,14 +110,13 @@ Any bugfixes and improvements are welcome.
 
 The following LibSourcey modules are available in external repositories. 
 
-### Anionu
+### Anionu SDK
 _dependencies:_ libuv, OpevCV
-The Anionu module includes a REST client interface for communicating with the Anionu public API.        
+The Anionu SDK includes a C++ API, tools, and client implementation for building [Spot](http://anionu.com/spot) plugins and applications that integrate with the [Anionu cloud surveillance serivice](https://anionu.com).
 
-### ISpot
-_dependencies:_ JsonCpp
-ISpot is a complete C++ SDK and API for building [Spot](http://anionu.com/spot) based applications and plug-ins. 
-Spot is a part of the [Anionu surveillance serivice](http://anionu.com).
+### Pacm
+_dependencies:_ libuv, JsonCpp  
+Pacm is an embeddable package manager which speaks JSON with the server. [More about Pacm](http://sourcey.com/pacm).
 
 ## Install LibSourcey
 

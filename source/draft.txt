@@ -1,0 +1,42 @@
+## On Developer Friendliness
+
+No, this is not a blog about being nice to your fellow developer, which I'm sure you all are anyway. 
+It's about the state of startups that are saturating the market today.
+
+If you're anything like us, of of the first things you look at when evaluating a new startup is "developer friendliness".
+The reason for this, is that software developemnt is both time intensive and costly, therefore projects that are developer focused usually have it where it counts.
+These projects are usually a labour of love, sometimes squillions of dollars, 
+but either way its a whole lot better than some get rich quick scheme dreamed up by ye old internet marketing gugu.
+
+The advntage a good creative deleloper mentality has, and why they are so important to every startup, 
+is their ability to conceptualise and implement complex workflows and patters.
+
+Take Gitbug for example. This is not some horing corporate entity, this is a group of dedicated individuals who love what they do! 
+Sure, they've had their issues, but they hold themselves personally accountable because their livelyhood is on the line.
+At the end of the day, this is the kind of person/business that I trust with my data, (not the type that throws money at an issue and expects it to be solved)
+not some corporate clock-watching desk monkey trying to scrape by doing the bare minimum so he can get in his afternoon game of solataire.
+
+Next time you're evaluating a startup, check the things that count: Strong APIs, SDKs, unique and original design, and open source!
+
+
+# WebRTC to the Rescue
+
+If a perfect world, WebRTC would solve all our problems relating to Internet video streaming and p2p connections. 
+Unfortunately though, our world is far from perfect ;)
+
+To a certain extent, WebRTC does acheive this, 
+but the inability of the big players to unanimously decide on a video codec means that browser support is fractured... farmiliar tune right?
+
+At this stage, if you want to take advantage of then your users need to be using either Firefox or Chrome. 
+That's a pretty big ask for a startup, 
+but fortunately more and more startups are saying, "to hell with these stuffy beurocrats, we want the technology". 
+This is a stance to be applauded, and as far as I'm concerned a "selling point" for these startups - it shows they are thinking right.
+
+Cisco?
+
+In the mean time, there is a workaround which enables you to acheive video streaming on all browsers, and it's called Symple. 
+Symple is a minimal p2p messaging protocol which includes a player model that automatically detects the best streaming method to be used for the browser being used.
+We built the Symple media library out of srustration with the state of internet streaming.
+
+Lets the companies that control the internet can resolve their issues and Internet video can take the forward step promised, 
+and as yet undelevered by WebRTC.

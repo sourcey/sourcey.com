@@ -13,25 +13,40 @@ We just finished installing Trac for Sourcey and thought we would share the proc
 There are a few ways to <a href="http://trac.edgewall.org/wiki/TracInstall" target="_blank">install Trac</a>, by Python's `easy_install` package makes the actual installation pretty straight forward so we'll use that.
 
 Install Trac 1.0.1:
-~~~ easy_install Trac==1.0.1~~~ 
+
+~~~ bash
+easy_install Trac==1.0.1 
+~~~ 
 
 Or install latest development version:
-~~~ easy_install Trac==dev~~~ 
+
+~~~ bash
+easy_install Trac==dev 
+~~~ 
 
 Next we create the environment:
-~~~ trac-admin /path/to/trac initenv~~~ 
+
+~~~ bash
+trac-admin /path/to/trac initenv
+~~~
 
 Make sure the user account under which the web front-end runs will have write permissions to the environment directory and all the files inside:
-~~~ chown -R deploy.deploy /path/to/trac~~~ 
+
+~~~ bash
+chown -R deploy.deploy /path/to/trac 
+~~~ 
 
 You can fire up the server now to test everything. If you are only have a single Trac project you should use the -s option to bypass the "Available Projects" screen.
-~~~ tracd -s --port 9990 /path/to/trac~~~ 
+
+~~~ bash
+tracd -s --port 9990 /path/to/trac 
+~~~ 
 
 For our purposes we are content using the tracd server behind an Nginx reverse proxy, but there are other alternatives to tracd should you need it. 
 
 Next we create a bash script for tracd. Copy the contents of the below bash script into `/etc/init.d/tracd` and change the necessary variables:
 
-~~~ 
+~~~ bash
 #!/bin/bash
 #
 # chkconfig: - 85 15
@@ -119,21 +134,33 @@ exit $RETVAL
 ~~~ 
 
 Now run the following commands:
-~~~ chmod 755 /etc/init.d/tracd~~~ 
-~~~ chkconfig –-add /etc/init.d/tracd~~~ 
+
+~~~ bash
+chmod 755 /etc/init.d/tracd
+chkconfig –-add /etc/init.d/tracd
+~~~ 
 
 Unless you want to create a public wiki you will want some form of authentication. The init.d script uses a htpasswd file for basic authentication, so we can build that now:
-~~~ htpasswd -c /path/to/trac/htpasswd MyUsername~~~ 
+
+~~~ bash
+htpasswd -c /path/to/trac/htpasswd MyUsername
+~~~ 
 
 Alternatively, if you want a completely public wiki you could do something like this to give anonymous users full privileges (be sure you know what you are doing before you run this command!):
-~~~ trac-admin /path/to/trac permission add anonymous "*"~~~ 
+
+~~~ bash
+trac-admin /path/to/trac permission add anonymous "*"
+~~~ 
 
 To start the server you can run:
-~~~ service tracd start~~~ 
+
+~~~ bash
+service tracd start
+~~~ 
 
 Since we use monit to monitor our server stack we will add a quick script to ensure the server doesn't go down. Copy the following file to `/etc/monit.d/tracd`:
 
-~~~ 
+~~~ bash
 check process tracd with pidfile /var/run/tracd.pid
   start program = "/etc/init.d/tracd start"
   stop  program = "/etc/init.d/tracd stop"
@@ -141,6 +168,8 @@ check process tracd with pidfile /var/run/tracd.pid
 ~~~ 
 
 Now reload the monit configuration:
-~~~ monit reload~~~ 
+~~~ bash
+monit reload
+~~~ 
 
 And we are done. Hopefully this saved you some time, and good luck with your projects!

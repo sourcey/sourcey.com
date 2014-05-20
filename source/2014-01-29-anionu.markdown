@@ -4,9 +4,10 @@ date: 2014-01-29 01:09:06
 tags: surveillance, cloud, security
 layout: page
 ---
+
 # Anionu
 
-![Anionu Logo](anionu-logo-120.png "Anionu Logo"){: .align-left} In 2010, Sourcey acquired private funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a solution to both personal and property security which has the potential change the industry. This document transparency addresses some key points regarding Anionu for both investors and customers.
+![Anionu Logo](anionu-logo-120.png "Anionu Logo"){: .align-left} In 2010, Sourcey acquired private funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a solution to both personal and property security which has the potential to change the industry. This document transparency addresses some key points regarding Anionu for both investors and customers.
 
 ## What is Anionu?
 Anionu, pronounced "an-eye-on-you", is a video surveillance web application for savy home owners, business owners and security companies. 
