@@ -8,10 +8,9 @@ layout: article
 ---
 # Libuv C++ Wrappers
 
-LibSourcey uses libuv for it's networking layer as well as for abstracting cross platform capabilities such as shared library loading, filesystem, timers and other various helper methods. For anyone looking for libuv C++ wrappers, LibSourcey is a great place to start. The Node.js project is also good since it is really just one big libuv wrapper, but the code is quite complex compared to LibSourcey, and there is more interdependent code within the library which make it hard to find clean examples. 
+LibSourcey uses libuv for it's networking layer as well as for abstracting cross platform capabilities such as shared library loading, filesystem, timers and other various cross-platform helper methods. For anyone looking for libuv C++ wrappers, LibSourcey is a great place to start. The Node.js project is also good since it is really just one big libuv wrapper, but the code is quite complex compared to LibSourcey, and there is more interdependent code within the library which make it hard to find clean examples. 
 
 The following modules contain usable examples of libuv wrappers:
-
 
 Handle
 : [src/net/include/scy/uv/handle.h](https://github.com/sourcey/libsourcey/tree/master/src/uv/include/scy/uv/uvpp.h)

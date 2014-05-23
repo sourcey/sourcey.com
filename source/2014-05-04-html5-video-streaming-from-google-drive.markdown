@@ -33,7 +33,7 @@ And the source code:
 </video>
 ~~~
 
-In order to be completely cross-browser then we can't forget about the geriatric fathers of the browser world which still claim a market share. <!--; Internet Explorer. -->
+In order to be completely cross-browser we can't forget about the geriatric fathers of the browser world who still claim a market share, and require a Flash fallback. <!--; Internet Explorer. -->
 
 As you may already know, Google automatically encodes uploaded videos into lower bitrate FLV files for playback using Flash via the Google Drive Viewer. This means the Google Flash player can be reused like so:
 

@@ -10,9 +10,9 @@ layout: article
 
 <a href="http://www.pinterest.com/sourcey/" title="Sourcey on Pinterest" target="_blank">Pinterest</a> is a pretty hot topic in Social Marketing right now. Their APIs and documentation are still quite underdeveloped, so over the course of my next few posts I will offering some up Pinterest hacking tips for developers.
 
-The first is how to render Pinterest buttons loaded dynamically using JavaScript. The Pinterest documentation is pretty scarce, so us developers are left to trawl through the source code for some of the answers - but they are there!
+The first is how to render Pinterest buttons loaded dynamically using JavaScript. The Pinterest documentation is pretty scarce, so developers are left to trawl through the source code for some of the answers - but they are there!
 
-### Method one
+## Method one
 
 The most common way to achieve this, although it's not my preferred way, is by using the "data-pin-build" attribute of the script tag to map the function for rendering dynamic buttons.
 
@@ -30,7 +30,7 @@ window.parsePins(pbtn[0]);
 window.parsePins();
 ~~~ 
 
-### Method two
+## Method two
 
 An alternative method for people who like to hack in JavaScript, and don't much like including a shit tonne of script tags in the page header can use this script as a starting point (yes it uses JQuery, which can be easily substituted).
 

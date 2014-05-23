@@ -226,6 +226,12 @@ body.index #blog li p {
   font-size: 13px;
 }
 
+@media only screen and (max-width: 64.063em) {
+  /* Hide on small devices as per Google PageSpeed recommendation */
+  body.index #blog li .more-link {
+    display: none;
+  }
+}
 
 
 

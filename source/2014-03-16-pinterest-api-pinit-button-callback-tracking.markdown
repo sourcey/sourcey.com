@@ -83,3 +83,5 @@ Here is some pseudo Ruby code that we have used successfully in a recent Rails p
     render nothing: true, status: :not_found     
   end
 ~~~ 
+
+Happy hacking!

@@ -9,11 +9,11 @@ layout: article
 
 # WebRTC Custom OpenCV Video Capture
 
-WebRTC comes with an video device capture implementations for most platforms including Linux, Mac, Windows, iOS and Android, but what if we want to use our own video capture source such as a frame-grabber, or OpenCV or FFmpeg? The good news is that it's quite easy, all you need to do is override the cricket::VideoCapturer class and create a custom cricket::VideoCapturerFactory for attaching to the cricket::DeviceManagerInterface. The code below can be used as a replacement for the default cricket::VideoCapturer that's used by the peerconnection_client example that's distributed with the WebRTC source.
+WebRTC comes with an video device capture implementations for most platforms including Linux, Mac, Windows, iOS and Android, but what if we want to use our own video capture source such as a frame-grabber, or OpenCV or FFmpeg? The good news is that it's quite easy, all you need to do is override the `cricket::VideoCapturer` class and create a custom `cricket::VideoCapturerFactory` for attaching to the `cricket::DeviceManagerInterface`. The code below can be used as a replacement for the default `cricket::VideoCapturer` that's used by the `peerconnection_client` example that's distributed with the WebRTC source.
 
 Bear in mind that these classes are just for testing, and are by no means 100% complete. For example pixel format handling and conversion is fixed to I420, but this can be easily implemented as the logic is already in place.
 
-### videocapturerocv.h
+#### videocapturerocv.h
 
 ~~~ cpp
 #ifndef SCY_VideoCaturerOCV_H
@@ -80,7 +80,7 @@ public:
 #endif
 ~~~ 
 
-### videocapturerocv.cpp
+#### videocapturerocv.cpp
 
 ~~~ cpp
 #include "videocapturerocv.h"

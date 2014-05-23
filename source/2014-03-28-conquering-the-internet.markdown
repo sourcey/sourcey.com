@@ -24,9 +24,9 @@ and build unrealistic expectations of success.
 
 When launching a new enterprise it's your entrepreneurial passion that will drive you, and delude you from the truth. This is why its important to calm and prepare your mind for what's coming before you setting out on your hero's journey. 
 
-Don't be blinded by the entrepreneurial fervour, and or loose sight of the reality of your choices. Make sure you know what you're in for, and that you're willing to accept the long term effects and responsibilities of your undertaking. 
+In the beginning it's important now to be blinded by entrepreneurial fervour, or loose sight of the reality of your choices. Make sure you know what you're getting yourself into, and that you're willing to accept the long term effects and responsibilities of your undertaking. 
 
-Take the time to detach yourself, and view your goals with an objective and critical mind. Ask yourself the difficult questions, and if you can't be 100% honest, then find someone who will.
+Take the time to detach yourself, and view your goals with an objective and critical mind. Ask yourself the difficult questions, and if you can't be 100% honest, then find someone who will be.
 
 * Have I researched the market properly?
 * Do I have the manpower and resources?
@@ -62,7 +62,7 @@ Without going into extreme detail, here are some factors to consider when educat
 
 Google's algorithm changes have made it easier than ever to rank for genuine quality original content, so get writing! Write natural content covering all aspects of your market and profession. Careful not to repost or duplicate your content on other sites. Guest post if you have to, but remember, **your** content is always more valuable on **YOUR** domain.
 
-Because of this, it follows that you should store your blog of your own domain. Try to stay clear of cloud blogging platforms (Wordpress/Tumblr) for your primary content, but by all means use them to aggregate excerpts from your blog feed.
+Because of this, it follows that you should store your blog of your own domain. Try to stay clear of cloud blogging platforms (Wordpress/Tumblr) to host your primary content (unless you use your own domain), but by all means use them to aggregate excerpts from your blog feed.
 
 ### Social Media
 
@@ -85,6 +85,7 @@ PPC advertising is expensive, and can be hit and miss depending on your product 
 You might also consider paid directories. DMOZ is free but hard to get in, and Best of the Web and Yahoo are well known paid directories. Directories will give you credibility, but bear in mind they aren't cheap, and many consider them to be redundant.
 
 ## Preparing for Victory
+
 The way one handles victory says a lot about the character of a person or business. You may be tempted by the bright lights and fat stacks, but in the end the greatest reward you can expect is to succeed while having a good time and conducting yourself with integrity.
 
-The victor has certain obligations, least of which is to set the standard for those to come. As your business grows, so must you. Be consistent with your training, meditation and relaxation, and free yourself from gloating and arrogant expression. Keep developing your mind and body so that your endeavours may continue to evolve alongside your vision and creativity.
+The victor also has certain obligations, least of which is to set the standard for those to come. As your business grows, so must you. Be consistent with your training, meditation and relaxation, and free yourself from gloating and arrogant expression. Keep developing your mind and body so that your endeavours may continue to evolve alongside your abundant vision and creativity.

@@ -98,7 +98,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
         if @user.persisted?
           sign_in_and_redirect @user, event: :authentication
-          set_flash_message(:notice, :success, kind: #{provider}.capitalize) if is_navigational_format?
+          set_flash_message(:notice, :success, kind: provider.capitalize) if is_navigational_format?
         else
           session["devise.#{provider}_data"] = env["omniauth.auth"]
           redirect_to new_user_registration_url
@@ -144,12 +144,14 @@ class User < ActiveRecord::Base
     # Create the user if needed
     if user.nil?
 
-      # Get the existing user by email if the OAuth provider gives us a verified email
-      # If the email has not been verified yet we will force the user to validate it
-      email = auth.info.email if auth.info.email && auth.info.verified_email
+      # Get the existing user by email if the provider gives us a verified email
+      # If the email has not been verified by the provider we will assign the
+      # TEMP_EMAIL and get the user to verify it via UsersController.add_email
+      email_is_verified = auth.info.email && (auth.info.verified || auth.info.verified_email)
+      email = auth.info.email if email_is_verified
       user = User.where(:email => email).first if email
 
-      # Create the user if it is a new registration
+      # Create the user if it's a new registration
       if user.nil?
         user = User.new(
           name: auth.extra.raw_info.name,
@@ -210,8 +212,8 @@ class UsersController < ApplicationController
     if params[:user] && params[:user][:email]
       current_user.email = params[:user][:email]
 
-      # Note: When using the Devise confirmable module I choose to skip email validation
-      # here if the user has signed up with Twitter.
+      # When using the Devise confirmable module I choose to skip email confirmation here
+      # to avoid an unnecessary step since the user signed up with their Twitter account.
       # Just remove the following line if you want the user to confirm their email address. 
       current_user.skip_reconfirmation!
 
@@ -230,7 +232,7 @@ class UsersController < ApplicationController
 end
 ~~~ 
 
-#### app/views/users/add_user.html.rb
+#### app/views/users/add_email.html.rb
 
 Note that the following template uses Bootstrap markup.
 

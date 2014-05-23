@@ -8,9 +8,9 @@ layout: article
 ---
 # JavaScript Object to Flash SWF ExternalInterface Bridge
 
-Have you ever wanted to bind your ActionScript ExternalInterface callbacks to JavaScript object methods, rather than use free functions? We has need of this the other day when adding Flash video streaming to Symple, so we came up with a simple solution that helped us reduce clutter and write better code.
+Have you ever wanted to bind your ActionScript ExternalInterface callbacks to JavaScript object methods, rather than use free functions? We had need of this the other day when adding Flash video streaming to [Symple](/symple), so we came up with a simple solution that helped us reduce clutter and write better code.
 
-To get started include the JFlashBridge object somewhere in your JavaScript.
+To get started include the `JFlashBridge` object somewhere in your JavaScript.
 
 ~~~ javascript
 var JFlashBridge = {

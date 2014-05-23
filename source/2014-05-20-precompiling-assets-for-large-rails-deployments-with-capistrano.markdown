@@ -1,5 +1,5 @@
 ---
-title: Precompile Assets Locally for Large Rails Capistrano Deployments
+title: Precompiling Assets for Large Rails Deployments with Capistrano
 date: 2014-05-20
 tags: capistrano, rails, rsync
 author: Kam Low
@@ -7,18 +7,17 @@ author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
-# Precompile Assets Locally for Large Rails Capistrano Deployments
+# Precompiling Assets for Large Rails Deployments with Capistrano
 
 If you've ever had to deploy a large Rails site using Capistrano, 
-then you're no doubt aware of how time consuming it is to precompile the assets pipeline on the server-side.
+then you're probably aware of how time consuming it is to precompile the assets pipeline on the server-side.
 
 This is not really an issue for a small sites with a few images and JavaScripts, 
-but when it starts taking upwards of half an hour to roll out a small time critical patch you know somethings gotta give!
+but when it starts taking upwards of half an hour to roll out a small or time critical patch you know somethings gotta give!
 
-Some people store compiled assets using `git` in either the master or a separate repository, but that's really overkill and a completely unnecessary step. The most efficient way is just to use Capistrano's `run_locally` command compile assets locally and then `rsync` them to the remote server.
+Some people store compiled assets using `git` in either the master or a separate repository, but that's kind of overkill and it also introduces an extra step. The most efficient way is just to use Capistrano's `run_locally` command to compile assets on the local machine and then `rsync` them to the remote server.
 
-The following Capistrano script is what we currently use on a Rails 3.2 site, but it should work with other Rails versions too.
-Stick the following task somewhere in your `deploy.rb`:
+The following Capistrano script is what we currently use on a Rails 3.2 site, but it should work with other Rails versions too. Stick the following task somewhere in your `deploy.rb`:
 
 ~~~ ruby
 namespace :deploy do
@@ -41,8 +40,7 @@ Just add the `cwRsync/bin` folder to your system path and everything will be pea
 {: .panel .callout .radius}
 
 To make sure assets are compiles we need to call `deploy:assets:precompile` after each deployment. 
-The order in which the task is called is no so critical since Rails will be compiling assets from the local repository, 
-but I do prefer to call it after everything else is complete just in case anything else fails so we won't have run a costly task for nothing.
+The order in which the task is called is no so critical here since Rails will be compiling assets from the local repository, but just in case anything else fails it would be best to call it after other tasks so we won't have run a costly task for nothing.
 
 A good time to run the task is after `deploy:finalize_update` like so:
 

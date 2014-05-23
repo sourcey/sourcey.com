@@ -9,15 +9,15 @@ layout: article
 
 # Password Free Signup and Authentication
 
-Signup and authentication is a vital part of the user experience since it is probably the first interaction a customer has with your product or service. Let's face it, reentering your information each time you signup for a new service gets to be a real pain the the butt, so anything we can do to reduce the déjà vu is a good thing.
+Signup and authentication is a vital part of the user experience since it is one of the very first interactions a customer will have with your product or service. Let's face it, reentering your information each time you signup for a new service gets to be a real pain the the butt, so anything we can do to reduce the déjà vu is a good thing.
 
-Anyone who is dabbled with web services will be familiar with the [OAuth](http://tools.ietf.org/html/rfc6749) specification. OAuth enables your customers to signup and login to your service with their existing third-party accounts such as Google, Facebook, Twitter etc. 
+Anyone who is dabbled with web services before will be familiar with the [OAuth](http://tools.ietf.org/html/rfc6749) specification. OAuth enables your customers to signup and login to your service using their existing third-party accounts such as Google, Facebook, Twitter etc. 
 
-In fact, with a good OAuth implementation you can remove the need for passwords and even the entire signup process completely. The beauty here is that your customers don't have to remember any pesky passwords, and there's one less security concern for the developer.
+In fact, with a good OAuth implementation you can remove the need for passwords and even the entire signup process completely. The beauty here is that your customers don't have to remember any pesky passwords, and there's no more password related security concerns for the developer.
 
 ## Choosing an OAuth Provider
 
-Choosing the right OAuth provider will come down to the nature of your product or service. Most big players in the industry provide OAuth APIs, so onless you are just looking for social login convenience, your decision will probably hinge on the other services offered by the provider.
+Choosing the right OAuth provider will come down to the nature of your product or service. Most big players in the industry provide OAuth APIs, so unless you are just looking for social login convenience, your decision will probably hinge on the community or other services offered by the provider.
 
 ### Facebook
 
@@ -39,7 +39,7 @@ Twitter is good, but I would only recommend it when creating applications that i
 
 The social network for professionals is good when building services for web professionals. LinkedIn traffic is considered to be higher quality and have [higher conversions](http://blog.hubspot.com/blog/tabid/6307/bid/30030/LinkedIn-277-More-Effective-for-Lead-Generation-Than-Facebook-Twitter-New-Data.aspx) compared to other networks. Again it depends on your niche.
 
-Personally, I'm not a great fan of LinkedIn. I find their pushy business model and dated interface detract from the experience and drive me to interact elsewhere.
+Personally, I'm not a great fan of LinkedIn. I find their pushy business model and dated user interface leave very little to get excited about.
 
 ## Going All The Way
 

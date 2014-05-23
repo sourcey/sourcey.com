@@ -7,6 +7,7 @@ gem "middleman-blog", "~> 3.5.2"
 gem "middleman-livereload", "~> 3.1.0"
 gem "middleman-syntax"
 gem "middleman-minify-html"
+gem "middleman-smusher"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

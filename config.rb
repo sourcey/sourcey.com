@@ -19,7 +19,7 @@ def setup_summary_generator(
       summary = TruncateHTML.truncate_html(rendered, length, ellipsis)
       # Add a read more-link if  the original text was longer then the summary...
       unless summary.strip == rendered.strip  
-        summary = summary + " " + link_to(readmore_text, resource)
+        summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
       end
       summary = "<p>" + summary + "<p>"
       summary    # return
@@ -175,10 +175,9 @@ ready do
   sprockets.import_asset 'foundation-icon-fonts/foundation-icons.woff'
 end
 
-#set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 #set :markdown_engine, :redcarpet
 set :markdown_engine, :kramdown
-
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 
 # Development-specific configuration
 configure :development do  
@@ -198,6 +197,12 @@ configure :build do
   
   # Minify HTML on build
   activate :minify_html
+
+  # Optimize images on build
+  activate :smusher
+
+  # Gzip images and scripts
+  activate :gzip
 
   # Enable cache buster
   # activate :asset_hash

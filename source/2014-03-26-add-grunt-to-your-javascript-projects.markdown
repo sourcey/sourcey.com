@@ -1,7 +1,7 @@
 ---
 title: Add Grunt To Your JavaScript Projects
 date: 2014-03-26 05:43:37
-tags: automation, grunt, javascript, programming
+tags: automation, grunt, javascript
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
@@ -26,7 +26,9 @@ my-project
 
 First things first, install Grunt:
 
-~~~ npm install grunt-cli~~~ 
+~~~ 
+npm install grunt-cli
+~~~ 
 
 Create a `package.json` file in your root folder using this file as a template:
 
@@ -90,7 +92,7 @@ module.exports = function (grunt) {
 };
 ~~~ 
 
-This simple `Gruntfile` tells Grunt to combine and minify the CSS and JS files from the `src/` folder, and save the result to the `dist/` folder.
+This simple `Gruntfile` tells Grunt to combine and minify the CSS and JS files from the `src` folder, and save the result to the `dist` folder.
 
 Notice that we also included the watch plugin, which tells Grunt us to watch the filesystem in real-time for changes to your source files, and updates the distribution files automatically. Nice!
 
