@@ -19,7 +19,8 @@ Optional Dependencies
 : FFmpeg, OpenCV, WebRTC, OpenSSL (> 1.0.1g), RtAudio, JsonCpp
 {: .status}
   
-![LibSourcey Logo](libsourcey-logo-120.png "LibSourcey Logo"){: .align-left} LibSourcey is a collection of open source cross platform C++11 modules and classes which provide developers with a flexible high performance arsenal for the rapid development of real-time messaging and live media streaming applications. 
+![LibSourcey Logo](logos/libsourcey-120x120.png "LibSourcey Logo"){: .align-left}
+LibSourcey is a collection of open source cross platform C++11 modules and classes which provide developers with a flexible high performance arsenal for the rapid development of real-time messaging and live media streaming applications.
 
 LibSourcey was been used in private production by Sourcey since 2005, and was open sourced in 2013 under the LGPL licence to promote development of real-time native and web applications.
 

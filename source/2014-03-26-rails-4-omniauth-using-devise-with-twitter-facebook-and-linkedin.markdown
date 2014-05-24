@@ -9,7 +9,7 @@ layout: article
 
 # Rails 4 OmniAuth using Devise with Twitter, Facebook and Linkedin
 
-![OmniAuth](/rails-4-omniauth-using-devise-with-twitter-facebook-and-linkedin/omniauth.png "OmniAuth")
+![OmniAuth](logos/omniauth-522x159.png "OmniAuth")
 
 There are quite a few OAuth solutions out there, but I want to share the one we use since it allows you to intelligently link multiple OAuth identities with a single user entity. If you use 90% of the code examples on the internet you will wind up with a new user entity each time the user signs in with a different OAuth provider, and a bunch of very confused users.
 

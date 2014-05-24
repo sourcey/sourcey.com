@@ -8,6 +8,7 @@ layout: article
 ---
 # LibSourcey PacketStream API
 
+![LibSourcey Logo](logos/libsourcey-120x120.png "LibSourcey Logo"){: .align-left}
 Every C++ programmer understands that taming and writing elegant code for complex C++ applications is no easy task. Herb Sutter himself said that C++ gives you just enough rope to hang yourself, which is a great insight into the power and nuances of the language - and if it were true, then C++ would take many lifetimes to master! C++11 brings us a little closer, but of course the real implementation is left to the programmer.
 
 One particular class that's used extensively throughout LibSourcey to simplify data processing is the `PacketStream`. The `PacketStream` acts as a delegate chain for any class that handles and emits the `IPacket` type, allowing any processor to dynamically plug into the stream and preform arbitrary processing on packets as they are passed down the stream.

@@ -16,7 +16,7 @@ Licence
 : LGPL, <a href="/licence">Pro Licence</a>
 {: .status}
  
-![Symple Logo](symple-logo-120.png "Symple Logo"){: .align-left} Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for fast real-time communication between native desktop and browser applications.
+![Symple Logo](logos/symple-120x120.png "Symple Logo"){: .align-left} Symple is a messaging, presence and remoting protocol with implementations in C++ and JavaScript for fast real-time communication between native desktop and browser applications.
 
 Symple is an unrestrictive peer messaging and presence protocol, as the name would suggest, it's a minimal and flexible protocol that is well suited to a "do-it-yourself" developer mentality.   
    

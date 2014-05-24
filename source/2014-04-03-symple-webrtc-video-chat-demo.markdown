@@ -9,6 +9,7 @@ layout: article
 
 # Symple WebRTC Video Chat Demo
 
+![Symple Logo](logos/symple-120x120.png "Symple Logo"){: .align-left} 
 For those of you that don't know about Symple yet, it's a lightweight messaging and presence protocol for communication between our native and browser based apps. Most of our work with Symple until this point has been with WebRTC native to browser applications, so I thought it would be nice to create a demo which showcases just how easy it is to use Symple for building WebRTC video conferencing and real-time messaging applications.
 
 Symple's client side libraries already implement most of what we need to build such an application; real-time messaging; user presence; WebRTC signalling; and HTML5 video embedding. If fact, due to the comprehensiveness of Symple, and the awesomeness of AngularJS, I was able to write the entire application in less than 100 of JavaScript.

@@ -17,7 +17,8 @@ Dependencies
 : LibSourcey (base, uv, net, json, http, archo)
 {: .status}
     
-![Pacm Logo](pacm-logo-120.png "Pacm Logo"){: .align-left} Pacm is your solution for a simple C++ package manager that can be embedded or redistributed with native applications. Pacm is designed to make short work of the following tasks:
+![Pacm Logo](logos/pacm-120x120.png "Pacm Logo"){: .align-left}
+Pacm is your solution for a simple C++ package manager that can be embedded or redistributed with native applications. Pacm is designed to make short work of the following tasks:
 
 * Auto-Updates
 * Front-end Package Management

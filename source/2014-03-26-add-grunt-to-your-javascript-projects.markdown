@@ -6,13 +6,17 @@ author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
+
 # Add Grunt To Your JavaScript Projects
 
-If you write JavaScript libraries and you don't use <a href="http://gruntjs.com/" title="Grunt" target="_blank">Grunt</a> yet, you probably should! Grunt automates tasks like minifying CSS and JavaScript, and it is one of those wonderful simple pieces of software that makes a developers life so much easier and more productive.
+![Grunt](logos/grunt-400x400.png "Grunt"){: .align-left}
+If you write JavaScript libraries and you don't use <a href="http://gruntjs.com/" title="Grunt" target="_blank">Grunt</a> yet, you should check it out! Grunt is a task automater with loads of useful plugins for things like optimising images and minifying CSS and JavaScript. It's one of those indespensible yet simple pieces of software that makes a developers life much easier and more productive.
 
-Grunt is built using brilliant <a href="http://nodejs.org/" target="_blank">node.js</a> which is famous for bringing JavaScript to the server side, and the other reason I love node.js is because of it's underlying library, libuv, which we use for the high speed networking layer of <a href="http://sourcey.com/libsourcey/" title="LibSourcey">LibSourcey</a>.
+Grunt is built on top of <a href="http://nodejs.org/" target="_blank">node.js</a>, which is famous for bringing JavaScript to the server side. The other reason node.js is great, is because it's underlying library, libuv, is also the high speed networking layer for our very own <a href="http://sourcey.com/libsourcey/" title="LibSourcey">LibSourcey</a>.
 
-I recently incorporated Grunt into <a href="http://sourcey.com/mesh/" title="Mesh" target="_blank">Mesh</a> and <a href="http://sourcey.com/symple/" title="Symple" target="_blank">Symple</a>, and this guide shows how you can do the same. 
+I recently added Grunt to <a href="http://sourcey.com/mesh/" title="Mesh" target="_blank">Mesh</a> and <a href="http://sourcey.com/symple/" title="Symple" target="_blank">Symple</a>, and this guide shows how you can do the same. Feel the grunt baby!
+
+## Setup Your Project
 
 Lets say you have a basic project layout like so:
 
@@ -99,7 +103,7 @@ Notice that we also included the watch plugin, which tells Grunt us to watch the
 In order to start the watcher execute the following command from the source directory:
 
 ~~~ 
-$ grunt watch
+grunt watch
 ~~~ 
 
 Didn't I tell you it was easy? Now go forth and create :)

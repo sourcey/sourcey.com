@@ -9,7 +9,7 @@ layout: article
 
 # Migrating from Wordpress to Middleman
 
-![Middleman](/migrating-from-wordpress-to-middleman/middleman.png "Middleman")
+![Middleman](logos/middleman-770x258.png "Middleman")
 
 Today I decided to take the plunge and convert Sourcey into a static website. Sourcey has been running on Wordpress for the better part of year now, and while Wordpress was the duck's nuts way back then, today's static website generators just have so much to offer.
 

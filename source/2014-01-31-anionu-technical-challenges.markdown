@@ -7,6 +7,8 @@ author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 # Anionu Technical Challenges
+
+![Anionu Logo](logos/anionu-133x110.png "Anionu Logo"){: .align-left}
 The purpose of this post is to share, and sometimes rant, about the technical challenges that we faced and overcame while developing Anionu.
 
 ## State of the Industry    

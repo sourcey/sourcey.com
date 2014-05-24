@@ -17,7 +17,8 @@ Dependencies
 : Some modules depend on JQuery
 {: .status}
   
-![Mesh Logo](mesh-logo-120.png "Mesh Logo"){: .align-left} Mesh is a modular CSS3 layout framework designed for building web sites that take advantage of the latest CSS3 and HTML5 capabilities while still providing fallback support for older browsers.
+![Mesh Logo](logos/mesh-120x120.png "Mesh Logo"){: .align-left}
+Mesh is a modular CSS3 layout framework designed for building web sites that take advantage of the latest CSS3 and HTML5 capabilities while still providing fallback support for older browsers.
 
 Mesh consists of a number of separate modules which may be optionally included in your projects:    
     

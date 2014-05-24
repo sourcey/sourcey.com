@@ -9,7 +9,7 @@ layout: article
 
 # Precompiling Assets for Large Rails Deployments with Capistrano
 
-![Capistrano](/precompiling-assets-for-large-rails-deployments-with-capistrano/capistrano.png "Capistrano")
+![Capistrano](logos/capistrano-600x228.png "Capistrano")
 
 If you've ever had to deploy a large Rails site using Capistrano, 
 then you're probably aware of how time consuming it is to precompile the assets pipeline on the server-side.

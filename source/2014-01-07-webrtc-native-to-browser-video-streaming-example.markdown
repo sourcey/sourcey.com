@@ -8,6 +8,7 @@ layout: article
 ---
 # WebRTC Native C++ to Browser Video Streaming Example
 
+![WebRTC](logos/webrtc-250x250.png "WebRTC"){: .align-left}
 There is a lot of information out there about browser to browser WebRTC streaming, but surprisingly there is not much coverage on how to stream video from a native application to the browser. Hopefully this example will be of some use to those of you out there who are looking to use WebRTC in native applications.
 
 We have repackaged the `peerconnection_client` and `peerconnection_server` projects from the WebRTC repository with a few modifications, and included a `native-to-browser-test.html` page which you can use to view the native video stream in your browser.

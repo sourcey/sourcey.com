@@ -9,8 +9,7 @@ layout: article
 
 # Password Free Signup and Authentication with OAuth
 
-![OAuth](/password-free-signup-and-authentication-with-oauth/oauth.png "OAuth"){: .align-left}
-
+![OAuth](logos/oauth-278x279.png "OAuth"){: .align-left}
 Signup and authentication is a vital part of the user experience since it is one of the very first interactions a customer will have with your product or service. Let's face it, reentering your information each time you signup for a new service gets to be a real pain the the butt, so anything we can do to reduce the déjà vu is a good thing.
 
 Anyone who is dabbled with web services before will be familiar with the [OAuth](http://tools.ietf.org/html/rfc6749) specification. OAuth enables your customers to signup and login to your service using their existing third-party accounts such as Google, Facebook, Twitter etc. 
@@ -23,26 +22,26 @@ Choosing the right OAuth provider will come down to the nature of your product o
 
 ### Facebook
 
-![Facebook](/password-free-signup-and-authentication-with-oauth/facebook.png "Facebook"){: .align-right .width-100}
+![Facebook](logos/facebook-325x325.png "Facebook"){: .align-right .width-100}
 The largest social network in the world is not surprisingly the [favourite OAuth provider](http://techcrunch.com/2013/04/08/report-46-of-social-login-users-still-choose-facebook-but-google-is-quickly-gaining-ground/) for many users. Facebook has a very well rounded API and developer SDK. One of the more powerful features is the [FQL](https://developers.facebook.com/docs/reference/fql/) language which enables you to query almost any social metadata on Facebook.
 
 One gotcha to be aware of when using the JavaScript SDK is the "channelUrl" parameter. Without it set the SDK is **ridiculously** slow, so be sure that it points to a valid file on your server.
 
 ### Google
 
-![Google](/password-free-signup-and-authentication-with-oauth/google-plus.png "Google"){: .align-right .width-100}
+![Google](logos/google-plus-200x200.png "Google"){: .align-right .width-100}
 Probably the best IMO, especially for professional services. Google is a close second behind Facebook with regards to user adoption, and is ever increasing in popularity. Every professional on the Internet has a Google account, and there's a good chance they already use GMail and other Google services regularly. 
 
 The real advantage of using Google however, is their [developer services](https://developers.google.com/products/). You can integrate your applications with Cloud Storage, Google Drive, YouTube, GMail and more, and it works seamlessly if your customers login with Google OAuth. 
 
 ### Twitter
 
-![Twitter](/password-free-signup-and-authentication-with-oauth/twitter.png "Twitter"){: .align-right .width-100}
+![Twitter](logos/twitter-1139x926.png "Twitter"){: .align-right .width-100}
 Twitter is good, but I would only recommend it when creating applications that integrate specifically with Twitter. The reason for this is that Twitter doesn't provide you with a valid user email address like the other providers do. As a developer this means implementing another step to get an email address from the user, which adds complexity and kind of defeats the purpose of using OAuth to begin with. 
 
 ### LinkedIn
 
-![LinkedIn](/password-free-signup-and-authentication-with-oauth/linkedin.png "LinkedIn"){: .align-right .width-100}
+![LinkedIn](logos/linkedin-320x283.png "LinkedIn"){: .align-right .width-100}
 The social network for professionals is good when building services for web professionals. LinkedIn traffic is considered to be higher quality and have [higher conversions](http://blog.hubspot.com/blog/tabid/6307/bid/30030/LinkedIn-277-More-Effective-for-Lead-Generation-Than-Facebook-Twitter-New-Data.aspx) compared to other networks. Again it depends on your niche.
 
 Personally, I'm not a great fan of LinkedIn. I find their pushy business model and dated user interface leave very little to get excited about.
