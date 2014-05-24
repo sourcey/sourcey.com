@@ -9,6 +9,8 @@ layout: article
 
 # Rails 4 OmniAuth using Devise with Twitter, Facebook and Linkedin
 
+![OmniAuth](/rails-4-omniauth-using-devise-with-twitter-facebook-and-linkedin/omniauth.png "OmniAuth")
+
 There are quite a few OAuth solutions out there, but I want to share the one we use since it allows you to intelligently link multiple OAuth identities with a single user entity. If you use 90% of the code examples on the internet you will wind up with a new user entity each time the user signs in with a different OAuth provider, and a bunch of very confused users.
 
 The OAuth provider that throws a spanner in the works and adds convolution to our code is Twitter. Twitter doesn't share their user's email address, so we need to add an extra step to get it from the user. Note that we do not ask Twitter users to "confirm" their email address, since they have already associated their Twitter account, and we don't want to be too much of a pain in the ass and remove all the joy from OAuth altogether.

@@ -25,6 +25,7 @@ If you've used any sort of chat application before then this should be super eas
 
 A full list of users will be displayed on the left hand sidebar when you're logged in. 
 
+![Symple WebRTC Video Chat Demo](/symple-webrtc-video-chat-demo/screenshot.png "Symple WebRTC Video Chat Demo")
 ### Video Chat
 
 This guide assumes you have two browser windows open, and you have logged in with both. We refer to the client making the call as the 'caller', and the person receiving the call as the 'callee'.

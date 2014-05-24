@@ -9,6 +9,8 @@ layout: article
 
 # Migrating from Wordpress to Middleman
 
+![Middleman](/migrating-from-wordpress-to-middleman/middleman.png "Middleman")
+
 Today I decided to take the plunge and convert Sourcey into a static website. Sourcey has been running on Wordpress for the better part of year now, and while Wordpress was the duck's nuts way back then, today's static website generators just have so much to offer.
 
 Static websites are all the rage, and with good reason too. Unless your blog is huge, or you have the need for managed administration (wp dkz ntz), there is really no need for dynamic scripting languages, right? There's something satisfying and geekishly appealing about a static website; one less thing to break, and one less security vulnerability to worry about. Geeks love optimising stuff, and when it comes to building websites, you just don't get any more optimised than static HTML. 

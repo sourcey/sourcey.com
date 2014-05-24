@@ -18,9 +18,9 @@ def setup_summary_generator(
       rendered = rendered.sub(%r{<h1 id=\".+\">.+</h1>}, '').gsub(%r{</?[^>]+?>}, '')
       summary = TruncateHTML.truncate_html(rendered, length, ellipsis)
       # Add a read more-link if  the original text was longer then the summary...
-      unless summary.strip == rendered.strip  
-        summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
-      end
+      #unless summary.strip == rendered.strip  
+      #  summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
+      #end
       summary = "<p>" + summary + "<p>"
       summary    # return
     else
@@ -177,7 +177,12 @@ end
 
 #set :markdown_engine, :redcarpet
 set :markdown_engine, :kramdown
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
+set :markdown, 
+  :tables => true, 
+  :autolink => true, 
+  :gh_blockcode => true, 
+  :fenced_code_blocks => true, 
+  :link_attributes => { "target" => "_blank" }
 
 # Development-specific configuration
 configure :development do  

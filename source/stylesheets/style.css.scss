@@ -396,6 +396,37 @@ body.index #projects a.budokin .icon {
   margin: 35px 0 15px;
 }
 
+#main img { 
+  display: block;
+  margin: 25px auto;
+  box-shadow: 0 1px 16px rgba(0,0,0,0.28);
+  border: 1px solid #666;
+  text-align: center;
+}
+
+#main img.align-left { 
+  display: inline-block;
+  float: left;
+  margin: 0 20px 5px 0;
+  max-width: 150px;
+  box-shadow: none;
+  border: none;
+}
+
+#main img.align-right { 
+  display: inline-block;
+  float: right;
+  margin: 0 0 5px 20px;
+  max-width: 150px;
+  box-shadow: none;
+  border: none;
+}
+
+
+#main img.width-100 {
+  width: 100px;
+}
+
 #main h3 { 
   color: #b00;
   font-size: 22px;

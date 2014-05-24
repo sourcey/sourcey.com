@@ -9,6 +9,8 @@ layout: article
 
 # Conquering the Internet
 
+![Miyamoto Musashi](/conquering-the-internet/miyamoto-musashi.jpg "Miyamoto Musashi")
+
 Everyone with an entrepreneurial spark is trying to claim their piece of Internet glory, yet only a small number will have any measure of success. 
 
 When a warlord conquers a country, he not only does so with supreme force of will, he does so with an army. Despite his brutality, the warlords also has a certain kind of honour. The Internet differs from the battlefield in this respect, because of the enormous potential for cloak and dagger. In this brave new world of Internet marketing, it's the Internet warrior who succeeds with honour and dignity who's the real victor.
