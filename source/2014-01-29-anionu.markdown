@@ -8,52 +8,129 @@ layout: page
 # Anionu
 
 ![Anionu Logo](logos/anionu-133x110.png "Anionu Logo"){: .align-left}
-In 2010, Sourcey acquired private funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a solution to both personal and property security which has the potential to change the industry. This document transparency addresses some key points regarding Anionu for both investors and customers.
+In 2010, Sourcey acquired funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a personal and professional security solution that has the potential to change the industry. This document addresses some key aspects of Anionu for both customers and investors.
 
 ## What is Anionu?
-Anionu, pronounced "an-eye-on-you", is a video surveillance web application for savy home owners, business owners and security companies. 
+
+Anionu, pronounced "an-eye-on-you", is a cloud-based video surveillance technology for home owners, business owners and savvy security companies. 
+
+## What makes the purpose of Anionu?
+
+Anionu aims to evolve the security and surveillance industry away from redundant DVR and CCTV technology, and towards readily available, rapidly advancing, mobile and PC technology.
+
+By bringing this technology to the devices people already own, anyone will be able to quickly, easily, and affordably set up a video surveillance system to protect their way of life. This will give consumers control over the market, thereby forcing the industry to change and grow.
+
+<!--
+ rather than the hardware manufacturers.
+ market will belong to 
+-->
 
 ## What makes Anionu unique?
-The concept of remote video surveillance has been around for a while, but finally there is a modern alternative that people can fall in love with. Anionu’s elegant and intuitive interface will be especially appealing to those who enjoy using Apple products and engaging social networking websites such as Facebook, Twitter and Google Plus.
+
+Anionu combines the best of both worlds: a browser-based web application and a native desktop application. This fusion streamlines the whole surveillance process, and enables us to provide for a unique and flexible video surveillance service there can be used anywhere there is a computer with cameras attached and Internet access.
+
+Another vital factor is forward-thinking focus and direction. Where most surveillance companies still dwell in a bygone era bound by the aging systems and hardware they service, Anionu makes use of modern Internet technologies such as HTML5, CSS3 and WebRTC to ensure the company continues to evolve into the future.
+
+Anionu has been built from the ground up by world-class developers with dedicated attention to detail. The user interface is designed to be easy to use for beginners, while providing plenty of advanced features for those that want them. Anionu also provides an [SDK](https://anionu.com/documents/sdk-overview) as well as a C++ and [REST API](https://anionu.com/documents/creating-spot-plugins) for developers, which can be used to customise and improve the service.
+
+<!--
+Anionu has been heavily influenced by the open source movement, and features 
+, and is designed to be easy to use for beginners, while providing plenty of advanced features for those that need them
+. The web application itself makes full use of modern Internet technologies such as HTML5, CSS3 and WebRTC
+, This is what will enable 
+In anything separates Anionu from the competition, it's
+
+
+The central browser-based application is used to remotely record and view video feeds generated from the video cameras attached to any computer with the native application installed.
+
+, and receive security notifications via SMS, email or Twitter. 
+
+Anionu makes use of modern Internet technologies such as HTML5, CSS3 and WebRTC to provide a unique and flexible surveillance service which can be used anywhere there is Internet access.
+
+
+browser based
+
+
+bly evident in the user interface which is both beautiful and practical at the same time.
+
+elegant and intuitive enough to allow 
+, and the results are evident in the streamlined 
+
+ who insist on the highest level of 
+
+	elegant user interface has
+
+and intuitive interface will be especially appealing to those who enjoy using Apple products and engaging social networking websites such as Facebook, Twitter and Google Plus.
+
+The concept of remote video surveillance has been around for a while, but finally there is a modern alternative that people can 
+understand. Anionu makes full use of the modern 
+
+ elegant and intuitive interface will be especially appealing to those who enjoy using Apple products and engaging social networking websites such as Facebook, Twitter and Google Plus.
 
 Anionu allows users to manage a global network of cameras in real-time from a central browser-based application, and receive security notifications via SMS, email or Twitter. 
 
-The web application makes full use of modern internet technologies such as HTML5, CSS3 and WebRTC, and is designed to be easy to use for beginners, while providing plenty of advanced features for advanced users. 
+The web application makes full use of modern internet technologies such as HTML5, CSS3 and WebRTC, and is designed to be easy to use for beginners, while providing plenty of advanced features for those that want them. 
 
-Anionu has been heavily influenced by the open source movement, and features a full developer SDK with C++ and REST APIs for developers to improve and customize the service.
+-->
 
 ## What is the customer need, and what problems does it solve?
-People want to know their loved ones and assets are protected, wherever they may be in the world. Anionu is providing peace of mind and a practical solution to an essential human need by bringing this technology to people in a way that easily adoptable, flexible and understandable.
 
+People have the right to know their loved ones and assets are protected, wherever they may be in the world. Anionu is providing peace of mind by bringing this technology to people in a way that's easily adoptable, flexible and understandable, and a practical solution to an essential human need.
+
+<!--
 ## What is the solution and value proposition?
+
 Anionu helps you to protect the people, places and things you care about using your existing computer and mobile phone technology.
 
 Anionu is making video surveillance a viable option for every home and business owner by effectively removing the need for expensive and bulky DVR and CCTV technology.
+-->
 
 ## What are the risks, and how are they addressed?
-The main risks for Anionu lie in scalability, cloud security, and QoS for international customers. 
+
+The main risks lie in scalability, cloud security, and QoS for international customers. 
 
 ### Scalability
-The main scalability provision is for our ICE deployments which host resource-heavy TURN and STUN servers necessary for WebRTC, as well as our own custom signalling video streaming engine, <a href="http://sourcey.com/symple" title="Messaging made Symple">Symple</a>.
 
-By using automated cloud instances we can dynamically scale and deploy on demand.
+The main scalability provision is for our ICE deployments which host resource-heavy TURN and STUN servers necessary for WebRTC, as well as the real-time communications and signalling engine, <a href="http://sourcey.com/symple" title="Messaging made Symple">Symple</a>.
 
-We build and maintain our own custom server architecture using <a href="http://sourcey.com/libsourcey" title="C++ Networking Evolved">LibSourcey</a> in order to better measure, control and monitor all aspects of our server deployments.
+Anionu's custom server architecture is built on <a href="http://sourcey.com/libsourcey" title="C++ Networking Evolved">LibSourcey</a>, which allows for improved management, control and measurement of all aspects of server deployment.
+
+By using automated cloud instances Anionu can be dynamically scaled and deployed on demand.
+
+Currently, any recorded videos and images that are stored online are stored on the customer's private Google Drive. As well as convenience, using Google Drive enables customers to save big on cloud storage costs, which are currently as low as $9.99 per terabyte.
 
 ### Cloud Security
-All user content such as surveillance footage and logs are stored off-site using Amazon S3. Best practices are employed for securing user passwords, which are encrypted with SHA-512 hash using bcrypt. All client requests to anionu.com use SSL encryption and CA verification to protect against man-in-the-middle attacks. Other measures such as enterprise level heuristics, firewalls, honeypots and DoS protection are used to protect and monitor servers.
+
+Anionu is now a [password free service](https://anionu.com/blog/google-integration), and all authentication is handled via Google OAuth2. This means that all a customer needs to signup and login is a Google account.
+
+Customers can choose to store recorded videos and images on their local computer, or online on their Google Drive. Online files are uploaded directly to Google Drive without even touching Anionu servers, so these files are subject to the Google Drive [TOS](http://www.google.com/intl/en/policies/terms/). Depending on customer demand, Anionu may well support other storage methods and third-party services in the future. 
+
+All client requests use SSL encryption and CA verification to protect against man-in-the-middle attacks. Other measures such as enterprise level heuristics, firewalls, honeypots and DoS protection are used to constantly monitor and protect all servers.
+
+<!--
+	to anionu.com, and any other third party service,
+	, and  which will prevent password
+enables a vastly superior
+By using Google Drive,
+Best practices are employed for securing user passwords, which are encrypted with SHA-512 hash using bcrypt. 
+such as surveillance footage and logs are stored off-site using Amazon S3
+-->
 
 ### Quality of Service
-In order for Anionu to provide reasonable quality of service for international customers, cloud infrastructure must be spread across multiple continents, initially focusing on presence in Australasia, the Americas and Asia.
+
+In order for Anionu to provide reasonable quality of service for international customers, cloud infrastructure must be spread across multiple continents, initially focusing on presence in Australasia, the Americas and then Asia.
 
 ## Could Anionu be copied by competitors?
+
 Anionu is more than just a “good idea” brought to life with a fancy homepage, it is the result of years of dedicated research and development into the field of video surveillance. This groundwork is evident in our fully featured web application and accompanying native desktop application, and strengthened by the C++ SDK, C++ Plugin API, REST API, and a growing open source code base which will enable developers to extend and interoperate with Anionu in new and creative ways.
 
 ## Can I invest in Anionu?
-Anionu is currently open to Angel investors who want to get in early to see this groundbreaking technology reach it's full global potential.
+
+Anionu is currently open to Angel investors who want to play a part in helping this groundbreaking technology to reach it's full global potential.
 
 ## Can I work at Anionu?
-Anionu will be hiring extra developers and support staff before going public. If you're interested in working at an amazing startup that supports creativity and innovation with new web technologies then send your resume to <a href="mailto:info@anionu.com">info@anionu.com</a>
+
+Anionu will be hiring extra developers and support staff before going public, so if you're interested in working at a startup that supports creativity and innovation with new technologies then send your resume to <a href="mailto:info@anionu.com">info@anionu.com</a>
 
 <center>
 <a href="https://anionu.com" class="action-button button radius">visit anionu</a>

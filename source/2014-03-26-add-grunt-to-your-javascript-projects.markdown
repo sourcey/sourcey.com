@@ -106,4 +106,4 @@ In order to start the watcher execute the following command from the source dire
 grunt watch
 ~~~ 
 
-Didn't I tell you it was easy? Now go forth and create :)
+Didn't I say it was easy? Now go forth and create :)

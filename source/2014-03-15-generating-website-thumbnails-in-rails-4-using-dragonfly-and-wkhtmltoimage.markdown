@@ -6,20 +6,23 @@ author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
+
 # Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 
-The other day I had a joyous time trying to get a new rails app to take thumbnail snapshots of remote websites for http://gardn.net... Actually I lied, it wasn't that fun, in fact it was a total pain in the ass - but you know how it is being a developer ;)
+I had a joyous time the other day trying to get a new rails app to take thumbnail snapshots of remote websites for [Gardn.net](http://gardn.net)... Actually I lied, it wasn't fun, in was a total pain in the ass - but you know how it is as a developer ;)
 
-There are a few third-party APIs out there, Bluga.net, Websnapr and ShrinkTheWeb to name a few, but they all cost money - and why pay for it when we can build it ourselves? Obviously the ideas solution is to generate our own thumbnails without having to rely on third party services.
+There are a few third-party services out there, Bluga.net, Websnapr and ShrinkTheWeb, but they all cost money - and why pay for it when we can build it for free?
 
-I ended up using a combination of <a href="https://github.com/markevans/dragonfly" target="_blank">Dragonfly</a> and <a href="http://wkhtmltopdf.org" target="_blank">wkhtmltoimage</a> to get the job done. The reason for these two tools is so we can use wkhtmltoimage to generate and store the full size screenshot it in a temporary location, then we pass the file to Dragonfly for processing and creating thumbnails. 
+I ended up using a combination of <a href="http://wkhtmltopdf.org" target="_blank">wkhtmltoimage</a> and <a href="https://github.com/markevans/dragonfly" target="_blank">Dragonfly</a> to make it work. Wkhtmltoimage is great because it does most of the work; it generates the image from the remote URL using a WebKit renderer, and stores the full size screenshot in a temporary location. Then the temp image file is assigned to the Dragonfly accessor, which processes it and creates our thumbnails on the fly. Carrierwave would be a good alternative to Dragonfly if you wanted to create the thumbnails right away, or defer processing to a background task.
 
-As you can see in the example below, I generate the URL and thumbnail inside a validator during the `after_save` callback. This way we can validate the domain, and if anything fails we know the domain or the connection is faulty, and we can say to the user, "well what's up with this dodgey URL?". There are more scalable way of handling this (using deferred or async processing), but it will server our purposes for now. Keep reading for the code...
+As you can see in the example below, everything happens inside a validator during the `after_save` callback. This way if wkhtmltoimage throws an error we we can say to the user, "well what's up with this dodgey URL?". For maximum scalability you would defer processing to a background task, but the tradeoff is you would be unable to preform real-time validation.
+
+Just drop the following code in your Rails model to make it work. Also make sure you have added Dragonfly to your `Gemfile`, and wkhtmltoimage is in your environment `PATH`.
 
 ~~~ ruby
 class MySexyModel < ActiveRecord::Base
 
-  ... stuff
+  ... rails stuff
 
   # Generate the thumbnail on validate so we can return errors on failure
   validate :generate_thumbnail_from_url
@@ -65,5 +68,8 @@ class MySexyModel < ActiveRecord::Base
 end
 ~~~ 
 
+Here's to keeping it simple! Hopefully this helped make your life more peachy...
+<!--
 As you can see it's pretty straight forward, and we didn't use any third party services whatsoever!
 Don't forget to show your love if this post made your life more peachy.
+-->

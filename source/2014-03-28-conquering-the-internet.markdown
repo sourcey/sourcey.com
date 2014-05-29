@@ -1,7 +1,7 @@
 ---
 title: Conquering the Internet
 date: 2014-03-28 15:02:16
-tags: marketing, philosophy, promotions, rants, seo
+tags: marketing, philosophy, rants, seo
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
@@ -13,9 +13,20 @@ layout: article
 
 Everyone with an entrepreneurial spark is trying to claim their piece of Internet glory, yet only a small number will have any measure of success. 
 
-When a warlord conquers a country, he not only does so with supreme force of will, he does so with an army. Despite his brutality, the warlords also has a certain kind of honour. The Internet differs from the battlefield in this respect, because of the enormous potential for cloak and dagger. In this brave new world of Internet marketing, it's the Internet warrior who succeeds with honour and dignity who's the real victor.
+Take, for example, the warlord. When a warlord conquers a country, he not only does so with supreme force of will, he does so with an army. Despite his brutality, the warlord's actions are for the most part, honourable, which is more than can be said for many modern day Internet warriors. The key difference between the Internet and the battlefield is anonymity, and hence the enormous potential for cloak and dagger.
+
+In this brave new world of Internet marketing, it's the outspoken Internet warrior who stands out from the crowd with passion and conviction who's the real victor.
+
 
 <!--
+ succeeds with honour and dignity who's the real victor.
+	also has a certain kind of honour.  
+, but in this brave new world of Internet marketing, it's the Internet warrior who succeeds with honour and dignity who's the real victor.
+
+
+When a warlord conquers a country, he not only does so with supreme force of will, he does so with an army. Despite his brutality, the warlords also has a certain kind of honour. The Internet differs from the battlefield in this respect, because of the enormous potential for cloak and dagger. In this brave new world of Internet marketing, it's the Internet warrior who succeeds with honour and dignity who's the real victor.
+
+
 To conquer the Internet is a dream held by many, yet its easy to forget what's important along the treacherous path to victory. 
 , and what you will have to give and take.
 
@@ -24,11 +35,50 @@ and build unrealistic expectations of success.
 
 ## Meditation
 
-When launching a new enterprise it's your entrepreneurial passion that will drive you, and delude you from the truth. This is why its important to calm and prepare your mind for what's coming before you setting out on your hero's journey. 
+Before setting out on any [new venture](http://en.wikipedia.org/wiki/Monomyth), it's vital you detach yourself from your quest and prepare your mind for what's coming. Only through focused meditation can you realise the calmness and clarity of mind necessary to view your venture with critical and honest objectivity.
+
+The state of mind achieved through proper meditation gives one a spatial frame of reference with which to view concepts and ideas, and iwithin this spatial awareness all lateral thought becomes possible. 
+
+Always attempt to break the constructs that bind your mind. In programming we have loops and scopes which serve to control and restrict the flow of data, and the mind works in much the same way. However, unlike programming, it's extremely difficult to understand the implications of our own patterning from behind the smokescreen, and far more difficult still to affect the kind of change necessary to shift the paradigm of consciousness with which we view reality.
+
+<!--pre-conceived consciously and unconsciously
+We are forever at the mercy of our own patterning, so the challenge is to 
+The challenge is to view our own patterning from behind the smokescreen, 
+and constantly shift the paradigm of consciousness towards the true nature of things. 
+
+
+The difference is it's much harder to see our own patterns 
+
+, yet 
+is it's much harder 
+	honest 
+Only a calm and clear mind is capable of viewing
+	It's vital that you can view a venture with honest and critical objectivity, 
+and can also steer you from the ideal path
+delude you from the truth. 
+ that will both your greatest 
+When engaging in a new enterprise, it's your 
+, 
+
+and view your goals with an objective and critical mind. Ask yourself the difficult questions, and if you can't be 100% honest, then find someone who will be.
 
 In the beginning it's important now to be blinded by entrepreneurial fervour, or loose sight of the reality of your choices. Make sure you know what you're getting yourself into, and that you're willing to accept the long term effects and responsibilities of your undertaking. 
 
-Take the time to detach yourself, and view your goals with an objective and critical mind. Ask yourself the difficult questions, and if you can't be 100% honest, then find someone who will be.
+, so ask the hard questions:
+Take care not to fall into the trap of saying "We'll think about that when we come to it", for that's the path to ruin! 
+but it can blind you to the tru nature of things 
+
+if you are blinded by it
+
+ of ruin
+, then it will steer you
+Take the time to detach yourself from your quest, and
+is both your friend and enemy. I
+-->
+
+Beware also of blind entrepreneurial passion, for although it will be the driving force of your success, if unchecked it will drive you from the path of reason straight into the abyss quicker than you can say "But I thought...". 
+
+During your meditations be sure to the hard questions:
 
 * Have I researched the market properly?
 * Do I have the manpower and resources?
@@ -36,29 +86,64 @@ Take the time to detach yourself, and view your goals with an objective and crit
 * Am I ready to spend the next few years doing this?
 * Have I spoken to the right people?
 
-In this world full by quick fix pop culture and black-hat morals, genuine quality has become something of a rarity. Stay true to your purpose, don't be guiled into believing the hollow promises and hype, and eventually you will cultivate a loyal and credible following. What's rare is also valuable, and even though your success won't be instantaneous, it will be well earned and rewarded. 
+In this world full by quick fix pop culture and black-hat morals, genuine quality has become something of a rarity. What's rare is also valuable, so stay true to your purpose and don't be guiled by the hollow promises and hype. Eventually you will prosper a real following, and though your success may not be be instantaneous, it will be well earned and rewarded. 
 
-## Building your Castle
+## Building Your Castle
 
-In the game of the Internet, you should first concentrate on building your castle, which your primary domain.
+Brace yourself, for this is often the most trying time for any venture, but also take heart in the knowledge that if done right then joyous times lay ahead. 
 
-Forget about the crappy minisites and backlink spam - shortcuts will get you killed. You are establishing an online economy and you don't want to spread yourself thin with too many towns and villages early on in the piece. Consolidate your resources, and focus on your primary domain.
+In the game of the Internet, you should first concentrate on building your castle. By castle, I am referring to your primary domain, which will be your primary real estate.
+
+Be sure not to spread yourself thin with too many towns and villages early on in the piece. Consolidate your resources and majestify your castle so that people will gather from far and wide to witness the spectacle. When your economy begins to flourish you will be able to direct the flow of trade as you like, and expansion will happen naturally. 
+
+<!--you will attract to join your cause and 
+	Just as when building an empire, you don't want 
+, so beg, borrow or steal to get to this point
+the people will soon hear about it and come from far and wide to gaze upon it's beauty. As the economy flourishes
+You are establishing an online economy and 
+Forget about the crappy minisites and backlink spam - shortcuts will get you killed. 
+, and focus on your primary domain.
+-->
 
 ## Rallying the Troops
 
-To consolidate your vision, you need to rally the troops. Working as a solopreneur is a tough gig - so why not make life easy on yourself? The Internet is a hive of people, and everyone is looking for something, so why not use it to connect with people! Check meetup.com for local meetups with people of similar interests. Talk about and develop your ideas with other people, and pretty soon your talent, conviction and passion will begin to attract an army.
+<!--
+![Karate at Shuri Castle c.1938](/conquering-the-internet/karate-castle-shuri.jpg "Karate at Shuri Castle c.1938")
+-->
+
+In order to realise your vision, you will need to rally elite troops to your side - unless of course you intend to be a one man army ie. a solopreneur and a total masochist. 
+
+The Internet is a hive of people, and everyone is looking for something, so be sure to understand the tools at your disposal and use them to connect with the right people. Check your local area for meetups, pitches and conferences. Remember also that no amount of well written emails can substitute being a pro-active member of a community. Some good places are Meetup, Facebook, and Github.
+
+Talk about your ideas with as many people as possible, raise the necessary funding, and pretty soon your passion and conviction will attract the army you need.
+
+A warlord rallies his troops with fear and promise of spoils untold, but as entrepreneurs we offer each other friendship and success.
+
+
+
+<!--
+and pretty soon your talent, conviction and passion will begin to attract an army.
+thing substitutes  sure you use 
+If your vision is yet
+To consolidate your vision, you will need to rally the troops. Working as a solopreneur is a tough gig - so why not make life easy on yourself? The Internet is a hive of people, and everyone is looking for something, so why not use it to connect with people! Check meetup.com for local meetups with people of similar interests. Talk about and develop your ideas with other people, and pretty soon your talent, conviction and passion will begin to attract an army.
 
 A warlord rallies his troops with fear and promise of spoils untold, but as entrepreneurs preffer to offer each other friendship and success.
 
 Some good places are Meetup, Facebook, Github - whatever floats your boat.
+-->
 
 ## Going to War
 
-On the Internet, the success is measured in terms of conversions, revenue and real estate. Total annihilation of the competition is just a bonus!
+![JungShan Samurai Painting](/conquering-the-internet/ink-samurai-jungshan.jpg "JungShan Samurai Painting")
+<!--
+![Samurai Battle](/conquering-the-internet/samurai-battle.jpg "Samurai Battle")
+-->
 
-Developing a sound Marketing Strategy and sticking to is key, as well as knowing how to use the Internet as a weapon.
+On the Internet success is measured in terms of conversions, revenue and real estate. Total annihilation of the competition is just a bonus.
 
-Without going into extreme detail, here are some factors to consider when educating yourself and planning your strategy.
+Developing a sound marketing strategy and sticking to is key, as well as knowing how to use the Internet as a weapon.
+
+Without going into extreme detail, here are some factors to consider when planning and implementing your strategy.
 
 ### Content
 
@@ -74,9 +159,11 @@ Using and understanding the right tools for the job will save you precious time.
 
 ### SEO
 
-Things are changing fast in the SEO world, so it's a good idea to stay informed about the latest SEO trends - just don't caught up in the hype.
+Things are changing fast in the SEO world, so it's a good idea to stay informed about the latest SEO trends without getting caught up in the hype.
 
-Spend time creating regular content and reputable backlinks, and be sure to optimize your site for page speed and cross platform devices. Educate yourself about static websites (Middleman, Jekyll), and responsive design (Bootstrap, Zerb Foundation), and use pretty URLs wherever possible.
+Spend some time creating regular content and reputable backlinks, and be sure to optimise your site for page speed and cross platform devices. Forget about the crappy minisites and backlink spam - shortcuts will get you killed. 
+
+Educate yourself about static websites if appropriate (Middleman, Jekyll), responsive design (Bootstrap, Zerb Foundation), and use pretty URLs wherever possible.
 
 ### Advertising
 
@@ -88,6 +175,12 @@ You might also consider paid directories. DMOZ is free but hard to get in, and B
 
 ## Preparing for Victory
 
-The way one handles victory says a lot about the character of a person or business. You may be tempted by the bright lights and fat stacks, but in the end the greatest reward you can expect is to succeed while having a good time and conducting yourself with integrity.
+![Hokusai: The Great Wave of Kanagawa](/conquering-the-internet/hokusai-the-great-wave.jpg "Hokusai: The Great Wave of Kanagawa")
+<!--
+![Berserk Gatsu](/conquering-the-internet/berserk-guts.jpg "Berserk Gatsu")
+The victor has certain obligations, least of which is to set the standard for those to come. 
+-->
 
-The victor also has certain obligations, least of which is to set the standard for those to come. As your business grows, so must you. Be consistent with your training, meditation and relaxation, and free yourself from gloating and arrogant expression. Keep developing your mind and body so that your endeavours may continue to evolve alongside your abundant vision and creativity.
+The victor has certain obligations in the eyes of the many, and the way victory is handled says a lot for the character of a individual or business. It's easy to be overwhelmed by the bright lights and fat stacks, so try to free yourself from gloating and arrogant expression. The greatest reward is to succeed and grow rich while having a great time and conducting yourself with impeccable integrity.
+
+As your business grows, so must you. Be consistent with your training, meditation and relaxation, and keep developing your mind and body so that your endeavours may evolve alongside your vision of abundant creativity.

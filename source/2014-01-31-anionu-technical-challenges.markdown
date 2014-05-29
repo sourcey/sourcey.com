@@ -112,7 +112,7 @@ As it currently stands, the main options are:
   In order to afford the privilege of encoding in H.264 one is required to sell one's soul along with a substantial share of one's profits to MPEG-LA. No thanks.</dd>
 
 <dt>WebM</dt>
-<dd>Another options is Google's WebM codec. WebM combines the non-standardized VP8 video codec with Vorbis audio in a Matroska container.
+<dd>Another options is Google's WebM codec. WebM combines the non-standardised VP8 video codec with Vorbis audio in a Matroska container.
   Google is currently under fire over alleged breaches of other patented codecs. The future of WebM is still a bit uncertain at this stage.</dd>
 
 <dt>Theora</dt>
@@ -120,7 +120,7 @@ As it currently stands, the main options are:
   Quality is lacking compared to H.264, but apparently this is being attended to.</dd>
 </dl>
 
-Let's hope that the money grabbers who monopolize these codec patents can come to the outrageous realisation that a universally supported web media format is required before Internet video technology can move forward. We can always hope, right? Apologies for the accusational tone, but this issue costs startups hundreds of thousands, and a consensus really should have been reached years ago.
+Let's hope that the money grabbers who monopolise these codec patents can come to the outrageous realisation that a universally supported web media format is required before Internet video technology can move forward. We can always hope, right? Apologies for the accusational tone, but this issue costs startups hundreds of thousands, and a consensus really should have been reached years ago.
 
 As a result Anionu's Spot client only understands plain old MJPEG by default; other media formats are implemented via official plugins, which we provide.
 This enables Spot to record and stream just about any media format with the help of FFmpeg. If consumers want to enable other propriety media formats then they need to recompile the plugin and FFmpeg binaries. The source code for the official Media Plugin is available via the Anionu SDK repository.

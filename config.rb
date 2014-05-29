@@ -62,6 +62,9 @@ page "/sitemap.txt", :layout => false
 page "/archives"
 #page "/blog" # paginate blog in the furute
 
+ignore 'drafts/*'
+ignore 'bower_components/*'
+
 ###
 # Compass
 ###
