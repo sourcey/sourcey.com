@@ -1,13 +1,11 @@
 ---
 title: HTML5 Video is Finally Ready
 date: 2014-05-03
-tags: html5, video, streaming
+tags: HTML5, Video, Streaming
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-
-# HTML5 Video is Finally Ready
 
 Today I had a pleasant surprise when I was able to get a H.264/AVC encoded MP4 video to play on Chrome (*34.0.1847.131*), Firefox (*28.0*) and Safari (*5.1.7*) using the native HTML5 video element. I'm also told that Internet Explorer 11 works, and has apparently had partial support since [version 9](http://stackoverflow.com/questions/6944679/html5-mp4-video-does-not-play-in-ie9).
 

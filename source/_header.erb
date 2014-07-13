@@ -1,46 +1,6 @@
-  <nav class="top-bar" data-topbar="">
-    <div id="social">
-      <a href="https://plus.google.com/+SourceyDevel"><i class="fi-social-google-plus large"></i></a>
-      <a href="https://facebook.com/sourceydevel"><i class="fi-social-facebook large"></i></a>
-      <a href="https://twitter.com/sourceydevel"><i class="fi-social-twitter large"></i></a>
-      <a href="https://github.com/sourcey"><i class="fi-social-github large"></i></a>    
-    </div>
-      
-    <ul class="title-area">
-      <li class="name"></li>
-      <li class="toggle-topbar menu-icon"><a href="" class="left"><!--Menu--></a></li>
-    </ul>
-    
-    <section class="top-bar-section" style="left: 0%;">      
-      <ul class="left">
-        <li class="has-dropdown not-click"><%= link_to "Menu", "/" %>
-          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-            <li><label>Wicked</label></li>
-            <li class="has-dropdown not-click"><%= link_to "Projects", "/", fragment: "projects" %>
-              <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
-                <li><label>Projects</label></li>
-                <li><%= link_to "LibSourcey", "/libsourcey" %></li>
-                <li><%= link_to "Anionu", "/anionu" %></li>
-                <li><%= link_to "Symple", "/symple" %></li>
-                <li><%= link_to "Mesh", "/mesh" %></li>
-                <li><%= link_to "Pacm", "/pacm" %></li>
-              </ul>
-            </li>
-            <li class="divider"></li>
-            <li><%= link_to "Blog", "/", fragment: "blog" %></li>
-            <li><%= link_to "Archives", "/archives" %></li>
-            <li><%= link_to "Feed", "/feed.xml" %></li>
-            <li class="divider"></li>
-            <li><a href="mailto:hello@sourcey.com">Contact</a></li>
-          </ul>
-        </li>
-        <li class="divider"></li>
-      </ul>
-    </section></nav>
-    
-    <header id="header">
-      <h1 id="logo">
-        <%= link_to(image_tag("logos/sourcey-250x250.png", height: 150, width: 150, title: "Sourcey", alt: "Sourcey"), data.site.url, title: "Sourcey", rel: "home") %>
-      </h1>
-      <!--<h2 class="site-description">Open Source Developer Collective</h2>-->
-    </header>
+  <header id="header">
+    <h1 id="logo">
+      <%= link_to(image_tag("logos/sourcey-glow-250x250.png", height: 150, width: 150, title: "Sourcey", alt: "Sourcey"), data.site.url, title: "Sourcey", rel: "home") %>
+    </h1>
+    <!--<h2 class="site-description">Open Source Developer Collective</h2>-->
+  </header>

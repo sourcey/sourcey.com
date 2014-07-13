@@ -1,12 +1,11 @@
 ---
 title: LibSourcey Event-driven Networking with Libuv
 date: 2014-02-10 00:23:26
-tags: cpp, libsourcey, libuv, performance
+tags: Cpp, LibSourcey, Libuv, Performance
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# LibSourcey Event-driven Networking with Libuv
 
 ![LibSourcey Logo](logos/libsourcey-120x120.png "LibSourcey Logo"){: .align-left} 
 <a href="http://sourcey.com/libsourcey" title="C++ Networking Evolved" target="_blank">LibSourcey</a> began it's life built on the brilliant [Poco C++ libraries](http://pocoproject.org/), but once we began developing mission critical server-side code like our <a href="https://tools.ietf.org/html/rfc5245" title="Interactive Connectivity Establishment" target="_blank">ICE </a>stack (TURN/STUN server), HTTP server and <a href="http://sourcey.com/symple" title="Messaging Made Symple" target="_blank">Symple</a> messaging, the old multi-thread design just wouldn't cut it.

@@ -5,7 +5,13 @@ tags:
 layout: page
 ---
 
-# Pacm
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 Repository
 : [https://github.com/sourcey/pacm](https://github.com/sourcey/pacm)

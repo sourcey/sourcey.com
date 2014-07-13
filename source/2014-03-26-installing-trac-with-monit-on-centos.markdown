@@ -1,12 +1,11 @@
 ---
 title: Installing Trac with Monit on CentOS
 date: 2014-03-26 01:59:26
-tags: centos, monit, programming, python, trac
+tags: Linux, Programming
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# Installing Trac with Monit on CentOS
 
 We just finished installing Trac for Sourcey and thought we would share the process with others. Make sure you are logged in as `root` and let the fun begin!
 

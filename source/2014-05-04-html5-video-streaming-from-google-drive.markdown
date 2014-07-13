@@ -1,15 +1,13 @@
 ---
 title: HTML5 Video Streaming from Google Drive
 date: 2014-05-04
-tags: google, drive, html5, video, streaming
+tags: Google, HTML5, Video, Streaming
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
 ![Google Drive](logos/google-drive-704x344.png "Google Drive")
-
-# HTML5 Video Streaming from Google Drive
 
 If you made it here, then you're probably wondering weather or not Google Drive is a viable option for hosting streamable videos? Well, the answer is yes!
 

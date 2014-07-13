@@ -1,12 +1,11 @@
 ---
 title: Twitter Follow Unfollow Retweeter Ruby Bot
 date: 2014-01-26 04:34:22
-tags: ausca, bot, gem, programming, ruby, twitter
+tags: Ausca, Twitter, Automation, Programming, Code, Ruby
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# Twitter Follow Unfollow Retweeter Ruby Bot
 
 ![Twitter](logos/twitter-1139x926.png "Twitter"){: .align-left}
 Let me start by saying that I don't condone the automation of social interaction... but we don't always take our own best advice do we? The other day I was playing with the Twitter API and I decided to write a bot as an anti-social experiment :)

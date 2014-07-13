@@ -1,11 +1,17 @@
 ---
 title: Anionu
 date: 2014-01-29 01:09:06
-tags: surveillance, cloud, security
+tags: Anionu, Cloud, Surveillance, Security
 layout: page
 ---
 
-# Anionu
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 ![Anionu Logo](logos/anionu-133x110.png "Anionu Logo"){: .align-left}
 In 2010, Sourcey acquired funding to build a surveillance system for the new generation of Internet technology. Today, Anionu is a personal and professional security solution that has the potential to change the industry. This document addresses some key aspects of Anionu for both customers and investors.
@@ -14,7 +20,7 @@ In 2010, Sourcey acquired funding to build a surveillance system for the new gen
 
 Anionu, pronounced "an-eye-on-you", is a cloud-based video surveillance technology for home owners, business owners and savvy security companies. 
 
-## What makes the purpose of Anionu?
+## What is the purpose of Anionu?
 
 Anionu aims to evolve the security and surveillance industry away from redundant DVR and CCTV technology, and towards readily available, rapidly advancing, mobile and PC technology.
 

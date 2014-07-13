@@ -15,7 +15,7 @@ def setup_summary_generator(
     require 'middleman-blog/truncate_html'
     
     if length
-      rendered = rendered.sub(%r{<h1 id=\".+\">.+</h1>}, '').gsub(%r{</?[^>]+?>}, '')
+      rendered = rendered.sub(/<div[^>]*>(.*)<\/div>/im, '').sub(%r{<h1 id=\".+\">.+</h1>}, '').gsub(%r{</?[^>]+?>}, '')
       summary = TruncateHTML.truncate_html(rendered, length, ellipsis)
       # Add a read more-link if  the original text was longer then the summary...
       #unless summary.strip == rendered.strip  
@@ -57,8 +57,8 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "/sitemap.xml", :layout => false  
-page "/sitemap.txt", :layout => false  
+page "/sitemap.xml", layout: false
+page "/sitemap.txt", layout: false
 page "/archives"
 #page "/blog" # paginate blog in the furute
 
@@ -153,6 +153,17 @@ helpers do
   def current_url
     protocol + host_with_port + current_page.url #image_path(source)
   end
+
+  def tag_list(resource)
+    l = '<ul>'
+    l += resource.data.tags.split(", ").collect{ |tag| "<li>#{link_to(tag, tag_path(tag))}</li>" }.join
+    l += '</ul>'
+    l
+  end
+
+  def tag_links(resource)
+    resource.data.tags.split(", ").collect{ |tag| link_to(tag, tag_path(tag)) }.join(", ")
+  end
 end
 
 # Add bower's directory to sprockets asset path
@@ -179,13 +190,30 @@ ready do
 end
 
 #set :markdown_engine, :redcarpet
+
+#set :markdown, 
+#  :quote => true,
+#  :tables => true, 
+#  :autolink => true, 
+#  :footnotes => true,
+#  :gh_blockcode => true, 
+#  :fenced_code_blocks => true, 
+#  :link_attributes => { "target" => "_blank" }
+
 set :markdown_engine, :kramdown
-set :markdown, 
-  :tables => true, 
-  :autolink => true, 
-  :gh_blockcode => true, 
-  :fenced_code_blocks => true, 
-  :link_attributes => { "target" => "_blank" }
+set :markdown,
+  parse_block_html: true, 
+  auto_id_prefix: '',
+  smart_quotes: ['lsquo', 'rsquo', 'ldquo', 'rdquo'],
+  toc_levels: [1, 2, 3, 4],
+  smartypants: true
+
+# apos,apos,quot,quot
+
+#set :kramdown, :parse_block_html => true
+#set :kramdown, :use_coderay => true
+#set :kramdown, :smart_quotes => true # => ["&ldquo;", "&rdquo;"]
+#  :smart_quotes => ["&ldquo;", "&rdquo;"],
 
 # Development-specific configuration
 configure :development do  

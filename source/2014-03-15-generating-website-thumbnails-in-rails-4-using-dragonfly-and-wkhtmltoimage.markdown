@@ -1,13 +1,11 @@
 ---
 title: Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 date: 2014-03-15 02:49:02
-tags: programming, rails, ruby, thumbnails
+tags: Programming, Rails, Ruby, Thumbnails
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-
-# Generating Website Thumbnails in Rails 4 using Dragonfly and wkhtmltoimage
 
 I had a joyous time the other day trying to get a new rails app to take thumbnail snapshots of remote websites for [Gardn.net](http://gardn.net)... Actually I lied, it wasn't fun, in was a total pain in the ass - but you know how it is as a developer ;)
 

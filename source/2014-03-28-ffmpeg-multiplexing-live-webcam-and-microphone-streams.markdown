@@ -1,12 +1,11 @@
 ---
 title: FFmpeg Multiplexing Live Webcam and Microphone Streams
 date: 2014-03-28 10:53:27
-tags: encoding, ffmpeg, programming
+tags: FFmpeg, Video, Programming, Code, CPP
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# FFmpeg Multiplexing Live Webcam and Microphone Streams
 
 The other day I had a tough time trying to get multiple FFmpeg codecs to behave consistently with live variable framerate stream sources, such as a microphone and a webcam. It didn't take too long before I realised that the encoder was not multiplexing properly when fed frames at irregular intervals, even when specifying the correct PTS (presentation timestamp). 
 

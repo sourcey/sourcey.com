@@ -1,12 +1,11 @@
 ---
 title: Pinterest API Pinit Button Callback Tracking
 date: 2014-03-16 09:23:33
-tags: api, pinterest, programming, rails
+tags: Pinterest, Programming, Rails, Code, API
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# Pinterest API Pinit Button Callback Tracking
 
 Unlike the Facebook and Twitter button APIs, the Pinterest button does not provide us with any callback tracking capabilities. So how do we verify that a user has completed a Pinit action? 
 

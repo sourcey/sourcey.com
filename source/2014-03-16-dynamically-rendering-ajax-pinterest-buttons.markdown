@@ -1,12 +1,11 @@
 ---
 title: Dynamically Rendering AJAX Pinterest Buttons
 date: 2014-03-16 04:02:53
-tags: api, javascript, pinterest, programming
+tags: Pinterest, Programming, Code, JavaScript, API
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article 
 ---
-# Dynamically Rendering AJAX Pinterest Buttons
 
 <a href="http://www.pinterest.com/sourcey/" title="Sourcey on Pinterest" target="_blank">Pinterest</a> is a pretty hot topic in Social Marketing right now. Their APIs and documentation are still quite underdeveloped, so over the course of my next few posts I will offering some up Pinterest hacking tips for developers.
 

@@ -1,12 +1,19 @@
 ---
 title: Anionu Technical Challenges
 date: 2014-01-31 00:24:36
-tags: css3, html5, programming, symple, web-development
+tags: Anionu, Programming, Symple, CSS3, HTMLl5
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# Anionu Technical Challenges
+
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 ![Anionu Logo](logos/anionu-133x110.png "Anionu Logo"){: .align-left}
 The purpose of this post is to share, and sometimes rant, about the technical challenges that we faced and overcame while developing Anionu.

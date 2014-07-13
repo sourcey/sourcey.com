@@ -22,6 +22,7 @@ end
 
 desc "build and deploy to github pages"
 task :publish do
+  # SSH_ASKPASS
   Rake::Task["build"].invoke
   Rake::Task["deploy"].invoke
 end

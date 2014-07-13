@@ -1,13 +1,19 @@
 ---
 title: Password Free Signup and Authentication with OAuth
 date: 2014-04-25
-tags: oauth, authentication, security
+tags: OAuth, Authentication, Security
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
-# Password Free Signup and Authentication with OAuth
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 ![OAuth](logos/oauth-278x279.png "OAuth"){: .align-left}
 Signup and authentication is a vital part of the user experience since it is one of the very first interactions a customer will have with your product or service. Let's face it, reentering your information each time you signup for a new service gets to be a real pain the the butt, so anything we can do to reduce the déjà vu is a good thing.

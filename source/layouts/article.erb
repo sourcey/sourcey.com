@@ -1,27 +1,79 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <%= partial "head" %>    
-  <body class="blog <%= page_classes %>">
+  <body class="article <%= page_classes %>">    
+    <%= partial "nav" %>  
+    <%= image_tag(current_article.data.banner, id: 'banner') if current_article.data.banner %>
     <%= partial "header" %>    
     <div id="main" role="main">
-      <div id="rotate-article">
-        <% if current_article.next_article %>
-          <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
-        <% end %>
-        <% if current_article.previous_article %>
-          <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
-        <% end %>
-      </div>
-      <%= yield %>    
-      <%= partial "social" %>      
-      <div class="meta">
-        Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by 
-        <% if current_article.data.author_site %>
-          <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
-        <% else %>
-          <%= current_article.data.author %>
-        <% end %>. Tagged: <%= current_article.tags.join(', ') %>.
-      </div>       
+      <% 
+        content = Nokogiri::HTML(yield)
+        sidebar_content = content.xpath("//div[contains(@class, 'sidebar-section')]").remove
+      %>
+      <article>
+        <header class="article-header">
+          <h1><%= current_article.data.title %></h1>   
+          <% if current_article.data.subtitle %>
+            <h2 class="subtitle"><%= current_article.data.subtitle %></h2>  
+          <% end %>     
+          <div class="meta">               
+              <% if current_article.data.author_site %>
+                By <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
+              <% else %>
+                By <%= current_article.data.author %> 
+              <% end %>
+            &diams;
+            <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> 
+            <!--
+            <br>
+            <%= current_article.tags.join(', ') %>
+            <div class="author">
+            </div>
+            <div class="tags">
+              Tagged: <%= current_article.tags.join(', ') %>.
+            </div>
+            -->
+          </div>
+        </header>	
+        <div class="article-wrap row">
+          <div class="large-9 columns">  
+            <div class="content">
+              <%= content %>  
+            </div>
+         </div>
+          <div class="large-3 columns">
+            <div class="sidebar">
+              <%= sidebar_content %>
+              <div class="sidebar-section tags">
+                <h4>Tags</h4>
+                <%= tag_list(current_article) %>
+              </div>
+            <!--
+                <%= current_article.data.tags.split(", ").collect{ |tag| link_to tag, '/tags/' + tag }.join(", ") %>
+            <div id="rotate-article">
+              <% if current_article.next_article %>
+                <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
+              <% end %>
+              <% if current_article.previous_article %>
+                <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
+              <% end %>
+            </div>
+            -->
+          </div>
+        </div>   
+        <%= partial "social" %>    
+        <!--  
+        <div class="meta">
+          Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by 
+          <% if current_article.data.author_site %>
+            <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
+          <% else %>
+            <%= current_article.data.author %>
+          <% end %>. Tagged: <%= current_article.tags.join(', ') %>.
+        </div>
+        -->
+      <article>
+	       
       <%= partial "comments" %>  
     </div>
     <%= partial "footer" %>

@@ -3,10 +3,9 @@ title: Initial commit!
 date: 2014-01-01 01:08:52
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
-tags: promotions
+tags: Promotions
 layout: article
 ---
-# Initial commit!
 
 Since 2005, the Sourcey collective has been developing code and design for private and freelance contracts, as well as our own projects.
 

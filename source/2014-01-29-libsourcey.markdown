@@ -4,7 +4,14 @@ date: 2014-01-29 00:45:47
 tags: 
 layout: page
 ---
-# LibSourcey
+
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 Repository
 : [https://github.com/sourcey/libsourcey](https://github.com/sourcey/libsourcey)
@@ -31,9 +38,9 @@ LibSourcey provides a simple and flexible method of capturing live audio/video s
 LibSourcey has full support for the following protocols: **TCP**, **SSL**, **UDP**, **HTTP**, **JSON**, **XML**, **STUN**, **SDP**, **SocketIO**. 
 Partial or non-standard support is implemented for the following protocols: **WebSockets**, **TURN**, **ICE**, **RTP**, and **XMPP**.
 
-<center>
-<a href="#install-libsourcey" class="action-button button radius" style="margin:20px auto;display:inline-block">install libsourcey</a>
-</center>
+
+[Install LibSourcey](#installation){: .action-button .button .radius}
+{: .center}
 
 ## Public Modules
 
@@ -80,6 +87,22 @@ UVPP is a set of C++ wrappers for Joyent's fantastic libuv library.
 ### JSON
 _dependencies:_ JsonCpp  
 Thin wrappers and helper functions for the JsonCpp library. 
+
+## External Modules
+
+The following LibSourcey modules are available in external repositories. 
+
+### Pacm
+_dependencies:_ libuv, JsonCpp  
+Pacm is an embeddable package manager which speaks JSON with the server. [More about Pacm](http://sourcey.com/pacm).
+
+### Paca
+_dependencies:_ libuv  
+Paca is simple cross platform C++ plugin system. [More about Paca](http://sourcey.com/paca).
+
+### Anionu SDK
+_dependencies:_ libuv, OpevCV
+The Anionu SDK includes a C++ API, tools, and client implementation for building [Spot](http://anionu.com/spot) plugins and applications that integrate with the [Anionu cloud surveillance serivice](https://anionu.com).
   
 ## Private Modules
 
@@ -107,19 +130,7 @@ Our XMPP module includes a client with full Jingle session support.
 This module has been neglected for a while now in favor of other projects. 
 Any bugfixes and improvements are welcome.  
 
-## External Modules
-
-The following LibSourcey modules are available in external repositories. 
-
-### Anionu SDK
-_dependencies:_ libuv, OpevCV
-The Anionu SDK includes a C++ API, tools, and client implementation for building [Spot](http://anionu.com/spot) plugins and applications that integrate with the [Anionu cloud surveillance serivice](https://anionu.com).
-
-### Pacm
-_dependencies:_ libuv, JsonCpp  
-Pacm is an embeddable package manager which speaks JSON with the server. [More about Pacm](http://sourcey.com/pacm).
-
-## Install LibSourcey
+## Installation
 
 Install Git
  : * _Windows users_: Install [TortoiseGit](http://code.google.com/p/tortoisegit/), a convenient git front-end, which integrates right into Windows Explorer. MinGW users can use [msysgit]( from <a class="external" href="http://code.google.com/p/msysgit/downloads/list"></a>).

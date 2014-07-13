@@ -1,13 +1,11 @@
 ---
 title: Darkly Pygments CSS Theme
 date: 2014-05-17
-tags: pygments, css, themes
+tags: Pygments, CSS, Themes
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-
-# Darkly Pygments CSS Theme
 
 Sourcey has no shortage of beautiful code, so it's about time we had some sexy syntax highlighting to match. 
 

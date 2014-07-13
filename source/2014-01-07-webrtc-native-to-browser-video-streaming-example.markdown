@@ -1,12 +1,11 @@
 ---
 title: WebRTC Native C++ to Browser Video Streaming Example
 date: 2014-01-07 07:17:48
-tags: c++, programming, webrtc
+tags: WebRTC, Programming, Code, CPP
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# WebRTC Native C++ to Browser Video Streaming Example
 
 ![WebRTC](logos/webrtc-250x250.png "WebRTC"){: .align-left}
 There is a lot of information out there about browser to browser WebRTC streaming, but surprisingly there is not much coverage on how to stream video from a native application to the browser. Hopefully this example will be of some use to those of you out there who are looking to use WebRTC in native applications.

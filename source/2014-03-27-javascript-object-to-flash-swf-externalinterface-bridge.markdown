@@ -1,14 +1,15 @@
 ---
 title: JavaScript Object to Flash SWF ExternalInterface Bridge
 date: 2014-03-27 08:54:36
-tags: flash, javascript, oop, programming, swf
+tags: Programming, Code, JavaScript, Flash
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# JavaScript Object to Flash SWF ExternalInterface Bridge
 
-Have you ever wanted to bind your ActionScript ExternalInterface callbacks to JavaScript object methods, rather than use free functions? We had need of this the other day when adding Flash video streaming to [Symple](/symple), so we came up with a simple solution that helped us reduce clutter and write better code.
+Have you ever wanted to bind your ActionScript ExternalInterface callbacks to JavaScript object methods, rather than use free functions? I've always found the lack of a member function callback solution quite frustrating since it causes me to write ugly static event handlers that break the flow of my code. The other day while adding Flash video streaming to [Symple](/symple) day I came up with a simple solution that is worth sharing. 
+
+The answer isn't rocket science, it's just a intermediary object registry which stores indexed delegate callbacks that can be called from Flash via a custom AS3 `ExternalInterface` wrapper.
 
 To get started include the `JFlashBridge` object somewhere in your JavaScript.
 
@@ -201,22 +202,22 @@ package
 			jsBridge.initialize();	
 		}
 		
-                // This is an internal callback that passes data to
-                // the JavaScript application
+        // This is an internal callback that passes data to
+        // the JavaScript application
 		private function onCallback(data:String):void 
 		{	
 			trace("MySWF: onCallback", data);	
 			jsBridge.call("onCallback", data);
 		}
 
-                // This method is bound to the ExternalInterface to 
-                // receive data from the JavaScript application
+        // This method is bound to the ExternalInterface to 
+        // receive data from the JavaScript application
 		private function someMethod(data:String):Object
 		{
 			trace("MySWF: someMethod", data);
-                        onCallback(data);
-                }
-        }		
+            onCallback(data);
+        }
+    }		
 }
 ~~~ 
 
@@ -275,3 +276,5 @@ obj.setup()
 // back via the onCallback method of the MyClass instance
 obj.someMethod("hello flash")
 ~~~ 
+
+Hope it helps!

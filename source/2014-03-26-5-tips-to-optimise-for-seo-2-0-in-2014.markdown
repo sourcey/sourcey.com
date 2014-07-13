@@ -1,12 +1,11 @@
 ---
 title: 5 Tips To Optimise for SEO 2.0 in 2014
 date: 2014-03-26 07:36:18
-tags: business, promotions, seo, strategy
+tags: Promotions, Business, SEO, Strategy
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# 5 Tips To Optimise for SEO 2.0 in 2014
 
 The phrase "Web 2.0" coined by Darcy DiNucci back in 1999 to describe web sites that use technology beyond the static pages of earlier web sites. In late 2004 the term was popularised by Tim O'Reilly at the O'Reilly Media Web 2.0 conference. Today, the changes to Google's algorithms have given rise to a new term in the SEO world; "SEO 2.0".
 

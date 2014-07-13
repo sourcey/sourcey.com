@@ -1,12 +1,11 @@
 ---
 title: Combining Multiple RSS Feeds
 date: 2014-03-26 03:58:20
-tags: ausca, programming, rss, ruby
+tags: Ausca, Programming, RSS, Ruby
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# Combining Multiple RSS Feeds
 
 The <a href="http://ausca.com/" title="Ausca Ruby Gem" target="_blank">Ausca ruby gem</a> features an RSS joiner module that can be used to combine multiple RSS feeds into a single RSS feed.
 

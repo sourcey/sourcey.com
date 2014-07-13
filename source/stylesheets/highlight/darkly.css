@@ -5,15 +5,16 @@
 */
 
 .highlight{
-  white-space: pre; 
   overflow: auto; 
-  word-wrap: normal; /* horizontal scrolling */
+  white-space: pre; 
+  word-wrap: normal;
+  padding: 20px; 
+  color: #C1C2C3;
+  display: block;
+  background: #343642;
   -moz-border-radius: 3px; 
   -webkit-border-radius: 3px; 
   border-radius: 3px;
-  padding: 20px; 
-  background:#343642;
-  color:#C1C2C3;
 }
 .highlight .hll{background-color:#ffc;}
 .highlight .gd{color:#2e3436;background-color:#0e1416;}
@@ -36,6 +37,7 @@
 .highlight .o{color:#989DAA;}
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi{color:#fff;}
 
+/*
 code {
   color: inherit;
   margin: 0;
@@ -53,3 +55,4 @@ code:after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
+*/

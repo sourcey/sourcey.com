@@ -5,7 +5,13 @@ tags:
 layout: page
 ---
 
-# Mesh
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 Repository
 : [https://github.com/sourcey/mesh](https://github.com/sourcey/mesh)
@@ -48,7 +54,7 @@ Geo
 : Our own implementation for GPS tracking using HTML5 geolocation.
    
 Hint
-: XCSS3 tooltip library.
+: CSS3 tooltip library.
    
 Hint
 : Cross-browser history implementation for HTML5 history with hashbang fallback.

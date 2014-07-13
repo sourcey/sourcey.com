@@ -1,12 +1,11 @@
 ---
 title: LibSourcey PacketStream API
 date: 2014-02-01 11:42:50
-tags: c++, libsourcey, packetstream, programming
+tags: CPP, LibSourcey, Programming, Code, Optimisation
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# LibSourcey PacketStream API
 
 ![LibSourcey Logo](logos/libsourcey-120x120.png "LibSourcey Logo"){: .align-left}
 Every C++ programmer understands that taming and writing elegant code for complex C++ applications is no easy task. Herb Sutter himself said that C++ gives you just enough rope to hang yourself, which is a great insight into the power and nuances of the language - and if it were true, then C++ would take many lifetimes to master! C++11 brings us a little closer, but of course the real implementation is left to the programmer.

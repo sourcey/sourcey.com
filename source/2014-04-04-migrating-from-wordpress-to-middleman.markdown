@@ -1,13 +1,20 @@
 ---
 title: Migrating from Wordpress to Middleman
 date: 2014-04-04 10:09:32
-tags: programming, symple, video, webrtc
+tags: Programming, Middleman
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
+image: logos/middleman-770x258.png
 layout: article
 ---
 
-# Migrating from Wordpress to Middleman
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 ![Middleman](logos/middleman-770x258.png "Middleman")
 

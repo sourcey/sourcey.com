@@ -1,0 +1,70 @@
+  <nav class="top-bar" data-topbar="">    
+    <div class="top-bar-inner">
+      <div id="social">
+        <a href="https://plus.google.com/+SourceyDevel"><i class="fi-social-google-plus large"></i></a>
+        <a href="https://facebook.com/sourceydevel"><i class="fi-social-facebook large"></i></a>
+        <a href="https://twitter.com/sourceydevel"><i class="fi-social-twitter large"></i></a>
+        <a href="https://github.com/sourcey"><i class="fi-social-github large"></i></a>    
+      </div>
+        
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="" class="left"><!--Menu--></a></li>
+      </ul>
+      
+      <section class="top-bar-section" style="left: 0%;">      
+        <ul class="left">
+          <li class="home"><%= link_to "Home", "/" %></li>
+          <li class="has-dropdown"><%= link_to "Projects", "/#projects" %>
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+              <!--<li><label>Projects</label></li>-->
+              <li>
+                <%= link_to "/libsourcey" do
+                  "<b>LibSourcey</b><small>C++ networking evolved</small>" 
+                end %>                
+              </li>
+              <li>
+                <%= link_to "/anionu" do
+                  "<b>Anionu</b><small>Cloud video surveillance</small>" 
+                end %>
+              </li>
+              <li>
+                <%= link_to "http://stompstart.com" do
+                  "<b>StompStart</b><small>Promote your startup</small>" 
+                end %>
+              </li>
+              <li>
+                <%= link_to "/symple" do
+                  "<b>Symple</b><small>Messaging made Symple</small>" 
+                end %>    
+              </li>
+              <li>
+                <%= link_to "/mesh" do
+                  "<b>Mesh</b><small>Elegant, modern design</small>" 
+                end %>    
+              </li>
+              <li>
+                <%= link_to "/pacm" do
+                  "<b>Pacm</b><small>Redistributable package manager</small>" 
+                end %>    
+              </li>
+              <li>
+                <%= link_to "/pluga" do
+                  "<b>Pluga</b><small>C++ plugin system</small>" 
+                end %>    
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><%= link_to "Articles", "/#articles" %>
+            <ul class="dropdown">
+              <li><%= link_to "Archives", "/archives" %></li>
+              <li><%= link_to "Feed", "/feed.xml" %></li>
+            </ul>
+          </li>
+          <li><%= link_to "Contact", "mailto:hello@sourcey.com" %></li>
+          <li class="divider"></li>
+        </ul>
+      </section>  
+    </div> 
+  </nav>
+    

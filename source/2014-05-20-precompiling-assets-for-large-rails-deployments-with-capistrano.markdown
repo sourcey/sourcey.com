@@ -1,13 +1,12 @@
 ---
 title: Precompiling Assets for Large Rails Deployments with Capistrano
 date: 2014-05-20
-tags: capistrano, rails, rsync
+tags: Capistrano, Rails, Productivity
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
+image: logos/capistrano-600x228.png
 layout: article
 ---
-
-# Precompiling Assets for Large Rails Deployments with Capistrano
 
 ![Capistrano](logos/capistrano-600x228.png "Capistrano")
 

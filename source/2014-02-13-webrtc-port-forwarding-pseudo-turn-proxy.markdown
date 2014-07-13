@@ -1,12 +1,11 @@
 ---
 title: WebRTC Port Forwarding Pseudo TURN Proxy
 date: 2014-02-13 04:00:41
-tags: ice, libsourcey, turn, webrtc
+tags: WebRTC, LibSourcey, ICE, TURN
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-# WebRTC Port Forwarding Pseudo TURN Proxy
 
 ![WebRTC](logos/webrtc-250x250.png "WebRTC"){: .align-left}
 One of the tricky things about releasing native WebRTC applications build with the current spec is that it's just not designed for use behind corporate firewalls. When the current WebRTC implementation creates a socket, it binds port 0. This means it's up to the operating system to select a port, any port from 0 to 65535! Good like trying to convince any self respecting sysadmin, or security conscious customer for that matter, to expose every UDP port on their network! The same issue exists with RTMFP, which requires that all outbound UDP ports > 1023 be open, which is also an instant deal-breaker for many.

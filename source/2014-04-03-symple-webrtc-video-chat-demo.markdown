@@ -1,13 +1,19 @@
 ---
 title: Symple WebRTC Video Chat Demo
 date: 2014-04-03 01:41:32
-tags: symple, webrtc, real-time, video, streaming, demo
+tags: WebRTC, Symple, Video, Streaming, Demo
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
-# Symple WebRTC Video Chat Demo
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
 
 ![Symple Logo](logos/symple-120x120.png "Symple Logo"){: .align-left} 
 For those of you that don't know about Symple yet, it's a lightweight messaging and presence protocol for communication between our native and browser based apps. Most of our work with Symple until this point has been with WebRTC native to browser applications, so I thought it would be nice to create a demo which showcases just how easy it is to use Symple for building WebRTC video conferencing and real-time messaging applications.

@@ -3,7 +3,6 @@ title: Licence
 date: 2014-01-29 06:15:57
 tags: 
 ---
-# Licence
 
 <center><p>We release most of our code as open source for the purpose of strengthening the open source initiative that benefits us so much. Software is not only our passion, it is also our bread and butter. If you intend on using our code, especially in closed source or commercial applications, then we can provide you with an "optional" professional licence which is obtained with a very resonable one time payment. </p>
 

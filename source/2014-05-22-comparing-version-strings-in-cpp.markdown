@@ -1,13 +1,11 @@
 ---
 title: Comparing Version Strings in C++
 date: 2014-05-22
-tags: code, cpp
+tags: Programming, Code, CPP
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
-
-# Comparing Version Strings in C++
 
 If you're building any kind of version management system in C++, such as a package manager or plugin system, then you'll need to be able to maniulate, compare and print version strings. The `Version` structure below is extracted from [pacm](/pacm), and does exactly that:
 

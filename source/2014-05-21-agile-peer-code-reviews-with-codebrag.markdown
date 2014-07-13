@@ -1,22 +1,28 @@
 ---
 title: Agile Peer Code Reviews with Codebrag
+subtitle: No More Late Friday Fixes
 date: 2014-05-21
-tags: code review
+tags: Programming, Productivity
 author: Mirek Woźniak
 author_site: https://plus.google.com/102767598909426690515/posts
 layout: article
 ---
 
-# Agile Peer Code Reviews with Codebrag
-<!-- No More Late Friday Fixes - Agile Peer Code Reviews with Codebrag -->
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
 
-![Codebrag](/agile-peer-code-reviews-with-codebrag/cbr-landing-snippet.png "Codebrag")
+* ToC
+{:toc}
+</div>
 
 It's Friday afternoon and you're sitting in the office, extinguishing the fire on the production server.
 You promise yourself that it won't happen again, not after tonight. But it happened in the past. And might happen in the future. 
 
 Well, we've been there. Experienced the frustration and tiredness of staying late and fixing bugs. That's why we've decided to do something about it.
 Enter [Codebrag](http://codebrag.com), the code review tool your team will actually use.
+
+![Codebrag](/agile-peer-code-reviews-with-codebrag/cbr-landing-snippet.png "Codebrag")
 
 ## Fun = Different?
 
