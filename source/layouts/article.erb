@@ -36,32 +36,47 @@
           </div>
         </header>	
         <div class="article-wrap row">
-          <div class="large-9 columns">  
+          <div class="large-8 columns">  
             <div class="content">
               <%= content %>  
             </div>
          </div>
-          <div class="large-3 columns">
+          <div class="large-4 columns">
             <div class="sidebar">
               <%= sidebar_content %>
               <div class="sidebar-section tags">
                 <h4>Tags</h4>
                 <%= tag_list(current_article) %>
               </div>
-            <!--
-                <%= current_article.data.tags.split(", ").collect{ |tag| link_to tag, '/tags/' + tag }.join(", ") %>
-            <div id="rotate-article">
-              <% if current_article.next_article %>
-                <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
-              <% end %>
-              <% if current_article.previous_article %>
-                <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
-              <% end %>
-            </div>
-            -->
+
+
+              <!--
+                  <%= current_article.data.tags.split(", ").collect{ |tag| link_to tag, '/tags/' + tag }.join(", ") %>
+              <div id="rotate-article">
+                <% if current_article.next_article %>
+                  <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
+                <% end %>
+                <% if current_article.previous_article %>
+                  <%= link_to '&larr; previous article', current_article.previous_article, { class: 'prev' } %>
+                <% end %>
+              </div>
+              -->
+
+              <div class="sidebar-section ad">
+                <h4>Advertisment</h4>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Sourcey (MRec) -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-1397369873900370"
+                     data-ad-slot="3472500885"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+
           </div>
         </div>   
-        <%= partial "social" %>    
         <!--  
         <div class="meta">
           Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by 
@@ -72,7 +87,23 @@
           <% end %>. Tagged: <%= current_article.tags.join(', ') %>.
         </div>
         -->
-      <article>
+      </article>
+
+      <%= partial "social" %>    
+
+      <div class="row text-center">
+        <div class="ad ad-720x90">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Sourcey (Leaderboard) -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:728px;height:90px"
+               data-ad-client="ca-pub-1397369873900370"
+               data-ad-slot="8042301285"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
 	       
       <%= partial "comments" %>  
     </div>

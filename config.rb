@@ -235,7 +235,7 @@ configure :build do
   activate :minify_html
 
   # Optimize images on build
-  activate :smusher
+  #activate :smusher
 
   # Gzip images and scripts
   activate :gzip

@@ -19,6 +19,7 @@ banner: /engineering-the-mind/xiao-feng-dmt-1024x680.jpg
 	- strengthening feedback loops and synapses through focused training.
 -->
 
+
 <div class="sidebar-section toc">
 #### Contents
 {:.no_toc}

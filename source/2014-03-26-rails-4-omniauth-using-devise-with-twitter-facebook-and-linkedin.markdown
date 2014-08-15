@@ -25,6 +25,8 @@ if a user registers with  in -->
 
 Thanks to everyone who submitted comments and changes! For a list of code changes [see here](#changes).
 
+A quick word of warning: This isn't a complete code example, it's a hackers guide to using OmniAuth in Rails the right way. If you're looking for a full fledged demo then there are plenty available on Github.
+
 ## Basic Implementation
 
 So, without further ado, here is the code:
@@ -60,9 +62,7 @@ class Identity < ActiveRecord::Base
   validates_uniqueness_of :uid, :scope => :provider
 
   def self.find_for_oauth(auth)
-    identity = find_by(provider: auth.provider, uid: auth.uid)
-    identity = create(uid: auth.uid, provider: auth.provider) if identity.nil?
-    identity
+    find_or_create_by(uid: auth.uid, provider: auth.provider)
   end
 end
 ~~~ 
@@ -83,18 +83,21 @@ end
 
 ~~~ ruby
 ...
+  # General Settings
+  config.app_domain = 'somedomain.com'
+
   # Email
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { :host => config.app_domain }
+  config.action_mailer.default_url_options = { host: config.app_domain }
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com', 
     port: '587',
     enable_starttls_auto: true,
     user_name: 'someuser',
     password: 'somepass',
-    authentication => :plain,
-    domain => 'somedomain.com'
+    authentication: :plain,
+    domain: 'somedomain.com'
   }
 ...
 ~~~ 
@@ -227,7 +230,7 @@ The next steps are optional to get an email address from Twitter users.
 
 ~~~ ruby
 ...
-  match '/profile/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
 ...
 ~~~ 
 
@@ -237,19 +240,56 @@ If you're using the Devise confirmable module to verify email signups, then you 
 
 ~~~ ruby
 class UsersController < ApplicationController
-  before_action :set_user, :finish_signup
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   ...
 
+  # GET /users/:id.:format
+  def show
+    # authorize! :read, @user
+  end
+
+  # GET /users/:id/edit
+  def edit
+    # authorize! :update, @user
+  end
+
+  # PATCH/PUT /users/:id.:format
+  def update
+    # authorize! :update, @user
+    respond_to do |format|
+      if @user.update(user_params)
+        sign_in(@user == current_user ? @user : current_user, :bypass => true)
+        format.html { redirect_to @user, notice: 'Your profile was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # GET/PATCH /users/:id/finish_signup
   def finish_signup
+    # authorize! :update, @user 
     if request.patch? && params[:user] #&& params[:user][:email]
-      if current_user.update(user_params)
-        current_user.skip_reconfirmation!
-        sign_in(current_user, :bypass => true)
-        redirect_to current_user, notice: 'Your profile was successfully updated.'
+      if @user.update(user_params)
+        @user.skip_reconfirmation!
+        sign_in(@user, :bypass => true)
+        redirect_to @user, notice: 'Your profile was successfully updated.'
       else
         @show_errors = true
       end
+    end
+  end
+
+  # DELETE /users/:id.:format
+  def destroy
+    # authorize! :delete, @user
+    @user.destroy
+    respond_to do |format|
+      format.html { redirect_to root_url }
+      format.json { head :no_content }
     end
   end
   
@@ -329,14 +369,16 @@ Well that's pretty much it! If I left anything out please give me a shout and I'
 
 ## Changes
 
-* Add `UsersController.set_user` method for clarity
-* Remove duplicate controller methods from `OmniauthCallbacksController`
+* Added `UsersController.set_user` method for clarity
+* Removed duplicate controller methods from `OmniauthCallbacksController`
 * Only accept verified email addresses from the provider via 'User.find_for_oauth'
-* Remove redundant `gem "omniauth"` from `Gemfile`
-* Update `User.find_for_oauth` to better handle `signed_in_resource`. Thanks [@mtuckerb](https://github.com/mtuckerb)
-* Rename `UsersController.add_email` to `UsersController.finish_signup`
-* Rename `ApplicationController.ensure_valid_email` to `ApplicationController.ensure_signup_complete`
+* Removed redundant `gem "omniauth"` from `Gemfile`
+* Updated `User.find_for_oauth` to better handle `signed_in_resource`. Thanks [@mtuckerb](https://github.com/mtuckerb)
+* Renamed `UsersController.add_email` to `UsersController.finish_signup`
+* Renamed `ApplicationController.ensure_valid_email` to `ApplicationController.ensure_signup_complete`
 * Override `OmniauthCallbacksController.after_sign_in_path_for` to redirect to `UsersController.finish_signup` instead of forcing via `before_filter` 
-* Add `UsersController.user_params` to filter `:password` and `:password_confirmation` when blank
+* Added `UsersController.user_params` to filter `:password` and `:password_confirmation` when blank
 * Temporary email addresses are now unique
 * `signed_in_resource` always overrides existing user entity in `User.find_for_oauth`
+* Simplified `Identity.find_for_oauth` method. Thanks Ahmed Mostafa
+* Posted a more complete `UsersController`.
