@@ -25,10 +25,6 @@
             &diams;
             <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> 
             <!--
-            <br>
-            <%= current_article.tags.join(', ') %>
-            <div class="author">
-            </div>
             <div class="tags">
               Tagged: <%= current_article.tags.join(', ') %>.
             </div>
@@ -48,10 +44,29 @@
                 <h4>Tags</h4>
                 <%= tag_list(current_article) %>
               </div>
+              <div class="sidebar-section ad ad-300x250 sidebar-float">
+                <!--<h4>Advertisment</h4>-->
+                <!-- Sourcey (Skyscraper) -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:600px"
+                     data-ad-client="ca-pub-1397369873900370"
+                     data-ad-slot="7510590887"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 
+                <!-- Sourcey (MRec)
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-1397369873900370"
+                     data-ad-slot="3472500885"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                -->
+              </div>
 
               <!--
-                  <%= current_article.data.tags.split(", ").collect{ |tag| link_to tag, '/tags/' + tag }.join(", ") %>
               <div id="rotate-article">
                 <% if current_article.next_article %>
                   <%= link_to 'next article &rarr;', current_article.next_article, { class: 'next' } %>
@@ -61,19 +76,6 @@
                 <% end %>
               </div>
               -->
-
-              <div class="sidebar-section ad">
-                <h4>Advertisment</h4>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Sourcey (MRec) -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:250px"
-                     data-ad-client="ca-pub-1397369873900370"
-                     data-ad-slot="3472500885"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-              </div>
 
           </div>
         </div>   
@@ -91,8 +93,8 @@
 
       <%= partial "social" %>    
 
-      <div class="row text-center">
-        <div class="ad ad-720x90">
+      <div class="row show-for-large-up">
+        <div class="ad ad-720x90 text-center">
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- Sourcey (Leaderboard) -->
           <ins class="adsbygoogle"

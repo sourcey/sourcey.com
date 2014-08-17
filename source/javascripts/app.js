@@ -5,34 +5,36 @@ $(document).ready(function() {
 
 $(window).load(function() { 
   var sidebar = $('body article .sidebar')
-  if (sidebar.length) {
+
+  // Bind the floating sidebar  
+  var sidebarFloat = $('body article .sidebar-float')
+  if (sidebarFloat.length) {
     var content = $('body article .content')
-    var topOffset = content.offset().top;
+    var topOffset = sidebarFloat.offset().top;
     var bottomLimit = content.height() + topOffset - sidebar.height();
     var isTop, isHidden = false;
 
-    // Bind the sidebar
     $(window).bind('scroll', function() {
       if ($(this).scrollTop() >= bottomLimit) {
-          sidebar.hide()
+          sidebarFloat.hide()
           isHidden = true;
       }
       else if ($(this).scrollTop() >= topOffset) {
           if (isHidden) {
               isHidden = false;
-              sidebar.show()
+              sidebarFloat.show()
           }
-          sidebar.addClass('float')
+          sidebarFloat.addClass('float')
           isTop = true;
       }
       else if (isTop) {
-          sidebar.removeClass('float')
+          sidebarFloat.removeClass('float')
           isTop = false;
       }
     });
   }
 
-  // Bind the tok
+  // Bind the toc
   var toc = $('.toc', sidebar)
   if (toc.length) {
     toc.find('h4').append('<a href="#top">&uArr;</a>')
