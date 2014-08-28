@@ -1,0 +1,8 @@
+Since working with large corporations I have become aware of a little concept called “broken by design”. Basically, it’s the practice of breaking or not fully implementing things for the purpose of; making money for future services rendered; misdirection; or to cover up deeper inconsistencies and issues with a workflow or codebase.
+
+The scope and nature of multi-layered corporations with millions of dollars constantly changing hands means that these practices are often overlooked, and even expected, because thats just the way things work in big business, right? Unfortunately, it’s the smaller client organisations and individuals who are the ones that get burned by these practices.
+
+Next time you notice something is inherently broken with no apparent reason, ask yourself why, and who stands to benefit. Perhaps it’s been “broken by design”.
+
+
+

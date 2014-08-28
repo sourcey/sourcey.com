@@ -1,0 +1,270 @@
+---
+title: Engineering the Mind
+subtitle: A Hackers Guide to Thinking the Unthinkable
+date: 2014-07-05
+tags: Psychology, Philosophy
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+image: /understanding-psychedelics/xiao-feng-lsd-1024x680.jpg
+banner: /understanding-psychedelics/xiao-feng-lsd-1024x680.jpg
+layout: article
+---
+<!--
+engineering-the-mind
+
+- read about mind hacking
+- storing information (improving memory)
+- STRENGTHEINING MIND AND BODY TOGETHER
+	- strengthening feedback loops and synapses through focused training.
+-->
+
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
+
+The mind is a tricky mistress, but it's our mistress, and with proper focused training it can be taught to function and create beyond our wildest dreams.
+
+Like most fields that push the boundaries of science, our knowledge is limited. We still don't know exactly 'how' the brain functions or stores information, but we do know how to program it to function at a higher level of efficiency. Within our skull resides an amazing super-computer; wouldn't it be a shame if it wasn't able to shine just because we didn't learn the proper commands?
+
+The mind and body that understands the underlying principles of nature, can apply them to great effect to learning, thinking and application. The education system hasn't done much for us in this regard, tending to cram our minds full of facts and figures, rather than teaching it about system, technique and strategy.
+
+It should be noted that I'm not a psychologist or a neuro-scientist, and as such my information will not be presented in the standard academic format. I'm just a humble self-made programmer and matrial artist who's spent the last 15 years developing my skills, and is now working with some of the top companies in the world.
+
+<!--
+The mind processes information visually in the language of forms and shapes[], but the perception and meaning of this language is governed by conscious and unconscious patterns. Physicists, alchemists, philosophers and mathematicians, and more, all attempt to explain nature by reducing it into more understandable and manageable data sets. The good news is you don't need a fancy degree, just strong will and a perceptive mind.
+-->
+
+### Paradoxical Thinking
+
+Paradoxical thinking is an important element of learning that challenges us to look beyond the bounds of what is considered rational and therefore 'valid'. Paradoxically, paradoxical arguments are generally considered to be 'invalid', but the value of the paradox lies not it it's validity, it's in the resulting journey of the mind that's given rise to by the reconciliation of conflicting arguments. 
+
+<!--
+- yin yang and paradoxes
+	- for most ideas that are considered to be true, there are generally polar opposites that are also considered to be true. This forms the basis 'Yin Yang', the Chinese belief that states that everything in nature has an opposite, otherwise it could not exist in the first place.
+
+Masters of their destiny will tell you that the human animal thrives under genuine adversity, with the constant guidance of the internal voice of opposition.
+For the weak-minded or uneducated that choose complacency and ignorance, their internal voice becomes nothing more than the constant whisper of self-loathing that drives self-destructive tendencies, and is eventually lost altogether. 
+-->
+
+Darwainism teches us that an organism requires adversity in order to thrive or evolve into a stronger version of itself. Take a look at our own history - nothing great has ever been acheived without a significant measure of conflict and adversity. Therefore, the paradox is the eqivllent of figting a war in the mind. We all know that without regular battle the troops become restless and complecent, and turn to the booze and brothels for entertainment.
+
+
+The problem with "thinking", is that the mind ends up getting caught up in an endless iteration, with no hope of a resolution until the scope changes and more data becomes available and or accessible. Most of our actual processing happens at a subconscious level, which is why we find that often the answer just pops into our head some time after the fact when we are in a state of relaxation. 
+
+Like computers programs, the brain uses multiple threads and deferred processing to process intensive or long running tasks. All we can do is feed it the correct information and parameters, and let it do what it does best. Trying to shortcut the process is as futile as trying to break the natural laws, but we can use stronger laws to overcome weaker laws to optimise the result.
+
+It's important to recognise that while it plays an important, paradoxical thinking is also a trap in it's own right. It's only a step on the path to true intelligence, which is the ability to see directly to the core of the matter.
+
+### True Intelligence
+
+There are many forms of intelligence, academic, intuitive, emotional and so on, but it's the combination of all these forms of intelligence that affords us the insight and wisdom to tackle the really big problems. Unfortuntely, due to the way our education system and society is geared up we have been lead to believe that only the academic subset has real value, and the others are largely superfluous.
+
+Einstein's genius was attributed to his ability to perceive the heart of things with a childlike sincerity. While everyone else was explaining themselves in circles with complex equations, Einstein's discoveries were so black and white that everyone hit themselves on the head asking "why didn't I think of that?"
+
+So what does it mean to see to the "heat of things"? For children, everything is happening in the moment, their experiences are extremely vivid and real. This isn't to say that all children are geniuses, far from it, it's to say that for them there's no layers between what is happening and what they are experiencing, which is necessary for perception. For most of us though, by the time we reach adulthood our psyche is so marred with unconscious patterning and coping mechanisms that the ability to be truly present in the moment is a distant memory. The irony here is that when the mind reaches this stage, becoming more intelligent is actually more of an unlearning or an unravelling process.
+
+<!--
+where the adult mind tends to analyse and rationalise itself around in circles. In this respect, our mind is it's own worst enemy.
+
+Over time something changes; the mind develops comping mechanisms and patterns that filter stimulus and affect the way we process information. we become desensitised and dull.
+
+A quality that's recognises in children (and also Einstein), is their ability to perceive the heart of the situation. 
+
+Einstein's genius during his time was his ability to perceive the heart of things with a childlike sincerity. 
+There was no layers to cloud his perception
+-->
+
+
+<!--
+Most of the information in the brain is stored in the subconscious, whch is always processing, this can't happen until the conscious mind takes a break. 
+
+, and that's something that can't happen when the mind is on endless iteration. 
+
+Every day we are bombarded with an insane amount of stimulus, and if we were consciously aware of it all at once, the we would surely go insane! The mind conveniently develops coping mechanisms that filter and sometimes modify non-critical and overly traumatic details and experiences. While these mechanisms are necessary, the process of desensitisation can dull the mind over time.
+
+An intelligent and active mind is defined by it's ability to see directly to the core of the matter; either by way of empirical knowledge, or some unexplained primordial intuition[]. For now we'll assume that knowledge is learned, and that anything else is outside of our direct control, therefore outside the scope of this article.
+
+
+So how does one stay sane in a world full of contradictions and paradoxes?
+
+Physicists, alchemists, philosophers and mathematicians, and more, all attempt to explain nature by reducing it into more understandable and manageable data sets. The good news is you don't need a fancy degree, just strong will and a perceptive mind.
+
+Every day we are bombarded with an insane amount of stimulus, and if we were consciously aware of it all at once, the we would surely go insane! The mind conveniently develops coping mechanisms that filter and sometimes modify non-critical and overly traumatic details and experiences. While these mechanisms are necessary, the process of desensitisation can dull the mind over time.
+
+An intelligent and active mind is defined by it's ability to see directly to the core of the matter; either by way of empirical knowledge, or some unexplained primordial intuition[]. For now we'll assume that knowledge is learned, and that anything else is outside of our direct control, therefore outside the scope of this article.
+
+## Reprogramming Your Mind
+The process of dumbing down can be reversed by...
+by reprogramming the mind to filter out the 
+ We do this by filtering 
+ it part by part
+
+ -- wu-gong?
+The first thing required is will-power, the will to constantly override the internal voice of opposition which wants to enforce your learned patterns.
+Will-power is developed though conflict, be it with the self, others or situational. 
+The key to developing will-power, as well as most learned skills, is focus.
+-->
+
+## Wu-Gong Masters
+
+Gong fu masters are the true masters of reality, for have connected the mind to the the body in a way that enables them to achieve seemingly super-human feats. These feats may seem improbable and even impossible to some, and I would tend to agree had I not witnessed them first hand.
+
+In martial arts we can observe two predominant philosophies; one that favours the hard (external), and one that favours the soft (internal). Internal martial arts that focus on how to maximise force with minimal effort are of particular interest to me, because they show the existence of a commonly misunderstood force that can't be generated by muscular exertion alone. 
+
+There is a "special" force that moves through the human body that can be accessed and demonstrated by a few of the top masters at will. I'm not going to call it "qi" or anything else liable to be misinterpreted or accompanied with hallucinations of mystical warriors flying through bamboo forrests, rather it's the kind of condition that allows a mother to lift up a car to rescue her baby[], or a master to project their entire body mass through a small movement.
+
+<!--
+Most of us have mapped our neural pathways sufficiently to be able to preform daily functions with ease, but what if your brain was mapped to accelerate and project your entire body mass through any movement? ****
+
+and can be unexpectedly triggered under extreme conditions
+-->
+
+Chu Shong Tin is one such master who can demonstrate these abilities.
+
+, not only is he is one of the great internal gong fu masters, but he has the internal control to cycle his heart rate at will - though all ... pulses measured in Chinese medicine.
+
+Sigong Chu talks about 'Lim Tao', which denotes a mind-body connection that facilitates this force transferrance. The other precondition for 'Lim Tao' to work is complete muscular relaxation.
+
+Sigong Chu tells a story about how he once had an MRI scan and decided to switch on his 'Lim Tao' to see what part of his brain was activating. The doctors told him to stop doing whatever he was doing, because it was throwing the readings out. Apparently the crerbelum is the part of the brain that was activating, which makes a lot of sense because it's also the part of the brain that controls the nervous system. This kind of ability has nothing to do with one's academic intelligence whatsoever. 
+
+Sigong Chu is one of the most intelligent people I have ever met, he has the ability to read your energy and intent before you even know what's happening yourself. I don't know about you, but for me that's way cooler than reciting PI to 100,000 places.
+
+Those who spend a lot of time in their mind often neglect their body, but it's only through the combination of mind, body and what we subjectively call spirit, that true intelligence can be attained.
+
+The study of martial arts, especially the internal arts, requires a specific kind of abstract intelligence that relies on feeling and intuition. The internal arts deal with "concepts" and "ideas" that can be applied in the body to transfer and deal with force.
+
+To learn these ideas, the student must be able to feel them in their body, and train them to the point where the neural pathways pertaining to that "idea" are so well mapped out that they can be triggered with a single thought. The challenging part for most to reconcile is that their ideas exist predominantly in their head, but for these ideas to have any sort of practical martial application they must be directly related to a movement of energy in the body. This is why they take so long and a certain type of individual to master, but they have a much greater potential over short term physical gains.
+
+When talking with the masters you often hear them talk about "state, not shape". What this means is that if the idea is working properly, the shape of the body, or the hand technique being applied, is irrelevant. This is interesting, becasue it shows us that physicality plays a secondary role in generating true force, rather it's a state of mind that can be triggered. 
+
+Take care though, if you're presuing these skills remember thare are countless frauds out there, and probably a handful of people in the world who can properly demonstrate these skills.
+
+## Recognising and Reprogramming Patterns
+
+<!-- a ... processor with ... memory
+	but still many of us take it for granted, 
+Nature reproduces and decays in the form of patterns, and so does our own mind, albeit much more rapidly and responsively. 
+Nature reproduces and decays in the form of patterns, and so does our own mind, although it is a much more localised and susceptible medium.
+As nature reproduces and decays in the form of patterns, so does our own mind. 
+ due to the fact that is's a much more localised and susceptible medium
+ grows and decays
+Nature takes shape in the form of patterns, as do the thoughts in our mind. 
+Just as nature speaks a universal language of recurring geometric patterns and principles[sacred geometry], so does the human mind. 
+ [sacred geometry]
+Weather or not the same patterns that exist in nature influence our own thoughts is speculative, and not as more useful or relevant as the question of how to identify and reprogram these recurring patterns within our psyche.
+ the origin
+ of this stimulusow could we possibly take it all in? 
+ shapes and 
+The more patterning we take on board, the more disconnected we become from , the less free we become; 
+ in the brain and body
+-->
+
+In nature, as well as the human mind, we can observe geometric patterns and principles that reoccur [sacred geometry]. As energy collides and interacts at the mercy of the variables and constants that comprise the laws of nature, it stands to reason that there will be convergent similarities. 
+
+Patterns of the mind, both conscious and unconscious, govern the way we perceive sensory input and stored memories. In essence, reality doesn't change, but the way we see it does. 
+
+The practice of identifying and understanding the patterns that govern the mind is a worthy pursuit, especially when those patterns deprive us of our full potential. Limiting thought patterns are learned and enforced on us from birth by our parents, friends, work, and society as whole. Many of these patterns are so ingrained into every day life, that they are absurdly considered by everyone to be "normal". The deeper you look into your own life and the world around you, the more the matrix of patterns that comprise perceived reality will be exposed.
+
+The more patterns we take on board through life, the more disconnected we become from our source, and the less "free" we become. This metamorphosis prevents us from being able to express ourselves truly, and simply "be in the the moment". Without patterns we would exist in a state of bliss, but the truth is that some patterns are necessary for our very survival, so it's up to your discretion as to what you want to let go of, and keep. The important thing is to know that you have control over the process, the principle of neural plasticity[] ensures that nothing in our mind is ever fixed. 
+
+### Visualise
+
+First, calm your mind and relax your body - the deeper your mediative state the better.
+
+A system is both as simple and complex as the sum of all of its parts[], so start by visualising your life and consciousness as the overall system, and your patterns as the parts which comprise the whole.
+
+Just as mental patterns are constructs of consciousness, they can also be visualised as constructs in the form of shapes and emotions by the way they intersect and influence the energetic space in which they exist. The more you can isolate variables and constants which formulate the pattern, the clearer the pattern will become, and in turn it's affect on your entire life.
+
+When you're aware of your pattern and can visualise and it's constructs, then you're ready to make your peace and finally let it go.
+
+<!-- 
+Mental patterns can be visualised as forms and shapes by the way they intersect and influence the energetic space in which they exist. 
+
+-- isolate variables and constants, constructs
+The first step to changing subconscious patterning is to gain insight about it through experience, meditation and interaction with others. 
+
+Start by viewing your life as whole, then use reductive thinking? (reverse engineering?) until you arrive at the source of the patterns you're not satisfied with and want to change.
+
+
+for the people around us
+Start with 
+so to see your patterning clearly, first view your life as whole, then reverse engineer it part by part until you discover the source of any patterns that you're not satisfied with.
+-->
+
+### Accept
+
+<!--
+	can visualise, isolate, and feel
+	the constants and variables that formulate it
+	This is not about fighting, it's about letting go. Resistance is futile. 
+Consciously enter into the process of the pattern that you want to let go of, and be totally aware of
+the constants and variables that construct your pattern, and
+-->
+Enter into a meditative state again, and become aware consciously aware of the pattern that you want to let go of, and how it affects your mind and body. Explore all the parts of your pattern, including the journeys it has taken you on over the course of your life. Wherever this takes you just go with it, and weather you feel pain, fear, rage, or loss, just experience those feelings and allow them to be.
+
+Remember that resistance is futile; you can't fight negativity with hatred or more negativity, this is about accepting and letting go. 
+
+Before long you will feel clear again, like a weight has been lifted - but we're not done yet! When you've accepted your pattern, and dealt with the associated negative feeling and emotions, you're ready to override your original programming.
+
+<!--
+By accepting your pattern for what it is you stop fighting and become consciously aware of it, an begin to release it's unconscious hold on you.
+-->
+
+### Override
+
+Overriding your original programming is as simple as doing something that's completely contradictory to your original programming. The more you do it the better. Not much more needs to be said - have fun, and above all, be outrageous. This is, after all, about breaking patterns and limitations!
+
+<!--
+This is as simple as doing something that's contradictory to your original programming. The more you do it the better.
+
+To override your patterning you need to override it by acting contrary to your programming.
+
+The mind processes and stores information visually in the form of images and shapes[], but our perception and the meaning of this stimulus is governed by our conscious and unconscious patterning. For many, the process 
+
+Our belief system is governed by patterns, and many of them have a negative effect on the way we perceive and interact with the world around us. 
+
+Identifying the patterns that govern the mind is a worthy pursuit, especially when it helps us resolve patterns that have a negative impact on our lives. 
+These patterns 
+-->
+
+
+<!--
+-- desensitisation, coping mechanisms, dumbing down 
+can even reprogram itself to fill in the blanks if a memory is too traumatic.
+
+patterns itself to filter non-critical details and experiences, and 
+Every day we are bombarded with an insane amount of stimulus, which if we took it all in, would surely drive us insane!  
+
+The mind deals with a traumatic experiences by filtering out the information it can't process, and filling in the blanks with it's own version of events.
+This process of desensitisation and patterning helps us cope with reality, and helps (some of) us refrain from shouting at idiots on the street, but it's gone to far when the mind stops testing the boundaries and asking the real questions. 
+-->
+
+<!--
+, albeit much more rapidly and responsively. 
+. It's recognition algorithms 
+The human animal thrives under genuine adversity, which forges new pathways and shifts the frame of reference to encompass a greater scope of consciousness.
+
+, which forges new pathways and shifts the frame of reference to encompass a greater scope of consciousness
+
+## Breaking the Rules
+-->
+This part is about breaking the rules ...
+
+There are those that follow the rules their entire lives, but where does it really get them in the end? A normal life without any real acheivement, with a pat on the back and maybe nice retirement fund at the end. Big whoop.
+
+There is so much yet to be discovered and understood about life and the universe, and a good place to start is to free your mind by breaking the rules that you and society have set for yourself. Remember that everything that's considered normal today was outrageous and preposterous at one point in time. At best people will think you're a savant, and at worst they'll think you're an idiot, maybe a little of both, but who really gives a shit what people think anyway!?
+
+<!--
+It's easier to tweak an operational system that it is to build one from scratch, so what are you waiting for? T
+-->
+
+## Attribution
+{:.no_toc}
+
+1. [DMT](#banner) by [Alice Feng](http://studiofeng.net)
+
+

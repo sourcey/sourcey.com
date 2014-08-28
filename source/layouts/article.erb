@@ -17,11 +17,11 @@
             <h2 class="subtitle"><%= current_article.data.subtitle %></h2>  
           <% end %>     
           <div class="meta">               
-              <% if current_article.data.author_site %>
-                By <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
-              <% else %>
-                By <%= current_article.data.author %> 
-              <% end %>
+            <% if current_article.data.author_site %>
+              By <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
+            <% else %>
+              By <%= current_article.data.author %> 
+            <% end %>
             &diams;
             <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> 
             <!--
