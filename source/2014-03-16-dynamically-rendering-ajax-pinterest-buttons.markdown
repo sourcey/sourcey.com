@@ -31,19 +31,19 @@ window.parsePins();
 
 ## Method two
 
-An alternative method for people who like to hack in JavaScript, and don't much like including a shit tonne of script tags in the page header can use this script as a starting point (yes it uses JQuery, which can be easily substituted).
+An alternative method for people who like to hack in JavaScript, and don't much like including a shit tonne of script tags in the page header can use this script as a starting point (yes it uses JQuery, but that can be easily substituted).
 
 ~~~ javascript
 var Pinterest = {
     load: function(callback) {
-        $.getScript('//assets.pinterest.com/js/pinit.js', callback)
+        $.getScript('//assets.pinterest.com/js/pinit.js', callback);
     },
 
     // Get the Pinterest instance
     get: function() {
       for (var i in window) {
          if (i.indexOf('PIN_') == 0 && typeof window[i] == 'object') {
-            return window[n]
+            return window[i];
          }
       }
     },

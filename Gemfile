@@ -15,6 +15,10 @@ gem "builder", "~> 3.0"
 gem "nokogiri"
 gem "redcarpet"
 
+# http://foundation.zurb.com/forum/posts/18856-sass-342-compilation-problem
+gem "compass", "0.12.7"
+gem "sass", "3.2.19"
+
 # https://github.com/middleman/middleman/issues/1097
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 require 'tzinfo'

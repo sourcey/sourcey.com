@@ -5,7 +5,7 @@ date: 2014-03-28 15:02:16
 tags: Strategy, Philosophy, Marketing, Productivity
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
-image: /conquering-the-internet/miyamoto-musashi-320x200.jpg
+#image: /conquering-the-internet/miyamoto-musashi-320x200.jpg
 banner: /conquering-the-internet/miyamoto-musashi-1280x600.jpg
 featured: true
 layout: article

@@ -2,7 +2,8 @@ body {
   margin-top: 50px;
   /* 
   line-height: 1.5;
-  font: 400 14px "freight-sans-pro", Helvetica, Arial, sans-serif; 
+  font: 400 14px "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
   */
   text-rendering: optimizelegibility;
 }
@@ -181,32 +182,37 @@ a:hover {
 
 /* Banner */
 
+/*
 body.index {
-  background: url(/understanding-psychedelics/xiao-feng-lsd-1024x680.jpg) no-repeat center top;  
+  background: url(/images/xiao-feng-lsd-1024x680.jpg) no-repeat center top;  
   background-size: 1000px auto;
 }
+*/
 body.index #main {  
   /*max-width: 940px;*/
 }
 
 body.index #logo {
-  margin-top: 240px;
-  margin-top: 210px;
-  visibility: hidden;
+  margin-top: 0px;
   /* 
+  margin-top: 240px;
+  visibility: hidden;
   position: relative;
   left: 435px;
   top: -240px; */
 }
 
 /* Welcome */
+body.index #header {
+  padding-top: 100px;
+}
 body.index #welcome {
-  padding: 0px 20px 20px;
+  padding: 0px 20px 0px;
   font-size: 28px;
-  line-height: 1.35;
+  line-height: 1.5;
   text-align: center;
-  margin-bottom: 1.625em;
-  text-transform: lowercase;
+  margin-bottom: 1.25em;
+  /* text-transform: lowercase; */
 }
 body.index #welcome span {
   clear: left;
@@ -221,6 +227,7 @@ body.index #welcome em {
   }
 }
 
+/*
 body.index #welcome1 {
   position: absolute;
   margin: -227px 0 0 10px;
@@ -250,6 +257,7 @@ body.index #welcome1 ol {
     margin-left: 0px;
   }
 }
+*/
 
 /* Showcase */
 body.index #projects {
@@ -416,7 +424,7 @@ body.index #articles > h2 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: -20px;
 }
 
 body.index #articles ol {
@@ -760,7 +768,13 @@ pre {
   line-height: 1.5;
   margin-bottom: 30px;
 }
-
+pre code {
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+}
 
 /* 
   Generic Sidebar
