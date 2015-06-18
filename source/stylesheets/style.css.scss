@@ -214,20 +214,22 @@ body.index #welcome {
   margin-bottom: 1.25em;
   /* text-transform: lowercase; */
 }
+/*
 body.index #welcome span {
   clear: left;
 }
 body.index #welcome em {
   color: #c00;
 }
+*/
 
+/*
 @media only screen and (max-width: 64.063em) {
   body.index #welcome br {
     display: none;
   }
 }
 
-/*
 body.index #welcome1 {
   position: absolute;
   margin: -227px 0 0 10px;
@@ -774,6 +776,11 @@ pre code {
   vertical-align: middle;
   border: none;
   background-color: transparent;
+}
+pre code:before,
+pre code:after {
+  content: none;
+  letter-spacing: normal;
 }
 
 /* 

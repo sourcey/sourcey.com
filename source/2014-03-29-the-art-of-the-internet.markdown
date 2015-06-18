@@ -4,8 +4,8 @@ date: 2014-03-29 02:23:53
 tags: Philosophy, Psychology, Art
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
-#image: /the-art-of-the-internet/logic-vs-art-320x200.jpg
-banner: /the-art-of-the-internet/logic-vs-art-1920x1080.jpg
+#image: /images/stock/logic-vs-art-320x200.jpg
+banner: /images/stock/logic-vs-art-1920x1080.jpg
 featured: true
 layout: article
 ---

@@ -1,3 +1,17 @@
+---
+title: Middleman Automated GitHub Pages Deployments with Rake
+date: 2015-02-09
+tags: Middleman, Code, Ruby
+author: Kam Low
+author_site: https://plus.google.com/+KamLow
+layout: article
+---
+
+Supposing you use GitHub pages to host your middleman site, like we do, you will probably want to speed up your deployments with some rakey goodness!
+
+Stick the following `deploy.rake` file in your middleman root directory:
+
+~~~ ruby
 desc "build static pages"
 task :build do
   p "## Compiling static pages"
@@ -24,3 +38,8 @@ task :publish do
   Rake::Task["build"].invoke
   Rake::Task["deploy"].invoke
 end
+~~~
+
+Now just type `rake publish` And your changes will be live in a few moments. Easy a &pi;!
+
+

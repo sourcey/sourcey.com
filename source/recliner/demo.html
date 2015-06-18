@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Recliner.js Lazy Load Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/javascripts/recliner.min.js"></script>
+
+    <script>
+        $(function() {
+        
+            // instantiate recliner
+            $('.lazy').recliner({
+                attrib: "data-src", // selector for attribute containing the media src
+                throttle: 300,      // millisecond interval at which to process events
+                threshold: 100,     // scroll distance from element before its loaded
+                live: true          // auto bind lazy loading to ajax loaded elements          
+            });
+
+            // handle lazyload events
+            $(document).on('lazyload', '.lazy', function() {
+                var $e = $(this);
+                // do something with the element to be loaded...
+                console.log('lazyload', $e);
+            });
+
+            // handle lazyshow events
+            $(document).on('lazyshow', '.lazy', function() {
+                var $e = $(this);
+                // do something with the loaded element...
+                console.log('lazyshow', $e);
+            });
+        });
+    </script>
+
+    <style>
+        .lazy {
+            margin-bottom:30px;
+            width: 320px;
+            height: 200px;
+            outline: 0;
+            box-shadow: 0px 2px 4px #999;
+            background: url(/images/loader.gif) no-repeat center;
+        }
+        .lazy-loaded {
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recliner.js Lazy Load Demo</h1>
+    <a href="http://sourcey.com/recliner">Homepage</a>
+
+    <h3>Image 1</h3>
+    <img class="lazy" data-src="http://sourcey.com/images/stock/xiao-feng-lsd-320x200.jpg" />
+
+    <h3>Image 2</h3>
+    <img class="lazy" data-src="http://sourcey.com/images/stock/xiao-feng-dmt-320x200.jpg" />
+
+    <h3>Image 3</h3>
+    <img class="lazy" data-src="http://sourcey.com/images/stock/miyamoto-musashi-320x200.jpg" />
+
+    <h3>Image 4</h3>
+    <img class="lazy" data-src="http://sourcey.com/images/stock/logic-vs-art-320x200.jpg" />
+
+    <h3>IFrame Element</h3>
+    <iframe class="lazy" data-src="/recliner/randomcontent" frameborder="0" vspace="0" hspace="0"></iframe>
+
+    <h3>AJAX Element</h3>
+    <div class="lazy" data-src="/recliner/randomcontent"></div>
+</body>
+</html>

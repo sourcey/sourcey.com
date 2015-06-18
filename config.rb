@@ -62,6 +62,9 @@ page "/sitemap.txt", layout: false
 page "/archives"
 #page "/blog" # paginate blog in the furute
 
+redirect "/understanding-psychedelics/index.html", :to => "http://avidsense.com/understanding-psychedelics/"
+redirect "/engineering-the-mind/index.html", :to => "http://avidsense.com/engineering-the-mind/"
+
 ignore 'drafts/*'
 ignore 'bower_components/*'
 
