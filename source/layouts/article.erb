@@ -1,40 +1,40 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <%= partial "head" %>    
-  <body class="article <%= page_classes %>">    
-    <%= partial "nav" %>  
+  <%= partial "head" %>
+  <body class="article <%= page_classes %>">
+    <%= partial "nav" %>
     <%= image_tag(current_article.data.banner, id: 'banner') if current_article.data.banner %>
-    <%= partial "header" %>    
+    <%= partial "header" %>
     <div id="main" role="main">
-      <% 
+      <%
         content = Nokogiri::HTML(yield)
         sidebar_content = content.xpath("//div[contains(@class, 'sidebar-section')]").remove
       %>
       <article>
         <header class="article-header">
-          <h1><%= current_article.data.title %></h1>   
+          <h1><%= current_article.data.title %></h1>
           <% if current_article.data.subtitle %>
-            <h2 class="subtitle"><%= current_article.data.subtitle %></h2>  
-          <% end %>     
-          <div class="meta">               
+            <h2 class="subtitle"><%= current_article.data.subtitle %></h2>
+          <% end %>
+          <div class="meta">
             <% if current_article.data.author_site %>
               By <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
             <% else %>
-              By <%= current_article.data.author %> 
+              By <%= current_article.data.author %>
             <% end %>
             &diams;
-            <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> 
+            <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time>
             <!--
             <div class="tags">
               Tagged: <%= current_article.tags.join(', ') %>.
             </div>
             -->
           </div>
-        </header>	
+        </header>
         <div class="article-wrap row">
-          <div class="large-8 columns">  
+          <div class="large-8 columns">
             <div class="content">
-              <%= content %>  
+              <%= content %>
             </div>
          </div>
           <div class="large-4 columns">
@@ -78,10 +78,10 @@
               -->
 
           </div>
-        </div>   
-        <!--  
+        </div>
+        <!--
         <div class="meta">
-          Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by 
+          Posted on <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time> by
           <% if current_article.data.author_site %>
             <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
           <% else %>
@@ -89,25 +89,13 @@
           <% end %>. Tagged: <%= current_article.tags.join(', ') %>.
         </div>
         -->
+
       </article>
-
-      <%= partial "social" %>    
-
-      <div class="row show-for-large-up">
-        <div class="ad ad-720x90 text-center">
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- Sourcey (Leaderboard) -->
-          <ins class="adsbygoogle"
-               style="display:inline-block;width:728px;height:90px"
-               data-ad-client="ca-pub-1397369873900370"
-               data-ad-slot="8042301285"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
+      <div class="row">
+        <%= partial "social" %>
       </div>
-	       
-      <%= partial "comments" %>  
+
+      <%= partial "comments" %>
     </div>
     <%= partial "footer" %>
   </body>

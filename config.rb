@@ -40,7 +40,7 @@ activate :blog do |blog|
   # blog.taglink = "tags/{tag}.html"
   # blog.layout = "layout"
   # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
+  # blog.summary_length = 100
   blog.summary_generator = setup_summary_generator(@readmore_separator)
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"

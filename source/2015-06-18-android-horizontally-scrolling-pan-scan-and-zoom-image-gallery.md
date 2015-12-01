@@ -1,23 +1,26 @@
 ---
 title: Android Hotizontally Scrolling Pan Scan and Zoom Image Gallery
 date: 2015-06-18
-tags: Android, Demo, Gallery
+tags: Android, Gallery, Demo
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
-Since the depreciation of the Android Gallery module there has been no clear way to implement image galleries on Android, so in order to fill the need I'm sharing my own Gallery implementation. 
+Since the depreciation of the Android Gallery module there has been no clear way to implement image galleries on Android, so I'm sharing my own Gallery implementation in order to fill the need. 
 
-The implementation is a horizontal scrolling image gallery, which is ideal for displaying smaller amounts of images (<10). However, if you need to display large amounts of images then you might be better served with a GridView based implementation.  
+![Android Gallery Demo](/android-horizontally-scrolling-pan-scan-and-zoom-image-gallery/screenshot-gallery.jpg "Android Gallery Demo") 
+{:.width-75 .center}
 
-Under the hood the Gallery consists of ViewPager element, and a HorizontalScroller for displaying selectable thumbnails. Inside the ViewPager view there is a modified ImageView which allows for panning, scanning and zooming of the main image.
+The implementation is a horizontal scrolling image gallery that consists of `ViewPager` element, and a `HorizontalScrollView` for displaying selectable thumbnails. Inside the `ViewPager` view there is a modified `ImageView` that allows for panning, scanning and zooming of the main image. 
+
+Horizontal galleries are ideal for displaying smaller amounts of images (<10), although if you need to display lots of images then you might be better served with a `GridView` based implementation. 
 
 <center>
 <p><a class="action-button button radius" target="_blank" href="https://github.com/sourcey/imagegallerydemo" title="Get the Code on Github">Get the Code</a></p>
 </center>
 
-The main activity code for `GalleryActivity.java` is as follows:
+#### GalleryActivity.java:
 
 ~~~ java
 package com.sourcey.imagegallerydemo;
@@ -166,7 +169,7 @@ public class GalleryActivity extends AppCompatActivity {
 
 The layout consists of two items, one for the activity, and one for the pager items.
 
-Paste the following activity layout into `res/layout/activity_gallery.xml`
+#### res/layout/activity_gallery.xml
 
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -207,8 +210,7 @@ Paste the following activity layout into `res/layout/activity_gallery.xml`
 </FrameLayout>
 ~~~
 
-
-And paste the view pager layout into `res/layout/pager_gallery_item.xml`
+#### res/layout/pager_gallery_item.xml
 
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -245,6 +247,8 @@ Next add the necessary Activity declarations to your AndroidManifest. I have pos
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sourcey.imagegallerydemo" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -270,10 +274,11 @@ When everything is setup you can instantiate the Gallery like so:
 ~~~
 public void startGalleryActivity() {
     ArrayList<String> images = new ArrayList<String>();
-    images.add("http://i.telegraph.co.uk/multimedia/archive/01421/flickr-pix6_1421814c.jpg");
-    images.add("http://farm1.staticflickr.com/162/416152814_8f7ffb4bb1_z.jpg");
-    images.add("http://a1.dspnimg.com/data/l/1627610726061_S8WvSbhk_l.jpg");
-    images.add("https://c4.staticflickr.com/8/7432/10111952905_7e58ecb32f_b.jpg");
+    images.add("http://sourcey.com/images/stock/salvador-dali-metamorphosis-of-narcissus.jpg");
+    images.add("http://sourcey.com/images/stock/salvador-dali-the-dream.jpg");
+    images.add("http://sourcey.com/images/stock/salvador-dali-persistance-of-memory.jpg");
+    images.add("http://sourcey.com/images/stock/simpsons-persistance-of-memory.jpg");
+    images.add("http://sourcey.com/images/stock/salvador-dali-the-great-masturbator.jpg");
     Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
     intent.putStringArrayListExtra(GalleryActivity.EXTRA_NAME, images);
     startActivity(intent);
@@ -282,7 +287,7 @@ public void startGalleryActivity() {
 
 The current code takes an array of image URLs and renders them asynchronously with `Glide`, but if you want to modify the code to display local resources, or even exchange Glide with another rendering library, then it should be fairly straight forward as the implementation is very simple.
 
-I hope you've found this article useful, and through it you can save some precious development hours. As usual, the full source code is up on Github:
+I hope you've found this article useful, so drop me a shout if it's saved you some precious development hours. As usual, the full source code is up on Github:
 
 <center>
 <p><a class="action-button button radius" target="_blank" href="https://github.com/sourcey/imagegallerydemo" title="Get the Code on Github">Get the Code on Github</a></p>

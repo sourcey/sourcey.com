@@ -20,10 +20,10 @@ Licence
 : LGPL, [Pro Licence](licence)
 
 Required Dependencies
-: libuv, cmake, C++11 compiler
+: libuv, CMake, C++11 compiler
 
 Optional Dependencies
-: FFmpeg, OpenCV, WebRTC, OpenSSL (> 1.0.1g), RtAudio, JsonCpp
+: FFmpeg (>= 2.8.3), OpenCV (>= 3.0), WebRTC, OpenSSL (> 1.0.1g), RtAudio, JsonCpp
 {: .status}
   
 ![LibSourcey Logo](logos/libsourcey-120x120.png "LibSourcey Logo"){: .align-left}
@@ -132,45 +132,92 @@ Any bugfixes and improvements are welcome.
 
 ## Installation
 
-Install Git
- : * _Windows users_: Install [TortoiseGit](http://code.google.com/p/tortoisegit/), a convenient git front-end, which integrates right into Windows Explorer. MinGW users can use [msysgit]( from <a class="external" href="http://code.google.com/p/msysgit/downloads/list"></a>).
-* _Linux users_: Install command-line git utility using your package manager, e.g. `apt-get install git` on Ubuntu and Debian. You can use <a href="http://www.syntevo.com/smartgithg/index.html" class="external">SmartGit</a> as a GUI client. SmartGit is cross-platform, btw.
-* _Mac users_: If you installed Xcode (which you will need anyway) then you already have git. You can use [SourceTree](http://www.sourcetreeapp.com/), which is a very good GUI client.
+### Linux
 
-Install CMake
- : CMake generates the LibSourcey project files so you can build on most platforms and compilers. CMake is also required to generate makefiles for OpenCV. [Download CMake](http://www.cmake.org/cmake/resources/software.html)
+This guide has been written for Ubuntu 14.04, but should be easily protable for most flavours of Linux.
 
-Install OpenSSL
- : * _Windows users_: download and install the [Windows OpenSSL binaries](http://slproweb.com/products/Win32OpenSSL.html).  
- * _Linux users_: Install the openssl package (if you don't already have it), ensuring the get the libssl-dev package which contains the developemnt headers: `apt-get install openssl libssl-dev`
+First install the necessary dependencies:
 
-Download LibSourcey
+~~~ bash 
+sudo apt-get update
+
+# required dependencies
+apt-get install -y build-essential pkg-config git openssl libssl-dev cmake libjack-jackd2-dev
+
+# optional dependencies
+apt-get install -y opencv-dev
+~~~
+
+_Note_: To compile LibSourcey with video and streaming capabilities enabled you should install the latest versions of both FFmpeg and OpenCV. 
+
+If you don't have FFmpeg development headers installed, then you can use the official FFmpeg installation guide which works out of the box with LibSourcey: http://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+
+Now checkout and compile the source:
+
+~~~ bash 
+cd ~/tmp
+git clone https://github.com/sourcey/libsourcey.git
+cd libsourcey
+mkdir -p build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=RELEASE # extra cmake commands here...
+make
+sudo make install
+~~~
+
+Simple! For a complete list of build options [see here](#cmake-build-options).
+
+### Windows
+
+#### Install Dependencies
+
+Install Git  
+ : Install [TortoiseGit](http://code.google.com/p/tortoisegit/), a convenient git front-end that integrates right into Windows Explorer. MinGW users can use [msysgit]( from <a class="external" href="http://code.google.com/p/msysgit/downloads/list"></a>).  
+
+Install CMake  
+ : CMake generates the LibSourcey project files so you can build on most platforms and compilers. [Download CMake](http://www.cmake.org/cmake/resources/software.html)  
+
+Install OpenSSL  
+ : Download and install the [Windows OpenSSL binaries](http://slproweb.com/products/Win32OpenSSL.html).  
+
+Download LibSourcey  
  : Clone the repository: `git clone https://github.com/sourcey/libsourcey.git`.  
    If you haven't got Git for some reason you can download and extract the [package archive](https://github.com/sourcey/libsourcey) from Github.
 
-### Generating Project Files
+#### Generate Project Files
 
-Depending on your platform, you may choose run CMake from the command line, or use the CMake GUI.
+Open the CMake GUI and set the project directory to point to the LibSourcey root directory. Execute "Configure" to do the initial configuration, then adjust any options, then press "Configure" again and then press "Generate".
 
-#### CMake Command Line (Linux)
+#### Compile With Visual Studio
 
-~~~ bash 
-# dependencies: openssl libssl-dev cmake pkg-config 
-# optional: libjack-jackd2-dev
+1. Generate solutions using CMake, as described above. Make sure, you chose the proper generator (32-bit or 64-bit)
+2. Launch Visual Studio, locate and open the "libsourcey.sln" solution file in your generated build folder (eg: `C:\LibSourcey\build\libsourcey.sln`). Select "Debug" configuration, build the solution (Ctrl-Shift-B), and/or select "Release" and build it.
+3. Add `{CMAKE_BINARY_DIR}\bin\Release`, `{CMAKE_BINARY_DIR}\bin\Debug` (containing "libscy*.dll" and "libscy*d.dll", respectively) to the system path (My Computer--[Right button click]->Properties->Advanced->Environment Variables->Path)
 
-git clone https://github.com/sourcey/libsourcey.git
-cd libsourcey
-mkdir -p build
-cmake .. -DCMAKE_BUILD_TYPE=RELEASE # extra cmake commands here...
-make
-make install
-~~~
+### Apple (MacOS)
 
-#### CMake GUI (Windows/Mac)
+Install Git  
+ : Download the [latest Git installer package](http://code.google.com/p/git-osx-installer/downloads/list?can=3), double click on the installer to start the installation wizard. You’ll be prompted for your system password in order for the installer to complete.
 
-If you use CMake GUI, execute "Configure" to do the initial configuration, then adjust any options, then press "Configure" again and then press "Generate".
+Install CMake  
+ : CMake generates the LibSourcey project files so you can build on most platforms and compilers. [Download CMake](http://www.cmake.org/cmake/resources/software.html)
 
-#### CMake Options
+Install OpenSSL  
+ : If you don't already have OpenSSL development headers on your Mac, then please follow [this guide](http://www.opensource.apple.com/source/OpenSSL/OpenSSL-7.1/openssl/INSTALL?txt) to install them.  
+
+Download LibSourcey  
+ : Clone the repository: `git clone https://github.com/sourcey/libsourcey.git`.  
+   If you haven't got Git for some reason you can download and extract the [package archive](https://github.com/sourcey/libsourcey) from Github.
+
+#### Generate Project Files
+
+Open the CMake GUI and set the project directory to point to the LibSourcey root directory. Execute "Configure" to do the initial configuration, then adjust any options, then press "Configure" again and then press "Generate".
+
+#### Compile with Xcode
+
+* Generate Xcode project using CMake, as described above.
+* Launch Xcode, locate and open libsourcey.xcodeproj. Select "Debug", build the BUILD_ALL target (Cmd-B), select "Release" and build it too.
+
+### CMake Build Options
 
 The main build options you will want to configure are as follows:
 
@@ -180,36 +227,18 @@ The main build options you will want to configure are as follows:
 * `BUILD_MODULE_xxx`: Enable or disable a specific module replacing _xxx_ with the module name.  
 * `BUILD_APPLICATIONS`: Build LibSourcey modules _default: ON_  
 * `BUILD_APPLICATION_xxx`: Enable or disable a specific applications replacing _xxx_ with the module name.  
-* `BUILD_MODULE_TESTS`: Build module test applications _default: OFF_  
+* `BUILD_MODULE_TESTS`: Build module test applications _default: ON_  
 * `BUILD_MODULES_xxx`: Enable or disable a specific module replacing xxx with the module name.  
-* `BUILD_MODULE_SAMPLES`: Build module sample applications _default: OFF_  
+* `BUILD_MODULE_SAMPLES`: Build module sample applications _default: ON_  
 
 If you are using third-party libraries is custom locations then make sure you update the CMake include paths: `CMAKE_SYSTEM_PREFIX_PATH` and `CMAKE_LIBRARY_PATH`.
 The only third-party libraries that may need configuring if you're using them are FFmpeg, OpenCV and WebRTC.
 
 For an exhaustive list of options check the `CMakeLists.txt` in the main directory. 
 
-### Building And Compiling
-
-#### Compiling with Visual Studio
-1. Generate solutions using CMake, as described above. Make sure, you chose the proper generator (32-bit or 64-bit)
-1. Launch Visual Studio, locate and open the "LibSourcey.sln" solution file in your generated build folder (eg: `C:\LibSourcey\build\LibSourcey.sln`). Select "Debug" configuration, build the solution (Ctrl-Shift-B), and/or select "Release" and build it.
-1. Add `{CMAKE_BINARY_DIR}\bin\Release`, `{CMAKE_BINARY_DIR}\bin\Debug` (containing "LibSourcey*.dll" and "LibSourcey*d.dll", respectively) to the system path (My Computer--[Right button click]->Properties->Advanced->Environment Variables->Path)
-
-#### Compiling with GCC (MinGW, MSYS, Linux)
-
-* Generate makefiles using CMake (choose "MinGW Makefiles" generator on Windows, "Unix Makefiles" on other OSes) as described above.
-* Enter the output CMake directory (denoted as `{CMAKE_BINARY_DIR}` further) and type `make -j [optional_number_of_threads]` on Unix, or `mingw32-make`on for MinGW. Windows users can also run parallel build of LibSourcey. To do that, please, define "SHELL" environment variable (My Computer--[Right button click]->Properties->Advanced->Environment Variables->Path) and set it to "cmd.exe" (without quotes). Then you can run `mingw32-make -j` (note that "-j" must go without any numerical parameter).
-* _Linux, MacOSX_ Then you can optionally run `sudo make install` (on Linux or MacOSX). Note, that if you are using CMake for your projects, it is not necessary to run `make install`. Just use LibSourcey from where you built it. This is actually the recommended approach, since it does not pollute system directories with potentially conflicting LibSourcey versions.
-* _Windows_ If you built LibSourcey as dynamic libraries (DLLs), you may want to add {CMAKE_BINARY_DIR}\bin to the system path (My Computer--[Right button click]->Properties->Advanced->Environment Variables->Path) to let Windows find "scy*.dll" etc.)
-  
-#### Compile with Xcode
-* Generate Xcode project using CMake, as described above.
-* Launch Xcode, locate and open LibSourcey.xcodeproj. Select "Debug", build the BUILD_ALL target (Cmd-B), select "Release" and build it too.
-
 ## Examples
 
-There is also plenty of examples available in the `samples` and `tests` folder of each module for you to sink your teeth into. Also, check out the [PacketStream API](http://sourcey.com/libsourcey-packetstream-api) article to get a feel for the LibSourcey way of doing things. 
+There is also plenty of examples available in the `samples` and `tests` folder of each module for you to cut your teeth on.
 
 ## Contributing
 
@@ -221,4 +250,4 @@ There is also plenty of examples available in the `samples` and `tests` folder o
 
 ## Issues
 
-If you find any bugs or issues please use the new [Github issue tracker](https://github.com/sourcey/libsourcey/issues).
+If you find any bugs or issues please use the [Github issue tracker](https://github.com/sourcey/libsourcey/issues).

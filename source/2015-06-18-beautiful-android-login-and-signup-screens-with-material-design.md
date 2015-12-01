@@ -1,32 +1,49 @@
 ---
-title: Beautiful Android Login and Signup Demo with Material Design
+title: Beautiful Android Login and Signup Screens with Material Design
 date: 2015-06-18
-tags: Android, Material
+tags: Android, Material, Demo
 author: Kam Low
 author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
-This article provides you with everything you need to implement your own beautiful login and sinup pages using the [Material design spec](). Google's new [design support library]() implements a growing subset of the Material spec, and includes some great new UI widgets that we can use to give our Android apps that polished feel.
+Everyone loves a beautiful login screen, and since it's usually the very first impression people have about your app it's super important to get it right.
 
-The main element we will be using from the design library to beautify our forms is the [FloatingLabelInput](), which is implemented via the TextInputLayout tag. Then FloatingLabelInput consists basically of an EditText element, where the placeholder text hovers above the element when selected.
+This article shows you how to create beautiful login and signup screens the right way using [Material design spec](https://www.google.com/design/spec/material-design/introduction.html) with the assistance of Google's new [design support library](https://developer.android.com/tools/support-library/index.html). The design support library implements a growing subset of the Material spec, and also includes a bunch of sexy UI widgets that can be used to give your Android apps that polished feel. 
 
-Everything has been done for you, but you will need to implement your own authentication logic, weather it be via HTTP, SQL or some other method. Now let the fun stuff commence! 
+On the design and layout side of things, the focus here is on balancing the screen elements in a way that's pleasing to the eye. To add the finishing touches we will also be styling the top status bar on newer devices <!-- an extra level of stylability -->, and utilising [floating labels](http://www.google.com/design/spec/components/text-fields.html#text-fields-floating-labels) from the design library (implemented via the `TextInputLayout` tag).
+
+Pretty much everything has been taken care of for you:
+
+* Full demo and code examples on Github.
+* Interface locking to prevent back button when the Login Activity is displayed.
+* Custom `ProgressDialog` to signify loading state.
+* Conforms to the Material design spec.
+* Floating labels from the design library.
+* Form user input validation.
+* Custom status bar style.
+* Faux authentication methods for testing each Activity. 
+
+All that remains is to implement your own authentication logic - weather it be via HTTP, SQL or some other method.
 
 <center>
 <p><a class="action-button button radius" target="_blank" href="https://github.com/sourcey/materiallogindemo" title="Get the Code on Github">Get the Code</a></p>
 </center>
 
-
 ## Login Activity
 
-Let's begin by setting up the Login Activity, as it will be the first Activity that's displayed to the user. The Login Activity can be started at any time, either at load time, or when the user is logged out. 
+Let's start by setting up the Login Activity, which is usually the first Activity you'll display to a user when they start your app. 
 
-The code is below:
+![Login Screen](/beautiful-android-logn-and-signup-screens-with-material-design/screenshot-login.png "Login Screen") 
+{:.width-75 .center}
+
+If you want to add social signin buttons then please go ahead, but they're outside the scope of this document for now. At minimum this code will give you a solid starting point for building your authentication workflow.
+
+Notice also that the `onBackPressed` method has been overriden, which prevents the user from closing the Login Activity.
+
+#### LoginActivity.java
 
 ~~~ java
-// LoginActivity.java
-
 package com.sourcey.materiallogindemo;
 
 import android.app.ProgressDialog;
@@ -60,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
         ButterKnife.inject(this);
         
         _loginButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 login();
@@ -67,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         _signupLink.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
@@ -95,12 +114,17 @@ public class LoginActivity extends AppCompatActivity {
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
 
-        // Implement your authentication logic here. On complete call either onLoginSuccess
-        // or onLoginFailed
-        onLoginSuccess();
-        // onLoginFailed();
+        // TODO: Implement your own authentication logic here.
 
-        progressDialog.dismiss();
+        new android.os.Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+                        // On complete call either onLoginSuccess or onLoginFailed
+                        onLoginSuccess();
+                        // onLoginFailed();
+                        progressDialog.dismiss();
+                    }
+                }, 3000);
     }
 
 
@@ -109,10 +133,17 @@ public class LoginActivity extends AppCompatActivity {
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
 
-                // If the user signs up successfully we can log them in automatically
+                // TODO: Implement successful signup logic here
+                // By default we just finish the Activity and log them in automatically
                 this.finish();
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // disable going back to the MainActivity
+        moveTaskToBack(true);
     }
 
     public void onLoginSuccess() {
@@ -149,16 +180,19 @@ public class LoginActivity extends AppCompatActivity {
         return valid;
     }
 }
-
 ~~~
 
-Go ahead and save the following layout code into `res/layout/activity_login.xml`
+![Login Screen Spinner](/beautiful-android-logn-and-signup-screens-with-material-design/screenshot-login-spinner.png "Login Screen Spinner") 
+{:.width-75 .center}
+
+#### res/layout/activity_login.xml
 
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:orientation="vertical"
@@ -225,11 +259,14 @@ Go ahead and save the following layout code into `res/layout/activity_login.xml`
 
 The Signup Activity enables the user to create an account on your app, and is generally displayed via the link on the Login Activity. 
 
-Note that we set a `RESULT_OK` result when the user signs up successfully. This result can be handled via the `onActivityResult` method of the Login Activity to determine how a successfull signup is handled. The current logic is simply to log the user in straight away after a successfull signup, but if you want to implement some kind of email validation then you will need to do that part yourself.
+![Signup Screen](/beautiful-android-logn-and-signup-screens-with-material-design/screenshot-signup.png "Signup Screen") 
+{:.width-75 .center}
+
+Note that we set a `RESULT_OK` result when the user signs up successfully. This result can be handled via the `onActivityResult` method of the Login Activity to determine how a successfull signup is handled. The current logic is simply to log the user in straight away after a successfull signup, but if you want some kind of email verification then you will need to implement that yourself.
+
+#### SignupActivity.java
 
 ~~~ java
-// SignupActivity.java
-
 package com.sourcey.materiallogindemo;
 
 import android.app.ProgressDialog;
@@ -277,7 +314,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void signup() {
-        Log.d(TAG, "Register");
+        Log.d(TAG, "Signup");
 
         if (!validate()) {
             onSignupFailed();
@@ -296,12 +333,18 @@ public class SignupActivity extends AppCompatActivity {
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
 
-        // Implement your authentication logic here. On complete call either onSignupSuccess
-        // or onSignupFailed
-        onSignupSuccess();
-        // onSignupFailed();
+        // TODO: Implement your own signup logic here.
 
-        progressDialog.dismiss();
+        new android.os.Handler().postDelayed(
+                new Runnable() {
+                    public void run() {
+                        // On complete call either onSignupSuccess or onSignupFailed 
+                        // depending on success
+                        onSignupSuccess();
+                        // onSignupFailed();
+                        progressDialog.dismiss();
+                    }
+                }, 3000);
     }
 
 
@@ -350,7 +393,7 @@ public class SignupActivity extends AppCompatActivity {
 }
 ~~~
 
-Save the following layout code into `res/layout/activity_signup.xml`
+#### res/layout/activity_signup.xml
 
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -448,13 +491,15 @@ dependencies {
 }
 ~~~
 
-Next add the necessary Activity declarations to your AndroidManifest. I have posted the complete AndroidManifest.xml for clarity.
+Next add the necessary Activity declarations to your AndroidManifest. I have posted the complete `AndroidManifest.xml` for clarity.
 
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sourcey.materiallogindemo" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -474,10 +519,9 @@ Next add the necessary Activity declarations to your AndroidManifest. I have pos
     </application>
 
 </manifest>
-
 ~~~
 
-I hope you've found this article useful, and through it you can save some precious development hours. As usual, the full source code is up on Github:
+I hope you've found this article useful, so drop me a shout if it's saved you some precious development hours.
 
 <center>
 <p><a class="action-button button radius" target="_blank" href="https://github.com/sourcey/materiallogindemo" title="Get the Code on Github">Get the Code on Github</a></p>

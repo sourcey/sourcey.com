@@ -1,9 +1,9 @@
 body {
   margin-top: 50px;
-  /* 
+  /*
   line-height: 1.5;
   font: 400 14px "freight-sans-pro", Helvetica, Arial, sans-serif;
-  font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+  font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   */
   text-rendering: optimizelegibility;
 }
@@ -28,8 +28,8 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; 
-  z-index: 1;  
+  right: 0;
+  z-index: 1;
   -webkit-box-shadow: 0 3px 13px 0 rgba(3, 3, 3, 0.16);
   -moz-box-shadow: 0 3px 13px 0 rgba(3, 3, 3, 0.16);
   box-shadow: 0 3px 13px 0 rgba(3, 3, 3, 0.16);
@@ -55,14 +55,14 @@ a:hover {
 .top-bar .top-bar-section li.home a {
   text-indent: -9999em;
   width: 50px;
-  background: url(/images/logos/sourcey-50x50.png) center;  
+  background: url(/images/logos/sourcey-50x50.png) center;
 }
 .top-bar .top-bar-section li.home a:hover {
-  background: #f6f6f6 url(/images/logos/sourcey-50x50.png) center;  
+  background: #f6f6f6 url(/images/logos/sourcey-50x50.png) center;
 }
 
 .top-bar .dropdown {
-  box-shadow: 0 1px 10px 0 rgba(2, 3, 3, 0.16);  
+  box-shadow: 0 1px 10px 0 rgba(2, 3, 3, 0.16);
   z-index: -1;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .top-bar-section .has-dropdown li a:hover {
-  box-shadow: 0 0px 3px 0 rgba(2, 3, 3, 0.06) inset;  
+  box-shadow: 0 0px 3px 0 rgba(2, 3, 3, 0.06) inset;
 }
 
 .top-bar-section .has-dropdown li a b {
@@ -125,7 +125,7 @@ a:hover {
   background: none;
 }
 
-    
+
 /* Header */
 #header {
   padding: 110px 0 40px;
@@ -134,7 +134,7 @@ a:hover {
 #header #logo a {
   height: 150px;
   width: 150px;
-  display: inline-block;  
+  display: inline-block;
   background: transparent;
   border: 1px solid transparent;
 }
@@ -168,33 +168,34 @@ a:hover {
   margin: 0 auto;
   padding: 30px 15px 30px;
   text-align: center;
-  max-width: 600px;
 }
 #footer p {
-  color: #aaa;
-  font-size: 12px;
+  color: #999;
+  font-size: 14px;
+  margin: 0 auto 15px;
+  max-width: 600px;
 }
 
 
 /*
-  Home Page 
+  Home Page
 */
 
 /* Banner */
 
 /*
 body.index {
-  background: url(/images/xiao-feng-lsd-1024x680.jpg) no-repeat center top;  
+  background: url(/images/xiao-feng-lsd-1024x680.jpg) no-repeat center top;
   background-size: 1000px auto;
 }
 */
-body.index #main {  
+body.index #main {
   /*max-width: 940px;*/
 }
 
 body.index #logo {
   margin-top: 0px;
-  /* 
+  /*
   margin-top: 240px;
   visibility: hidden;
   position: relative;
@@ -266,14 +267,14 @@ body.index #projects {
   text-align: center;
   margin: 72px auto 20px;
   padding: 0;
-  font-size: 0;  
-  background: rgba(255,255,255,0.90);  
+  font-size: 0;
+  background: rgba(255,255,255,0.90);
   box-shadow: 0px 0px 16px rgba(255,255,255,.5);
 }
 
 /*
 body.index #projects .project {
-  display: inline-block; 
+  display: inline-block;
   float: none;
   width: 300px;
 }
@@ -287,13 +288,13 @@ body.index #projects a {
   font-size: 15px;
   text-align: left;
   vertical-align: top;
-  border: 1px solid #f4f4f4;  
-  display:block;  
+  border: 1px solid #f4f4f4;
+  display:block;
   margin: 0;
-  padding: 24px 22px 30px;
+  padding: 30px 25px 30px;
   background: transparent;
   line-height: 1.4;
-  /* 
+  /*
   http://foohack.com/2007/11/cross-browser-support-for-inline-block-styling/
   display:-moz-inline-stack;
   display:inline-block;
@@ -301,7 +302,7 @@ body.index #projects a {
   *display:inline;
   width: 302px;
   height: 190px;
-  height: 190px;  
+  height: 190px;
   */
 }
 
@@ -331,9 +332,9 @@ body.index #projects a .icon {
 
 body.index #projects a span.title {
   display: block;
-  /* 
+  /*
   font-family: Georgia;
-  font-size: 22px; 
+  font-size: 22px;
   line-height: 1.5;
   text-transform: lowercase;
   */
@@ -346,7 +347,7 @@ body.index #projects a span.strap {
   display: block;
   /* font-size: 14px;
   font-weight: bold; */
-  font-weight: 500; 
+  font-weight: 500;
   color: #b00;
   margin-bottom: 4px;
   text-transform: lowercase;
@@ -359,36 +360,36 @@ body.index #projects a span.intro {
 
 /* Icons */
 body.index #projects a.symple .icon {
-  background: url(/images/logos/symple-80x80.png) no-repeat;	
+  background: url(/images/logos/symple-80x80.png) no-repeat;
 }
 body.index #projects a.anionu .icon {
   width: 100px;
-  background: url(/images/logos/anionu-100x80.png) no-repeat;	
+  background: url(/images/logos/anionu-100x80.png) no-repeat;
 }
 body.index #projects a.pacm .icon {
-  background: url(/images/logos/pacm-80x80.png) no-repeat;	
+  background: url(/images/logos/pacm-80x80.png) no-repeat;
 }
 body.index #projects a.libsourcey .icon {
-  background: url(/images/logos/libsourcey-80x80.png) no-repeat;	
+  background: url(/images/logos/libsourcey-80x80.png) no-repeat;
 }
 body.index #projects a.mesh .icon {
-  background: url(/images/logos/mesh-80x80.png) no-repeat;	
+  background: url(/images/logos/mesh-80x80.png) no-repeat;
 }
 body.index #projects a.stompstart .icon {
-  background: url(/images/logos/stompstart-80x80.png) no-repeat;	
+  background: url(/images/logos/stompstart-80x80.png) no-repeat;
 }
 body.index #projects a.gardn .icon {
-  background: url(/images/logos/gardn-80x80.png) no-repeat;	
+  background: url(/images/logos/gardn-80x80.png) no-repeat;
 }
 body.index #projects a.budokin .icon {
-  background: url(/images/logos/budokin-80x80.png) no-repeat;	
+  background: url(/images/logos/budokin-80x80.png) no-repeat;
 }
 
 @media only screen and (min-width: 64.063em) {
   body.index #projects .columns a {
-    height: 200px;
+    min-height: 200px;
   }
-  
+
   body.index #projects .faux {
     display:block;
     padding: 20px;
@@ -409,7 +410,7 @@ body.index #articles {
 /*
   max-width: 62.5rem;
   max-width: 650px;
-  border-top: 1px solid #e5e5e5; 
+  border-top: 1px solid #e5e5e5;
   text-align: center;
   */
   margin: 60px auto 20px;
@@ -419,8 +420,8 @@ body.index #articles > h2 {
   display:none;
   color: #c00;
   text-align: right;
-  border-bottom: 1px solid #333; 
-  border-bottom: 1px solid #d5d5d5; 
+  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #d5d5d5;
   */
   color: #e5e5e5;
   text-transform: uppercase;
@@ -435,34 +436,10 @@ body.index #articles ol {
 }
 
 body.index #articles .row {
-  border-bottom: 1px solid #eee;  
+  border-bottom: 1px solid #eee;
   /* 15px; Need side padding for mobile */
 }
 
-/*
-padding-left: 0.9375rem;
-padding-right: 0.9375rem;
-
-0.46875
-1.40625
-
-body.index #articles .row > .columns {
-  padding-left: 0.46875rem;
-  padding-right: 0.46875rem;
-}
-
-body.index #articles .row > .columns:first-child {
-  padding-left: 0px;
-  padding-right: 0.9375rem;
-}
-
-body.index #articles .row > .columns:last-child {
-  padding-left: 0.9375rem;
-  padding-right: 0px;
-}
-
-  background: #f8f8f8;
-*/
 body.index #articles .row > .columns {
   padding: 25px 0;
 }
@@ -476,13 +453,13 @@ body.index #articles .container {
 body.index #articles img {
   margin-top: -25px;
   margin-bottom: 15px;
-  border-right: 1px solid #fff;  
+  border-right: 1px solid #fff;
 }
 
 body.index #articles .title {
   font-size: 22px;
   font-weight: 400;
-  /* 
+  /*
   margin: 15px 0 10px;
   text-transform: lowercase;
    */
@@ -503,11 +480,11 @@ body.index #articles .title time {
 body.index #articles p {
   color: #222;
   color: #666;
-  font-size: 13px;
+  font-size: 14px;
 }
 body.index #articles .category {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   color: #c00;
 }
@@ -529,20 +506,20 @@ body.index #articles .more-link {
 
 
 /*
-  Generic Styles 
+  Generic Styles
 */
 #main {
   padding: 0;
 }
 #main .article-header {
 }
-#main .article-header h1 { 
+#main .article-header h1 {
   /*
   font-size: 32px;
   font-weight: normal;
   line-height: 42px;
   */
-  position: relative;  
+  position: relative;
   text-transform: none;
   color: #000;
   text-align: center;
@@ -554,7 +531,7 @@ body.index #articles .more-link {
   line-height: 80px;
   -webkit-font-smoothing: antialiased;
 }
-#main .article-header h2.subtitle { 
+#main .article-header h2.subtitle {
   text-align: center;
   margin: 17px auto 0;
   font: italic 500 24px/24px "freight-display-pro", Georgia, "Times New Roman", Serif;
@@ -594,8 +571,8 @@ body.index #articles .more-link {
   font-weight: 500;
 }
 
-/* 
-#main .content { 
+/*
+#main .content {
   font: 500 18px/32px "freight-sans-pro", Helvetica, Arial, sans-serif;
 }
 */
@@ -619,30 +596,30 @@ body.index #articles .more-link {
   content: " ☜";
 }
 
-#main .content dl { 
+#main .content dl {
   margin-left: 1em;
 }
-#main .content dl dt { 
+#main .content dl dt {
   /* text-transform: lowercase; */
 }
 #main .content dl dd {
   margin-bottom: 1.625em;
 }
 
-#main .content h1 { 
+#main .content h1 {
   display: none;
 }
 
-#main .content h2 { 
+#main .content h2 {
   /*
 	font-size: 30px;
-  margin: 35px 0 15px;  
+  margin: 35px 0 15px;
   margin-top: 2rem;
   margin-bottom: 1.15rem;
   */
 }
 
-#main .content h3 { 
+#main .content h3 {
   color: #b00;
   /*
   font-size: 26px;
@@ -654,27 +631,28 @@ body.index #articles .more-link {
 }
 
 
-#main .content h4 { 
-  /* 
+#main .content h4 {
+  /*
   color: #b00; font-size: 22px;
   font-weight: bold;
-  font-size: 24px;  
+  font-size: 24px;
   margin: 15px 0 0px;
    */
 }
 
-#main .content img { 
+#main .content img {
   display: block;
-  margin: 25px auto;
+  margin: 30px auto;
   box-shadow: 0 1px 16px rgba(0,0,0,0.28);
   border: 1px solid #666;
   text-align: center;
 }
-#main .content img:first-child { 
-  margin-top: 0;
-}
 
-#main .content img.align-left { 
+//#main .content > img:first-child {
+//  margin-top: 0;
+//}
+
+#main .content img.align-left {
   display: inline-block;
   float: left;
   margin: 0 27px 7px 0;
@@ -683,7 +661,7 @@ body.index #articles .more-link {
   border: none;
 }
 
-#main .content img.align-right { 
+#main .content img.align-right {
   display: inline-block;
   float: right;
   margin: 0 0 8px 22px;
@@ -693,6 +671,10 @@ body.index #articles .more-link {
 }
 #main .content img.width-100 {
   width: 100px;
+}
+#main p.width-75 {
+  width: 75%;
+  margin: 0 auto;
 }
 
 #main .content .action-button {
@@ -743,7 +725,7 @@ code {
   border: 1px solid #ddd;
   background-color: #f8f8f8;
   color: inherit;
-  /* 
+  /*
   font-size: 14px;
   font-size: 14px;
   line-height: 1.3; */
@@ -783,10 +765,10 @@ pre code:after {
   letter-spacing: normal;
 }
 
-/* 
+/*
   Generic Sidebar
 */
-.sidebar {  
+.sidebar {
 }
 @media only screen and (min-width: 64.063em) {
   .sidebar-float.float {
@@ -797,10 +779,10 @@ pre code:after {
     -webkit-transform: translateZ(0);
   }
   body.page .sidebar-float.float {
-    width: 220px; 
+    width: 220px;
   }
   body.article .sidebar-float.float {
-    width: 303px; 
+    width: 303px;
   }
 }
 
@@ -847,7 +829,7 @@ pre code:after {
   top: -3px;
   font-size: 16px;
   position: absolute;
-  color: #ccc;    
+  color: #ccc;
 }
 .sidebar.float .toc h4 a {
   display: inline;
@@ -914,15 +896,15 @@ pre code:after {
 /*
   Pages
 */
-body.page #main .article-header h1 { 
+body.page #main .article-header h1 {
   font: 300 60px/60px "freight-sans-pro", Helvetica, Arial, sans-serif;
 }
-body.page #main .article-wrap { 
+body.page #main .article-wrap {
   border-top: 1px solid #d6d6d6;
   padding-top: 25px;
   margin-top: 30px;
 }
-body.page #main .content { 
+body.page #main .content {
   font: 500 16px/28px "freight-sans-pro", Helvetica, Arial, sans-serif;
 }
 
@@ -951,14 +933,14 @@ body.page #main .content ul,
 body.page #main .content li {
   font-weight: 500;
   font-size: 1.1rem;
-  /* 
+  /*
   font-size: inherit;
   font-family: inherit;
   line-height: inherit; */
 }
 
 
-/* 
+/*
   Articles
 */
 
@@ -974,7 +956,7 @@ body.article #main .content ul,
 body.article #main .content li {
   font-weight: 500;
   font-size: 1.1rem;
-  /* 
+  /*
   font-size: inherit;
   font-family: inherit;
   line-height: inherit; */
@@ -986,13 +968,19 @@ body.article #disqus_thread {
 }
 
 body.article .social-buttons {
-  list-style-type: none;
-  width: 300px;
-  height: 90px;
-  margin: 45px auto 10px;
+  clear: both;
+  height: 110px;
+  background: #f2f2f2;
+  padding: 15px;
+  margin: 20px auto 10px;
 }
-
+body.article .social-buttons ul {
+  width: 300px;
+  padding: 0;
+  margin: 0 auto;
+}
 body.article .social-buttons li {
+  list-style-type: none;
   display: block;
   margin: 0;
   padding: 10px;

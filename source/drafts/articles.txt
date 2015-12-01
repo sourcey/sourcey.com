@@ -1,5 +1,18 @@
 Recliner.js demos
 Broken by Design
 https://coderwall.com/p/rs63ea/installing-phantomjs-1-9-on-ubuntu-12-04-x64-x86
-Android Login and Registration Screens using Material Design
-android image gallery
+
+batch delete files from update git repository
+(refer to self in throd person making an oopsie)
+http://www.zyxware.com/articles/4027/how-to-delete-files-permanently-from-your-local-and-remote-git-repositories
+
+Upgrading to Rails 5
+
+Open Source h264 Video Encoder Example using FFmpeg and LibSourcey
+  - install ffmpeg and opencv
+  - install libsourcey with all enabled
+  - include encoder code in libsourcey base
+
+MP3 streaming to HTML5 audio with libmp3lame, FFmpeg and LibSourcey
+
+Upload to Google Drive with LibSourcey (http tests)
