@@ -62,6 +62,7 @@ page "/sitemap.txt", layout: false
 page "/archives"
 #page "/blog" # paginate blog in the furute
 
+redirect "/building-a-complete-rails-5-api-guide/index.html", :to => "http://sourcey.com/rails-5-api-guide/"
 redirect "/understanding-psychedelics/index.html", :to => "http://avidsense.com/understanding-psychedelics/"
 redirect "/engineering-the-mind/index.html", :to => "http://avidsense.com/engineering-the-mind/"
 

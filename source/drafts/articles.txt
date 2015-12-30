@@ -15,4 +15,6 @@ Open Source h264 Video Encoder Example using FFmpeg and LibSourcey
 
 MP3 streaming to HTML5 audio with libmp3lame, FFmpeg and LibSourcey
 
+Real-time HTML5 Video Streaming Example with OpenCV, FFmpeg and LibSourcey
+
 Upload to Google Drive with LibSourcey (http tests)
