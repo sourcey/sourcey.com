@@ -4,21 +4,21 @@
 
 # Time.zone = "UTC"
 
-set :protocol, "http://"  
-set :host, "sourcey.com"  
+set :protocol, "http://"
+set :host, "sourcey.com"
 set :port, 80
-  
+
 def setup_summary_generator(
     separator = /(READMORE)/i,
-    readmore_text = 'read &rarr;') 
+    readmore_text = 'read &rarr;')
   return Proc.new  do |resource, rendered, length, ellipsis|
     require 'middleman-blog/truncate_html'
-    
+
     if length
       rendered = rendered.sub(/<div[^>]*>(.*)<\/div>/im, '').sub(%r{<h1 id=\".+\">.+</h1>}, '').gsub(%r{</?[^>]+?>}, '')
       summary = TruncateHTML.truncate_html(rendered, length, ellipsis)
       # Add a read more-link if  the original text was longer then the summary...
-      #unless summary.strip == rendered.strip  
+      #unless summary.strip == rendered.strip
       #  summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
       #end
       summary = "<p>" + summary + "<p>"
@@ -77,7 +77,7 @@ ignore 'bower_components/*'
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path "bower_components/foundation/scss"
-  
+
   # Set this to the root of your project when deployed:
   config.http_path = "/"
   config.css_dir = "stylesheets"
@@ -137,7 +137,7 @@ helpers do
   def nav_active(page)
     @page_id == page ? {:class => "active"} : {}
   end
-  
+
   def host_with_port
     [host, optional_port].compact.join(':')
   end
@@ -195,18 +195,18 @@ end
 
 #set :markdown_engine, :redcarpet
 
-#set :markdown, 
+#set :markdown,
 #  :quote => true,
-#  :tables => true, 
-#  :autolink => true, 
+#  :tables => true,
+#  :autolink => true,
 #  :footnotes => true,
-#  :gh_blockcode => true, 
-#  :fenced_code_blocks => true, 
+#  :gh_blockcode => true,
+#  :fenced_code_blocks => true,
 #  :link_attributes => { "target" => "_blank" }
 
 set :markdown_engine, :kramdown
 set :markdown,
-  parse_block_html: true, 
+  parse_block_html: true,
   auto_id_prefix: '',
   smart_quotes: ['lsquo', 'rsquo', 'ldquo', 'rdquo'],
   toc_levels: [1, 2, 3, 4],
@@ -220,11 +220,11 @@ set :markdown,
 #  :smart_quotes => ["&ldquo;", "&rdquo;"],
 
 # Development-specific configuration
-configure :development do  
+configure :development do
   # Used for generating absolute URLs
   #set :host, Middleman::PreviewServer.host
   #set :port, Middleman::PreviewServer.port
-end  
+end
 
 # Build-specific configuration
 
@@ -234,7 +234,7 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-  
+
   # Minify HTML on build
   activate :minify_html
 

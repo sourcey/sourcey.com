@@ -1,5 +1,5 @@
 ---
-title: Building a Complete Rails 5 API Only App
+title: Building the Perfect Rails 5 API Only App
 date: 2015-12-26
 tags: Rails, API
 author: Kam Low
@@ -7,35 +7,38 @@ author_site: https://plus.google.com/+KamLow
 layout: article
 ---
 
+<div class="sidebar-section toc">
+#### Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+</div>
+
 Thanks to the new `rails-api` gem that ships as part of the Rails 5 core, Rails is now an ideal candidate for building streamlined APIs quickly and easily.
 
 Until now, arguably the best option for creating APIs in Ruby has been Grape, and while Grape is still a brilliant option (especially if you like to DIY), there are some great advantages to using Rails 5 in API mode, such as; ActiveRecord by default, a strong developer community, and having the asset pipeline and front end features available should you need them as your project evolves.  
 
-This guide will help you get started the right way when building your first Rails 5 API only app, and comprises of the following sections:
+This how-to guide aims to help you get started the right way using Rails 5 to build the perfect API, and it comprises of the following sections:
 
 * ToC
 {:toc}
 
-## Setting up Rails 5
+## Installing up Rails 5
 
-First, make sure you are running Ruby 2.2.2+ or newer as it's required by Rails 5.
+First, make sure you are running Ruby 2.2.2+ or newer as it's required by Rails 5, then go ahead an install the Rails gem:
+
+~~~bash
+gem install rails
+
+# The output should be >= Rails 5.0.0
+rails --version
+~~~
 
 According to the official [Rails guide](http://edgeguides.rubyonrails.org/api_app.html) all we need to do to create an API only Rails app is to pass the `--api` option at the command line when creating a new Rails app, like so:
 
 ~~~bash
 rails new api_app_name --api
-~~~
-
-However, as Rails 5 hasn't been officially released yet things aren't quite that simple, and we need to generate our Rails API app using the latest version on Github. Simply clone the master branch from the Rails repo:
-
-~~~bash
-git clone git@github.com:rails/rails.git
-~~~
-
-Now we generate new Rails API application by passing the `--api` directive to the `rails new` command:
-
-~~~bash
-bundle exec railties/exe/rails new <parent-folder-path>/api_app_name --api --edge
 ~~~
 
 The next thing is to run `bundle` and `rake` inside our app directory to install the default gems and setup the database:
@@ -46,17 +49,17 @@ bundle install
 bin/rake db:setup
 ~~~
 
-Nice! Now we have a shiny new API only Rails app without any of the incumbent front end bloat, and all of the inherent Railsy goodness.
+Now we have a shiny new API only Rails app without any of the incumbent front end bloat, and all of the inherent Railsy goodness. Nice!
 
 ## Using RSpec for Testing
 
-Before doing anything else let's setup [RSpec](http://rspec.info) for testing our application. By setting up Rspec first we can make the most of the RSpec Rails generators, which will auto generate default specs for us each time we use `rails generate` to generate resources. To do this, go ahead and add the [rspec-rails](https://github.com/rspec/rspec-rails) gem to your Gemfile in the `:development, :test` group:
+Before going any further let's setup [RSpec](http://rspec.info) for spec testing our application. The reason why it's good to setup RSpec first is that we can save a bit of time using the built-in RSpec generators to auto generate default model and controller specs for us each time we use `rails generate scaffold` to generate resources later on. To install RSpec, go ahead and add the [rspec-rails](https://github.com/rspec/rspec-rails) gem to your Gemfile in the `:development, :test` group:
 
 ~~~ruby
 group :development, :test do
 
   # Use RSpec for specs
-  gem 'rspec-rails', '3.1.0'
+  gem 'rspec-rails', '>= 3.5.0'
 
   # Use Factory Girl for generating random test data
   gem 'factory_girl_rails'
@@ -75,11 +78,11 @@ Run the RSpec installer:
 bin/rails g rspec:install  
 ~~~
 
-Finally, you can get rid of the `test` directory in Rails, since we won't be writing unit tests, but specifications instead.
+Finally, you can get rid of the `test` directory in Rails, since we won't be writing unit tests, but writing specifications instead.
 
 ## Bulding Your API
 
-Now is the time to start building out our API controllers.
+Lets start building out our API controllers.
 
 When an app is created with the `--api` flag you can use the default scaffold generators to generate your API resources as normal, without the need for any special arguments.
 
@@ -396,7 +399,7 @@ class User < ActiveRecord::Base
   def generate_api_key
     loop do
       token = SecureRandom.base64.tr('+/=', 'Qrt')
-      break token unless User.exists?(api_key: token).any?
+      break token unless User.exists?(api_key: token)
     end
   end
 end
@@ -405,23 +408,30 @@ end
 On the controller side we can implement the authentication using the built in `authenticate_or_request_with_http_token` Rails method.
 
 ~~~ruby
-class Api::ApiController < ActionController::Base
+class ApplicationController < ActionController::Base
+  include ActionController::HttpAuthentication::Token::ControllerMethods
 
   # Add a before_action to authenticate all requests.
   # Move this to subclassed controllers if you only
   # want to authenticate certain methods.
   before_action :authenticate
 
-  # Expose `current_user` to subclassed controllers
-  helper_method :current_user
-
-  private
+  protected
 
   # Authenticate the user with token based authentication
   def authenticate
-    authenticate_or_request_with_http_token do |token, options|
-      @current_user = User.where(api_key: token).first
+    authenticate_token || render_unauthorized
+  end
+
+  def authenticate_token
+    authenticate_with_http_token do |token, options|
+      @current_user = User.find_by(api_key: token)
     end
+  end
+
+  def render_unauthorized(realm = "Application")
+    self.headers["WWW-Authenticate"] = %(Token realm="#{realm.gsub(/"/, "")}")
+    render json: 'Bad credentials', status: :unauthorized
   end
 end
 ~~~
