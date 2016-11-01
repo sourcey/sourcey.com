@@ -4,7 +4,6 @@
   <body class="article <%= page_classes %>">
     <%= partial "nav" %>
     <%= image_tag(current_article.data.banner, id: 'banner') if current_article.data.banner %>
-    <%= partial "header" %>
     <div id="main" role="main">
       <%
         content = Nokogiri::HTML(yield)
@@ -18,17 +17,19 @@
           <% end %>
           <div class="meta">
             <% if current_article.data.author_site %>
-              By <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external' %>
+              <%= link_to current_article.data.author, current_article.data.author_site, rel: 'author external', class: 'author' %>
             <% else %>
-              By <%= current_article.data.author %>
+              <%= current_article.data.author %>
             <% end %>
-            &diams;
+            <!-- &diams; -->
+            &mdash;
             <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time>
-            <!--
+
             <div class="tags">
-              Tagged: <%= current_article.tags.join(', ') %>.
+              <%# current_article.tags.join(', ') %>
+              <%= tag_links(current_article) %>
             </div>
-            -->
+
           </div>
         </header>
         <div class="article-wrap row">
@@ -40,10 +41,10 @@
           <div class="large-4 columns">
             <div class="sidebar">
               <%= sidebar_content %>
-              <div class="sidebar-section tags">
+              <!-- <div class="sidebar-section tags">
                 <h4>Tags</h4>
-                <%= tag_list(current_article) %>
-              </div>
+                <%# tag_list(current_article) %>
+              </div> -->
               <div class="sidebar-section ad ad-300x250 sidebar-float">
                 <!--<h4>Advertisment</h4>-->
                 <!-- Sourcey (Skyscraper) -->
