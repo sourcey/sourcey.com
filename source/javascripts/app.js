@@ -6,7 +6,7 @@ $(document).ready(function() {
   var sidebar = $('body article .sidebar');
   var toc = $('.toc', sidebar);
   if (toc.length) {
-    toc.find('h4').append('<a href="#top">&uArr;</a>');
+    toc.find('h4').preped('<a href="#top">&uArr;</a>');
     toc.find('ul#markdown-toc > li').each(function(i) {
       var e = $(this);
       var l = e.children('ul');

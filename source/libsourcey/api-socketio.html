@@ -1,0 +1,1906 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SocketIO · LibSourcey</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="api-stun.html" />
+    
+    
+    <link rel="prev" href="api-sked.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="installation-linux.html">
+            
+                <a href="installation-linux.html">
+            
+                    
+                    Linux Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="installation-osx.html">
+            
+                <a href="installation-osx.html">
+            
+                    
+                    OS X Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="installation-windows.html">
+            
+                <a href="installation-windows.html">
+            
+                    
+                    Windows Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="examples.html">
+            
+                <a href="examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="api-archo.html">
+            
+                <a href="api-archo.html">
+            
+                    
+                    Archo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="api-av.html">
+            
+                <a href="api-av.html">
+            
+                    
+                    AV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="api-base.html">
+            
+                <a href="api-base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="api-crypto.html">
+            
+                <a href="api-crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="api-http.html">
+            
+                <a href="api-http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="api-json.html">
+            
+                <a href="api-json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="api-net.html">
+            
+                <a href="api-net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="api-pacm.html">
+            
+                <a href="api-pacm.html">
+            
+                    
+                    Pacm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="api-pluga.html">
+            
+                <a href="api-pluga.html">
+            
+                    
+                    Pluga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="api-sked.html">
+            
+                <a href="api-sked.html">
+            
+                    
+                    Sked
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.11" data-path="api-socketio.html">
+            
+                <a href="api-socketio.html">
+            
+                    
+                    SocketIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="api-stun.html">
+            
+                <a href="api-stun.html">
+            
+                    
+                    STUN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="api-symple.html">
+            
+                <a href="api-symple.html">
+            
+                    
+                    Symple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="api-turn.html">
+            
+                <a href="api-turn.html">
+            
+                    
+                    TURN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="api-util.html">
+            
+                <a href="api-util.html">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="api-uv.html">
+            
+                <a href="api-uv.html">
+            
+                    
+                    UV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="api-webrtc.html">
+            
+                <a href="api-webrtc.html">
+            
+                    
+                    WebRTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="LICENSE.html">
+            
+                <a href="LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >SocketIO</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="module--socketio">Module <!-- group --> <code>socketio</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>namespace</code><a href="#namespacescy_1_1sockio"><code>scy::sockio</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1Client"><code>scy::sockio::Client</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1TCPClient"><code>scy::sockio::TCPClient</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1SSLClient"><code>scy::sockio::SSLClient</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1Packet"><code>scy::sockio::Packet</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>struct</code><a href="#structscy_1_1sockio_1_1ClientState"><code>scy::sockio::ClientState</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>struct</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>scy::sockio::Client::Options</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>struct</code><a href="#structscy_1_1sockio_1_1Transaction"><code>scy::sockio::Transaction</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="namespace-scysockio">namespace <code>scy::sockio</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1Client"><code>scy::sockio::Client</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1Packet"><code>scy::sockio::Packet</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1SSLClient"><code>scy::sockio::SSLClient</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1sockio_1_1TCPClient"><code>scy::sockio::TCPClient</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>struct</code><a href="#structscy_1_1sockio_1_1ClientState"><code>scy::sockio::ClientState</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>struct</code><a href="#structscy_1_1sockio_1_1Transaction"><code>scy::sockio::Transaction</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="class-scysockioclient">class <code>scy::sockio::Client</code></h1>
+<pre><code>class scy::sockio::Client
+  : public scy::Stateful&lt; ClientState &gt;
+  : public scy::net::SocketAdapter
+  : public scy::SignalBase&lt; PacketDelegateBase, IPacket &amp; &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Client(const net::Socket::Ptr &amp; socket,const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Options</code></a><code>&amp; options)</code></td>
+<td>Client(const net::Socket::Ptr&amp; socket);.</td>
+</tr>
+<tr>
+<td><code>public virtual  ~Client()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void connect()</code></td>
+<td>virtual void connect(const std::string&amp; host, std::uint16_t port);</td>
+</tr>
+<tr>
+<td><code>public virtual void close()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; message,bool ack)</code></td>
+<td>Send a default message packet.</td>
+</tr>
+<tr>
+<td><code>public virtual int send(const json::Value &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const char * message,bool ack)</code></td>
+<td>Send an event packet.</td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td>Send the given packet.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1sockio_1_1Transaction"><code>Transaction</code></a><code>* createTransaction(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></td>
+<td>Create a packet transaction.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options()</code></td>
+<td>Return a reference to the client options object.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>&amp; ws()</code></td>
+<td>Return the underlying WebSocket instance.</td>
+</tr>
+<tr>
+<td><code>public std::string sessionID() const</code></td>
+<td>Return the current session ID assigned by the server.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>error() const</code></td>
+<td>Return the error object (if any).</td>
+</tr>
+<tr>
+<td><code>public bool isOnline() const</code></td>
+<td>Return true if the client is is Online state.</td>
+</tr>
+<tr>
+<td><code>public bool reconnecting() const</code></td>
+<td>Return true if currently reconnecting.</td>
+</tr>
+<tr>
+<td><code>public bool wasOnline() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimeoutTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_reconnectTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _sessionID</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>_options</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>_ws</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _pingTimeout</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _pingInterval</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _reconnecting</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _wasOnline</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void reset()</code></td>
+<td>Reset variables and timers at the beginning and end of each session.</td>
+</tr>
+<tr>
+<td><code>protected virtual void onConnect()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onOnline()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onClose()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPacket(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onHandshake(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onMessage(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketConnect()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketRecv(const</code><a href="#classscy_1_1MutableBuffer"><code>MutableBuffer</code></a><code>&amp; buffer,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketClose()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPingTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPingTimeoutTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void startReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void stopReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual int sendPing()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPong()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--clientconst-netsocketptr--socketconstoptions-options"><code>public  Client(const net::Socket::Ptr &amp; socket,const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Options</code></a><code>&amp; options)</code></h4>
+<p>Client(const net::Socket::Ptr&amp; socket);.</p>
+<h4 id="public-virtual--client"><code>public virtual  ~Client()</code></h4>
+<h4 id="public-virtual-void-connect"><code>public virtual void connect()</code></h4>
+<p>virtual void connect(const std::string&amp; host, std::uint16_t port);</p>
+<h4 id="public-virtual-void-close"><code>public virtual void close()</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--messagebool-ack"><code>public virtual int send(const std::string &amp; message,bool ack)</code></h4>
+<p>Send a default message packet.</p>
+<h4 id="public-virtual-int-sendconst-jsonvalue--messagebool-ack"><code>public virtual int send(const json::Value &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-char--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const char * message,bool ack)</code></h4>
+<p>Send an event packet.</p>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-jsonvalue--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconstsockiopacket-packet"><code>public virtual int send(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<p>Send the given packet.</p>
+<h4 id="publictransaction-createtransactionconstsockiopacket-requestlong-timeout"><code>public</code><a href="#structscy_1_1sockio_1_1Transaction"><code>Transaction</code></a><code>* createTransaction(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></h4>
+<p>Create a packet transaction.</p>
+<h4 id="publicclientoptions-options"><code>public</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options()</code></h4>
+<p>Return a reference to the client options object.</p>
+<h4 id="publichttpwswebsocket-ws"><code>public</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>&amp; ws()</code></h4>
+<p>Return the underlying WebSocket instance.</p>
+<h4 id="public-stdstring-sessionid-const"><code>public std::string sessionID() const</code></h4>
+<p>Return the current session ID assigned by the server.</p>
+<h4 id="publicscyerrorerror-const"><code>public</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>error() const</code></h4>
+<p>Return the error object (if any).</p>
+<h4 id="public-bool-isonline-const"><code>public bool isOnline() const</code></h4>
+<p>Return true if the client is is Online state.</p>
+<h4 id="public-bool-reconnecting-const"><code>public bool reconnecting() const</code></h4>
+<p>Return true if currently reconnecting.</p>
+<h4 id="public-bool-wasonline-const"><code>public bool wasOnline() const</code></h4>
+<p>Return true if the client was previously in the Online state. Useful for delegates handling the <a href="#structscy_1_1Error">Error</a> state.</p>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protectedtimerpingtimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimer</code></h4>
+<h4 id="protectedtimerpingtimeouttimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimeoutTimer</code></h4>
+<h4 id="protectedtimerreconnecttimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_reconnectTimer</code></h4>
+<h4 id="protectedscyerrorerror"><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></h4>
+<h4 id="protected-stdstring-sessionid"><code>protected std::string _sessionID</code></h4>
+<h4 id="protectedclientoptionsoptions"><code>protected</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>_options</code></h4>
+<h4 id="protectedhttpwswebsocketws"><code>protected</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>_ws</code></h4>
+<h4 id="protected-int-pingtimeout"><code>protected int _pingTimeout</code></h4>
+<h4 id="protected-int-pinginterval"><code>protected int _pingInterval</code></h4>
+<h4 id="protected-bool-reconnecting"><code>protected bool _reconnecting</code></h4>
+<h4 id="protected-bool-wasonline"><code>protected bool _wasOnline</code></h4>
+<h4 id="protected-virtual-void-seterrorconstscyerror-error"><code>protected virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></h4>
+<h4 id="protected-virtual-void-reset"><code>protected virtual void reset()</code></h4>
+<p>Reset variables and timers at the beginning and end of each session.</p>
+<h4 id="protected-virtual-void-onconnect"><code>protected virtual void onConnect()</code></h4>
+<h4 id="protected-virtual-void-ononline"><code>protected virtual void onOnline()</code></h4>
+<h4 id="protected-virtual-void-onclose"><code>protected virtual void onClose()</code></h4>
+<h4 id="protected-virtual-void-onpacketsockiopacket-packet"><code>protected virtual void onPacket(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onhandshakesockiopacket-packet"><code>protected virtual void onHandshake(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onmessagesockiopacket-packet"><code>protected virtual void onMessage(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onsocketconnect"><code>protected virtual void onSocketConnect()</code></h4>
+<p>These virtual methods can be overridden as necessary to intercept socket events before they hit the application.</p>
+<h4 id="protected-virtual-void-onsocketrecvconstmutablebuffer-bufferconstnetaddress-peeraddress"><code>protected virtual void onSocketRecv(const</code><a href="#classscy_1_1MutableBuffer"><code>MutableBuffer</code></a><code>&amp; buffer,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress)</code></h4>
+<h4 id="protected-virtual-void-onsocketerrorconstscyerror-error"><code>protected virtual void onSocketError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></h4>
+<h4 id="protected-virtual-void-onsocketclose"><code>protected virtual void onSocketClose()</code></h4>
+<h4 id="protected-virtual-void-onpingtimer"><code>protected virtual void onPingTimer()</code></h4>
+<h4 id="protected-virtual-void-onpingtimeouttimer"><code>protected virtual void onPingTimeoutTimer()</code></h4>
+<h4 id="protected-virtual-void-startreconnecttimer"><code>protected virtual void startReconnectTimer()</code></h4>
+<h4 id="protected-virtual-void-stopreconnecttimer"><code>protected virtual void stopReconnectTimer()</code></h4>
+<h4 id="protected-virtual-void-onreconnecttimer"><code>protected virtual void onReconnectTimer()</code></h4>
+<h4 id="protected-virtual-int-sendping"><code>protected virtual int sendPing()</code></h4>
+<h4 id="protected-virtual-void-onpong"><code>protected virtual void onPong()</code></h4>
+<h1 id="class-scysockiopacket">class <code>scy::sockio::Packet</code></h1>
+<pre><code>class scy::sockio::Packet
+  : public scy::IPacket
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Packet(Frame frame,Type type,int id,const std::string &amp; nsp,const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td>Default contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(Type type,const std::string &amp; message,bool ack)</code></td>
+<td>General contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; message,bool ack)</code></td>
+<td>Message contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const json::Value &amp; message,bool ack)</code></td>
+<td>JSON contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td>Event contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></td>
+<td>Event JSON contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~Packet()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public Frame frame() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public Type type() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int id() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string nsp() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string message() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public json::Value json() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setID(int id)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setNamespace(const std::string &amp; nsp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setMessage(const std::string &amp; message)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setAck(bool flag)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp;)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(Buffer &amp;) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool valid() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string frameString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string typeString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string toString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void print(std::ostream &amp; os) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected Frame _frame</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected Type _type</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _id</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _nsp</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _event</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _message</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _ack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::size_t _size</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--packetframe-frametype-typeint-idconst-stdstring--nspconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public  Packet(Frame frame,Type type,int id,const std::string &amp; nsp,const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<p>Default contructor.</p>
+<h4 id="public--packettype-typeconst-stdstring--messagebool-ack"><code>public  Packet(Type type,const std::string &amp; message,bool ack)</code></h4>
+<p>General contructor.</p>
+<h4 id="public--packetconst-stdstring--messagebool-ack"><code>public  Packet(const std::string &amp; message,bool ack)</code></h4>
+<p>Message contructor.</p>
+<h4 id="public--packetconst-jsonvalue--messagebool-ack"><code>public  Packet(const json::Value &amp; message,bool ack)</code></h4>
+<p>JSON contructor.</p>
+<h4 id="public--packetconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public  Packet(const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<p>Event contructor.</p>
+<h4 id="public--packetconst-stdstring--eventconst-jsonvalue--messagebool-ack"><code>public  Packet(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></h4>
+<p>Event JSON contructor.</p>
+<h4 id="public--packetconstpacket-r"><code>public  Packet(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></h4>
+<h4 id="publicpacket-operatorconstpacket-r"><code>public</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--packet"><code>public virtual  ~Packet()</code></h4>
+<h4 id="public-virtualipacket-clone-const"><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></h4>
+<h4 id="public-frame-frame-const"><code>public Frame frame() const</code></h4>
+<h4 id="public-type-type-const"><code>public Type type() const</code></h4>
+<h4 id="public-int-id-const"><code>public int id() const</code></h4>
+<h4 id="public-stdstring-nsp-const"><code>public std::string nsp() const</code></h4>
+<h4 id="public-stdstring-message-const"><code>public std::string message() const</code></h4>
+<h4 id="public-jsonvalue-json-const"><code>public json::Value json() const</code></h4>
+<h4 id="public-void-setidint-id"><code>public void setID(int id)</code></h4>
+<h4 id="public-void-setnamespaceconst-stdstring--nsp"><code>public void setNamespace(const std::string &amp; nsp)</code></h4>
+<h4 id="public-void-setmessageconst-stdstring--message"><code>public void setMessage(const std::string &amp; message)</code></h4>
+<h4 id="public-void-setackbool-flag"><code>public void setAck(bool flag)</code></h4>
+<h4 id="public-virtual-stdsizet-readconstconstbuffer"><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp;)</code></h4>
+<p>Read/parse to the packet from the given input buffer. The number of bytes read is returned.</p>
+<h4 id="public-virtual-void-writebuffer--const"><code>public virtual void write(Buffer &amp;) const</code></h4>
+<p>Copy/generate to the packet given output buffer. The number of bytes written can be obtained from the buffer.</p>
+<p>Todo: It may be prefferable to use our pod types here instead of buffer input, but the current codebase requires that the buffer be dynamically resizable for some protocols...</p>
+<p>virtual std::size_t write(MutableBuffer&amp;) const = 0;</p>
+<h4 id="public-virtual-stdsizet-size-const"><code>public virtual std::size_t size() const</code></h4>
+<p>The size of the packet in bytes.</p>
+<p>This is the nember of bytes that will be written on a call to <a href="#group__socketio_1gad8bcc194e62922929788a39be680775c">write()</a>, but may not be the number of bytes that will be consumed by <a href="#group__socketio_1ga081246038126d83d077764781899a723">read()</a>.</p>
+<h4 id="public-bool-valid-const"><code>public bool valid() const</code></h4>
+<h4 id="public-stdstring-framestring-const"><code>public std::string frameString() const</code></h4>
+<h4 id="public-stdstring-typestring-const"><code>public std::string typeString() const</code></h4>
+<h4 id="public-stdstring-tostring-const"><code>public std::string toString() const</code></h4>
+<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-frame-frame"><code>protected Frame _frame</code></h4>
+<h4 id="protected-type-type"><code>protected Type _type</code></h4>
+<h4 id="protected-int-id"><code>protected int _id</code></h4>
+<h4 id="protected-stdstring-nsp"><code>protected std::string _nsp</code></h4>
+<h4 id="protected-stdstring-event"><code>protected std::string _event</code></h4>
+<h4 id="protected-stdstring-message"><code>protected std::string _message</code></h4>
+<h4 id="protected-bool-ack"><code>protected bool _ack</code></h4>
+<h4 id="protected-stdsizet-size"><code>protected std::size_t _size</code></h4>
+<h1 id="class-scysockiosslclient">class <code>scy::sockio::SSLClient</code></h1>
+<pre><code>class scy::sockio::SSLClient
+  : public scy::sockio::Client
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  SSLClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--sslclientconstclientoptions-optionsuvloop--loop"><code>public  SSLClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></h4>
+<h1 id="class-scysockiotcpclient">class <code>scy::sockio::TCPClient</code></h1>
+<pre><code>class scy::sockio::TCPClient
+  : public scy::sockio::Client
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  TCPClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--tcpclientconstclientoptions-optionsuvloop--loop"><code>public  TCPClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></h4>
+<h1 id="struct-scysockioclientstate">struct <code>scy::sockio::ClientState</code></h1>
+<pre><code>struct scy::sockio::ClientState
+  : public scy::State
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public inline virtual std::string str(unsigned int id) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-inline-virtual-stdstring-strunsigned-int-id-const"><code>public inline virtual std::string str(unsigned int id) const</code></h4>
+<h1 id="struct-scysockiotransaction">struct <code>scy::sockio::Transaction</code></h1>
+<pre><code>struct scy::sockio::Transaction
+  : public scy::PacketTransaction&lt; sockio::Packet &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,long timeout)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool send()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onPotentialResponse(void *,</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onResponse()</code></td>
+<td>Called when a successful response is received.</td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual  ~Transaction()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="publicsockioclient-client"><code>public</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client</code></h4>
+<h4 id="public--transactionsockioclient-clientlong-timeout"><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,long timeout)</code></h4>
+<h4 id="public--transactionsockioclient-clientconstsockiopacket-requestlong-timeout"><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></h4>
+<h4 id="public-virtual-bool-send"><code>public virtual bool send()</code></h4>
+<p>Starts the transaction timer and sends the request. Overriding classes should implement send logic here.</p>
+<h4 id="public-virtual-bool-checkresponseconstsockiopacket-packet"><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<p>Checks a potential response candidate and returns true on successful match.</p>
+<h4 id="public-virtual-void-onpotentialresponsevoid-sockiopacket-packet"><code>public virtual void onPotentialResponse(void *,</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="public-virtual-void-onresponse"><code>public virtual void onResponse()</code></h4>
+<p>Called when a successful response is received.</p>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-virtual--transaction"><code>protected virtual  ~Transaction()</code></h4>
+<h1 id="class-scysockioclient">class <code>scy::sockio::Client</code></h1>
+<pre><code>class scy::sockio::Client
+  : public scy::Stateful&lt; ClientState &gt;
+  : public scy::net::SocketAdapter
+  : public scy::SignalBase&lt; PacketDelegateBase, IPacket &amp; &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Client(const net::Socket::Ptr &amp; socket,const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Options</code></a><code>&amp; options)</code></td>
+<td>Client(const net::Socket::Ptr&amp; socket);.</td>
+</tr>
+<tr>
+<td><code>public virtual  ~Client()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void connect()</code></td>
+<td>virtual void connect(const std::string&amp; host, std::uint16_t port);</td>
+</tr>
+<tr>
+<td><code>public virtual void close()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; message,bool ack)</code></td>
+<td>Send a default message packet.</td>
+</tr>
+<tr>
+<td><code>public virtual int send(const json::Value &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const char * message,bool ack)</code></td>
+<td>Send an event packet.</td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual int send(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td>Send the given packet.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1sockio_1_1Transaction"><code>Transaction</code></a><code>* createTransaction(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></td>
+<td>Create a packet transaction.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options()</code></td>
+<td>Return a reference to the client options object.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>&amp; ws()</code></td>
+<td>Return the underlying WebSocket instance.</td>
+</tr>
+<tr>
+<td><code>public std::string sessionID() const</code></td>
+<td>Return the current session ID assigned by the server.</td>
+</tr>
+<tr>
+<td><code>public</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>error() const</code></td>
+<td>Return the error object (if any).</td>
+</tr>
+<tr>
+<td><code>public bool isOnline() const</code></td>
+<td>Return true if the client is is Online state.</td>
+</tr>
+<tr>
+<td><code>public bool reconnecting() const</code></td>
+<td>Return true if currently reconnecting.</td>
+</tr>
+<tr>
+<td><code>public bool wasOnline() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimeoutTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_reconnectTimer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _sessionID</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>_options</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>_ws</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _pingTimeout</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _pingInterval</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _reconnecting</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _wasOnline</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void reset()</code></td>
+<td>Reset variables and timers at the beginning and end of each session.</td>
+</tr>
+<tr>
+<td><code>protected virtual void onConnect()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onOnline()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onClose()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPacket(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onHandshake(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onMessage(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketConnect()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketRecv(const</code><a href="#classscy_1_1MutableBuffer"><code>MutableBuffer</code></a><code>&amp; buffer,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onSocketClose()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPingTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPingTimeoutTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void startReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void stopReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onReconnectTimer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual int sendPing()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void onPong()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--clientconst-netsocketptr--socketconstoptions-options"><code>public  Client(const net::Socket::Ptr &amp; socket,const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Options</code></a><code>&amp; options)</code></h4>
+<p>Client(const net::Socket::Ptr&amp; socket);.</p>
+<h4 id="public-virtual--client"><code>public virtual  ~Client()</code></h4>
+<h4 id="public-virtual-void-connect"><code>public virtual void connect()</code></h4>
+<p>virtual void connect(const std::string&amp; host, std::uint16_t port);</p>
+<h4 id="public-virtual-void-close"><code>public virtual void close()</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--messagebool-ack"><code>public virtual int send(const std::string &amp; message,bool ack)</code></h4>
+<p>Send a default message packet.</p>
+<h4 id="public-virtual-int-sendconst-jsonvalue--messagebool-ack"><code>public virtual int send(const json::Value &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-char--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const char * message,bool ack)</code></h4>
+<p>Send an event packet.</p>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconst-stdstring--eventconst-jsonvalue--messagebool-ack"><code>public virtual int send(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></h4>
+<h4 id="public-virtual-int-sendconstsockiopacket-packet"><code>public virtual int send(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<p>Send the given packet.</p>
+<h4 id="publictransaction-createtransactionconstsockiopacket-requestlong-timeout"><code>public</code><a href="#structscy_1_1sockio_1_1Transaction"><code>Transaction</code></a><code>* createTransaction(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></h4>
+<p>Create a packet transaction.</p>
+<h4 id="publicclientoptions-options"><code>public</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options()</code></h4>
+<p>Return a reference to the client options object.</p>
+<h4 id="publichttpwswebsocket-ws"><code>public</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>&amp; ws()</code></h4>
+<p>Return the underlying WebSocket instance.</p>
+<h4 id="public-stdstring-sessionid-const"><code>public std::string sessionID() const</code></h4>
+<p>Return the current session ID assigned by the server.</p>
+<h4 id="publicscyerrorerror-const"><code>public</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>error() const</code></h4>
+<p>Return the error object (if any).</p>
+<h4 id="public-bool-isonline-const"><code>public bool isOnline() const</code></h4>
+<p>Return true if the client is is Online state.</p>
+<h4 id="public-bool-reconnecting-const"><code>public bool reconnecting() const</code></h4>
+<p>Return true if currently reconnecting.</p>
+<h4 id="public-bool-wasonline-const"><code>public bool wasOnline() const</code></h4>
+<p>Return true if the client was previously in the Online state. Useful for delegates handling the <a href="#structscy_1_1Error">Error</a> state.</p>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protectedtimerpingtimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimer</code></h4>
+<h4 id="protectedtimerpingtimeouttimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_pingTimeoutTimer</code></h4>
+<h4 id="protectedtimerreconnecttimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_reconnectTimer</code></h4>
+<h4 id="protectedscyerrorerror"><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></h4>
+<h4 id="protected-stdstring-sessionid"><code>protected std::string _sessionID</code></h4>
+<h4 id="protectedclientoptionsoptions"><code>protected</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>_options</code></h4>
+<h4 id="protectedhttpwswebsocketws"><code>protected</code><a href="#classscy_1_1http_1_1ws_1_1WebSocket"><code>http::ws::WebSocket</code></a><code>_ws</code></h4>
+<h4 id="protected-int-pingtimeout"><code>protected int _pingTimeout</code></h4>
+<h4 id="protected-int-pinginterval"><code>protected int _pingInterval</code></h4>
+<h4 id="protected-bool-reconnecting"><code>protected bool _reconnecting</code></h4>
+<h4 id="protected-bool-wasonline"><code>protected bool _wasOnline</code></h4>
+<h4 id="protected-virtual-void-seterrorconstscyerror-error"><code>protected virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></h4>
+<h4 id="protected-virtual-void-reset"><code>protected virtual void reset()</code></h4>
+<p>Reset variables and timers at the beginning and end of each session.</p>
+<h4 id="protected-virtual-void-onconnect"><code>protected virtual void onConnect()</code></h4>
+<h4 id="protected-virtual-void-ononline"><code>protected virtual void onOnline()</code></h4>
+<h4 id="protected-virtual-void-onclose"><code>protected virtual void onClose()</code></h4>
+<h4 id="protected-virtual-void-onpacketsockiopacket-packet"><code>protected virtual void onPacket(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onhandshakesockiopacket-packet"><code>protected virtual void onHandshake(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onmessagesockiopacket-packet"><code>protected virtual void onMessage(</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="protected-virtual-void-onsocketconnect"><code>protected virtual void onSocketConnect()</code></h4>
+<p>These virtual methods can be overridden as necessary to intercept socket events before they hit the application.</p>
+<h4 id="protected-virtual-void-onsocketrecvconstmutablebuffer-bufferconstnetaddress-peeraddress"><code>protected virtual void onSocketRecv(const</code><a href="#classscy_1_1MutableBuffer"><code>MutableBuffer</code></a><code>&amp; buffer,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress)</code></h4>
+<h4 id="protected-virtual-void-onsocketerrorconstscyerror-error"><code>protected virtual void onSocketError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error)</code></h4>
+<h4 id="protected-virtual-void-onsocketclose"><code>protected virtual void onSocketClose()</code></h4>
+<h4 id="protected-virtual-void-onpingtimer"><code>protected virtual void onPingTimer()</code></h4>
+<h4 id="protected-virtual-void-onpingtimeouttimer"><code>protected virtual void onPingTimeoutTimer()</code></h4>
+<h4 id="protected-virtual-void-startreconnecttimer"><code>protected virtual void startReconnectTimer()</code></h4>
+<h4 id="protected-virtual-void-stopreconnecttimer"><code>protected virtual void stopReconnectTimer()</code></h4>
+<h4 id="protected-virtual-void-onreconnecttimer"><code>protected virtual void onReconnectTimer()</code></h4>
+<h4 id="protected-virtual-int-sendping"><code>protected virtual int sendPing()</code></h4>
+<h4 id="protected-virtual-void-onpong"><code>protected virtual void onPong()</code></h4>
+<h1 id="class-scysockiotcpclient">class <code>scy::sockio::TCPClient</code></h1>
+<pre><code>class scy::sockio::TCPClient
+  : public scy::sockio::Client
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  TCPClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--tcpclientconstclientoptions-optionsuvloop--loop"><code>public  TCPClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></h4>
+<h1 id="class-scysockiosslclient">class <code>scy::sockio::SSLClient</code></h1>
+<pre><code>class scy::sockio::SSLClient
+  : public scy::sockio::Client
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  SSLClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--sslclientconstclientoptions-optionsuvloop--loop"><code>public  SSLClient(const</code><a href="#structscy_1_1sockio_1_1Client_1_1Options"><code>Client::Options</code></a><code>&amp; options,uv::Loop * loop)</code></h4>
+<h1 id="class-scysockiopacket">class <code>scy::sockio::Packet</code></h1>
+<pre><code>class scy::sockio::Packet
+  : public scy::IPacket
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Packet(Frame frame,Type type,int id,const std::string &amp; nsp,const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td>Default contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(Type type,const std::string &amp; message,bool ack)</code></td>
+<td>General contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; message,bool ack)</code></td>
+<td>Message contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const json::Value &amp; message,bool ack)</code></td>
+<td>JSON contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; event,const std::string &amp; message,bool ack)</code></td>
+<td>Event contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></td>
+<td>Event JSON contructor.</td>
+</tr>
+<tr>
+<td><code>public  Packet(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~Packet()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public Frame frame() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public Type type() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int id() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string nsp() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string message() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public json::Value json() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setID(int id)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setNamespace(const std::string &amp; nsp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setMessage(const std::string &amp; message)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setAck(bool flag)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp;)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(Buffer &amp;) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool valid() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string frameString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string typeString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string toString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void print(std::ostream &amp; os) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected Frame _frame</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected Type _type</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _id</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _nsp</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _event</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _message</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _ack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::size_t _size</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--packetframe-frametype-typeint-idconst-stdstring--nspconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public  Packet(Frame frame,Type type,int id,const std::string &amp; nsp,const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<p>Default contructor.</p>
+<h4 id="public--packettype-typeconst-stdstring--messagebool-ack"><code>public  Packet(Type type,const std::string &amp; message,bool ack)</code></h4>
+<p>General contructor.</p>
+<h4 id="public--packetconst-stdstring--messagebool-ack"><code>public  Packet(const std::string &amp; message,bool ack)</code></h4>
+<p>Message contructor.</p>
+<h4 id="public--packetconst-jsonvalue--messagebool-ack"><code>public  Packet(const json::Value &amp; message,bool ack)</code></h4>
+<p>JSON contructor.</p>
+<h4 id="public--packetconst-stdstring--eventconst-stdstring--messagebool-ack"><code>public  Packet(const std::string &amp; event,const std::string &amp; message,bool ack)</code></h4>
+<p>Event contructor.</p>
+<h4 id="public--packetconst-stdstring--eventconst-jsonvalue--messagebool-ack"><code>public  Packet(const std::string &amp; event,const json::Value &amp; message,bool ack)</code></h4>
+<p>Event JSON contructor.</p>
+<h4 id="public--packetconstpacket-r"><code>public  Packet(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></h4>
+<h4 id="publicpacket-operatorconstpacket-r"><code>public</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>Packet</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--packet"><code>public virtual  ~Packet()</code></h4>
+<h4 id="public-virtualipacket-clone-const"><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></h4>
+<h4 id="public-frame-frame-const"><code>public Frame frame() const</code></h4>
+<h4 id="public-type-type-const"><code>public Type type() const</code></h4>
+<h4 id="public-int-id-const"><code>public int id() const</code></h4>
+<h4 id="public-stdstring-nsp-const"><code>public std::string nsp() const</code></h4>
+<h4 id="public-stdstring-message-const"><code>public std::string message() const</code></h4>
+<h4 id="public-jsonvalue-json-const"><code>public json::Value json() const</code></h4>
+<h4 id="public-void-setidint-id"><code>public void setID(int id)</code></h4>
+<h4 id="public-void-setnamespaceconst-stdstring--nsp"><code>public void setNamespace(const std::string &amp; nsp)</code></h4>
+<h4 id="public-void-setmessageconst-stdstring--message"><code>public void setMessage(const std::string &amp; message)</code></h4>
+<h4 id="public-void-setackbool-flag"><code>public void setAck(bool flag)</code></h4>
+<h4 id="public-virtual-stdsizet-readconstconstbuffer"><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp;)</code></h4>
+<p>Read/parse to the packet from the given input buffer. The number of bytes read is returned.</p>
+<h4 id="public-virtual-void-writebuffer--const"><code>public virtual void write(Buffer &amp;) const</code></h4>
+<p>Copy/generate to the packet given output buffer. The number of bytes written can be obtained from the buffer.</p>
+<p>Todo: It may be prefferable to use our pod types here instead of buffer input, but the current codebase requires that the buffer be dynamically resizable for some protocols...</p>
+<p>virtual std::size_t write(MutableBuffer&amp;) const = 0;</p>
+<h4 id="public-virtual-stdsizet-size-const"><code>public virtual std::size_t size() const</code></h4>
+<p>The size of the packet in bytes.</p>
+<p>This is the nember of bytes that will be written on a call to <a href="#group__socketio_1gad8bcc194e62922929788a39be680775c">write()</a>, but may not be the number of bytes that will be consumed by <a href="#group__socketio_1ga081246038126d83d077764781899a723">read()</a>.</p>
+<h4 id="public-bool-valid-const"><code>public bool valid() const</code></h4>
+<h4 id="public-stdstring-framestring-const"><code>public std::string frameString() const</code></h4>
+<h4 id="public-stdstring-typestring-const"><code>public std::string typeString() const</code></h4>
+<h4 id="public-stdstring-tostring-const"><code>public std::string toString() const</code></h4>
+<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-frame-frame"><code>protected Frame _frame</code></h4>
+<h4 id="protected-type-type"><code>protected Type _type</code></h4>
+<h4 id="protected-int-id"><code>protected int _id</code></h4>
+<h4 id="protected-stdstring-nsp"><code>protected std::string _nsp</code></h4>
+<h4 id="protected-stdstring-event"><code>protected std::string _event</code></h4>
+<h4 id="protected-stdstring-message"><code>protected std::string _message</code></h4>
+<h4 id="protected-bool-ack"><code>protected bool _ack</code></h4>
+<h4 id="protected-stdsizet-size"><code>protected std::size_t _size</code></h4>
+<h1 id="struct-scysockioclientstate">struct <code>scy::sockio::ClientState</code></h1>
+<pre><code>struct scy::sockio::ClientState
+  : public scy::State
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public inline virtual std::string str(unsigned int id) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-inline-virtual-stdstring-strunsigned-int-id-const"><code>public inline virtual std::string str(unsigned int id) const</code></h4>
+<h1 id="struct-scysockioclientoptions">struct <code>scy::sockio::Client::Options</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public std::string host</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t port</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool reconnection</code></td>
+<td>Weather or not to reconnect if disconnected from the server.</td>
+</tr>
+<tr>
+<td><code>public int reconnectAttempts</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int reconnectDelay</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline  Options()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-stdstring-host"><code>public std::string host</code></h4>
+<h4 id="public-stduint16t-port"><code>public std::uint16_t port</code></h4>
+<h4 id="public-bool-reconnection"><code>public bool reconnection</code></h4>
+<p>Weather or not to reconnect if disconnected from the server.</p>
+<h4 id="public-int-reconnectattempts"><code>public int reconnectAttempts</code></h4>
+<p>The number of times to attempt to reconnect if disconnected from the server. (0 = unlimited)</p>
+<h4 id="public-int-reconnectdelay"><code>public int reconnectDelay</code></h4>
+<h4 id="public-inline--options"><code>public inline  Options()</code></h4>
+<h1 id="struct-scysockiotransaction">struct <code>scy::sockio::Transaction</code></h1>
+<pre><code>struct scy::sockio::Transaction
+  : public scy::PacketTransaction&lt; sockio::Packet &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,long timeout)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool send()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onPotentialResponse(void *,</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onResponse()</code></td>
+<td>Called when a successful response is received.</td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual  ~Transaction()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="publicsockioclient-client"><code>public</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client</code></h4>
+<h4 id="public--transactionsockioclient-clientlong-timeout"><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,long timeout)</code></h4>
+<h4 id="public--transactionsockioclient-clientconstsockiopacket-requestlong-timeout"><code>public  Transaction(</code><a href="#classscy_1_1sockio_1_1Client"><code>sockio::Client</code></a><code>&amp; client,const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; request,long timeout)</code></h4>
+<h4 id="public-virtual-bool-send"><code>public virtual bool send()</code></h4>
+<p>Starts the transaction timer and sends the request. Overriding classes should implement send logic here.</p>
+<h4 id="public-virtual-bool-checkresponseconstsockiopacket-packet"><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<p>Checks a potential response candidate and returns true on successful match.</p>
+<h4 id="public-virtual-void-onpotentialresponsevoid-sockiopacket-packet"><code>public virtual void onPotentialResponse(void *,</code><a href="#classscy_1_1sockio_1_1Packet"><code>sockio::Packet</code></a><code>&amp; packet)</code></h4>
+<h4 id="public-virtual-void-onresponse"><code>public virtual void onResponse()</code></h4>
+<p>Called when a successful response is received.</p>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-virtual--transaction"><code>protected virtual  ~Transaction()</code></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="api-sked.html" class="navigation navigation-prev " aria-label="Previous page: Sked">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="api-stun.html" class="navigation navigation-next " aria-label="Next page: STUN">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SocketIO","level":"2.11","depth":1,"next":{"title":"STUN","level":"2.12","depth":1,"path":"api-stun.md","ref":"api-stun.md","articles":[]},"previous":{"title":"Sked","level":"2.10","depth":1,"path":"api-sked.md","ref":"api-sked.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-socketio.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

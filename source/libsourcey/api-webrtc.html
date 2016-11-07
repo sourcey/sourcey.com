@@ -1,0 +1,2788 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>WebRTC · LibSourcey</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="LICENSE.html" />
+    
+    
+    <link rel="prev" href="api-uv.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="installation-linux.html">
+            
+                <a href="installation-linux.html">
+            
+                    
+                    Linux Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="installation-osx.html">
+            
+                <a href="installation-osx.html">
+            
+                    
+                    OS X Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="installation-windows.html">
+            
+                <a href="installation-windows.html">
+            
+                    
+                    Windows Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="examples.html">
+            
+                <a href="examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="api-archo.html">
+            
+                <a href="api-archo.html">
+            
+                    
+                    Archo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="api-av.html">
+            
+                <a href="api-av.html">
+            
+                    
+                    AV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="api-base.html">
+            
+                <a href="api-base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="api-crypto.html">
+            
+                <a href="api-crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="api-http.html">
+            
+                <a href="api-http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="api-json.html">
+            
+                <a href="api-json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="api-net.html">
+            
+                <a href="api-net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="api-pacm.html">
+            
+                <a href="api-pacm.html">
+            
+                    
+                    Pacm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="api-pluga.html">
+            
+                <a href="api-pluga.html">
+            
+                    
+                    Pluga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="api-sked.html">
+            
+                <a href="api-sked.html">
+            
+                    
+                    Sked
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="api-socketio.html">
+            
+                <a href="api-socketio.html">
+            
+                    
+                    SocketIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="api-stun.html">
+            
+                <a href="api-stun.html">
+            
+                    
+                    STUN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="api-symple.html">
+            
+                <a href="api-symple.html">
+            
+                    
+                    Symple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="api-turn.html">
+            
+                <a href="api-turn.html">
+            
+                    
+                    TURN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="api-util.html">
+            
+                <a href="api-util.html">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="api-uv.html">
+            
+                <a href="api-uv.html">
+            
+                    
+                    UV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.17" data-path="api-webrtc.html">
+            
+                <a href="api-webrtc.html">
+            
+                    
+                    WebRTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="LICENSE.html">
+            
+                <a href="LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >WebRTC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="module--webrtc">Module <!-- group --> <code>webrtc</code></h1>
+<p>The <code>webrtc</code> module contains WebRTC integrations.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>namespace</code><a href="#namespacescy"><code>scy</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1AudioPacketModule"><code>scy::AudioPacketModule</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1ImageSequenceRecorder"><code>scy::ImageSequenceRecorder</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1MultiplexMediaCapturer"><code>scy::MultiplexMediaCapturer</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1PeerConnection"><code>scy::PeerConnection</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1DummySetSessionDescriptionObserver"><code>scy::DummySetSessionDescriptionObserver</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1PeerConnectionManager"><code>scy::PeerConnectionManager</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1StreamRecorder"><code>scy::StreamRecorder</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1VideoPacketSource"><code>scy::VideoPacketSource</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="namespace-scy">namespace <code>scy</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code><a href="#classscy_1_1AudioPacketModule"><code>scy::AudioPacketModule</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1DummySetSessionDescriptionObserver"><code>scy::DummySetSessionDescriptionObserver</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1ImageSequenceRecorder"><code>scy::ImageSequenceRecorder</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1MultiplexMediaCapturer"><code>scy::MultiplexMediaCapturer</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1PeerConnection"><code>scy::PeerConnection</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1PeerConnectionManager"><code>scy::PeerConnectionManager</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1StreamRecorder"><code>scy::StreamRecorder</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1VideoPacketSource"><code>scy::VideoPacketSource</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="class-scyaudiopacketmodule">class <code>scy::AudioPacketModule</code></h1>
+<pre><code>class scy::AudioPacketModule
+  : public AudioDeviceModule
+  : public MessageHandler
+</code></pre><p>This class implements an <code>AudioDeviceModule</code> that can be used to detect if audio is being received properly if it is fed by another <code>AudioDeviceModule</code> in some arbitrary audio pipeline where they are connected. It does not play out or record any audio so it does not need access to any hardware and can therefore be used in the gtest testing framework.</p>
+<p>Note P postfix of a function indicates that it should only be called by the processing thread.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public void onAudioCaptured(void * sender,</code><a href="#structscy_1_1av_1_1AudioPacket"><code>av::AudioPacket</code></a><code>&amp; packet)</code></td>
+<td>Handles input packets from the capture for sending.</td>
+</tr>
+<tr>
+<td><code>public int64_t TimeUntilNextProcess()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void Process()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t ActiveAudioLayer(AudioLayer * audio_layer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public ErrorCode LastError() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RegisterEventObserver(webrtc::AudioDeviceObserver * event_callback)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RegisterAudioCallback(webrtc::AudioTransport * audio_callback)</code></td>
+<td>Note: Calling this method from a callback may result in deadlock.</td>
+</tr>
+<tr>
+<td><code>public int32_t Init()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t Terminate()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Initialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int16_t PlayoutDevices()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int16_t RecordingDevices()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutDeviceName(uint16_t index,char name,char guid)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingDeviceName(uint16_t index,char name,char guid)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutDevice(uint16_t index)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutDevice(WindowsDeviceType device)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingDevice(uint16_t index)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingDevice(WindowsDeviceType device)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool PlayoutIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool RecordingIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Playing() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Recording() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetAGC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool AGC() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetWaveOutVolume(uint16_t volume_left,uint16_t volume_right)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t WaveOutVolume(uint16_t * volume_left,uint16_t * volume_right) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitSpeaker()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool SpeakerIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitMicrophone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool MicrophoneIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolumeIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetSpeakerVolume(uint32_t volume)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolume(uint32_t * volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MaxSpeakerVolume(uint32_t * max_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MinSpeakerVolume(uint32_t * min_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolumeStepSize(uint16_t * step_size) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolumeIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneVolume(uint32_t volume)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolume(uint32_t * volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MaxMicrophoneVolume(uint32_t * max_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MinMicrophoneVolume(uint32_t * min_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolumeStepSize(uint16_t * step_size) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerMuteIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetSpeakerMute(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerMute(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneMuteIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneMute(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneMute(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneBoostIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneBoost(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneBoost(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoPlayoutIsAvailable(bool * available) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetStereoPlayout(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoPlayout(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoRecordingIsAvailable(bool * available) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetStereoRecording(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoRecording(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingChannel(const ChannelType channel)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingChannel(ChannelType * channel) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutBuffer(const BufferType type,uint16_t size_ms)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutBuffer(BufferType * type,uint16_t * size_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutDelay(uint16_t * delay_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingDelay(uint16_t * delay_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t CPULoad(uint16_t * load) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRawOutputFileRecording(const char pcm_file_name_utf8)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRawOutputFileRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRawInputFileRecording(const char pcm_file_name_utf8)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRawInputFileRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingSampleRate(const uint32_t samples_per_sec)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingSampleRate(uint32_t * samples_per_sec) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutSampleRate(const uint32_t samples_per_sec)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutSampleRate(uint32_t * samples_per_sec) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t ResetAudioDevice()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetLoudspeakerStatus(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t GetLoudspeakerStatus(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInAECIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInAEC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInAGCIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInAGC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInNSIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInNS(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnMessage(rtc::Message * msg)</code></td>
+<td>WEBRTC_IOS.</td>
+</tr>
+<tr>
+<td><code>protected  explicit AudioPacketModule()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual  ~AudioPacketModule()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-void-onaudiocapturedvoid--senderavaudiopacket-packet"><code>public void onAudioCaptured(void * sender,</code><a href="#structscy_1_1av_1_1AudioPacket"><code>av::AudioPacket</code></a><code>&amp; packet)</code></h4>
+<p>Handles input packets from the capture for sending.</p>
+<h4 id="public-int64t-timeuntilnextprocess"><code>public int64_t TimeUntilNextProcess()</code></h4>
+<p>Following functions are inherited from <code>webrtc::AudioDeviceModule</code>. Only functions called by <code>[PeerConnection](#classscy_1_1PeerConnection)</code> are implemented, the rest do nothing and return success. If a function is not expected to be called by <code>[PeerConnection](#classscy_1_1PeerConnection)</code> an assertion is triggered if it is in fact called.</p>
+<h4 id="public-void-process"><code>public void Process()</code></h4>
+<h4 id="public-int32t-activeaudiolayeraudiolayer--audiolayer-const"><code>public int32_t ActiveAudioLayer(AudioLayer * audio_layer) const</code></h4>
+<h4 id="public-errorcode-lasterror-const"><code>public ErrorCode LastError() const</code></h4>
+<h4 id="public-int32t-registereventobserverwebrtcaudiodeviceobserver--eventcallback"><code>public int32_t RegisterEventObserver(webrtc::AudioDeviceObserver * event_callback)</code></h4>
+<h4 id="public-int32t-registeraudiocallbackwebrtcaudiotransport--audiocallback"><code>public int32_t RegisterAudioCallback(webrtc::AudioTransport * audio_callback)</code></h4>
+<p>Note: Calling this method from a callback may result in deadlock.</p>
+<h4 id="public-int32t-init"><code>public int32_t Init()</code></h4>
+<h4 id="public-int32t-terminate"><code>public int32_t Terminate()</code></h4>
+<h4 id="public-bool-initialized-const"><code>public bool Initialized() const</code></h4>
+<h4 id="public-int16t-playoutdevices"><code>public int16_t PlayoutDevices()</code></h4>
+<h4 id="public-int16t-recordingdevices"><code>public int16_t RecordingDevices()</code></h4>
+<h4 id="public-int32t-playoutdevicenameuint16t-indexchar-namechar-guid"><code>public int32_t PlayoutDeviceName(uint16_t index,char name,char guid)</code></h4>
+<h4 id="public-int32t-recordingdevicenameuint16t-indexchar-namechar-guid"><code>public int32_t RecordingDeviceName(uint16_t index,char name,char guid)</code></h4>
+<h4 id="public-int32t-setplayoutdeviceuint16t-index"><code>public int32_t SetPlayoutDevice(uint16_t index)</code></h4>
+<h4 id="public-int32t-setplayoutdevicewindowsdevicetype-device"><code>public int32_t SetPlayoutDevice(WindowsDeviceType device)</code></h4>
+<h4 id="public-int32t-setrecordingdeviceuint16t-index"><code>public int32_t SetRecordingDevice(uint16_t index)</code></h4>
+<h4 id="public-int32t-setrecordingdevicewindowsdevicetype-device"><code>public int32_t SetRecordingDevice(WindowsDeviceType device)</code></h4>
+<h4 id="public-int32t-playoutisavailablebool--available"><code>public int32_t PlayoutIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-initplayout"><code>public int32_t InitPlayout()</code></h4>
+<h4 id="public-bool-playoutisinitialized-const"><code>public bool PlayoutIsInitialized() const</code></h4>
+<h4 id="public-int32t-recordingisavailablebool--available"><code>public int32_t RecordingIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-initrecording"><code>public int32_t InitRecording()</code></h4>
+<h4 id="public-bool-recordingisinitialized-const"><code>public bool RecordingIsInitialized() const</code></h4>
+<h4 id="public-int32t-startplayout"><code>public int32_t StartPlayout()</code></h4>
+<h4 id="public-int32t-stopplayout"><code>public int32_t StopPlayout()</code></h4>
+<h4 id="public-bool-playing-const"><code>public bool Playing() const</code></h4>
+<h4 id="public-int32t-startrecording"><code>public int32_t StartRecording()</code></h4>
+<h4 id="public-int32t-stoprecording"><code>public int32_t StopRecording()</code></h4>
+<h4 id="public-bool-recording-const"><code>public bool Recording() const</code></h4>
+<h4 id="public-int32t-setagcbool-enable"><code>public int32_t SetAGC(bool enable)</code></h4>
+<h4 id="public-bool-agc-const"><code>public bool AGC() const</code></h4>
+<h4 id="public-int32t-setwaveoutvolumeuint16t-volumeleftuint16t-volumeright"><code>public int32_t SetWaveOutVolume(uint16_t volume_left,uint16_t volume_right)</code></h4>
+<h4 id="public-int32t-waveoutvolumeuint16t--volumeleftuint16t--volumeright-const"><code>public int32_t WaveOutVolume(uint16_t * volume_left,uint16_t * volume_right) const</code></h4>
+<h4 id="public-int32t-initspeaker"><code>public int32_t InitSpeaker()</code></h4>
+<h4 id="public-bool-speakerisinitialized-const"><code>public bool SpeakerIsInitialized() const</code></h4>
+<h4 id="public-int32t-initmicrophone"><code>public int32_t InitMicrophone()</code></h4>
+<h4 id="public-bool-microphoneisinitialized-const"><code>public bool MicrophoneIsInitialized() const</code></h4>
+<h4 id="public-int32t-speakervolumeisavailablebool--available"><code>public int32_t SpeakerVolumeIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setspeakervolumeuint32t-volume"><code>public int32_t SetSpeakerVolume(uint32_t volume)</code></h4>
+<h4 id="public-int32t-speakervolumeuint32t--volume-const"><code>public int32_t SpeakerVolume(uint32_t * volume) const</code></h4>
+<h4 id="public-int32t-maxspeakervolumeuint32t--maxvolume-const"><code>public int32_t MaxSpeakerVolume(uint32_t * max_volume) const</code></h4>
+<h4 id="public-int32t-minspeakervolumeuint32t--minvolume-const"><code>public int32_t MinSpeakerVolume(uint32_t * min_volume) const</code></h4>
+<h4 id="public-int32t-speakervolumestepsizeuint16t--stepsize-const"><code>public int32_t SpeakerVolumeStepSize(uint16_t * step_size) const</code></h4>
+<h4 id="public-int32t-microphonevolumeisavailablebool--available"><code>public int32_t MicrophoneVolumeIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophonevolumeuint32t-volume"><code>public int32_t SetMicrophoneVolume(uint32_t volume)</code></h4>
+<h4 id="public-int32t-microphonevolumeuint32t--volume-const"><code>public int32_t MicrophoneVolume(uint32_t * volume) const</code></h4>
+<h4 id="public-int32t-maxmicrophonevolumeuint32t--maxvolume-const"><code>public int32_t MaxMicrophoneVolume(uint32_t * max_volume) const</code></h4>
+<h4 id="public-int32t-minmicrophonevolumeuint32t--minvolume-const"><code>public int32_t MinMicrophoneVolume(uint32_t * min_volume) const</code></h4>
+<h4 id="public-int32t-microphonevolumestepsizeuint16t--stepsize-const"><code>public int32_t MicrophoneVolumeStepSize(uint16_t * step_size) const</code></h4>
+<h4 id="public-int32t-speakermuteisavailablebool--available"><code>public int32_t SpeakerMuteIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setspeakermutebool-enable"><code>public int32_t SetSpeakerMute(bool enable)</code></h4>
+<h4 id="public-int32t-speakermutebool--enabled-const"><code>public int32_t SpeakerMute(bool * enabled) const</code></h4>
+<h4 id="public-int32t-microphonemuteisavailablebool--available"><code>public int32_t MicrophoneMuteIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophonemutebool-enable"><code>public int32_t SetMicrophoneMute(bool enable)</code></h4>
+<h4 id="public-int32t-microphonemutebool--enabled-const"><code>public int32_t MicrophoneMute(bool * enabled) const</code></h4>
+<h4 id="public-int32t-microphoneboostisavailablebool--available"><code>public int32_t MicrophoneBoostIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophoneboostbool-enable"><code>public int32_t SetMicrophoneBoost(bool enable)</code></h4>
+<h4 id="public-int32t-microphoneboostbool--enabled-const"><code>public int32_t MicrophoneBoost(bool * enabled) const</code></h4>
+<h4 id="public-int32t-stereoplayoutisavailablebool--available-const"><code>public int32_t StereoPlayoutIsAvailable(bool * available) const</code></h4>
+<h4 id="public-int32t-setstereoplayoutbool-enable"><code>public int32_t SetStereoPlayout(bool enable)</code></h4>
+<h4 id="public-int32t-stereoplayoutbool--enabled-const"><code>public int32_t StereoPlayout(bool * enabled) const</code></h4>
+<h4 id="public-int32t-stereorecordingisavailablebool--available-const"><code>public int32_t StereoRecordingIsAvailable(bool * available) const</code></h4>
+<h4 id="public-int32t-setstereorecordingbool-enable"><code>public int32_t SetStereoRecording(bool enable)</code></h4>
+<h4 id="public-int32t-stereorecordingbool--enabled-const"><code>public int32_t StereoRecording(bool * enabled) const</code></h4>
+<h4 id="public-int32t-setrecordingchannelconst-channeltype-channel"><code>public int32_t SetRecordingChannel(const ChannelType channel)</code></h4>
+<h4 id="public-int32t-recordingchannelchanneltype--channel-const"><code>public int32_t RecordingChannel(ChannelType * channel) const</code></h4>
+<h4 id="public-int32t-setplayoutbufferconst-buffertype-typeuint16t-sizems"><code>public int32_t SetPlayoutBuffer(const BufferType type,uint16_t size_ms)</code></h4>
+<h4 id="public-int32t-playoutbufferbuffertype--typeuint16t--sizems-const"><code>public int32_t PlayoutBuffer(BufferType * type,uint16_t * size_ms) const</code></h4>
+<h4 id="public-int32t-playoutdelayuint16t--delayms-const"><code>public int32_t PlayoutDelay(uint16_t * delay_ms) const</code></h4>
+<h4 id="public-int32t-recordingdelayuint16t--delayms-const"><code>public int32_t RecordingDelay(uint16_t * delay_ms) const</code></h4>
+<h4 id="public-int32t-cpuloaduint16t--load-const"><code>public int32_t CPULoad(uint16_t * load) const</code></h4>
+<h4 id="public-int32t-startrawoutputfilerecordingconst-char-pcmfilenameutf8"><code>public int32_t StartRawOutputFileRecording(const char pcm_file_name_utf8)</code></h4>
+<h4 id="public-int32t-stoprawoutputfilerecording"><code>public int32_t StopRawOutputFileRecording()</code></h4>
+<h4 id="public-int32t-startrawinputfilerecordingconst-char-pcmfilenameutf8"><code>public int32_t StartRawInputFileRecording(const char pcm_file_name_utf8)</code></h4>
+<h4 id="public-int32t-stoprawinputfilerecording"><code>public int32_t StopRawInputFileRecording()</code></h4>
+<h4 id="public-int32t-setrecordingsamplerateconst-uint32t-samplespersec"><code>public int32_t SetRecordingSampleRate(const uint32_t samples_per_sec)</code></h4>
+<h4 id="public-int32t-recordingsamplerateuint32t--samplespersec-const"><code>public int32_t RecordingSampleRate(uint32_t * samples_per_sec) const</code></h4>
+<h4 id="public-int32t-setplayoutsamplerateconst-uint32t-samplespersec"><code>public int32_t SetPlayoutSampleRate(const uint32_t samples_per_sec)</code></h4>
+<h4 id="public-int32t-playoutsamplerateuint32t--samplespersec-const"><code>public int32_t PlayoutSampleRate(uint32_t * samples_per_sec) const</code></h4>
+<h4 id="public-int32t-resetaudiodevice"><code>public int32_t ResetAudioDevice()</code></h4>
+<h4 id="public-int32t-setloudspeakerstatusbool-enable"><code>public int32_t SetLoudspeakerStatus(bool enable)</code></h4>
+<h4 id="public-int32t-getloudspeakerstatusbool--enabled-const"><code>public int32_t GetLoudspeakerStatus(bool * enabled) const</code></h4>
+<h4 id="public-inline-bool-builtinaecisavailable-const"><code>public inline bool BuiltInAECIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinaecbool-enable"><code>public inline int32_t EnableBuiltInAEC(bool enable)</code></h4>
+<h4 id="public-inline-bool-builtinagcisavailable-const"><code>public inline bool BuiltInAGCIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinagcbool-enable"><code>public inline int32_t EnableBuiltInAGC(bool enable)</code></h4>
+<h4 id="public-inline-bool-builtinnsisavailable-const"><code>public inline bool BuiltInNSIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinnsbool-enable"><code>public inline int32_t EnableBuiltInNS(bool enable)</code></h4>
+<h4 id="public-void-onmessagertcmessage--msg"><code>public void OnMessage(rtc::Message * msg)</code></h4>
+<p>WEBRTC_IOS.</p>
+<p>End of functions inherited from <code>webrtc::AudioDeviceModule</code>. The following function is inherited from <code>rtc::MessageHandler</code>.</p>
+<h4 id="protected--explicit-audiopacketmodule"><code>protected  explicit AudioPacketModule()</code></h4>
+<p>The constructor is protected because the class needs to be created as a reference counted object (for memory managment reasons). It could be exposed in which case the burden of proper instantiation would be put on the creator of a <a href="#classscy_1_1AudioPacketModule">AudioPacketModule</a> instance. To create an instance of this class use the <code>[Create()](#group__webrtc_1gaf78f45016b72c9bdca424e9a31691db8)</code> API.</p>
+<h4 id="protected-virtual--audiopacketmodule"><code>protected virtual  ~AudioPacketModule()</code></h4>
+<p>The destructor is protected because it is reference counted and should not be deleted directly.</p>
+<h1 id="class-scydummysetsessiondescriptionobserver">class <code>scy::DummySetSessionDescriptionObserver</code></h1>
+<pre><code>class scy::DummySetSessionDescriptionObserver
+  : public SetSessionDescriptionObserver
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public virtual void OnSuccess()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void OnFailure(const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline  DummySetSessionDescriptionObserver()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline  ~DummySetSessionDescriptionObserver()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-virtual-void-onsuccess"><code>public virtual void OnSuccess()</code></h4>
+<h4 id="public-virtual-void-onfailureconst-stdstring--error"><code>public virtual void OnFailure(const std::string &amp; error)</code></h4>
+<h4 id="protected-inline--dummysetsessiondescriptionobserver"><code>protected inline  DummySetSessionDescriptionObserver()</code></h4>
+<h4 id="protected-inline--dummysetsessiondescriptionobserver"><code>protected inline  ~DummySetSessionDescriptionObserver()</code></h4>
+<h1 id="class-scyimagesequencerecorder">class <code>scy::ImageSequenceRecorder</code></h1>
+<pre><code>class scy::ImageSequenceRecorder
+  : public rtc::VideoSinkInterface&lt; cricket::VideoFrame &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  ImageSequenceRecorder(webrtc::VideoTrackInterface * track_to_render,const std::string &amp; basename)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~ImageSequenceRecorder()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string getNextFilename()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></td>
+<td>VideoSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _renderedTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected const std::string _basename</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected size_t _count</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _width</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _height</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected av::VideoEncoder _encoder</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected AVFrame * _avframe</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--imagesequencerecorderwebrtcvideotrackinterface--tracktorenderconst-stdstring--basename"><code>public  ImageSequenceRecorder(webrtc::VideoTrackInterface * track_to_render,const std::string &amp; basename)</code></h4>
+<h4 id="public-virtual--imagesequencerecorder"><code>public virtual  ~ImageSequenceRecorder()</code></h4>
+<h4 id="public-stdstring-getnextfilename"><code>public std::string getNextFilename()</code></h4>
+<h4 id="public-void-onframeconst-cricketvideoframe--frame"><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></h4>
+<p>VideoSinkInterface implementation.</p>
+<h4 id="protected-rtcscopedrefptr-webrtcvideotrackinterface--renderedtrack"><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _renderedTrack</code></h4>
+<h4 id="protected-const-stdstring-basename"><code>protected const std::string _basename</code></h4>
+<h4 id="protected-sizet-count"><code>protected size_t _count</code></h4>
+<h4 id="protected-int-width"><code>protected int _width</code></h4>
+<h4 id="protected-int-height"><code>protected int _height</code></h4>
+<h4 id="protected-avvideoencoder-encoder"><code>protected av::VideoEncoder _encoder</code></h4>
+<h4 id="protected-avframe--avframe"><code>protected AVFrame * _avframe</code></h4>
+<h1 id="class-scymultiplexmediacapturer">class <code>scy::MultiplexMediaCapturer</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  MultiplexMediaCapturer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~MultiplexMediaCapturer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void openFile(const std::string &amp; file)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void addMediaTracks(webrtc::PeerConnectionFactoryInterface * factory,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void start()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void stop()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; getAudioModule()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1VideoPacketSource"><code>VideoPacketSource</code></a><code>* createVideoSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>_stream</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected av::MediaCapture::Ptr _capture</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; _audioModule</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--multiplexmediacapturer"><code>public  MultiplexMediaCapturer()</code></h4>
+<h4 id="public-virtual--multiplexmediacapturer"><code>public virtual  ~MultiplexMediaCapturer()</code></h4>
+<h4 id="public-virtual-void-openfileconst-stdstring--file"><code>public virtual void openFile(const std::string &amp; file)</code></h4>
+<h4 id="public-virtual-void-addmediatrackswebrtcpeerconnectionfactoryinterface--factorywebrtcmediastreaminterface--stream"><code>public virtual void addMediaTracks(webrtc::PeerConnectionFactoryInterface * factory,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-start"><code>public virtual void start()</code></h4>
+<h4 id="public-virtual-void-stop"><code>public virtual void stop()</code></h4>
+<h4 id="public-virtual-rtcscopedrefptraudiopacketmodule-getaudiomodule"><code>public virtual rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; getAudioModule()</code></h4>
+<h4 id="public-virtualvideopacketsource-createvideosource"><code>public virtual</code><a href="#classscy_1_1VideoPacketSource"><code>VideoPacketSource</code></a><code>* createVideoSource()</code></h4>
+<h4 id="protectedpacketstreamstream"><code>protected</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>_stream</code></h4>
+<h4 id="protected-avmediacaptureptr-capture"><code>protected av::MediaCapture::Ptr _capture</code></h4>
+<h4 id="protected-rtcscopedrefptraudiopacketmodule-audiomodule"><code>protected rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; _audioModule</code></h4>
+<h1 id="class-scypeerconnection">class <code>scy::PeerConnection</code></h1>
+<pre><code>class scy::PeerConnection
+  : public PeerConnectionObserver
+  : public CreateSessionDescriptionObserver
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  PeerConnection(</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* manager,const std::string &amp; peerid,</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>mode)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~PeerConnection()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; createMediaStream()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void createConnection()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void closeConnection()</code></td>
+<td>Close the peer connection.</td>
+</tr>
+<tr>
+<td><code>public virtual void createOffer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvSDP(const std::string &amp; type,const std::string &amp; sdp)</code></td>
+<td>Receive a remote offer or answer.</td>
+</tr>
+<tr>
+<td><code>public virtual void recvCandidate(const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></td>
+<td>Receive a remote candidate.</td>
+</tr>
+<tr>
+<td><code>public void setPeerConnectionFactory(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string peerid() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::FakeConstraints &amp; constraints()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; peerConnection() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; stream() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* _manager</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _peerid</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>_mode</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected webrtc::PeerConnectionInterface::RTCConfiguration _config</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected webrtc::FakeConstraints _constraints</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; _peerConnection</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; _stream</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnAddStream(webrtc::MediaStreamInterface * stream)</code></td>
+<td>inherited from PeerConnectionObserver</td>
+</tr>
+<tr>
+<td><code>protected virtual void OnRemoveStream(webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceCandidate(const webrtc::IceCandidateInterface * candidate)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnSignalingChange(webrtc::PeerConnectionInterface::SignalingState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceConnectionChange(webrtc::PeerConnectionInterface::IceConnectionState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnRenegotiationNeeded()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnSuccess(webrtc::SessionDescriptionInterface * desc)</code></td>
+<td>inherited from CreateSessionDescriptionObserver</td>
+</tr>
+<tr>
+<td><code>protected virtual void OnFailure(const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline virtual int AddRef() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline virtual int Release() const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--peerconnectionpeerconnectionmanager-managerconst-stdstring--peeridmodemode"><code>public  PeerConnection(</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* manager,const std::string &amp; peerid,</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>mode)</code></h4>
+<h4 id="public-virtual--peerconnection"><code>public virtual  ~PeerConnection()</code></h4>
+<h4 id="public-virtual-rtcscopedrefptr-webrtcmediastreaminterface--createmediastream"><code>public virtual rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; createMediaStream()</code></h4>
+<p>Create the local media stream. Only necessary when we are creating the offer.</p>
+<h4 id="public-virtual-void-createconnection"><code>public virtual void createConnection()</code></h4>
+<p>Create the peer connection once configuration, constraints and streams have been set.</p>
+<h4 id="public-virtual-void-closeconnection"><code>public virtual void closeConnection()</code></h4>
+<p>Close the peer connection.</p>
+<h4 id="public-virtual-void-createoffer"><code>public virtual void createOffer()</code></h4>
+<p>Create the offer SDP tos end to the peer. No offer should be received after creating the offer. A call to <code>recvRemoteAnswer</code> is expected to initiate the session.</p>
+<h4 id="public-virtual-void-recvsdpconst-stdstring--typeconst-stdstring--sdp"><code>public virtual void recvSDP(const std::string &amp; type,const std::string &amp; sdp)</code></h4>
+<p>Receive a remote offer or answer.</p>
+<h4 id="public-virtual-void-recvcandidateconst-stdstring--midint-mlineindexconst-stdstring--sdp"><code>public virtual void recvCandidate(const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></h4>
+<p>Receive a remote candidate.</p>
+<h4 id="public-void-setpeerconnectionfactoryrtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>public void setPeerConnectionFactory(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></h4>
+<p>Set a custom PeerConnectionFactory object Must be done before any streams are initiated</p>
+<h4 id="public-stdstring-peerid-const"><code>public std::string peerid() const</code></h4>
+<h4 id="public-webrtcfakeconstraints--constraints"><code>public webrtc::FakeConstraints &amp; constraints()</code></h4>
+<h4 id="public-webrtcpeerconnectionfactoryinterface--factory-const"><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></h4>
+<h4 id="public-rtcscopedrefptr-webrtcpeerconnectioninterface--peerconnection-const"><code>public rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; peerConnection() const</code></h4>
+<h4 id="public-rtcscopedrefptr-webrtcmediastreaminterface--stream-const"><code>public rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; stream() const</code></h4>
+<h4 id="protectedpeerconnectionmanager-manager"><code>protected</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* _manager</code></h4>
+<h4 id="protected-stdstring-peerid"><code>protected std::string _peerid</code></h4>
+<h4 id="protectedmodemode"><code>protected</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>_mode</code></h4>
+<h4 id="protected-webrtcpeerconnectioninterfacertcconfiguration-config"><code>protected webrtc::PeerConnectionInterface::RTCConfiguration _config</code></h4>
+<h4 id="protected-webrtcfakeconstraints-constraints"><code>protected webrtc::FakeConstraints _constraints</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectioninterface--peerconnection"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; _peerConnection</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcmediastreaminterface--stream"><code>protected rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; _stream</code></h4>
+<h4 id="protected-virtual-void-onaddstreamwebrtcmediastreaminterface--stream"><code>protected virtual void OnAddStream(webrtc::MediaStreamInterface * stream)</code></h4>
+<p>inherited from PeerConnectionObserver</p>
+<h4 id="protected-virtual-void-onremovestreamwebrtcmediastreaminterface--stream"><code>protected virtual void OnRemoveStream(webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="protected-virtual-void-onicecandidateconst-webrtcicecandidateinterface--candidate"><code>protected virtual void OnIceCandidate(const webrtc::IceCandidateInterface * candidate)</code></h4>
+<h4 id="protected-virtual-void-onsignalingchangewebrtcpeerconnectioninterfacesignalingstate-newstate"><code>protected virtual void OnSignalingChange(webrtc::PeerConnectionInterface::SignalingState new_state)</code></h4>
+<h4 id="protected-virtual-void-oniceconnectionchangewebrtcpeerconnectioninterfaceiceconnectionstate-newstate"><code>protected virtual void OnIceConnectionChange(webrtc::PeerConnectionInterface::IceConnectionState new_state)</code></h4>
+<h4 id="protected-virtual-void-onicegatheringchangewebrtcpeerconnectioninterfaceicegatheringstate-newstate"><code>protected virtual void OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)</code></h4>
+<h4 id="protected-virtual-void-onrenegotiationneeded"><code>protected virtual void OnRenegotiationNeeded()</code></h4>
+<h4 id="protected-virtual-void-onsuccesswebrtcsessiondescriptioninterface--desc"><code>protected virtual void OnSuccess(webrtc::SessionDescriptionInterface * desc)</code></h4>
+<p>inherited from CreateSessionDescriptionObserver</p>
+<h4 id="protected-virtual-void-onfailureconst-stdstring--error"><code>protected virtual void OnFailure(const std::string &amp; error)</code></h4>
+<h4 id="protected-inline-virtual-int-addref-const"><code>protected inline virtual int AddRef() const</code></h4>
+<h4 id="protected-inline-virtual-int-release-const"><code>protected inline virtual int Release() const</code></h4>
+<h1 id="class-scypeerconnectionmanager">class <code>scy::PeerConnectionManager</code></h1>
+<pre><code>class scy::PeerConnectionManager
+  : public scy::PointerCollection&lt; std::string, PeerConnection &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  PeerConnectionManager(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~PeerConnectionManager()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void sendSDP(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; type,const std::string &amp; sdp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void sendCandidate(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvSDP(const std::string &amp; peerid,const json::Value &amp; data)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvCandidate(const std::string &amp; peerid,const json::Value &amp; data)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onAddRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onRemoveRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onStable(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onClosed(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onFailure(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--peerconnectionmanagerrtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>public  PeerConnectionManager(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></h4>
+<h4 id="public-virtual--peerconnectionmanager"><code>public virtual  ~PeerConnectionManager()</code></h4>
+<h4 id="public-virtual-void-sendsdppeerconnection-connconst-stdstring--typeconst-stdstring--sdp"><code>public virtual void sendSDP(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; type,const std::string &amp; sdp)</code></h4>
+<h4 id="public-virtual-void-sendcandidatepeerconnection-connconst-stdstring--midint-mlineindexconst-stdstring--sdp"><code>public virtual void sendCandidate(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></h4>
+<h4 id="public-virtual-void-recvsdpconst-stdstring--peeridconst-jsonvalue--data"><code>public virtual void recvSDP(const std::string &amp; peerid,const json::Value &amp; data)</code></h4>
+<h4 id="public-virtual-void-recvcandidateconst-stdstring--peeridconst-jsonvalue--data"><code>public virtual void recvCandidate(const std::string &amp; peerid,const json::Value &amp; data)</code></h4>
+<h4 id="public-virtual-void-onaddremotestreampeerconnection-connwebrtcmediastreaminterface--stream"><code>public virtual void onAddRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-onremoveremotestreampeerconnection-connwebrtcmediastreaminterface--stream"><code>public virtual void onRemoveRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-onstablepeerconnection-conn"><code>public virtual void onStable(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></h4>
+<h4 id="public-virtual-void-onclosedpeerconnection-conn"><code>public virtual void onClosed(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></h4>
+<h4 id="public-virtual-void-onfailurepeerconnection-connconst-stdstring--error"><code>public virtual void onFailure(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; error)</code></h4>
+<h4 id="public-webrtcpeerconnectionfactoryinterface--factory-const"><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></h4>
+<h1 id="class-scystreamrecorder">class <code>scy::StreamRecorder</code></h1>
+<pre><code>class scy::StreamRecorder
+  : public rtc::VideoSinkInterface&lt; cricket::VideoFrame &gt;
+  : public AudioTrackSinkInterface
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  StreamRecorder(const</code><a href="#structscy_1_1av_1_1EncoderOptions"><code>av::EncoderOptions</code></a><code>&amp; options)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  ~StreamRecorder()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setVideoTrack(webrtc::VideoTrackInterface * track)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setAudioTrack(webrtc::AudioTrackInterface * track)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void onPacketEncoded(</code><a href="#structscy_1_1av_1_1MediaPacket"><code>av::MediaPacket</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></td>
+<td>VideoSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>public void OnData(const void * audio_data,int bits_per_sample,int sample_rate,size_t number_of_channels,size_t number_of_frames)</code></td>
+<td>AudioTrackSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>protected av::MultiplexEncoder _encoder</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _videoTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::AudioTrackInterface &gt; _audioTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _awaitingVideo</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _awaitingAudio</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--streamrecorderconstavencoderoptions-options"><code>public  StreamRecorder(const</code><a href="#structscy_1_1av_1_1EncoderOptions"><code>av::EncoderOptions</code></a><code>&amp; options)</code></h4>
+<h4 id="public--streamrecorder"><code>public  ~StreamRecorder()</code></h4>
+<h4 id="public-void-setvideotrackwebrtcvideotrackinterface--track"><code>public void setVideoTrack(webrtc::VideoTrackInterface * track)</code></h4>
+<h4 id="public-void-setaudiotrackwebrtcaudiotrackinterface--track"><code>public void setAudioTrack(webrtc::AudioTrackInterface * track)</code></h4>
+<h4 id="public-void-onpacketencodedavmediapacket-packet"><code>public void onPacketEncoded(</code><a href="#structscy_1_1av_1_1MediaPacket"><code>av::MediaPacket</code></a><code>&amp; packet)</code></h4>
+<h4 id="public-void-onframeconst-cricketvideoframe--frame"><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></h4>
+<p>VideoSinkInterface implementation.</p>
+<h4 id="public-void-ondataconst-void--audiodataint-bitspersampleint-sampleratesizet-numberofchannelssizet-numberofframes"><code>public void OnData(const void * audio_data,int bits_per_sample,int sample_rate,size_t number_of_channels,size_t number_of_frames)</code></h4>
+<p>AudioTrackSinkInterface implementation.</p>
+<h4 id="protected-avmultiplexencoder-encoder"><code>protected av::MultiplexEncoder _encoder</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcvideotrackinterface--videotrack"><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _videoTrack</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcaudiotrackinterface--audiotrack"><code>protected rtc::scoped_refptr&lt; webrtc::AudioTrackInterface &gt; _audioTrack</code></h4>
+<h4 id="protected-bool-awaitingvideo"><code>protected bool _awaitingVideo</code></h4>
+<h4 id="protected-bool-awaitingaudio"><code>protected bool _awaitingAudio</code></h4>
+<h1 id="class-scyvideopacketsource">class <code>scy::VideoPacketSource</code></h1>
+<pre><code>class scy::VideoPacketSource
+  : public VideoCapturer
+</code></pre><p><a href="#classscy_1_1VideoPacketSource">VideoPacketSource</a> implements a simple <code>cricket::VideoCapturer</code> that gets decoded remote video frames from a local media channel. It&apos;s used as the remote video source&apos;s <code>VideoCapturer</code> so that the remote video can be used as a <code>cricket::VideoCapturer</code> and in that way a remote video stream can implement the <code>MediaStreamSourceInterface</code>.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  VideoPacketSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~VideoPacketSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual cricket::CaptureState Start(const cricket::VideoFormat &amp; capture_format)</code></td>
+<td>cricket::VideoCapturer implementation.</td>
+</tr>
+<tr>
+<td><code>public virtual void Stop()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool IsRunning()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool GetPreferredFourccs(std::vector&lt; uint32_t &gt; * fourccs)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool GetBestCaptureFormat(const cricket::VideoFormat &amp; desired,cricket::VideoFormat * best_format)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool IsScreencast() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void onVideoCaptured(void * sender,</code><a href="#structscy_1_1av_1_1VideoPacket"><code>av::VideoPacket</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--videopacketsource"><code>public  VideoPacketSource()</code></h4>
+<h4 id="public-virtual--videopacketsource"><code>public virtual  ~VideoPacketSource()</code></h4>
+<h4 id="public-virtual-cricketcapturestate-startconst-cricketvideoformat--captureformat"><code>public virtual cricket::CaptureState Start(const cricket::VideoFormat &amp; capture_format)</code></h4>
+<p>cricket::VideoCapturer implementation.</p>
+<h4 id="public-virtual-void-stop"><code>public virtual void Stop()</code></h4>
+<h4 id="public-virtual-bool-isrunning"><code>public virtual bool IsRunning()</code></h4>
+<h4 id="public-virtual-bool-getpreferredfourccsstdvector-uint32t---fourccs"><code>public virtual bool GetPreferredFourccs(std::vector&lt; uint32_t &gt; * fourccs)</code></h4>
+<h4 id="public-virtual-bool-getbestcaptureformatconst-cricketvideoformat--desiredcricketvideoformat--bestformat"><code>public virtual bool GetBestCaptureFormat(const cricket::VideoFormat &amp; desired,cricket::VideoFormat * best_format)</code></h4>
+<h4 id="public-virtual-bool-isscreencast-const"><code>public virtual bool IsScreencast() const</code></h4>
+<h4 id="public-void-onvideocapturedvoid--senderavvideopacket-packet"><code>public void onVideoCaptured(void * sender,</code><a href="#structscy_1_1av_1_1VideoPacket"><code>av::VideoPacket</code></a><code>&amp; packet)</code></h4>
+<h1 id="class-scyaudiopacketmodule">class <code>scy::AudioPacketModule</code></h1>
+<pre><code>class scy::AudioPacketModule
+  : public AudioDeviceModule
+  : public MessageHandler
+</code></pre><p>This class implements an <code>AudioDeviceModule</code> that can be used to detect if audio is being received properly if it is fed by another <code>AudioDeviceModule</code> in some arbitrary audio pipeline where they are connected. It does not play out or record any audio so it does not need access to any hardware and can therefore be used in the gtest testing framework.</p>
+<p>Note P postfix of a function indicates that it should only be called by the processing thread.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public void onAudioCaptured(void * sender,</code><a href="#structscy_1_1av_1_1AudioPacket"><code>av::AudioPacket</code></a><code>&amp; packet)</code></td>
+<td>Handles input packets from the capture for sending.</td>
+</tr>
+<tr>
+<td><code>public int64_t TimeUntilNextProcess()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void Process()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t ActiveAudioLayer(AudioLayer * audio_layer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public ErrorCode LastError() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RegisterEventObserver(webrtc::AudioDeviceObserver * event_callback)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RegisterAudioCallback(webrtc::AudioTransport * audio_callback)</code></td>
+<td>Note: Calling this method from a callback may result in deadlock.</td>
+</tr>
+<tr>
+<td><code>public int32_t Init()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t Terminate()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Initialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int16_t PlayoutDevices()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int16_t RecordingDevices()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutDeviceName(uint16_t index,char name,char guid)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingDeviceName(uint16_t index,char name,char guid)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutDevice(uint16_t index)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutDevice(WindowsDeviceType device)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingDevice(uint16_t index)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingDevice(WindowsDeviceType device)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool PlayoutIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool RecordingIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopPlayout()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Playing() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool Recording() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetAGC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool AGC() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetWaveOutVolume(uint16_t volume_left,uint16_t volume_right)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t WaveOutVolume(uint16_t * volume_left,uint16_t * volume_right) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitSpeaker()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool SpeakerIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t InitMicrophone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool MicrophoneIsInitialized() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolumeIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetSpeakerVolume(uint32_t volume)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolume(uint32_t * volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MaxSpeakerVolume(uint32_t * max_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MinSpeakerVolume(uint32_t * min_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerVolumeStepSize(uint16_t * step_size) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolumeIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneVolume(uint32_t volume)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolume(uint32_t * volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MaxMicrophoneVolume(uint32_t * max_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MinMicrophoneVolume(uint32_t * min_volume) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneVolumeStepSize(uint16_t * step_size) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerMuteIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetSpeakerMute(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SpeakerMute(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneMuteIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneMute(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneMute(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneBoostIsAvailable(bool * available)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetMicrophoneBoost(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t MicrophoneBoost(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoPlayoutIsAvailable(bool * available) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetStereoPlayout(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoPlayout(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoRecordingIsAvailable(bool * available) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetStereoRecording(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StereoRecording(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingChannel(const ChannelType channel)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingChannel(ChannelType * channel) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutBuffer(const BufferType type,uint16_t size_ms)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutBuffer(BufferType * type,uint16_t * size_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutDelay(uint16_t * delay_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingDelay(uint16_t * delay_ms) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t CPULoad(uint16_t * load) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRawOutputFileRecording(const char pcm_file_name_utf8)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRawOutputFileRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StartRawInputFileRecording(const char pcm_file_name_utf8)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t StopRawInputFileRecording()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetRecordingSampleRate(const uint32_t samples_per_sec)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t RecordingSampleRate(uint32_t * samples_per_sec) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetPlayoutSampleRate(const uint32_t samples_per_sec)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t PlayoutSampleRate(uint32_t * samples_per_sec) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t ResetAudioDevice()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t SetLoudspeakerStatus(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int32_t GetLoudspeakerStatus(bool * enabled) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInAECIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInAEC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInAGCIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInAGC(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline bool BuiltInNSIsAvailable() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline int32_t EnableBuiltInNS(bool enable)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnMessage(rtc::Message * msg)</code></td>
+<td>WEBRTC_IOS.</td>
+</tr>
+<tr>
+<td><code>protected  explicit AudioPacketModule()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual  ~AudioPacketModule()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-void-onaudiocapturedvoid--senderavaudiopacket-packet"><code>public void onAudioCaptured(void * sender,</code><a href="#structscy_1_1av_1_1AudioPacket"><code>av::AudioPacket</code></a><code>&amp; packet)</code></h4>
+<p>Handles input packets from the capture for sending.</p>
+<h4 id="public-int64t-timeuntilnextprocess"><code>public int64_t TimeUntilNextProcess()</code></h4>
+<p>Following functions are inherited from <code>webrtc::AudioDeviceModule</code>. Only functions called by <code>[PeerConnection](#classscy_1_1PeerConnection)</code> are implemented, the rest do nothing and return success. If a function is not expected to be called by <code>[PeerConnection](#classscy_1_1PeerConnection)</code> an assertion is triggered if it is in fact called.</p>
+<h4 id="public-void-process"><code>public void Process()</code></h4>
+<h4 id="public-int32t-activeaudiolayeraudiolayer--audiolayer-const"><code>public int32_t ActiveAudioLayer(AudioLayer * audio_layer) const</code></h4>
+<h4 id="public-errorcode-lasterror-const"><code>public ErrorCode LastError() const</code></h4>
+<h4 id="public-int32t-registereventobserverwebrtcaudiodeviceobserver--eventcallback"><code>public int32_t RegisterEventObserver(webrtc::AudioDeviceObserver * event_callback)</code></h4>
+<h4 id="public-int32t-registeraudiocallbackwebrtcaudiotransport--audiocallback"><code>public int32_t RegisterAudioCallback(webrtc::AudioTransport * audio_callback)</code></h4>
+<p>Note: Calling this method from a callback may result in deadlock.</p>
+<h4 id="public-int32t-init"><code>public int32_t Init()</code></h4>
+<h4 id="public-int32t-terminate"><code>public int32_t Terminate()</code></h4>
+<h4 id="public-bool-initialized-const"><code>public bool Initialized() const</code></h4>
+<h4 id="public-int16t-playoutdevices"><code>public int16_t PlayoutDevices()</code></h4>
+<h4 id="public-int16t-recordingdevices"><code>public int16_t RecordingDevices()</code></h4>
+<h4 id="public-int32t-playoutdevicenameuint16t-indexchar-namechar-guid"><code>public int32_t PlayoutDeviceName(uint16_t index,char name,char guid)</code></h4>
+<h4 id="public-int32t-recordingdevicenameuint16t-indexchar-namechar-guid"><code>public int32_t RecordingDeviceName(uint16_t index,char name,char guid)</code></h4>
+<h4 id="public-int32t-setplayoutdeviceuint16t-index"><code>public int32_t SetPlayoutDevice(uint16_t index)</code></h4>
+<h4 id="public-int32t-setplayoutdevicewindowsdevicetype-device"><code>public int32_t SetPlayoutDevice(WindowsDeviceType device)</code></h4>
+<h4 id="public-int32t-setrecordingdeviceuint16t-index"><code>public int32_t SetRecordingDevice(uint16_t index)</code></h4>
+<h4 id="public-int32t-setrecordingdevicewindowsdevicetype-device"><code>public int32_t SetRecordingDevice(WindowsDeviceType device)</code></h4>
+<h4 id="public-int32t-playoutisavailablebool--available"><code>public int32_t PlayoutIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-initplayout"><code>public int32_t InitPlayout()</code></h4>
+<h4 id="public-bool-playoutisinitialized-const"><code>public bool PlayoutIsInitialized() const</code></h4>
+<h4 id="public-int32t-recordingisavailablebool--available"><code>public int32_t RecordingIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-initrecording"><code>public int32_t InitRecording()</code></h4>
+<h4 id="public-bool-recordingisinitialized-const"><code>public bool RecordingIsInitialized() const</code></h4>
+<h4 id="public-int32t-startplayout"><code>public int32_t StartPlayout()</code></h4>
+<h4 id="public-int32t-stopplayout"><code>public int32_t StopPlayout()</code></h4>
+<h4 id="public-bool-playing-const"><code>public bool Playing() const</code></h4>
+<h4 id="public-int32t-startrecording"><code>public int32_t StartRecording()</code></h4>
+<h4 id="public-int32t-stoprecording"><code>public int32_t StopRecording()</code></h4>
+<h4 id="public-bool-recording-const"><code>public bool Recording() const</code></h4>
+<h4 id="public-int32t-setagcbool-enable"><code>public int32_t SetAGC(bool enable)</code></h4>
+<h4 id="public-bool-agc-const"><code>public bool AGC() const</code></h4>
+<h4 id="public-int32t-setwaveoutvolumeuint16t-volumeleftuint16t-volumeright"><code>public int32_t SetWaveOutVolume(uint16_t volume_left,uint16_t volume_right)</code></h4>
+<h4 id="public-int32t-waveoutvolumeuint16t--volumeleftuint16t--volumeright-const"><code>public int32_t WaveOutVolume(uint16_t * volume_left,uint16_t * volume_right) const</code></h4>
+<h4 id="public-int32t-initspeaker"><code>public int32_t InitSpeaker()</code></h4>
+<h4 id="public-bool-speakerisinitialized-const"><code>public bool SpeakerIsInitialized() const</code></h4>
+<h4 id="public-int32t-initmicrophone"><code>public int32_t InitMicrophone()</code></h4>
+<h4 id="public-bool-microphoneisinitialized-const"><code>public bool MicrophoneIsInitialized() const</code></h4>
+<h4 id="public-int32t-speakervolumeisavailablebool--available"><code>public int32_t SpeakerVolumeIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setspeakervolumeuint32t-volume"><code>public int32_t SetSpeakerVolume(uint32_t volume)</code></h4>
+<h4 id="public-int32t-speakervolumeuint32t--volume-const"><code>public int32_t SpeakerVolume(uint32_t * volume) const</code></h4>
+<h4 id="public-int32t-maxspeakervolumeuint32t--maxvolume-const"><code>public int32_t MaxSpeakerVolume(uint32_t * max_volume) const</code></h4>
+<h4 id="public-int32t-minspeakervolumeuint32t--minvolume-const"><code>public int32_t MinSpeakerVolume(uint32_t * min_volume) const</code></h4>
+<h4 id="public-int32t-speakervolumestepsizeuint16t--stepsize-const"><code>public int32_t SpeakerVolumeStepSize(uint16_t * step_size) const</code></h4>
+<h4 id="public-int32t-microphonevolumeisavailablebool--available"><code>public int32_t MicrophoneVolumeIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophonevolumeuint32t-volume"><code>public int32_t SetMicrophoneVolume(uint32_t volume)</code></h4>
+<h4 id="public-int32t-microphonevolumeuint32t--volume-const"><code>public int32_t MicrophoneVolume(uint32_t * volume) const</code></h4>
+<h4 id="public-int32t-maxmicrophonevolumeuint32t--maxvolume-const"><code>public int32_t MaxMicrophoneVolume(uint32_t * max_volume) const</code></h4>
+<h4 id="public-int32t-minmicrophonevolumeuint32t--minvolume-const"><code>public int32_t MinMicrophoneVolume(uint32_t * min_volume) const</code></h4>
+<h4 id="public-int32t-microphonevolumestepsizeuint16t--stepsize-const"><code>public int32_t MicrophoneVolumeStepSize(uint16_t * step_size) const</code></h4>
+<h4 id="public-int32t-speakermuteisavailablebool--available"><code>public int32_t SpeakerMuteIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setspeakermutebool-enable"><code>public int32_t SetSpeakerMute(bool enable)</code></h4>
+<h4 id="public-int32t-speakermutebool--enabled-const"><code>public int32_t SpeakerMute(bool * enabled) const</code></h4>
+<h4 id="public-int32t-microphonemuteisavailablebool--available"><code>public int32_t MicrophoneMuteIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophonemutebool-enable"><code>public int32_t SetMicrophoneMute(bool enable)</code></h4>
+<h4 id="public-int32t-microphonemutebool--enabled-const"><code>public int32_t MicrophoneMute(bool * enabled) const</code></h4>
+<h4 id="public-int32t-microphoneboostisavailablebool--available"><code>public int32_t MicrophoneBoostIsAvailable(bool * available)</code></h4>
+<h4 id="public-int32t-setmicrophoneboostbool-enable"><code>public int32_t SetMicrophoneBoost(bool enable)</code></h4>
+<h4 id="public-int32t-microphoneboostbool--enabled-const"><code>public int32_t MicrophoneBoost(bool * enabled) const</code></h4>
+<h4 id="public-int32t-stereoplayoutisavailablebool--available-const"><code>public int32_t StereoPlayoutIsAvailable(bool * available) const</code></h4>
+<h4 id="public-int32t-setstereoplayoutbool-enable"><code>public int32_t SetStereoPlayout(bool enable)</code></h4>
+<h4 id="public-int32t-stereoplayoutbool--enabled-const"><code>public int32_t StereoPlayout(bool * enabled) const</code></h4>
+<h4 id="public-int32t-stereorecordingisavailablebool--available-const"><code>public int32_t StereoRecordingIsAvailable(bool * available) const</code></h4>
+<h4 id="public-int32t-setstereorecordingbool-enable"><code>public int32_t SetStereoRecording(bool enable)</code></h4>
+<h4 id="public-int32t-stereorecordingbool--enabled-const"><code>public int32_t StereoRecording(bool * enabled) const</code></h4>
+<h4 id="public-int32t-setrecordingchannelconst-channeltype-channel"><code>public int32_t SetRecordingChannel(const ChannelType channel)</code></h4>
+<h4 id="public-int32t-recordingchannelchanneltype--channel-const"><code>public int32_t RecordingChannel(ChannelType * channel) const</code></h4>
+<h4 id="public-int32t-setplayoutbufferconst-buffertype-typeuint16t-sizems"><code>public int32_t SetPlayoutBuffer(const BufferType type,uint16_t size_ms)</code></h4>
+<h4 id="public-int32t-playoutbufferbuffertype--typeuint16t--sizems-const"><code>public int32_t PlayoutBuffer(BufferType * type,uint16_t * size_ms) const</code></h4>
+<h4 id="public-int32t-playoutdelayuint16t--delayms-const"><code>public int32_t PlayoutDelay(uint16_t * delay_ms) const</code></h4>
+<h4 id="public-int32t-recordingdelayuint16t--delayms-const"><code>public int32_t RecordingDelay(uint16_t * delay_ms) const</code></h4>
+<h4 id="public-int32t-cpuloaduint16t--load-const"><code>public int32_t CPULoad(uint16_t * load) const</code></h4>
+<h4 id="public-int32t-startrawoutputfilerecordingconst-char-pcmfilenameutf8"><code>public int32_t StartRawOutputFileRecording(const char pcm_file_name_utf8)</code></h4>
+<h4 id="public-int32t-stoprawoutputfilerecording"><code>public int32_t StopRawOutputFileRecording()</code></h4>
+<h4 id="public-int32t-startrawinputfilerecordingconst-char-pcmfilenameutf8"><code>public int32_t StartRawInputFileRecording(const char pcm_file_name_utf8)</code></h4>
+<h4 id="public-int32t-stoprawinputfilerecording"><code>public int32_t StopRawInputFileRecording()</code></h4>
+<h4 id="public-int32t-setrecordingsamplerateconst-uint32t-samplespersec"><code>public int32_t SetRecordingSampleRate(const uint32_t samples_per_sec)</code></h4>
+<h4 id="public-int32t-recordingsamplerateuint32t--samplespersec-const"><code>public int32_t RecordingSampleRate(uint32_t * samples_per_sec) const</code></h4>
+<h4 id="public-int32t-setplayoutsamplerateconst-uint32t-samplespersec"><code>public int32_t SetPlayoutSampleRate(const uint32_t samples_per_sec)</code></h4>
+<h4 id="public-int32t-playoutsamplerateuint32t--samplespersec-const"><code>public int32_t PlayoutSampleRate(uint32_t * samples_per_sec) const</code></h4>
+<h4 id="public-int32t-resetaudiodevice"><code>public int32_t ResetAudioDevice()</code></h4>
+<h4 id="public-int32t-setloudspeakerstatusbool-enable"><code>public int32_t SetLoudspeakerStatus(bool enable)</code></h4>
+<h4 id="public-int32t-getloudspeakerstatusbool--enabled-const"><code>public int32_t GetLoudspeakerStatus(bool * enabled) const</code></h4>
+<h4 id="public-inline-bool-builtinaecisavailable-const"><code>public inline bool BuiltInAECIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinaecbool-enable"><code>public inline int32_t EnableBuiltInAEC(bool enable)</code></h4>
+<h4 id="public-inline-bool-builtinagcisavailable-const"><code>public inline bool BuiltInAGCIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinagcbool-enable"><code>public inline int32_t EnableBuiltInAGC(bool enable)</code></h4>
+<h4 id="public-inline-bool-builtinnsisavailable-const"><code>public inline bool BuiltInNSIsAvailable() const</code></h4>
+<h4 id="public-inline-int32t-enablebuiltinnsbool-enable"><code>public inline int32_t EnableBuiltInNS(bool enable)</code></h4>
+<h4 id="public-void-onmessagertcmessage--msg"><code>public void OnMessage(rtc::Message * msg)</code></h4>
+<p>WEBRTC_IOS.</p>
+<p>End of functions inherited from <code>webrtc::AudioDeviceModule</code>. The following function is inherited from <code>rtc::MessageHandler</code>.</p>
+<h4 id="protected--explicit-audiopacketmodule"><code>protected  explicit AudioPacketModule()</code></h4>
+<p>The constructor is protected because the class needs to be created as a reference counted object (for memory managment reasons). It could be exposed in which case the burden of proper instantiation would be put on the creator of a <a href="#classscy_1_1AudioPacketModule">AudioPacketModule</a> instance. To create an instance of this class use the <code>[Create()](#group__webrtc_1gaf78f45016b72c9bdca424e9a31691db8)</code> API.</p>
+<h4 id="protected-virtual--audiopacketmodule"><code>protected virtual  ~AudioPacketModule()</code></h4>
+<p>The destructor is protected because it is reference counted and should not be deleted directly.</p>
+<h1 id="class-scyimagesequencerecorder">class <code>scy::ImageSequenceRecorder</code></h1>
+<pre><code>class scy::ImageSequenceRecorder
+  : public rtc::VideoSinkInterface&lt; cricket::VideoFrame &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  ImageSequenceRecorder(webrtc::VideoTrackInterface * track_to_render,const std::string &amp; basename)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~ImageSequenceRecorder()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string getNextFilename()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></td>
+<td>VideoSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _renderedTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected const std::string _basename</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected size_t _count</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _width</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected int _height</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected av::VideoEncoder _encoder</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected AVFrame * _avframe</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--imagesequencerecorderwebrtcvideotrackinterface--tracktorenderconst-stdstring--basename"><code>public  ImageSequenceRecorder(webrtc::VideoTrackInterface * track_to_render,const std::string &amp; basename)</code></h4>
+<h4 id="public-virtual--imagesequencerecorder"><code>public virtual  ~ImageSequenceRecorder()</code></h4>
+<h4 id="public-stdstring-getnextfilename"><code>public std::string getNextFilename()</code></h4>
+<h4 id="public-void-onframeconst-cricketvideoframe--frame"><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></h4>
+<p>VideoSinkInterface implementation.</p>
+<h4 id="protected-rtcscopedrefptr-webrtcvideotrackinterface--renderedtrack"><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _renderedTrack</code></h4>
+<h4 id="protected-const-stdstring-basename"><code>protected const std::string _basename</code></h4>
+<h4 id="protected-sizet-count"><code>protected size_t _count</code></h4>
+<h4 id="protected-int-width"><code>protected int _width</code></h4>
+<h4 id="protected-int-height"><code>protected int _height</code></h4>
+<h4 id="protected-avvideoencoder-encoder"><code>protected av::VideoEncoder _encoder</code></h4>
+<h4 id="protected-avframe--avframe"><code>protected AVFrame * _avframe</code></h4>
+<h1 id="class-scymultiplexmediacapturer">class <code>scy::MultiplexMediaCapturer</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  MultiplexMediaCapturer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~MultiplexMediaCapturer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void openFile(const std::string &amp; file)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void addMediaTracks(webrtc::PeerConnectionFactoryInterface * factory,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void start()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void stop()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; getAudioModule()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1VideoPacketSource"><code>VideoPacketSource</code></a><code>* createVideoSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>_stream</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected av::MediaCapture::Ptr _capture</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; _audioModule</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--multiplexmediacapturer"><code>public  MultiplexMediaCapturer()</code></h4>
+<h4 id="public-virtual--multiplexmediacapturer"><code>public virtual  ~MultiplexMediaCapturer()</code></h4>
+<h4 id="public-virtual-void-openfileconst-stdstring--file"><code>public virtual void openFile(const std::string &amp; file)</code></h4>
+<h4 id="public-virtual-void-addmediatrackswebrtcpeerconnectionfactoryinterface--factorywebrtcmediastreaminterface--stream"><code>public virtual void addMediaTracks(webrtc::PeerConnectionFactoryInterface * factory,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-start"><code>public virtual void start()</code></h4>
+<h4 id="public-virtual-void-stop"><code>public virtual void stop()</code></h4>
+<h4 id="public-virtual-rtcscopedrefptraudiopacketmodule-getaudiomodule"><code>public virtual rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; getAudioModule()</code></h4>
+<h4 id="public-virtualvideopacketsource-createvideosource"><code>public virtual</code><a href="#classscy_1_1VideoPacketSource"><code>VideoPacketSource</code></a><code>* createVideoSource()</code></h4>
+<h4 id="protectedpacketstreamstream"><code>protected</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>_stream</code></h4>
+<h4 id="protected-avmediacaptureptr-capture"><code>protected av::MediaCapture::Ptr _capture</code></h4>
+<h4 id="protected-rtcscopedrefptraudiopacketmodule-audiomodule"><code>protected rtc::scoped_refptr&lt;</code><a href="#classscy_1_1AudioPacketModule"><code>AudioPacketModule</code></a><code>&gt; _audioModule</code></h4>
+<h1 id="class-scypeerconnection">class <code>scy::PeerConnection</code></h1>
+<pre><code>class scy::PeerConnection
+  : public PeerConnectionObserver
+  : public CreateSessionDescriptionObserver
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  PeerConnection(</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* manager,const std::string &amp; peerid,</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>mode)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~PeerConnection()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; createMediaStream()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void createConnection()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void closeConnection()</code></td>
+<td>Close the peer connection.</td>
+</tr>
+<tr>
+<td><code>public virtual void createOffer()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvSDP(const std::string &amp; type,const std::string &amp; sdp)</code></td>
+<td>Receive a remote offer or answer.</td>
+</tr>
+<tr>
+<td><code>public virtual void recvCandidate(const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></td>
+<td>Receive a remote candidate.</td>
+</tr>
+<tr>
+<td><code>public void setPeerConnectionFactory(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string peerid() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::FakeConstraints &amp; constraints()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; peerConnection() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; stream() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* _manager</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::string _peerid</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>_mode</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected webrtc::PeerConnectionInterface::RTCConfiguration _config</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected webrtc::FakeConstraints _constraints</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; _peerConnection</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; _stream</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnAddStream(webrtc::MediaStreamInterface * stream)</code></td>
+<td>inherited from PeerConnectionObserver</td>
+</tr>
+<tr>
+<td><code>protected virtual void OnRemoveStream(webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceCandidate(const webrtc::IceCandidateInterface * candidate)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnSignalingChange(webrtc::PeerConnectionInterface::SignalingState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceConnectionChange(webrtc::PeerConnectionInterface::IceConnectionState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnRenegotiationNeeded()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected virtual void OnSuccess(webrtc::SessionDescriptionInterface * desc)</code></td>
+<td>inherited from CreateSessionDescriptionObserver</td>
+</tr>
+<tr>
+<td><code>protected virtual void OnFailure(const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline virtual int AddRef() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline virtual int Release() const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--peerconnectionpeerconnectionmanager-managerconst-stdstring--peeridmodemode"><code>public  PeerConnection(</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* manager,const std::string &amp; peerid,</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>mode)</code></h4>
+<h4 id="public-virtual--peerconnection"><code>public virtual  ~PeerConnection()</code></h4>
+<h4 id="public-virtual-rtcscopedrefptr-webrtcmediastreaminterface--createmediastream"><code>public virtual rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; createMediaStream()</code></h4>
+<p>Create the local media stream. Only necessary when we are creating the offer.</p>
+<h4 id="public-virtual-void-createconnection"><code>public virtual void createConnection()</code></h4>
+<p>Create the peer connection once configuration, constraints and streams have been set.</p>
+<h4 id="public-virtual-void-closeconnection"><code>public virtual void closeConnection()</code></h4>
+<p>Close the peer connection.</p>
+<h4 id="public-virtual-void-createoffer"><code>public virtual void createOffer()</code></h4>
+<p>Create the offer SDP tos end to the peer. No offer should be received after creating the offer. A call to <code>recvRemoteAnswer</code> is expected to initiate the session.</p>
+<h4 id="public-virtual-void-recvsdpconst-stdstring--typeconst-stdstring--sdp"><code>public virtual void recvSDP(const std::string &amp; type,const std::string &amp; sdp)</code></h4>
+<p>Receive a remote offer or answer.</p>
+<h4 id="public-virtual-void-recvcandidateconst-stdstring--midint-mlineindexconst-stdstring--sdp"><code>public virtual void recvCandidate(const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></h4>
+<p>Receive a remote candidate.</p>
+<h4 id="public-void-setpeerconnectionfactoryrtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>public void setPeerConnectionFactory(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></h4>
+<p>Set a custom PeerConnectionFactory object Must be done before any streams are initiated</p>
+<h4 id="public-stdstring-peerid-const"><code>public std::string peerid() const</code></h4>
+<h4 id="public-webrtcfakeconstraints--constraints"><code>public webrtc::FakeConstraints &amp; constraints()</code></h4>
+<h4 id="public-webrtcpeerconnectionfactoryinterface--factory-const"><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></h4>
+<h4 id="public-rtcscopedrefptr-webrtcpeerconnectioninterface--peerconnection-const"><code>public rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; peerConnection() const</code></h4>
+<h4 id="public-rtcscopedrefptr-webrtcmediastreaminterface--stream-const"><code>public rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; stream() const</code></h4>
+<h4 id="protectedpeerconnectionmanager-manager"><code>protected</code><a href="#classscy_1_1PeerConnectionManager"><code>PeerConnectionManager</code></a><code>* _manager</code></h4>
+<h4 id="protected-stdstring-peerid"><code>protected std::string _peerid</code></h4>
+<h4 id="protectedmodemode"><code>protected</code><a href="#group__webrtc_1ga574415d63d860395230c8d596c679c08"><code>Mode</code></a><code>_mode</code></h4>
+<h4 id="protected-webrtcpeerconnectioninterfacertcconfiguration-config"><code>protected webrtc::PeerConnectionInterface::RTCConfiguration _config</code></h4>
+<h4 id="protected-webrtcfakeconstraints-constraints"><code>protected webrtc::FakeConstraints _constraints</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectioninterface--peerconnection"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionInterface &gt; _peerConnection</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcmediastreaminterface--stream"><code>protected rtc::scoped_refptr&lt; webrtc::MediaStreamInterface &gt; _stream</code></h4>
+<h4 id="protected-virtual-void-onaddstreamwebrtcmediastreaminterface--stream"><code>protected virtual void OnAddStream(webrtc::MediaStreamInterface * stream)</code></h4>
+<p>inherited from PeerConnectionObserver</p>
+<h4 id="protected-virtual-void-onremovestreamwebrtcmediastreaminterface--stream"><code>protected virtual void OnRemoveStream(webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="protected-virtual-void-onicecandidateconst-webrtcicecandidateinterface--candidate"><code>protected virtual void OnIceCandidate(const webrtc::IceCandidateInterface * candidate)</code></h4>
+<h4 id="protected-virtual-void-onsignalingchangewebrtcpeerconnectioninterfacesignalingstate-newstate"><code>protected virtual void OnSignalingChange(webrtc::PeerConnectionInterface::SignalingState new_state)</code></h4>
+<h4 id="protected-virtual-void-oniceconnectionchangewebrtcpeerconnectioninterfaceiceconnectionstate-newstate"><code>protected virtual void OnIceConnectionChange(webrtc::PeerConnectionInterface::IceConnectionState new_state)</code></h4>
+<h4 id="protected-virtual-void-onicegatheringchangewebrtcpeerconnectioninterfaceicegatheringstate-newstate"><code>protected virtual void OnIceGatheringChange(webrtc::PeerConnectionInterface::IceGatheringState new_state)</code></h4>
+<h4 id="protected-virtual-void-onrenegotiationneeded"><code>protected virtual void OnRenegotiationNeeded()</code></h4>
+<h4 id="protected-virtual-void-onsuccesswebrtcsessiondescriptioninterface--desc"><code>protected virtual void OnSuccess(webrtc::SessionDescriptionInterface * desc)</code></h4>
+<p>inherited from CreateSessionDescriptionObserver</p>
+<h4 id="protected-virtual-void-onfailureconst-stdstring--error"><code>protected virtual void OnFailure(const std::string &amp; error)</code></h4>
+<h4 id="protected-inline-virtual-int-addref-const"><code>protected inline virtual int AddRef() const</code></h4>
+<h4 id="protected-inline-virtual-int-release-const"><code>protected inline virtual int Release() const</code></h4>
+<h1 id="class-scydummysetsessiondescriptionobserver">class <code>scy::DummySetSessionDescriptionObserver</code></h1>
+<pre><code>class scy::DummySetSessionDescriptionObserver
+  : public SetSessionDescriptionObserver
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public virtual void OnSuccess()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void OnFailure(const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline  DummySetSessionDescriptionObserver()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected inline  ~DummySetSessionDescriptionObserver()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-virtual-void-onsuccess"><code>public virtual void OnSuccess()</code></h4>
+<h4 id="public-virtual-void-onfailureconst-stdstring--error"><code>public virtual void OnFailure(const std::string &amp; error)</code></h4>
+<h4 id="protected-inline--dummysetsessiondescriptionobserver"><code>protected inline  DummySetSessionDescriptionObserver()</code></h4>
+<h4 id="protected-inline--dummysetsessiondescriptionobserver"><code>protected inline  ~DummySetSessionDescriptionObserver()</code></h4>
+<h1 id="class-scypeerconnectionmanager">class <code>scy::PeerConnectionManager</code></h1>
+<pre><code>class scy::PeerConnectionManager
+  : public scy::PointerCollection&lt; std::string, PeerConnection &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  PeerConnectionManager(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~PeerConnectionManager()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void sendSDP(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; type,const std::string &amp; sdp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void sendCandidate(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvSDP(const std::string &amp; peerid,const json::Value &amp; data)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void recvCandidate(const std::string &amp; peerid,const json::Value &amp; data)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onAddRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onRemoveRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onStable(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onClosed(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onFailure(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; error)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--peerconnectionmanagerrtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>public  PeerConnectionManager(rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; factory)</code></h4>
+<h4 id="public-virtual--peerconnectionmanager"><code>public virtual  ~PeerConnectionManager()</code></h4>
+<h4 id="public-virtual-void-sendsdppeerconnection-connconst-stdstring--typeconst-stdstring--sdp"><code>public virtual void sendSDP(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; type,const std::string &amp; sdp)</code></h4>
+<h4 id="public-virtual-void-sendcandidatepeerconnection-connconst-stdstring--midint-mlineindexconst-stdstring--sdp"><code>public virtual void sendCandidate(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; mid,int mlineindex,const std::string &amp; sdp)</code></h4>
+<h4 id="public-virtual-void-recvsdpconst-stdstring--peeridconst-jsonvalue--data"><code>public virtual void recvSDP(const std::string &amp; peerid,const json::Value &amp; data)</code></h4>
+<h4 id="public-virtual-void-recvcandidateconst-stdstring--peeridconst-jsonvalue--data"><code>public virtual void recvCandidate(const std::string &amp; peerid,const json::Value &amp; data)</code></h4>
+<h4 id="public-virtual-void-onaddremotestreampeerconnection-connwebrtcmediastreaminterface--stream"><code>public virtual void onAddRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-onremoveremotestreampeerconnection-connwebrtcmediastreaminterface--stream"><code>public virtual void onRemoveRemoteStream(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,webrtc::MediaStreamInterface * stream)</code></h4>
+<h4 id="public-virtual-void-onstablepeerconnection-conn"><code>public virtual void onStable(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></h4>
+<h4 id="public-virtual-void-onclosedpeerconnection-conn"><code>public virtual void onClosed(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn)</code></h4>
+<h4 id="public-virtual-void-onfailurepeerconnection-connconst-stdstring--error"><code>public virtual void onFailure(</code><a href="#classscy_1_1PeerConnection"><code>PeerConnection</code></a><code>* conn,const std::string &amp; error)</code></h4>
+<h4 id="public-webrtcpeerconnectionfactoryinterface--factory-const"><code>public webrtc::PeerConnectionFactoryInterface * factory() const</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcpeerconnectionfactoryinterface--factory"><code>protected rtc::scoped_refptr&lt; webrtc::PeerConnectionFactoryInterface &gt; _factory</code></h4>
+<h1 id="class-scystreamrecorder">class <code>scy::StreamRecorder</code></h1>
+<pre><code>class scy::StreamRecorder
+  : public rtc::VideoSinkInterface&lt; cricket::VideoFrame &gt;
+  : public AudioTrackSinkInterface
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  StreamRecorder(const</code><a href="#structscy_1_1av_1_1EncoderOptions"><code>av::EncoderOptions</code></a><code>&amp; options)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  ~StreamRecorder()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setVideoTrack(webrtc::VideoTrackInterface * track)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setAudioTrack(webrtc::AudioTrackInterface * track)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void onPacketEncoded(</code><a href="#structscy_1_1av_1_1MediaPacket"><code>av::MediaPacket</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></td>
+<td>VideoSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>public void OnData(const void * audio_data,int bits_per_sample,int sample_rate,size_t number_of_channels,size_t number_of_frames)</code></td>
+<td>AudioTrackSinkInterface implementation.</td>
+</tr>
+<tr>
+<td><code>protected av::MultiplexEncoder _encoder</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _videoTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected rtc::scoped_refptr&lt; webrtc::AudioTrackInterface &gt; _audioTrack</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _awaitingVideo</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected bool _awaitingAudio</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--streamrecorderconstavencoderoptions-options"><code>public  StreamRecorder(const</code><a href="#structscy_1_1av_1_1EncoderOptions"><code>av::EncoderOptions</code></a><code>&amp; options)</code></h4>
+<h4 id="public--streamrecorder"><code>public  ~StreamRecorder()</code></h4>
+<h4 id="public-void-setvideotrackwebrtcvideotrackinterface--track"><code>public void setVideoTrack(webrtc::VideoTrackInterface * track)</code></h4>
+<h4 id="public-void-setaudiotrackwebrtcaudiotrackinterface--track"><code>public void setAudioTrack(webrtc::AudioTrackInterface * track)</code></h4>
+<h4 id="public-void-onpacketencodedavmediapacket-packet"><code>public void onPacketEncoded(</code><a href="#structscy_1_1av_1_1MediaPacket"><code>av::MediaPacket</code></a><code>&amp; packet)</code></h4>
+<h4 id="public-void-onframeconst-cricketvideoframe--frame"><code>public void OnFrame(const cricket::VideoFrame &amp; frame)</code></h4>
+<p>VideoSinkInterface implementation.</p>
+<h4 id="public-void-ondataconst-void--audiodataint-bitspersampleint-sampleratesizet-numberofchannelssizet-numberofframes"><code>public void OnData(const void * audio_data,int bits_per_sample,int sample_rate,size_t number_of_channels,size_t number_of_frames)</code></h4>
+<p>AudioTrackSinkInterface implementation.</p>
+<h4 id="protected-avmultiplexencoder-encoder"><code>protected av::MultiplexEncoder _encoder</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcvideotrackinterface--videotrack"><code>protected rtc::scoped_refptr&lt; webrtc::VideoTrackInterface &gt; _videoTrack</code></h4>
+<h4 id="protected-rtcscopedrefptr-webrtcaudiotrackinterface--audiotrack"><code>protected rtc::scoped_refptr&lt; webrtc::AudioTrackInterface &gt; _audioTrack</code></h4>
+<h4 id="protected-bool-awaitingvideo"><code>protected bool _awaitingVideo</code></h4>
+<h4 id="protected-bool-awaitingaudio"><code>protected bool _awaitingAudio</code></h4>
+<h1 id="class-scyvideopacketsource">class <code>scy::VideoPacketSource</code></h1>
+<pre><code>class scy::VideoPacketSource
+  : public VideoCapturer
+</code></pre><p><a href="#classscy_1_1VideoPacketSource">VideoPacketSource</a> implements a simple <code>cricket::VideoCapturer</code> that gets decoded remote video frames from a local media channel. It&apos;s used as the remote video source&apos;s <code>VideoCapturer</code> so that the remote video can be used as a <code>cricket::VideoCapturer</code> and in that way a remote video stream can implement the <code>MediaStreamSourceInterface</code>.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  VideoPacketSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~VideoPacketSource()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual cricket::CaptureState Start(const cricket::VideoFormat &amp; capture_format)</code></td>
+<td>cricket::VideoCapturer implementation.</td>
+</tr>
+<tr>
+<td><code>public virtual void Stop()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool IsRunning()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool GetPreferredFourccs(std::vector&lt; uint32_t &gt; * fourccs)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool GetBestCaptureFormat(const cricket::VideoFormat &amp; desired,cricket::VideoFormat * best_format)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool IsScreencast() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void onVideoCaptured(void * sender,</code><a href="#structscy_1_1av_1_1VideoPacket"><code>av::VideoPacket</code></a><code>&amp; packet)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--videopacketsource"><code>public  VideoPacketSource()</code></h4>
+<h4 id="public-virtual--videopacketsource"><code>public virtual  ~VideoPacketSource()</code></h4>
+<h4 id="public-virtual-cricketcapturestate-startconst-cricketvideoformat--captureformat"><code>public virtual cricket::CaptureState Start(const cricket::VideoFormat &amp; capture_format)</code></h4>
+<p>cricket::VideoCapturer implementation.</p>
+<h4 id="public-virtual-void-stop"><code>public virtual void Stop()</code></h4>
+<h4 id="public-virtual-bool-isrunning"><code>public virtual bool IsRunning()</code></h4>
+<h4 id="public-virtual-bool-getpreferredfourccsstdvector-uint32t---fourccs"><code>public virtual bool GetPreferredFourccs(std::vector&lt; uint32_t &gt; * fourccs)</code></h4>
+<h4 id="public-virtual-bool-getbestcaptureformatconst-cricketvideoformat--desiredcricketvideoformat--bestformat"><code>public virtual bool GetBestCaptureFormat(const cricket::VideoFormat &amp; desired,cricket::VideoFormat * best_format)</code></h4>
+<h4 id="public-virtual-bool-isscreencast-const"><code>public virtual bool IsScreencast() const</code></h4>
+<h4 id="public-void-onvideocapturedvoid--senderavvideopacket-packet"><code>public void onVideoCaptured(void * sender,</code><a href="#structscy_1_1av_1_1VideoPacket"><code>av::VideoPacket</code></a><code>&amp; packet)</code></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="api-uv.html" class="navigation navigation-prev " aria-label="Previous page: UV">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="LICENSE.html" class="navigation navigation-next " aria-label="Next page: License">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WebRTC","level":"2.17","depth":1,"next":{"title":"License","level":"3.1","depth":1,"path":"LICENSE.md","ref":"LICENSE.md","articles":[]},"previous":{"title":"UV","level":"2.16","depth":1,"path":"api-uv.md","ref":"api-uv.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-webrtc.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

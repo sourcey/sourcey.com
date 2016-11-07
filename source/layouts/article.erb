@@ -24,12 +24,10 @@
             <!-- &diams; -->
             &mdash;
             <time class="updated" datetime="<%= current_article.date.strftime('%b %e %Y') %>"><%= current_article.date.strftime('%b %e %Y') %></time>
-
             <div class="tags">
               <%# current_article.tags.join(', ') %>
               <%= tag_links(current_article) %>
             </div>
-
           </div>
         </header>
         <div class="article-wrap row">

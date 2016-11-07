@@ -15,23 +15,19 @@ layout: article
 {:toc}
 </div>
 
+This how-to guide aims to help you get started the right way using Rails 5 to build the perfect API.
 Thanks to the new `rails-api` gem that ships as part of the Rails 5 core, Rails is now an ideal candidate for building streamlined APIs quickly and easily.
 
 Until now, arguably the best option for creating APIs in Ruby has been Grape, and while Grape is still a brilliant option (especially if you like to DIY), there are some great advantages to using Rails 5 in API mode, such as; ActiveRecord by default, a strong developer community, and having the asset pipeline and front end features available should you need them as your project evolves.  
 
-This how-to guide aims to help you get started the right way using Rails 5 to build the perfect API, and it comprises of the following sections:
-
-* ToC
-{:toc}
-
-## Installing up Rails 5
+## Installing Rails 5
 
 First, make sure you are running Ruby 2.2.2+ or newer as it's required by Rails 5, then go ahead an install the Rails gem:
 
 ~~~bash
 gem install rails
 
-# The output should be >= Rails 5.0.0
+# version should be >= Rails 5.0.0
 rails --version
 ~~~
 

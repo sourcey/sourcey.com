@@ -1,0 +1,2448 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>STUN · LibSourcey</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="api-symple.html" />
+    
+    
+    <link rel="prev" href="api-socketio.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="installation-linux.html">
+            
+                <a href="installation-linux.html">
+            
+                    
+                    Linux Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="installation-osx.html">
+            
+                <a href="installation-osx.html">
+            
+                    
+                    OS X Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="installation-windows.html">
+            
+                <a href="installation-windows.html">
+            
+                    
+                    Windows Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="examples.html">
+            
+                <a href="examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="api-archo.html">
+            
+                <a href="api-archo.html">
+            
+                    
+                    Archo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="api-av.html">
+            
+                <a href="api-av.html">
+            
+                    
+                    AV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="api-base.html">
+            
+                <a href="api-base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="api-crypto.html">
+            
+                <a href="api-crypto.html">
+            
+                    
+                    Crypto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="api-http.html">
+            
+                <a href="api-http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="api-json.html">
+            
+                <a href="api-json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="api-net.html">
+            
+                <a href="api-net.html">
+            
+                    
+                    Net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="api-pacm.html">
+            
+                <a href="api-pacm.html">
+            
+                    
+                    Pacm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="api-pluga.html">
+            
+                <a href="api-pluga.html">
+            
+                    
+                    Pluga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="api-sked.html">
+            
+                <a href="api-sked.html">
+            
+                    
+                    Sked
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="api-socketio.html">
+            
+                <a href="api-socketio.html">
+            
+                    
+                    SocketIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.12" data-path="api-stun.html">
+            
+                <a href="api-stun.html">
+            
+                    
+                    STUN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="api-symple.html">
+            
+                <a href="api-symple.html">
+            
+                    
+                    Symple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="api-turn.html">
+            
+                <a href="api-turn.html">
+            
+                    
+                    TURN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="api-util.html">
+            
+                <a href="api-util.html">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="api-uv.html">
+            
+                <a href="api-uv.html">
+            
+                    
+                    UV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="api-webrtc.html">
+            
+                <a href="api-webrtc.html">
+            
+                    
+                    WebRTC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="LICENSE.html">
+            
+                <a href="LICENSE.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >STUN</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="module--stun">Module <!-- group --> <code>stun</code></h1>
+<p>The <code>stun</code> module contains a STUN (rfc5389) implementation.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>namespace</code><a href="#namespacescy_1_1stun"><code>scy::stun</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Attribute"><code>scy::stun::Attribute</code></a></td>
+<td>The virtual base class for all STUN/TURN attributes.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>scy::stun::AddressAttribute</code></a></td>
+<td>Implements a STUN/TURN attribute that contains a socket address.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>scy::stun::UInt8Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 32-bit integer.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>scy::stun::UInt32Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 32-bit integer.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>scy::stun::UInt64Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 64-bit integer.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1FlagAttribute"><code>scy::stun::FlagAttribute</code></a></td>
+<td>Implements STUN/TURN attribute representing a 0 size flag.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>scy::stun::StringAttribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects an arbitrary byte string.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>scy::stun::UInt16ListAttribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a list of attribute names.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>scy::stun::MessageIntegrity</code></a></td>
+<td>Implements STUN/TURN attributes that reflects an internet address.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>scy::stun::ErrorCode</code></a></td>
+<td>Implements STUN/TURN attribute that reflects an error code.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Message"><code>scy::stun::Message</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Transaction"><code>scy::stun::Transaction</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="namespace-scystun">namespace <code>scy::stun</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>scy::stun::AddressAttribute</code></a></td>
+<td>Implements a STUN/TURN attribute that contains a socket address.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Attribute"><code>scy::stun::Attribute</code></a></td>
+<td>The virtual base class for all STUN/TURN attributes.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>scy::stun::ErrorCode</code></a></td>
+<td>Implements STUN/TURN attribute that reflects an error code.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1FlagAttribute"><code>scy::stun::FlagAttribute</code></a></td>
+<td>Implements STUN/TURN attribute representing a 0 size flag.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Message"><code>scy::stun::Message</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>scy::stun::MessageIntegrity</code></a></td>
+<td>Implements STUN/TURN attributes that reflects an internet address.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>scy::stun::StringAttribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects an arbitrary byte string.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1Transaction"><code>scy::stun::Transaction</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>scy::stun::UInt16ListAttribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a list of attribute names.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>scy::stun::UInt32Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 32-bit integer.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>scy::stun::UInt64Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 64-bit integer.</td>
+</tr>
+<tr>
+<td><code>class</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>scy::stun::UInt8Attribute</code></a></td>
+<td>Implements STUN/TURN attribute that reflects a 32-bit integer.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="class-scystunaddressattribute">class <code>scy::stun::AddressAttribute</code></h1>
+<pre><code>class scy::stun::AddressAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements a STUN/TURN attribute that contains a socket address.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  AddressAttribute(std::uint16_t type,bool ipv4)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  AddressAttribute(const</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>AddressAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>stun::Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline</code><a href="#group__stun_1gaec260a57e19eb607c18301f58f80e7e1"><code>stun::AddressFamily</code></a><code>family() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>address() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void setAddress(const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; addr)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--addressattributestduint16t-typebool-ipv4"><code>public  AddressAttribute(std::uint16_t type,bool ipv4)</code></h4>
+<h4 id="public--addressattributeconstaddressattribute-r"><code>public  AddressAttribute(const</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>AddressAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualstunattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>stun::Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inlinestunaddressfamilyfamily-const"><code>public inline</code><a href="#group__stun_1gaec260a57e19eb607c18301f58f80e7e1"><code>stun::AddressFamily</code></a><code>family() const</code></h4>
+<h4 id="public-virtualnetaddressaddress-const"><code>public virtual</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>address() const</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h4 id="public-inline-virtual-void-setaddressconstnetaddress-addr"><code>public inline virtual void setAddress(const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; addr)</code></h4>
+<h1 id="class-scystunattribute">class <code>scy::stun::Attribute</code></h1>
+<p>The virtual base class for all STUN/TURN attributes.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public inline virtual  ~Attribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t type() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void consumePadding(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void writePadding(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string typeString()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _type</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _size</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected  Attribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected void setLength(std::uint16_t size)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-inline-virtual--attribute"><code>public inline virtual  ~Attribute()</code></h4>
+<h4 id="publicattribute-clone"><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-void-readbitreader-reader"><code>public void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-void-writebitwriter-writer-const"><code>public void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h4 id="public-stduint16t-type-const"><code>public std::uint16_t type() const</code></h4>
+<h4 id="public-stduint16t-size-const"><code>public std::uint16_t size() const</code></h4>
+<h4 id="public-void-consumepaddingbitreader-reader-const"><code>public void consumePadding(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader) const</code></h4>
+<h4 id="public-void-writepaddingbitwriter-writer-const"><code>public void writePadding(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<h4 id="public-stdstring-typestring"><code>public std::string typeString()</code></h4>
+<h4 id="protected-stduint16t-type"><code>protected std::uint16_t _type</code></h4>
+<h4 id="protected-stduint16t-size"><code>protected std::uint16_t _size</code></h4>
+<h4 id="protected--attributestduint16t-typestduint16t-size"><code>protected  Attribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="protected-void-setlengthstduint16t-size"><code>protected void setLength(std::uint16_t size)</code></h4>
+<h1 id="class-scystunerrorcode">class <code>scy::stun::ErrorCode</code></h1>
+<pre><code>class scy::stun::ErrorCode
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects an error code.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  ErrorCode(std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  ErrorCode(const</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>ErrorCode</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~ErrorCode()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setErrorCode(int code)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setReason(const std::string &amp; reason)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int errorCode() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t errorClass() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t errorNumber() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const std::string &amp; reason() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--errorcodestduint16t-size"><code>public  ErrorCode(std::uint16_t size)</code></h4>
+<h4 id="public--errorcodeconsterrorcode-r"><code>public  ErrorCode(const</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>ErrorCode</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--errorcode"><code>public virtual  ~ErrorCode()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-void-seterrorcodeint-code"><code>public void setErrorCode(int code)</code></h4>
+<h4 id="public-void-setreasonconst-stdstring--reason"><code>public void setReason(const std::string &amp; reason)</code></h4>
+<h4 id="public-int-errorcode-const"><code>public int errorCode() const</code></h4>
+<h4 id="public-inline-stduint8t-errorclass-const"><code>public inline std::uint8_t errorClass() const</code></h4>
+<h4 id="public-inline-stduint8t-errornumber-const"><code>public inline std::uint8_t errorNumber() const</code></h4>
+<h4 id="public-inline-const-stdstring--reason-const"><code>public inline const std::string &amp; reason() const</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunflagattribute">class <code>scy::stun::FlagAttribute</code></h1>
+<pre><code>class scy::stun::FlagAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute representing a 0 size flag.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  FlagAttribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--flagattributestduint16t-type"><code>public  FlagAttribute(std::uint16_t type)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-virtual-void-readbitreader-reader"><code>public inline virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-inline-virtual-void-writebitwriter-writer-const"><code>public inline virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunmessage">class <code>scy::stun::Message</code></h1>
+<pre><code>class scy::stun::Message
+  : public scy::IPacket
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Message()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Message(ClassType clss,</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>meth)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Message(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~Message()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setClass(ClassType type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setMethod(</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setTransactionID(const std::string &amp; id)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public ClassType classType() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>methodType() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const TransactionID &amp; transactionID() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; attrs() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string methodString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string classString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string errorString(std::uint16_t errorCode) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void add(</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* attr)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* get(</code><a href="#group__stun_1ga58f9974b99873c21b541593d70751f76"><code>Attribute::Type</code></a><code>type,int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public template&lt;typename T&gt;</code>  <br><code>inline T * get(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp; buf)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(Buffer &amp; buf) const</code></td>
+<td>Writes this object into a STUN/TURN packet.</td>
+</tr>
+<tr>
+<td><code>public std::string toString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void print(std::ostream &amp; os) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _class</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _method</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _size</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected TransactionID _transactionID</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; _attrs</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--message"><code>public  Message()</code></h4>
+<h4 id="public--messageclasstype-clssmethodtypemeth"><code>public  Message(ClassType clss,</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>meth)</code></h4>
+<h4 id="public--messageconstmessage-that"><code>public  Message(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></h4>
+<h4 id="publicmessage-operatorconstmessage-that"><code>public</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></h4>
+<h4 id="public-virtual--message"><code>public virtual  ~Message()</code></h4>
+<h4 id="public-virtualipacket-clone-const"><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></h4>
+<h4 id="public-void-setclassclasstype-type"><code>public void setClass(ClassType type)</code></h4>
+<h4 id="public-void-setmethodmethodtypetype"><code>public void setMethod(</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>type)</code></h4>
+<h4 id="public-void-settransactionidconst-stdstring--id"><code>public void setTransactionID(const std::string &amp; id)</code></h4>
+<h4 id="public-classtype-classtype-const"><code>public ClassType classType() const</code></h4>
+<h4 id="publicmethodtypemethodtype-const"><code>public</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>methodType() const</code></h4>
+<h4 id="public-inline-const-transactionid--transactionid-const"><code>public inline const TransactionID &amp; transactionID() const</code></h4>
+<h4 id="public-inline-const-stdvectorattribute--attrs-const"><code>public inline const std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; attrs() const</code></h4>
+<h4 id="public-inline-virtual-stdsizet-size-const"><code>public inline virtual std::size_t size() const</code></h4>
+<p>The size of the packet in bytes.</p>
+<p>This is the nember of bytes that will be written on a call to <a href="#group__stun_1ga3c6edd2eda4563ce398271ca1e398f2f">write()</a>, but may not be the number of bytes that will be consumed by <a href="#group__stun_1ga39d2f47307460a6e1178466b0fd06b16">read()</a>.</p>
+<h4 id="public-stdstring-methodstring-const"><code>public std::string methodString() const</code></h4>
+<h4 id="public-stdstring-classstring-const"><code>public std::string classString() const</code></h4>
+<h4 id="public-stdstring-errorstringstduint16t-errorcode-const"><code>public std::string errorString(std::uint16_t errorCode) const</code></h4>
+<h4 id="public-void-addattribute-attr"><code>public void add(</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* attr)</code></h4>
+<h4 id="publicattribute-getattributetypetypeint-index-const"><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* get(</code><a href="#group__stun_1ga58f9974b99873c21b541593d70751f76"><code>Attribute::Type</code></a><code>type,int index) const</code></h4>
+<h4 id="public-templatetypename-t--inline-t--getint-index-const"><code>public template&lt;typename T&gt;</code>  <br><code>inline T * get(int index) const</code></h4>
+<h4 id="public-virtual-stdsizet-readconstconstbuffer-buf"><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp; buf)</code></h4>
+<p>Parses the STUN/TURN packet from the given buffer. The return value indicates the number of bytes read.</p>
+<h4 id="public-virtual-void-writebuffer--buf-const"><code>public virtual void write(Buffer &amp; buf) const</code></h4>
+<p>Writes this object into a STUN/TURN packet.</p>
+<h4 id="public-stdstring-tostring-const"><code>public std::string toString() const</code></h4>
+<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-stduint16t-class"><code>protected std::uint16_t _class</code></h4>
+<h4 id="protected-stduint16t-method"><code>protected std::uint16_t _method</code></h4>
+<h4 id="protected-stduint16t-size"><code>protected std::uint16_t _size</code></h4>
+<h4 id="protected-transactionid-transactionid"><code>protected TransactionID _transactionID</code></h4>
+<h4 id="protected-stdvectorattribute--attrs"><code>protected std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; _attrs</code></h4>
+<h1 id="class-scystunmessageintegrity">class <code>scy::stun::MessageIntegrity</code></h1>
+<pre><code>class scy::stun::MessageIntegrity
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attributes that reflects an internet address.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  MessageIntegrity()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  MessageIntegrity(const</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>MessageIntegrity</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~MessageIntegrity()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool verifyHmac(const std::string &amp; key) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string input() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string hmac() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string key() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setInput(const std::string &amp; input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setHmac(const std::string &amp; hmac)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setKey(const std::string &amp; key)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--messageintegrity"><code>public  MessageIntegrity()</code></h4>
+<h4 id="public--messageintegrityconstmessageintegrity-r"><code>public  MessageIntegrity(const</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>MessageIntegrity</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--messageintegrity"><code>public virtual  ~MessageIntegrity()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-bool-verifyhmacconst-stdstring--key-const"><code>public bool verifyHmac(const std::string &amp; key) const</code></h4>
+<h4 id="public-inline-stdstring-input-const"><code>public inline std::string input() const</code></h4>
+<h4 id="public-inline-stdstring-hmac-const"><code>public inline std::string hmac() const</code></h4>
+<h4 id="public-inline-stdstring-key-const"><code>public inline std::string key() const</code></h4>
+<h4 id="public-inline-void-setinputconst-stdstring--input"><code>public inline void setInput(const std::string &amp; input)</code></h4>
+<h4 id="public-inline-void-sethmacconst-stdstring--hmac"><code>public inline void setHmac(const std::string &amp; hmac)</code></h4>
+<h4 id="public-inline-void-setkeyconst-stdstring--key"><code>public inline void setKey(const std::string &amp; key)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunstringattribute">class <code>scy::stun::StringAttribute</code></h1>
+<pre><code>class scy::stun::StringAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects an arbitrary byte string.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  StringAttribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  StringAttribute(const</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>StringAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~StringAttribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const char * bytes() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBytes(char * bytes,unsigned size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string asString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void copyBytes(const char * bytes)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void copyBytes(const void * bytes,unsigned size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint8_t getByte(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setByte(int index,std::uint8_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--stringattributestduint16t-typestduint16t-size"><code>public  StringAttribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="public--stringattributeconststringattribute-r"><code>public  StringAttribute(const</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>StringAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--stringattribute"><code>public virtual  ~StringAttribute()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-const-char--bytes-const"><code>public inline const char * bytes() const</code></h4>
+<h4 id="public-void-setbyteschar--bytesunsigned-size"><code>public void setBytes(char * bytes,unsigned size)</code></h4>
+<h4 id="public-stdstring-asstring-const"><code>public std::string asString() const</code></h4>
+<h4 id="public-void-copybytesconst-char--bytes"><code>public void copyBytes(const char * bytes)</code></h4>
+<h4 id="public-void-copybytesconst-void--bytesunsigned-size"><code>public void copyBytes(const void * bytes,unsigned size)</code></h4>
+<h4 id="public-stduint8t-getbyteint-index-const"><code>public std::uint8_t getByte(int index) const</code></h4>
+<h4 id="public-void-setbyteint-indexstduint8t-value"><code>public void setByte(int index,std::uint8_t value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystuntransaction">class <code>scy::stun::Transaction</code></h1>
+<pre><code>class scy::stun::Transaction
+  : public scy::net::Transaction&lt; Message &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Transaction(const net::Socket::Ptr &amp; socket,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress,long timeout,int retries,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; message)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onResponse()</code></td>
+<td>Called when a successful response match is received.</td>
+</tr>
+<tr>
+<td><code>protected virtual  ~Transaction()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--transactionconst-netsocketptr--socketconstnetaddress-peeraddresslong-timeoutint-retriesuvloop--loop"><code>public  Transaction(const net::Socket::Ptr &amp; socket,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress,long timeout,int retries,uv::Loop * loop)</code></h4>
+<h4 id="public-virtual-bool-checkresponseconstmessage-message"><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; message)</code></h4>
+<h4 id="public-virtual-void-onresponse"><code>public virtual void onResponse()</code></h4>
+<p>Called when a successful response match is received.</p>
+<h4 id="protected-virtual--transaction"><code>protected virtual  ~Transaction()</code></h4>
+<h1 id="class-scystunuint16listattribute">class <code>scy::stun::UInt16ListAttribute</code></h1>
+<pre><code>class scy::stun::UInt16ListAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a list of attribute names.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt16ListAttribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt16ListAttribute(const</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>UInt16ListAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~UInt16ListAttribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t getType(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setType(int index,std::uint16_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void addType(std::uint16_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint16listattributestduint16t-typestduint16t-size"><code>public  UInt16ListAttribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="public--uint16listattributeconstuint16listattribute-r"><code>public  UInt16ListAttribute(const</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>UInt16ListAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--uint16listattribute"><code>public virtual  ~UInt16ListAttribute()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-stdsizet-size-const"><code>public std::size_t size() const</code></h4>
+<h4 id="public-stduint16t-gettypeint-index-const"><code>public std::uint16_t getType(int index) const</code></h4>
+<h4 id="public-void-settypeint-indexstduint16t-value"><code>public void setType(int index,std::uint16_t value)</code></h4>
+<h4 id="public-void-addtypestduint16t-value"><code>public void addType(std::uint16_t value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint32attribute">class <code>scy::stun::UInt32Attribute</code></h1>
+<pre><code>class scy::stun::UInt32Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 32-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt32Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt32Attribute(const</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>UInt32Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint32_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint32_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint32attributestduint16t-type"><code>public  UInt32Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint32attributeconstuint32attribute-r"><code>public  UInt32Attribute(const</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>UInt32Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint32t-value-const"><code>public inline std::uint32_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint32t-bits"><code>public inline void setValue(std::uint32_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint64attribute">class <code>scy::stun::UInt64Attribute</code></h1>
+<pre><code>class scy::stun::UInt64Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 64-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt64Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt64Attribute(const</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>UInt64Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint64_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint64_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint64attributestduint16t-type"><code>public  UInt64Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint64attributeconstuint64attribute-r"><code>public  UInt64Attribute(const</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>UInt64Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint64t-value-const"><code>public inline std::uint64_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint64t-bits"><code>public inline void setValue(std::uint64_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint8attribute">class <code>scy::stun::UInt8Attribute</code></h1>
+<pre><code>class scy::stun::UInt8Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 32-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt8Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt8Attribute(const</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>UInt8Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint8_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint8attributestduint16t-type"><code>public  UInt8Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint8attributeconstuint8attribute-r"><code>public  UInt8Attribute(const</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>UInt8Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint8t-value-const"><code>public inline std::uint8_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint8t-bits"><code>public inline void setValue(std::uint8_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunattribute">class <code>scy::stun::Attribute</code></h1>
+<p>The virtual base class for all STUN/TURN attributes.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public inline virtual  ~Attribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t type() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void consumePadding(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void writePadding(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string typeString()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _type</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _size</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected  Attribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected void setLength(std::uint16_t size)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-inline-virtual--attribute"><code>public inline virtual  ~Attribute()</code></h4>
+<h4 id="publicattribute-clone"><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-void-readbitreader-reader"><code>public void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-void-writebitwriter-writer-const"><code>public void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h4 id="public-stduint16t-type-const"><code>public std::uint16_t type() const</code></h4>
+<h4 id="public-stduint16t-size-const"><code>public std::uint16_t size() const</code></h4>
+<h4 id="public-void-consumepaddingbitreader-reader-const"><code>public void consumePadding(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader) const</code></h4>
+<h4 id="public-void-writepaddingbitwriter-writer-const"><code>public void writePadding(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<h4 id="public-stdstring-typestring"><code>public std::string typeString()</code></h4>
+<h4 id="protected-stduint16t-type"><code>protected std::uint16_t _type</code></h4>
+<h4 id="protected-stduint16t-size"><code>protected std::uint16_t _size</code></h4>
+<h4 id="protected--attributestduint16t-typestduint16t-size"><code>protected  Attribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="protected-void-setlengthstduint16t-size"><code>protected void setLength(std::uint16_t size)</code></h4>
+<h1 id="class-scystunaddressattribute">class <code>scy::stun::AddressAttribute</code></h1>
+<pre><code>class scy::stun::AddressAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements a STUN/TURN attribute that contains a socket address.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  AddressAttribute(std::uint16_t type,bool ipv4)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  AddressAttribute(const</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>AddressAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>stun::Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline</code><a href="#group__stun_1gaec260a57e19eb607c18301f58f80e7e1"><code>stun::AddressFamily</code></a><code>family() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>address() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void setAddress(const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; addr)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--addressattributestduint16t-typebool-ipv4"><code>public  AddressAttribute(std::uint16_t type,bool ipv4)</code></h4>
+<h4 id="public--addressattributeconstaddressattribute-r"><code>public  AddressAttribute(const</code><a href="#classscy_1_1stun_1_1AddressAttribute"><code>AddressAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualstunattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>stun::Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inlinestunaddressfamilyfamily-const"><code>public inline</code><a href="#group__stun_1gaec260a57e19eb607c18301f58f80e7e1"><code>stun::AddressFamily</code></a><code>family() const</code></h4>
+<h4 id="public-virtualnetaddressaddress-const"><code>public virtual</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>address() const</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h4 id="public-inline-virtual-void-setaddressconstnetaddress-addr"><code>public inline virtual void setAddress(const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; addr)</code></h4>
+<h1 id="class-scystunuint8attribute">class <code>scy::stun::UInt8Attribute</code></h1>
+<pre><code>class scy::stun::UInt8Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 32-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt8Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt8Attribute(const</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>UInt8Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint8_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint8attributestduint16t-type"><code>public  UInt8Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint8attributeconstuint8attribute-r"><code>public  UInt8Attribute(const</code><a href="#classscy_1_1stun_1_1UInt8Attribute"><code>UInt8Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint8t-value-const"><code>public inline std::uint8_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint8t-bits"><code>public inline void setValue(std::uint8_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint32attribute">class <code>scy::stun::UInt32Attribute</code></h1>
+<pre><code>class scy::stun::UInt32Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 32-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt32Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt32Attribute(const</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>UInt32Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint32_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint32_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint32attributestduint16t-type"><code>public  UInt32Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint32attributeconstuint32attribute-r"><code>public  UInt32Attribute(const</code><a href="#classscy_1_1stun_1_1UInt32Attribute"><code>UInt32Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint32t-value-const"><code>public inline std::uint32_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint32t-bits"><code>public inline void setValue(std::uint32_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint64attribute">class <code>scy::stun::UInt64Attribute</code></h1>
+<pre><code>class scy::stun::UInt64Attribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a 64-bit integer.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt64Attribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt64Attribute(const</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>UInt64Attribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint64_t value() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setValue(std::uint64_t bits)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool getBit(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBit(int index,bool value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint64attributestduint16t-type"><code>public  UInt64Attribute(std::uint16_t type)</code></h4>
+<h4 id="public--uint64attributeconstuint64attribute-r"><code>public  UInt64Attribute(const</code><a href="#classscy_1_1stun_1_1UInt64Attribute"><code>UInt64Attribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-stduint64t-value-const"><code>public inline std::uint64_t value() const</code></h4>
+<h4 id="public-inline-void-setvaluestduint64t-bits"><code>public inline void setValue(std::uint64_t bits)</code></h4>
+<h4 id="public-bool-getbitint-index-const"><code>public bool getBit(int index) const</code></h4>
+<h4 id="public-void-setbitint-indexbool-value"><code>public void setBit(int index,bool value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunflagattribute">class <code>scy::stun::FlagAttribute</code></h1>
+<pre><code>class scy::stun::FlagAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute representing a 0 size flag.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  FlagAttribute(std::uint16_t type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--flagattributestduint16t-type"><code>public  FlagAttribute(std::uint16_t type)</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-virtual-void-readbitreader-reader"><code>public inline virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-inline-virtual-void-writebitwriter-writer-const"><code>public inline virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunstringattribute">class <code>scy::stun::StringAttribute</code></h1>
+<pre><code>class scy::stun::StringAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects an arbitrary byte string.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  StringAttribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  StringAttribute(const</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>StringAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~StringAttribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const char * bytes() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setBytes(char * bytes,unsigned size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string asString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void copyBytes(const char * bytes)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void copyBytes(const void * bytes,unsigned size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint8_t getByte(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setByte(int index,std::uint8_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--stringattributestduint16t-typestduint16t-size"><code>public  StringAttribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="public--stringattributeconststringattribute-r"><code>public  StringAttribute(const</code><a href="#classscy_1_1stun_1_1StringAttribute"><code>StringAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--stringattribute"><code>public virtual  ~StringAttribute()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-inline-const-char--bytes-const"><code>public inline const char * bytes() const</code></h4>
+<h4 id="public-void-setbyteschar--bytesunsigned-size"><code>public void setBytes(char * bytes,unsigned size)</code></h4>
+<h4 id="public-stdstring-asstring-const"><code>public std::string asString() const</code></h4>
+<h4 id="public-void-copybytesconst-char--bytes"><code>public void copyBytes(const char * bytes)</code></h4>
+<h4 id="public-void-copybytesconst-void--bytesunsigned-size"><code>public void copyBytes(const void * bytes,unsigned size)</code></h4>
+<h4 id="public-stduint8t-getbyteint-index-const"><code>public std::uint8_t getByte(int index) const</code></h4>
+<h4 id="public-void-setbyteint-indexstduint8t-value"><code>public void setByte(int index,std::uint8_t value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunuint16listattribute">class <code>scy::stun::UInt16ListAttribute</code></h1>
+<pre><code>class scy::stun::UInt16ListAttribute
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects a list of attribute names.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  UInt16ListAttribute(std::uint16_t type,std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  UInt16ListAttribute(const</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>UInt16ListAttribute</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~UInt16ListAttribute()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::uint16_t getType(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setType(int index,std::uint16_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void addType(std::uint16_t value)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--uint16listattributestduint16t-typestduint16t-size"><code>public  UInt16ListAttribute(std::uint16_t type,std::uint16_t size)</code></h4>
+<h4 id="public--uint16listattributeconstuint16listattribute-r"><code>public  UInt16ListAttribute(const</code><a href="#classscy_1_1stun_1_1UInt16ListAttribute"><code>UInt16ListAttribute</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--uint16listattribute"><code>public virtual  ~UInt16ListAttribute()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-stdsizet-size-const"><code>public std::size_t size() const</code></h4>
+<h4 id="public-stduint16t-gettypeint-index-const"><code>public std::uint16_t getType(int index) const</code></h4>
+<h4 id="public-void-settypeint-indexstduint16t-value"><code>public void setType(int index,std::uint16_t value)</code></h4>
+<h4 id="public-void-addtypestduint16t-value"><code>public void addType(std::uint16_t value)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunmessageintegrity">class <code>scy::stun::MessageIntegrity</code></h1>
+<pre><code>class scy::stun::MessageIntegrity
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attributes that reflects an internet address.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  MessageIntegrity()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  MessageIntegrity(const</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>MessageIntegrity</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~MessageIntegrity()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool verifyHmac(const std::string &amp; key) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string input() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string hmac() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::string key() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setInput(const std::string &amp; input)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setHmac(const std::string &amp; hmac)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline void setKey(const std::string &amp; key)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--messageintegrity"><code>public  MessageIntegrity()</code></h4>
+<h4 id="public--messageintegrityconstmessageintegrity-r"><code>public  MessageIntegrity(const</code><a href="#classscy_1_1stun_1_1MessageIntegrity"><code>MessageIntegrity</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--messageintegrity"><code>public virtual  ~MessageIntegrity()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-bool-verifyhmacconst-stdstring--key-const"><code>public bool verifyHmac(const std::string &amp; key) const</code></h4>
+<h4 id="public-inline-stdstring-input-const"><code>public inline std::string input() const</code></h4>
+<h4 id="public-inline-stdstring-hmac-const"><code>public inline std::string hmac() const</code></h4>
+<h4 id="public-inline-stdstring-key-const"><code>public inline std::string key() const</code></h4>
+<h4 id="public-inline-void-setinputconst-stdstring--input"><code>public inline void setInput(const std::string &amp; input)</code></h4>
+<h4 id="public-inline-void-sethmacconst-stdstring--hmac"><code>public inline void setHmac(const std::string &amp; hmac)</code></h4>
+<h4 id="public-inline-void-setkeyconst-stdstring--key"><code>public inline void setKey(const std::string &amp; key)</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunerrorcode">class <code>scy::stun::ErrorCode</code></h1>
+<pre><code>class scy::stun::ErrorCode
+  : public scy::stun::Attribute
+</code></pre><p>Implements STUN/TURN attribute that reflects an error code.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  ErrorCode(std::uint16_t size)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  ErrorCode(const</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>ErrorCode</code></a><code>&amp; r)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~ErrorCode()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setErrorCode(int code)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setReason(const std::string &amp; reason)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int errorCode() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t errorClass() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline std::uint8_t errorNumber() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const std::string &amp; reason() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--errorcodestduint16t-size"><code>public  ErrorCode(std::uint16_t size)</code></h4>
+<h4 id="public--errorcodeconsterrorcode-r"><code>public  ErrorCode(const</code><a href="#classscy_1_1stun_1_1ErrorCode"><code>ErrorCode</code></a><code>&amp; r)</code></h4>
+<h4 id="public-virtual--errorcode"><code>public virtual  ~ErrorCode()</code></h4>
+<h4 id="public-virtualattribute-clone"><code>public virtual</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* clone()</code></h4>
+<h4 id="public-void-seterrorcodeint-code"><code>public void setErrorCode(int code)</code></h4>
+<h4 id="public-void-setreasonconst-stdstring--reason"><code>public void setReason(const std::string &amp; reason)</code></h4>
+<h4 id="public-int-errorcode-const"><code>public int errorCode() const</code></h4>
+<h4 id="public-inline-stduint8t-errorclass-const"><code>public inline std::uint8_t errorClass() const</code></h4>
+<h4 id="public-inline-stduint8t-errornumber-const"><code>public inline std::uint8_t errorNumber() const</code></h4>
+<h4 id="public-inline-const-stdstring--reason-const"><code>public inline const std::string &amp; reason() const</code></h4>
+<h4 id="public-virtual-void-readbitreader-reader"><code>public virtual void read(</code><a href="#classscy_1_1BitReader"><code>BitReader</code></a><code>&amp; reader)</code></h4>
+<p>Reads the body (not the type or size) for this type of attribute from the given buffer. Return value is true if successful.</p>
+<h4 id="public-virtual-void-writebitwriter-writer-const"><code>public virtual void write(</code><a href="#classscy_1_1BitWriter"><code>BitWriter</code></a><code>&amp; writer) const</code></h4>
+<p>Writes the body (not the type or size) to the given buffer. Return value is true if successful.</p>
+<h1 id="class-scystunmessage">class <code>scy::stun::Message</code></h1>
+<pre><code>class scy::stun::Message
+  : public scy::IPacket
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Message()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Message(ClassType clss,</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>meth)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  Message(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual  ~Message()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setClass(ClassType type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setMethod(</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>type)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void setTransactionID(const std::string &amp; id)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public ClassType classType() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>methodType() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const TransactionID &amp; transactionID() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline const std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; attrs() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual std::size_t size() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string methodString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string classString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::string errorString(std::uint16_t errorCode) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void add(</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* attr)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* get(</code><a href="#group__stun_1ga58f9974b99873c21b541593d70751f76"><code>Attribute::Type</code></a><code>type,int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public template&lt;typename T&gt;</code>  <br><code>inline T * get(int index) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp; buf)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void write(Buffer &amp; buf) const</code></td>
+<td>Writes this object into a STUN/TURN packet.</td>
+</tr>
+<tr>
+<td><code>public std::string toString() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void print(std::ostream &amp; os) const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public inline virtual const char * className() const</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _class</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _method</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::uint16_t _size</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected TransactionID _transactionID</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>protected std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; _attrs</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--message"><code>public  Message()</code></h4>
+<h4 id="public--messageclasstype-clssmethodtypemeth"><code>public  Message(ClassType clss,</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>meth)</code></h4>
+<h4 id="public--messageconstmessage-that"><code>public  Message(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></h4>
+<h4 id="publicmessage-operatorconstmessage-that"><code>public</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; that)</code></h4>
+<h4 id="public-virtual--message"><code>public virtual  ~Message()</code></h4>
+<h4 id="public-virtualipacket-clone-const"><code>public virtual</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>* clone() const</code></h4>
+<h4 id="public-void-setclassclasstype-type"><code>public void setClass(ClassType type)</code></h4>
+<h4 id="public-void-setmethodmethodtypetype"><code>public void setMethod(</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>type)</code></h4>
+<h4 id="public-void-settransactionidconst-stdstring--id"><code>public void setTransactionID(const std::string &amp; id)</code></h4>
+<h4 id="public-classtype-classtype-const"><code>public ClassType classType() const</code></h4>
+<h4 id="publicmethodtypemethodtype-const"><code>public</code><a href="#group__stun_1gac2630e3f14c223cdb85801feb8f848ee"><code>MethodType</code></a><code>methodType() const</code></h4>
+<h4 id="public-inline-const-transactionid--transactionid-const"><code>public inline const TransactionID &amp; transactionID() const</code></h4>
+<h4 id="public-inline-const-stdvectorattribute--attrs-const"><code>public inline const std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; attrs() const</code></h4>
+<h4 id="public-inline-virtual-stdsizet-size-const"><code>public inline virtual std::size_t size() const</code></h4>
+<p>The size of the packet in bytes.</p>
+<p>This is the nember of bytes that will be written on a call to <a href="#group__stun_1ga3c6edd2eda4563ce398271ca1e398f2f">write()</a>, but may not be the number of bytes that will be consumed by <a href="#group__stun_1ga39d2f47307460a6e1178466b0fd06b16">read()</a>.</p>
+<h4 id="public-stdstring-methodstring-const"><code>public std::string methodString() const</code></h4>
+<h4 id="public-stdstring-classstring-const"><code>public std::string classString() const</code></h4>
+<h4 id="public-stdstring-errorstringstduint16t-errorcode-const"><code>public std::string errorString(std::uint16_t errorCode) const</code></h4>
+<h4 id="public-void-addattribute-attr"><code>public void add(</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* attr)</code></h4>
+<h4 id="publicattribute-getattributetypetypeint-index-const"><code>public</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* get(</code><a href="#group__stun_1ga58f9974b99873c21b541593d70751f76"><code>Attribute::Type</code></a><code>type,int index) const</code></h4>
+<h4 id="public-templatetypename-t--inline-t--getint-index-const"><code>public template&lt;typename T&gt;</code>  <br><code>inline T * get(int index) const</code></h4>
+<h4 id="public-virtual-stdsizet-readconstconstbuffer-buf"><code>public virtual std::size_t read(const</code><a href="#classscy_1_1ConstBuffer"><code>ConstBuffer</code></a><code>&amp; buf)</code></h4>
+<p>Parses the STUN/TURN packet from the given buffer. The return value indicates the number of bytes read.</p>
+<h4 id="public-virtual-void-writebuffer--buf-const"><code>public virtual void write(Buffer &amp; buf) const</code></h4>
+<p>Writes this object into a STUN/TURN packet.</p>
+<h4 id="public-stdstring-tostring-const"><code>public std::string toString() const</code></h4>
+<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
+<h4 id="public-inline-virtual-const-char--classname-const"><code>public inline virtual const char * className() const</code></h4>
+<h4 id="protected-stduint16t-class"><code>protected std::uint16_t _class</code></h4>
+<h4 id="protected-stduint16t-method"><code>protected std::uint16_t _method</code></h4>
+<h4 id="protected-stduint16t-size"><code>protected std::uint16_t _size</code></h4>
+<h4 id="protected-transactionid-transactionid"><code>protected TransactionID _transactionID</code></h4>
+<h4 id="protected-stdvectorattribute--attrs"><code>protected std::vector&lt;</code><a href="#classscy_1_1stun_1_1Attribute"><code>Attribute</code></a><code>* &gt; _attrs</code></h4>
+<h1 id="class-scystuntransaction">class <code>scy::stun::Transaction</code></h1>
+<pre><code>class scy::stun::Transaction
+  : public scy::net::Transaction&lt; Message &gt;
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  Transaction(const net::Socket::Ptr &amp; socket,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress,long timeout,int retries,uv::Loop * loop)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; message)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void onResponse()</code></td>
+<td>Called when a successful response match is received.</td>
+</tr>
+<tr>
+<td><code>protected virtual  ~Transaction()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--transactionconst-netsocketptr--socketconstnetaddress-peeraddresslong-timeoutint-retriesuvloop--loop"><code>public  Transaction(const net::Socket::Ptr &amp; socket,const</code><a href="#classscy_1_1net_1_1Address"><code>net::Address</code></a><code>&amp; peerAddress,long timeout,int retries,uv::Loop * loop)</code></h4>
+<h4 id="public-virtual-bool-checkresponseconstmessage-message"><code>public virtual bool checkResponse(const</code><a href="#classscy_1_1stun_1_1Message"><code>Message</code></a><code>&amp; message)</code></h4>
+<h4 id="public-virtual-void-onresponse"><code>public virtual void onResponse()</code></h4>
+<p>Called when a successful response match is received.</p>
+<h4 id="protected-virtual--transaction"><code>protected virtual  ~Transaction()</code></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="api-socketio.html" class="navigation navigation-prev " aria-label="Previous page: SocketIO">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="api-symple.html" class="navigation navigation-next " aria-label="Next page: Symple">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"STUN","level":"2.12","depth":1,"next":{"title":"Symple","level":"2.13","depth":1,"path":"api-symple.md","ref":"api-symple.md","articles":[]},"previous":{"title":"SocketIO","level":"2.11","depth":1,"path":"api-socketio.md","ref":"api-socketio.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-stun.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -176,6 +176,18 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+# Replace hrefs in content (will be run before gziping)
+after_build do |builder|
+  p "Replacing build files"
+
+  # Make github links nofollow (we have 100's)
+  `find build -name "index.html" -print0 | xargs -0 sed -i 's|href="https://github.com|rel="nofollow" href="https://github.com|g'`
+
+  # Replace Gitbook sources to use middleman pretty directory srticture
+  `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="\\([^"]*\\)\\.html"|="/libsourcey/\\1/"|g'`
+  `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="./"|="/libsourcey/"|g'`
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -185,6 +197,7 @@ set :images_dir, 'images'
 activate :livereload
 activate :syntax
 activate :directory_indexes
+# page "/libsourcey/*.html", directory_index: false
 
 ready do
   sprockets.import_asset 'foundation-icon-fonts/foundation-icons.eot'
@@ -227,7 +240,6 @@ configure :development do
 end
 
 # Build-specific configuration
-
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -239,7 +251,7 @@ configure :build do
   activate :minify_html
 
   # Optimize images on build
-  #activate :smusher
+  # activate :smusher
 
   # Gzip images and scripts
   activate :gzip
@@ -248,8 +260,11 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  #activate :relative_assets
-  #set :relative_links, true
+  # activate :relative_assets
+  # set :relative_links, true
+
+  # activate :directory_indexes
+  # set :trailing_slash, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
