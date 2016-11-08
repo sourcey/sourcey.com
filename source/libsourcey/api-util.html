@@ -488,57 +488,9 @@
 <td><code>namespace</code><a href="#namespacescy"><code>scy</code></a></td>
 <td></td>
 </tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1Base64PacketEncoder"><code>scy::Base64PacketEncoder</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1IDiagnostic"><code>scy::IDiagnostic</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1AsyncDiagnostic"><code>scy::AsyncDiagnostic</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1DiagnosticManager"><code>scy::DiagnosticManager</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1IRegistry"><code>scy::IRegistry</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1RateLimiter"><code>scy::RateLimiter</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1StreamManager"><code>scy::StreamManager</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1TimedManager"><code>scy::TimedManager</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1BasicUser"><code>scy::BasicUser</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1UserManager"><code>scy::UserManager</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1DiagnosticState"><code>scy::DiagnosticState</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1IUser"><code>scy::IUser</code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h1 id="namespace-scy">namespace <code>scy</code></h1>
+<h1 id="namespacescy">namespace <code>scy</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -598,7 +550,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="class-scyasyncdiagnostic">class <code>scy::AsyncDiagnostic</code></h1>
+<h1 id="classscy_1_1AsyncDiagnostic">class <code>scy::AsyncDiagnostic</code> </h1>
 <pre><code>class scy::AsyncDiagnostic
   : public scy::IDiagnostic
   : public scy::async::Runnable
@@ -620,16 +572,16 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected</code><a href="#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code></td>
+<td><code>protected</code><a href="api-base.html#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline-virtual--asyncdiagnostic"><code>public inline virtual  ~AsyncDiagnostic()</code></h4>
-<h4 id="public-inline-virtual-void-check"><code>public inline virtual void check()</code></h4>
-<h4 id="protectedthreadthread"><code>protected</code><a href="#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code></h4>
-<h1 id="class-scybase64packetencoder">class <code>scy::Base64PacketEncoder</code></h1>
+<h4 id="group__util_1ga505c905b8a86b311f10b1bc81f3dd3e9"><code>public inline virtual  ~AsyncDiagnostic()</code> </h4>
+<h4 id="group__util_1ga5a37929c47fe2098c4e8946e54a55cb5"><code>public inline virtual void check()</code> </h4>
+<h4 id="group__util_1ga86a906cd8701f49e2f2065c9e8e3c1f3"><code>protected</code><a href="api-base.html#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code> </h4>
+<h1 id="classscy_1_1Base64PacketEncoder">class <code>scy::Base64PacketEncoder</code> </h1>
 <pre><code>class scy::Base64PacketEncoder
   : public scy::PacketProcessor
 </code></pre><h2 id="summary">Summary</h2>
@@ -642,7 +594,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public</code><a href="#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code></td>
 <td></td>
 </tr>
 <tr>
@@ -656,12 +608,12 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="publicpacketsignalemitter"><code>public</code><a href="#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code></h4>
-<h4 id="public-inline--base64packetencoder"><code>public inline  Base64PacketEncoder()</code></h4>
-<h4 id="public-inline-virtual-void-processipacket-packet"><code>public inline virtual void process(</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>&amp; packet)</code></h4>
+<h4 id="group__util_1ga2d3eededaa9fe67484a81fb7a346dc03"><code>public</code><a href="api-base.html#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code> </h4>
+<h4 id="group__util_1ga7a4a4a092ea8e67ba50a511a57acaa0b"><code>public inline  Base64PacketEncoder()</code> </h4>
+<h4 id="group__util_1ga99b62b13142c23e2354869ef20cf810d"><code>public inline virtual void process(</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>&amp; packet)</code> </h4>
 <p>This method performs processing on the given packet and emits the result.</p>
 <p>Note: If packet processing is async (the packet is not in the current thread scope) then packet data must be copied. Copied data can be freed directly aFter the async call to emit() the outgoing packet.</p>
-<h1 id="class-scybasicuser">class <code>scy::BasicUser</code></h1>
+<h1 id="classscy_1_1BasicUser">class <code>scy::BasicUser</code> </h1>
 <pre><code>class scy::BasicUser
   : public scy::IUser
 </code></pre><h2 id="summary">Summary</h2>
@@ -696,12 +648,12 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline--basicuserconst-stdstring--usernameconst-stdstring--password"><code>public inline  BasicUser(const std::string &amp; username,const std::string &amp; password)</code></h4>
-<h4 id="public-inline-virtual-stdstring-username-const"><code>public inline virtual std::string username() const</code></h4>
-<h4 id="public-inline-virtual-stdstring-password-const"><code>public inline virtual std::string password() const</code></h4>
-<h4 id="protected-stdstring-username"><code>protected std::string _username</code></h4>
-<h4 id="protected-stdstring-password"><code>protected std::string _password</code></h4>
-<h1 id="class-scydiagnosticmanager">class <code>scy::DiagnosticManager</code></h1>
+<h4 id="group__util_1ga99d6a8ec8d148263b858607fc12e6915"><code>public inline  BasicUser(const std::string &amp; username,const std::string &amp; password)</code> </h4>
+<h4 id="group__util_1gaa4d74cffed88430c95be50f4178a407c"><code>public inline virtual std::string username() const</code> </h4>
+<h4 id="group__util_1gaf85d948cee382cb7a8fd63bce2230906"><code>public inline virtual std::string password() const</code> </h4>
+<h4 id="group__util_1ga984dc62d5f29dad4f46adb0a18709614"><code>protected std::string _username</code> </h4>
+<h4 id="group__util_1ga6049b540334bbb0faa236a6a78646fb0"><code>protected std::string _password</code> </h4>
+<h1 id="classscy_1_1DiagnosticManager">class <code>scy::DiagnosticManager</code> </h1>
 <pre><code>class scy::DiagnosticManager
   : public scy::PointerCollection&lt; TKey, TValue, TDeleter &gt;
 </code></pre><h2 id="summary">Summary</h2>
@@ -714,7 +666,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public</code><a href="#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code></td>
 <td></td>
 </tr>
 <tr>
@@ -731,7 +683,7 @@
 </tr>
 <tr>
 <td><code>public bool addDiagnostic(</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* test)</code></td>
-<td>Adds a <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> test instance.</td>
+<td>Adds a <a href="api-util.html#classscy_1_1IDiagnostic">IDiagnostic</a> test instance.</td>
 </tr>
 <tr>
 <td><code>public virtual</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* getDiagnostic(const std::string &amp; name)</code></td>
@@ -756,20 +708,20 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="publicnullsignaldiagnosticscomplete"><code>public</code><a href="#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code></h4>
-<h4 id="public--diagnosticmanager"><code>public  DiagnosticManager()</code></h4>
-<h4 id="public-virtual--diagnosticmanager"><code>public virtual  ~DiagnosticManager()</code></h4>
-<h4 id="public-bool-freediagnosticconst-stdstring--name"><code>public bool freeDiagnostic(const std::string &amp; name)</code></h4>
-<h4 id="public-bool-adddiagnosticidiagnostic-test"><code>public bool addDiagnostic(</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* test)</code></h4>
+<h4 id="group__util_1gae4bffe1d36c1087a6456bdc124740968"><code>public</code><a href="api-base.html#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code> </h4>
+<h4 id="group__util_1ga1f7e1a71860acf1acf2ad00e658168b4"><code>public  DiagnosticManager()</code> </h4>
+<h4 id="group__util_1ga33969db867a5da02ba66af577888cce1"><code>public virtual  ~DiagnosticManager()</code> </h4>
+<h4 id="group__util_1gafcfa5828dcb06aa0da5d926026fba952"><code>public bool freeDiagnostic(const std::string &amp; name)</code> </h4>
+<h4 id="group__util_1ga965c646fe610d64eee38396d477e1527"><code>public bool addDiagnostic(</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* test)</code> </h4>
 <p>Adds a <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> test instance.</p>
-<h4 id="public-virtualidiagnostic-getdiagnosticconst-stdstring--name"><code>public virtual</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* getDiagnostic(const std::string &amp; name)</code></h4>
+<h4 id="group__util_1gac6ba64b207ffd86739f287a1efda9e73"><code>public virtual</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* getDiagnostic(const std::string &amp; name)</code> </h4>
 <p>Returns the <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> instance or throws a NotFoundException exception.</p>
-<h4 id="public-virtual-void-resetall"><code>public virtual void resetAll()</code></h4>
-<h4 id="public-virtual-void-checkall"><code>public virtual void checkAll()</code></h4>
+<h4 id="group__util_1gaf46ebc8e54d7508f44dc5ad49c0e269f"><code>public virtual void resetAll()</code> </h4>
+<h4 id="group__util_1ga32981bf8dbec2deef3f70427d48c2e54"><code>public virtual void checkAll()</code> </h4>
 <p>Runs all managed <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> tests. DiagnosticsComplete will be dispatched on completion.</p>
-<h4 id="public-virtual-bool-allcomplete"><code>public virtual bool allComplete()</code></h4>
-<h4 id="public-virtual-void-ondiagnosticstatechangevoid-diagnosticstate-stateconstdiagnosticstate"><code>public virtual void onDiagnosticStateChange(void *,</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp; state,const</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp;)</code></h4>
-<h1 id="class-scyidiagnostic">class <code>scy::IDiagnostic</code></h1>
+<h4 id="group__util_1gad077e09ee488e3639b0188c8667f2477"><code>public virtual bool allComplete()</code> </h4>
+<h4 id="group__util_1gae5adc21f9a476721730d164a13c8dcb3"><code>public virtual void onDiagnosticStateChange(void *,</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp; state,const</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp;)</code> </h4>
+<h1 id="classscy_1_1IDiagnostic">class <code>scy::IDiagnostic</code> </h1>
 <pre><code>class scy::IDiagnostic
   : public scy::Stateful&lt; DiagnosticState &gt;
 </code></pre><h2 id="summary">Summary</h2>
@@ -794,7 +746,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code></td>
 <td></td>
 </tr>
 <tr>
@@ -844,28 +796,28 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-stdstring-name"><code>public std::string name</code></h4>
+<h4 id="group__util_1gaa69e4ded0fb7d0db9113ab8c318a043f"><code>public std::string name</code> </h4>
 <p>The name of the diagnostic.</p>
-<h4 id="public-stdstring-description"><code>public std::string description</code></h4>
+<h4 id="group__util_1ga5a7dca63479b6fb69f62ed3c33919a11"><code>public std::string description</code> </h4>
 <p>The diagnostic description.</p>
-<h4 id="public-stdvector-stdstring--summary"><code>public std::vector&lt; std::string &gt; summary</code></h4>
+<h4 id="group__util_1gac24ce2f6e0d721dc04d292d6b99e2beb"><code>public std::vector&lt; std::string &gt; summary</code> </h4>
 <p>The diagnostic summary, maybe including troubleshooting information on failure.</p>
-<h4 id="publicsignal-const-stdstring---summaryupdated"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code></h4>
+<h4 id="group__util_1ga0688716571fe932a387cbf0b09911483"><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code> </h4>
 <p>Signals when a new text item is added to the summary.</p>
-<h4 id="public--idiagnostic"><code>public  IDiagnostic()</code></h4>
-<h4 id="public-virtual--idiagnostic"><code>public virtual  ~IDiagnostic()</code></h4>
-<h4 id="public-virtual-void-check"><code>public virtual void check()</code></h4>
-<h4 id="public-virtual-void-reset"><code>public virtual void reset()</code></h4>
-<h4 id="public-virtual-bool-complete-const"><code>public virtual bool complete() const</code></h4>
-<h4 id="public-virtual-bool-passed-const"><code>public virtual bool passed() const</code></h4>
-<h4 id="public-virtual-bool-failed-const"><code>public virtual bool failed() const</code></h4>
-<h4 id="protected-void-run"><code>protected void run()</code></h4>
+<h4 id="group__util_1gac8aca5149fda66a927334e1132c48890"><code>public  IDiagnostic()</code> </h4>
+<h4 id="group__util_1ga4ef2121b9fd45a42fda1b2aee0a9ea2c"><code>public virtual  ~IDiagnostic()</code> </h4>
+<h4 id="group__util_1gabd4bf909e78503107e0604f11d0437f6"><code>public virtual void check()</code> </h4>
+<h4 id="group__util_1ga4824c0cc08d8b244a5b7a8916e50a136"><code>public virtual void reset()</code> </h4>
+<h4 id="group__util_1ga23369ac4b799996b3b2911e05076e557"><code>public virtual bool complete() const</code> </h4>
+<h4 id="group__util_1ga5ed635d12653d66026810386a4bfb7a1"><code>public virtual bool passed() const</code> </h4>
+<h4 id="group__util_1ga31ceeef28f1b085ec2162002deb00d60"><code>public virtual bool failed() const</code> </h4>
+<h4 id="group__util_1ga36bfaa138a649addc6f0d89d4df5ea28"><code>protected void run()</code> </h4>
 <p>Override to implement diagnostic logic.</p>
 <p>The StateChange signal will dispatch diagnostic test results to delegates.</p>
-<h4 id="protected-virtual-bool-pass"><code>protected virtual bool pass()</code></h4>
-<h4 id="protected-virtual-bool-fail"><code>protected virtual bool fail()</code></h4>
-<h4 id="protected-virtual-void-addsummaryconst-stdstring--text"><code>protected virtual void addSummary(const std::string &amp; text)</code></h4>
-<h1 id="class-scyiregistry">class <code>scy::IRegistry</code></h1>
+<h4 id="group__util_1ga673e4cb65e024a8ec9e123061689b112"><code>protected virtual bool pass()</code> </h4>
+<h4 id="group__util_1ga05af62ad19e7683f04b2a0637ae0baed"><code>protected virtual bool fail()</code> </h4>
+<h4 id="group__util_1ga64ac18ee28d24cec3f898123db0a62c8"><code>protected virtual void addSummary(const std::string &amp; text)</code> </h4>
+<h1 id="classscy_1_1IRegistry">class <code>scy::IRegistry</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -876,11 +828,11 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code></td>
 <td></td>
 </tr>
 <tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code></td>
 <td></td>
 </tr>
 <tr>
@@ -910,15 +862,15 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="publicsignal-const-stdstring---typeregistered"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code></h4>
-<h4 id="publicsignal-const-stdstring---typeunregistered"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code></h4>
-<h4 id="public-inline--iregistry"><code>public inline  IRegistry()</code></h4>
-<h4 id="public-inline-virtual--iregistry"><code>public inline virtual  ~IRegistry()</code></h4>
-<h4 id="public-inline-virtual-itemt--createinstanceconst-stdstring--s"><code>public inline virtual ItemT * createInstance(const std::string &amp; s)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertypeconst-stdstring--s"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerType(const std::string &amp; s)</code></h4>
-<h4 id="public-inline-virtual-void-unregistertypeconst-stdstring--s"><code>public inline virtual void unregisterType(const std::string &amp; s)</code></h4>
-<h4 id="public-inline-typemap-types-const"><code>public inline TypeMap types() const</code></h4>
-<h1 id="class-scyratelimiter">class <code>scy::RateLimiter</code></h1>
+<h4 id="group__util_1gacbce18cbab3d0de2deec13695a69ec6e"><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code> </h4>
+<h4 id="group__util_1gab03caae1fb2324bb6520b2c924cffe04"><code>public</code><a href="api-base.html#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code> </h4>
+<h4 id="group__util_1ga8669f031838a467d3129960caa96e0b5"><code>public inline  IRegistry()</code> </h4>
+<h4 id="group__util_1ga9ce6d06a06e25983e03f7bd5a06716e3"><code>public inline virtual  ~IRegistry()</code> </h4>
+<h4 id="group__util_1ga3892a5aee7e6f674d92ad5ba4b4db267"><code>public inline virtual ItemT * createInstance(const std::string &amp; s)</code> </h4>
+<h4 id="group__util_1gae25f5528b11ce12d628e246eeb7e0e78"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerType(const std::string &amp; s)</code> </h4>
+<h4 id="group__util_1ga6501164e448376e278823594a9af0d93"><code>public inline virtual void unregisterType(const std::string &amp; s)</code> </h4>
+<h4 id="group__util_1ga2b6c7be0bba65bcbe8131921459f0d3f"><code>public inline TypeMap types() const</code> </h4>
+<h1 id="classscy_1_1RateLimiter">class <code>scy::RateLimiter</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -955,17 +907,17 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-double-rate"><code>public double rate</code></h4>
+<h4 id="group__util_1ga91c35e10dfcf207f17e62d2242708f26"><code>public double rate</code> </h4>
 <p>How many messages.</p>
-<h4 id="public-double-seconds"><code>public double seconds</code></h4>
+<h4 id="group__util_1gac47e0bd0461efd33ba6d7e480eeb9059"><code>public double seconds</code> </h4>
 <p>Over how many seconds.</p>
-<h4 id="public-double-allowance"><code>public double allowance</code></h4>
+<h4 id="group__util_1ga40eb12dada557ee2fff2ad2e419ec92c"><code>public double allowance</code> </h4>
 <p>Remaining send allowance.</p>
-<h4 id="public-clockt-lastcheck"><code>public clock_t lastCheck</code></h4>
+<h4 id="group__util_1ga247fefbc3361b60286b4e431410ff98a"><code>public clock_t lastCheck</code> </h4>
 <p>Last time canSend() was called.</p>
-<h4 id="public-inline--ratelimiterdouble-ratedouble-seconds"><code>public inline  RateLimiter(double rate,double seconds)</code></h4>
-<h4 id="public-inline-bool-cansend"><code>public inline bool canSend()</code></h4>
-<h1 id="class-scystreammanager">class <code>scy::StreamManager</code></h1>
+<h4 id="group__util_1gaba3e054e11999e0faf0d8be12e31855e"><code>public inline  RateLimiter(double rate,double seconds)</code> </h4>
+<h4 id="group__util_1gaa714f604007b21bc6435d3e518d68de4"><code>public inline bool canSend()</code> </h4>
+<h1 id="classscy_1_1StreamManager">class <code>scy::StreamManager</code> </h1>
 <pre><code>class scy::StreamManager
   : public scy::LiveCollection&lt; PacketStream &gt; &gt;
   : public scy::basic::Polymorphic
@@ -1037,24 +989,24 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--streammanagerbool-freeclosedstreams"><code>public  StreamManager(bool freeClosedStreams)</code></h4>
-<h4 id="public-virtual--streammanager"><code>public virtual  ~StreamManager()</code></h4>
-<h4 id="public-virtual-bool-addstreampacketstream-streambool-whiny"><code>public virtual bool addStream(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* stream,bool whiny)</code></h4>
-<h4 id="public-virtual-bool-closestreamconst-stdstring--namebool-whiny"><code>public virtual bool closeStream(const std::string &amp; name,bool whiny)</code></h4>
-<h4 id="public-virtual-void-closeall"><code>public virtual void closeAll()</code></h4>
-<h4 id="public-virtualpacketstream-getstreamconst-stdstring--namebool-whiny"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getStream(const std::string &amp; name,bool whiny)</code></h4>
-<h4 id="public-virtualpacketstream-getdafaultstream"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getDafaultStream()</code></h4>
+<h4 id="group__util_1gad5602b2d25265c53656c86f7739ae7d6"><code>public  StreamManager(bool freeClosedStreams)</code> </h4>
+<h4 id="group__util_1ga0204c0879b0c83ce9cd770ff14327669"><code>public virtual  ~StreamManager()</code> </h4>
+<h4 id="group__util_1gaf630cdcb67fa136f37e4b8ae9f07cf05"><code>public virtual bool addStream(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* stream,bool whiny)</code> </h4>
+<h4 id="group__util_1ga4d9fe6b1424912270ee3669c093d6ac3"><code>public virtual bool closeStream(const std::string &amp; name,bool whiny)</code> </h4>
+<h4 id="group__util_1ga6a82d6d92fa742e14402400791ef12a0"><code>public virtual void closeAll()</code> </h4>
+<h4 id="group__util_1ga07cf385a3eb2fa5e1e4a4d236dbc6b3c"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getStream(const std::string &amp; name,bool whiny)</code> </h4>
+<h4 id="group__util_1ga7cc76a987b8398d5c12cb01575bad6f0"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getDafaultStream()</code> </h4>
 <p>Returns the first stream in the list, or NULL.</p>
-<h4 id="public-virtual-map-streams-const"><code>public virtual Map streams() const</code></h4>
-<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
-<h4 id="protected-bool-freeclosedstreams"><code>protected bool _freeClosedStreams</code></h4>
-<h4 id="protected-virtual-void-onaddpacketstream-task"><code>protected virtual void onAdd(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></h4>
+<h4 id="group__util_1ga404d0fd5528693b0cc3effaf1c166392"><code>public virtual Map streams() const</code> </h4>
+<h4 id="group__util_1gaf885fbf7d31d61dd1545862913c34e94"><code>public virtual void print(std::ostream &amp; os) const</code> </h4>
+<h4 id="group__util_1gaddbce96aea755c169c60ecf93c378891"><code>protected bool _freeClosedStreams</code> </h4>
+<h4 id="group__util_1ga8c8fa23ce1ede39afa3fbb868b95a9ab"><code>protected virtual void onAdd(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code> </h4>
 <p>Called after a stream is added.</p>
-<h4 id="protected-virtual-void-onremovepacketstream-task"><code>protected virtual void onRemove(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></h4>
+<h4 id="group__util_1ga446dc5548a2201f9e6f60a5f487483b0"><code>protected virtual void onRemove(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code> </h4>
 <p>Called after a stream is removed.</p>
-<h4 id="protected-virtual-void-onstreamstatechangevoid--senderpacketstreamstate-stateconstpacketstreamstate"><code>protected virtual void onStreamStateChange(void * sender,</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp; state,const</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp;)</code></h4>
-<h4 id="protected-inline-virtual-const-char--classname-const"><code>protected inline virtual const char * className() const</code></h4>
-<h1 id="class-scytimedmanager">class <code>scy::TimedManager</code></h1>
+<h4 id="group__util_1ga7388ae78948b7e42d5ef65470d97022c"><code>protected virtual void onStreamStateChange(void * sender,</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp; state,const</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp;)</code> </h4>
+<h4 id="group__util_1ga40a27adac00840e0da6e344f5c5c05b4"><code>protected inline virtual const char * className() const</code> </h4>
+<h1 id="classscy_1_1TimedManager">class <code>scy::TimedManager</code> </h1>
 <pre><code>class scy::TimedManager
   : public scy::PointerCollection&lt; TKey, TValue, TDeleter &gt;
 </code></pre><h2 id="summary">Summary</h2>
@@ -1091,7 +1043,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code></td>
+<td><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1099,7 +1051,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code></td>
+<td><code>protected</code><a href="api-base.html#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1121,23 +1073,23 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline--timedmanageruvloop--loop"><code>public inline  TimedManager(uv::Loop * loop)</code></h4>
-<h4 id="public-inline-virtual--timedmanager"><code>public inline virtual  ~TimedManager()</code></h4>
-<h4 id="public-inline-virtual-void-addconst-tkey--keytvalue--itemlong-timeout"><code>public inline virtual void add(const TKey &amp; key,TValue * item,long timeout)</code></h4>
+<h4 id="group__util_1gab895d284229d512d9d51193b138b0fe1"><code>public inline  TimedManager(uv::Loop * loop)</code> </h4>
+<h4 id="group__util_1gadab34766ebc90333370b198ec3a3e043"><code>public inline virtual  ~TimedManager()</code> </h4>
+<h4 id="group__util_1ga49aabfeb877f828356eed48b2a494f74"><code>public inline virtual void add(const TKey &amp; key,TValue * item,long timeout)</code> </h4>
 <p>Add an item which will expire (and be deleted) after the specified timeout value. If the timeout is 0 the item will be stored indefinitely. The <a href="#classscy_1_1TimedManager">TimedManager</a> assumes ownership of the given pointer.</p>
-<h4 id="public-inline-virtual-bool-expiresconst-tkey--keylong-timeout"><code>public inline virtual bool expires(const TKey &amp; key,long timeout)</code></h4>
+<h4 id="group__util_1ga8c23a5777851e796ff30dce5dc644972"><code>public inline virtual bool expires(const TKey &amp; key,long timeout)</code> </h4>
 <p>Update the item expiry timeout.</p>
-<h4 id="public-inline-virtual-bool-expirestvalue--itemlong-timeout"><code>public inline virtual bool expires(TValue * item,long timeout)</code></h4>
+<h4 id="group__util_1ga08ed703cbdb67e04b43e4d3036c3f4d7"><code>public inline virtual bool expires(TValue * item,long timeout)</code> </h4>
 <p>Update the item expiry timeout.</p>
-<h4 id="public-inline-virtual-void-clear"><code>public inline virtual void clear()</code></h4>
-<h4 id="protected-mutablemutextmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code></h4>
-<h4 id="protected-timeoutmap-timeouts"><code>protected TimeoutMap _timeouts</code></h4>
-<h4 id="protectedtimertimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code></h4>
-<h4 id="protected-inline-virtual-bool-settimeouttvalue--itemlong-timeout"><code>protected inline virtual bool setTimeout(TValue * item,long timeout)</code></h4>
-<h4 id="protected-inline-virtual-void-onremoveconst-tkey--keytvalue--item"><code>protected inline virtual void onRemove(const TKey &amp; key,TValue * item)</code></h4>
-<h4 id="protected-inline-virtual-void-ontimeouttvalue--item"><code>protected inline virtual void onTimeout(TValue * item)</code></h4>
-<h4 id="protected-inline-void-ontimerupdatevoid-"><code>protected inline void onTimerUpdate(void *)</code></h4>
-<h1 id="class-scyusermanager">class <code>scy::UserManager</code></h1>
+<h4 id="group__util_1ga62616068a8fffa6176be947ee07b2db9"><code>public inline virtual void clear()</code> </h4>
+<h4 id="group__util_1ga4e858af645ee34e91e300b9f83536eeb"><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code> </h4>
+<h4 id="group__util_1ga01952e22d328c5b1bd87a023a8bf2fd2"><code>protected TimeoutMap _timeouts</code> </h4>
+<h4 id="group__util_1ga3cb60024293e87939b487cfbeb4095ab"><code>protected</code><a href="api-base.html#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code> </h4>
+<h4 id="group__util_1gab633d4bbc283611d2ddc0bac68fc759c"><code>protected inline virtual bool setTimeout(TValue * item,long timeout)</code> </h4>
+<h4 id="group__util_1ga2db40f6ae23ae8456c8eb6ed6b7ca3fc"><code>protected inline virtual void onRemove(const TKey &amp; key,TValue * item)</code> </h4>
+<h4 id="group__util_1ga66465316a2fe303332a6afded5256895"><code>protected inline virtual void onTimeout(TValue * item)</code> </h4>
+<h4 id="group__util_1ga57d8c4cc4fd5d21d20d8f27615db3567"><code>protected inline void onTimerUpdate(void *)</code> </h4>
+<h1 id="classscy_1_1UserManager">class <code>scy::UserManager</code> </h1>
 <pre><code>class scy::UserManager
   : public scy::LiveCollection&lt; std::string, IUser &gt;
 </code></pre><blockquote>
@@ -1167,10 +1119,10 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline--usermanager"><code>public inline  UserManager()</code></h4>
-<h4 id="public-inline-virtual--usermanager"><code>public inline virtual  ~UserManager()</code></h4>
-<h4 id="public-inline-virtual-bool-addiuser-user"><code>public inline virtual bool add(</code><a href="#structscy_1_1IUser"><code>IUser</code></a><code>* user)</code></h4>
-<h1 id="struct-scydiagnosticstate">struct <code>scy::DiagnosticState</code></h1>
+<h4 id="group__util_1gaa85253bb14e3db42a41d1422c1630828"><code>public inline  UserManager()</code> </h4>
+<h4 id="group__util_1ga4cbc4a22d84e5c80835ef06daacd016a"><code>public inline virtual  ~UserManager()</code> </h4>
+<h4 id="group__util_1ga7885b358f8dad3a9c1bfa26351919eb3"><code>public inline virtual bool add(</code><a href="#structscy_1_1IUser"><code>IUser</code></a><code>* user)</code> </h4>
+<h1 id="structscy_1_1DiagnosticState">struct <code>scy::DiagnosticState</code> </h1>
 <pre><code>struct scy::DiagnosticState
   : public scy::State
 </code></pre><h2 id="summary">Summary</h2>
@@ -1189,8 +1141,8 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline-virtual-stdstring-strunsigned-int-id-const"><code>public inline virtual std::string str(unsigned int id) const</code></h4>
-<h1 id="struct-scyiuser">struct <code>scy::IUser</code></h1>
+<h4 id="group__util_1ga0ff5f446bcd0e549324821cbd482ff04"><code>public inline virtual std::string str(unsigned int id) const</code> </h4>
+<h1 id="structscy_1_1IUser">struct <code>scy::IUser</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -1211,623 +1163,8 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-stdstring-username-const"><code>public std::string username() const</code></h4>
-<h4 id="public-stdstring-password-const"><code>public std::string password() const</code></h4>
-<h1 id="class-scybase64packetencoder">class <code>scy::Base64PacketEncoder</code></h1>
-<pre><code>class scy::Base64PacketEncoder
-  : public scy::PacketProcessor
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline  Base64PacketEncoder()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual void process(</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>&amp; packet)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publicpacketsignalemitter"><code>public</code><a href="#classscy_1_1SignalBase"><code>PacketSignal</code></a><code>emitter</code></h4>
-<h4 id="public-inline--base64packetencoder"><code>public inline  Base64PacketEncoder()</code></h4>
-<h4 id="public-inline-virtual-void-processipacket-packet"><code>public inline virtual void process(</code><a href="#classscy_1_1IPacket"><code>IPacket</code></a><code>&amp; packet)</code></h4>
-<p>This method performs processing on the given packet and emits the result.</p>
-<p>Note: If packet processing is async (the packet is not in the current thread scope) then packet data must be copied. Copied data can be freed directly aFter the async call to emit() the outgoing packet.</p>
-<h1 id="class-scyidiagnostic">class <code>scy::IDiagnostic</code></h1>
-<pre><code>class scy::IDiagnostic
-  : public scy::Stateful&lt; DiagnosticState &gt;
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public std::string name</code></td>
-<td>The name of the diagnostic.</td>
-</tr>
-<tr>
-<td><code>public std::string description</code></td>
-<td>The diagnostic description.</td>
-</tr>
-<tr>
-<td><code>public std::vector&lt; std::string &gt; summary</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  IDiagnostic()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~IDiagnostic()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void check()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void reset()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool complete() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool passed() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool failed() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected void run()</code></td>
-<td>Override to implement diagnostic logic.</td>
-</tr>
-<tr>
-<td><code>protected virtual bool pass()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual bool fail()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void addSummary(const std::string &amp; text)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-stdstring-name"><code>public std::string name</code></h4>
-<p>The name of the diagnostic.</p>
-<h4 id="public-stdstring-description"><code>public std::string description</code></h4>
-<p>The diagnostic description.</p>
-<h4 id="public-stdvector-stdstring--summary"><code>public std::vector&lt; std::string &gt; summary</code></h4>
-<p>The diagnostic summary, maybe including troubleshooting information on failure.</p>
-<h4 id="publicsignal-const-stdstring---summaryupdated"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; SummaryUpdated</code></h4>
-<p>Signals when a new text item is added to the summary.</p>
-<h4 id="public--idiagnostic"><code>public  IDiagnostic()</code></h4>
-<h4 id="public-virtual--idiagnostic"><code>public virtual  ~IDiagnostic()</code></h4>
-<h4 id="public-virtual-void-check"><code>public virtual void check()</code></h4>
-<h4 id="public-virtual-void-reset"><code>public virtual void reset()</code></h4>
-<h4 id="public-virtual-bool-complete-const"><code>public virtual bool complete() const</code></h4>
-<h4 id="public-virtual-bool-passed-const"><code>public virtual bool passed() const</code></h4>
-<h4 id="public-virtual-bool-failed-const"><code>public virtual bool failed() const</code></h4>
-<h4 id="protected-void-run"><code>protected void run()</code></h4>
-<p>Override to implement diagnostic logic.</p>
-<p>The StateChange signal will dispatch diagnostic test results to delegates.</p>
-<h4 id="protected-virtual-bool-pass"><code>protected virtual bool pass()</code></h4>
-<h4 id="protected-virtual-bool-fail"><code>protected virtual bool fail()</code></h4>
-<h4 id="protected-virtual-void-addsummaryconst-stdstring--text"><code>protected virtual void addSummary(const std::string &amp; text)</code></h4>
-<h1 id="class-scyasyncdiagnostic">class <code>scy::AsyncDiagnostic</code></h1>
-<pre><code>class scy::AsyncDiagnostic
-  : public scy::IDiagnostic
-  : public scy::async::Runnable
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline virtual  ~AsyncDiagnostic()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual void check()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline-virtual--asyncdiagnostic"><code>public inline virtual  ~AsyncDiagnostic()</code></h4>
-<h4 id="public-inline-virtual-void-check"><code>public inline virtual void check()</code></h4>
-<h4 id="protectedthreadthread"><code>protected</code><a href="#classscy_1_1Thread"><code>Thread</code></a><code>_thread</code></h4>
-<h1 id="class-scydiagnosticmanager">class <code>scy::DiagnosticManager</code></h1>
-<pre><code>class scy::DiagnosticManager
-  : public scy::PointerCollection&lt; TKey, TValue, TDeleter &gt;
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  DiagnosticManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~DiagnosticManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool freeDiagnostic(const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool addDiagnostic(</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* test)</code></td>
-<td>Adds a <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> test instance.</td>
-</tr>
-<tr>
-<td><code>public virtual</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* getDiagnostic(const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void resetAll()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void checkAll()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool allComplete()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void onDiagnosticStateChange(void *,</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp; state,const</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publicnullsignaldiagnosticscomplete"><code>public</code><a href="#classscy_1_1NullSignal"><code>NullSignal</code></a><code>DiagnosticsComplete</code></h4>
-<h4 id="public--diagnosticmanager"><code>public  DiagnosticManager()</code></h4>
-<h4 id="public-virtual--diagnosticmanager"><code>public virtual  ~DiagnosticManager()</code></h4>
-<h4 id="public-bool-freediagnosticconst-stdstring--name"><code>public bool freeDiagnostic(const std::string &amp; name)</code></h4>
-<h4 id="public-bool-adddiagnosticidiagnostic-test"><code>public bool addDiagnostic(</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* test)</code></h4>
-<p>Adds a <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> test instance.</p>
-<h4 id="public-virtualidiagnostic-getdiagnosticconst-stdstring--name"><code>public virtual</code><a href="#classscy_1_1IDiagnostic"><code>IDiagnostic</code></a><code>* getDiagnostic(const std::string &amp; name)</code></h4>
-<p>Returns the <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> instance or throws a NotFoundException exception.</p>
-<h4 id="public-virtual-void-resetall"><code>public virtual void resetAll()</code></h4>
-<h4 id="public-virtual-void-checkall"><code>public virtual void checkAll()</code></h4>
-<p>Runs all managed <a href="#classscy_1_1IDiagnostic">IDiagnostic</a> tests. DiagnosticsComplete will be dispatched on completion.</p>
-<h4 id="public-virtual-bool-allcomplete"><code>public virtual bool allComplete()</code></h4>
-<h4 id="public-virtual-void-ondiagnosticstatechangevoid-diagnosticstate-stateconstdiagnosticstate"><code>public virtual void onDiagnosticStateChange(void *,</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp; state,const</code><a href="#structscy_1_1DiagnosticState"><code>DiagnosticState</code></a><code>&amp;)</code></h4>
-<h1 id="class-scyiregistry">class <code>scy::IRegistry</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline  IRegistry()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual  ~IRegistry()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual ItemT * createInstance(const std::string &amp; s)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerType(const std::string &amp; s)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual void unregisterType(const std::string &amp; s)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline TypeMap types() const</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publicsignal-const-stdstring---typeregistered"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeRegistered</code></h4>
-<h4 id="publicsignal-const-stdstring---typeunregistered"><code>public</code><a href="#classscy_1_1Signal"><code>Signal</code></a><code>&lt; const std::string &amp; &gt; TypeUnregistered</code></h4>
-<h4 id="public-inline--iregistry"><code>public inline  IRegistry()</code></h4>
-<h4 id="public-inline-virtual--iregistry"><code>public inline virtual  ~IRegistry()</code></h4>
-<h4 id="public-inline-virtual-itemt--createinstanceconst-stdstring--s"><code>public inline virtual ItemT * createInstance(const std::string &amp; s)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertypeconst-stdstring--s"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerType(const std::string &amp; s)</code></h4>
-<h4 id="public-inline-virtual-void-unregistertypeconst-stdstring--s"><code>public inline virtual void unregisterType(const std::string &amp; s)</code></h4>
-<h4 id="public-inline-typemap-types-const"><code>public inline TypeMap types() const</code></h4>
-<h1 id="class-scyratelimiter">class <code>scy::RateLimiter</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public double rate</code></td>
-<td>How many messages.</td>
-</tr>
-<tr>
-<td><code>public double seconds</code></td>
-<td>Over how many seconds.</td>
-</tr>
-<tr>
-<td><code>public double allowance</code></td>
-<td>Remaining send allowance.</td>
-</tr>
-<tr>
-<td><code>public clock_t lastCheck</code></td>
-<td>Last time canSend() was called.</td>
-</tr>
-<tr>
-<td><code>public inline  RateLimiter(double rate,double seconds)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline bool canSend()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-double-rate"><code>public double rate</code></h4>
-<p>How many messages.</p>
-<h4 id="public-double-seconds"><code>public double seconds</code></h4>
-<p>Over how many seconds.</p>
-<h4 id="public-double-allowance"><code>public double allowance</code></h4>
-<p>Remaining send allowance.</p>
-<h4 id="public-clockt-lastcheck"><code>public clock_t lastCheck</code></h4>
-<p>Last time canSend() was called.</p>
-<h4 id="public-inline--ratelimiterdouble-ratedouble-seconds"><code>public inline  RateLimiter(double rate,double seconds)</code></h4>
-<h4 id="public-inline-bool-cansend"><code>public inline bool canSend()</code></h4>
-<h1 id="class-scystreammanager">class <code>scy::StreamManager</code></h1>
-<pre><code>class scy::StreamManager
-  : public scy::LiveCollection&lt; PacketStream &gt; &gt;
-  : public scy::basic::Polymorphic
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  StreamManager(bool freeClosedStreams)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~StreamManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool addStream(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* stream,bool whiny)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool closeStream(const std::string &amp; name,bool whiny)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void closeAll()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getStream(const std::string &amp; name,bool whiny)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getDafaultStream()</code></td>
-<td>Returns the first stream in the list, or NULL.</td>
-</tr>
-<tr>
-<td><code>public virtual Map streams() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void print(std::ostream &amp; os) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected bool _freeClosedStreams</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void onAdd(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></td>
-<td>Called after a stream is added.</td>
-</tr>
-<tr>
-<td><code>protected virtual void onRemove(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></td>
-<td>Called after a stream is removed.</td>
-</tr>
-<tr>
-<td><code>protected virtual void onStreamStateChange(void * sender,</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp; state,const</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected inline virtual const char * className() const</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--streammanagerbool-freeclosedstreams"><code>public  StreamManager(bool freeClosedStreams)</code></h4>
-<h4 id="public-virtual--streammanager"><code>public virtual  ~StreamManager()</code></h4>
-<h4 id="public-virtual-bool-addstreampacketstream-streambool-whiny"><code>public virtual bool addStream(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* stream,bool whiny)</code></h4>
-<h4 id="public-virtual-bool-closestreamconst-stdstring--namebool-whiny"><code>public virtual bool closeStream(const std::string &amp; name,bool whiny)</code></h4>
-<h4 id="public-virtual-void-closeall"><code>public virtual void closeAll()</code></h4>
-<h4 id="public-virtualpacketstream-getstreamconst-stdstring--namebool-whiny"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getStream(const std::string &amp; name,bool whiny)</code></h4>
-<h4 id="public-virtualpacketstream-getdafaultstream"><code>public virtual</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* getDafaultStream()</code></h4>
-<p>Returns the first stream in the list, or NULL.</p>
-<h4 id="public-virtual-map-streams-const"><code>public virtual Map streams() const</code></h4>
-<h4 id="public-virtual-void-printstdostream--os-const"><code>public virtual void print(std::ostream &amp; os) const</code></h4>
-<h4 id="protected-bool-freeclosedstreams"><code>protected bool _freeClosedStreams</code></h4>
-<h4 id="protected-virtual-void-onaddpacketstream-task"><code>protected virtual void onAdd(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></h4>
-<p>Called after a stream is added.</p>
-<h4 id="protected-virtual-void-onremovepacketstream-task"><code>protected virtual void onRemove(</code><a href="#classscy_1_1PacketStream"><code>PacketStream</code></a><code>* task)</code></h4>
-<p>Called after a stream is removed.</p>
-<h4 id="protected-virtual-void-onstreamstatechangevoid--senderpacketstreamstate-stateconstpacketstreamstate"><code>protected virtual void onStreamStateChange(void * sender,</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp; state,const</code><a href="#structscy_1_1PacketStreamState"><code>PacketStreamState</code></a><code>&amp;)</code></h4>
-<h4 id="protected-inline-virtual-const-char--classname-const"><code>protected inline virtual const char * className() const</code></h4>
-<h1 id="class-scytimedmanager">class <code>scy::TimedManager</code></h1>
-<pre><code>class scy::TimedManager
-  : public scy::PointerCollection&lt; TKey, TValue, TDeleter &gt;
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline  TimedManager(uv::Loop * loop)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual  ~TimedManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual void add(const TKey &amp; key,TValue * item,long timeout)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual bool expires(const TKey &amp; key,long timeout)</code></td>
-<td>Update the item expiry timeout.</td>
-</tr>
-<tr>
-<td><code>public inline virtual bool expires(TValue * item,long timeout)</code></td>
-<td>Update the item expiry timeout.</td>
-</tr>
-<tr>
-<td><code>public inline virtual void clear()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected TimeoutMap _timeouts</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected inline virtual bool setTimeout(TValue * item,long timeout)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected inline virtual void onRemove(const TKey &amp; key,TValue * item)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected inline virtual void onTimeout(TValue * item)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected inline void onTimerUpdate(void *)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline--timedmanageruvloop--loop"><code>public inline  TimedManager(uv::Loop * loop)</code></h4>
-<h4 id="public-inline-virtual--timedmanager"><code>public inline virtual  ~TimedManager()</code></h4>
-<h4 id="public-inline-virtual-void-addconst-tkey--keytvalue--itemlong-timeout"><code>public inline virtual void add(const TKey &amp; key,TValue * item,long timeout)</code></h4>
-<p>Add an item which will expire (and be deleted) after the specified timeout value. If the timeout is 0 the item will be stored indefinitely. The <a href="#classscy_1_1TimedManager">TimedManager</a> assumes ownership of the given pointer.</p>
-<h4 id="public-inline-virtual-bool-expiresconst-tkey--keylong-timeout"><code>public inline virtual bool expires(const TKey &amp; key,long timeout)</code></h4>
-<p>Update the item expiry timeout.</p>
-<h4 id="public-inline-virtual-bool-expirestvalue--itemlong-timeout"><code>public inline virtual bool expires(TValue * item,long timeout)</code></h4>
-<p>Update the item expiry timeout.</p>
-<h4 id="public-inline-virtual-void-clear"><code>public inline virtual void clear()</code></h4>
-<h4 id="protected-mutablemutextmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_tmutex</code></h4>
-<h4 id="protected-timeoutmap-timeouts"><code>protected TimeoutMap _timeouts</code></h4>
-<h4 id="protectedtimertimer"><code>protected</code><a href="#classscy_1_1Timer"><code>Timer</code></a><code>_timer</code></h4>
-<h4 id="protected-inline-virtual-bool-settimeouttvalue--itemlong-timeout"><code>protected inline virtual bool setTimeout(TValue * item,long timeout)</code></h4>
-<h4 id="protected-inline-virtual-void-onremoveconst-tkey--keytvalue--item"><code>protected inline virtual void onRemove(const TKey &amp; key,TValue * item)</code></h4>
-<h4 id="protected-inline-virtual-void-ontimeouttvalue--item"><code>protected inline virtual void onTimeout(TValue * item)</code></h4>
-<h4 id="protected-inline-void-ontimerupdatevoid-"><code>protected inline void onTimerUpdate(void *)</code></h4>
-<h1 id="class-scybasicuser">class <code>scy::BasicUser</code></h1>
-<pre><code>class scy::BasicUser
-  : public scy::IUser
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline  BasicUser(const std::string &amp; username,const std::string &amp; password)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual std::string username() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual std::string password() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _username</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _password</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline--basicuserconst-stdstring--usernameconst-stdstring--password"><code>public inline  BasicUser(const std::string &amp; username,const std::string &amp; password)</code></h4>
-<h4 id="public-inline-virtual-stdstring-username-const"><code>public inline virtual std::string username() const</code></h4>
-<h4 id="public-inline-virtual-stdstring-password-const"><code>public inline virtual std::string password() const</code></h4>
-<h4 id="protected-stdstring-username"><code>protected std::string _username</code></h4>
-<h4 id="protected-stdstring-password"><code>protected std::string _password</code></h4>
-<h1 id="class-scyusermanager">class <code>scy::UserManager</code></h1>
-<pre><code>class scy::UserManager
-  : public scy::LiveCollection&lt; std::string, IUser &gt;
-</code></pre><blockquote>
-<p>Deprecated: This class contains a list of users that have access on the system.</p>
-</blockquote>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline  UserManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual  ~UserManager()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual bool add(</code><a href="#structscy_1_1IUser"><code>IUser</code></a><code>* user)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline--usermanager"><code>public inline  UserManager()</code></h4>
-<h4 id="public-inline-virtual--usermanager"><code>public inline virtual  ~UserManager()</code></h4>
-<h4 id="public-inline-virtual-bool-addiuser-user"><code>public inline virtual bool add(</code><a href="#structscy_1_1IUser"><code>IUser</code></a><code>* user)</code></h4>
-<h1 id="struct-scydiagnosticstate">struct <code>scy::DiagnosticState</code></h1>
-<pre><code>struct scy::DiagnosticState
-  : public scy::State
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline virtual std::string str(unsigned int id) const</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline-virtual-stdstring-strunsigned-int-id-const"><code>public inline virtual std::string str(unsigned int id) const</code></h4>
-<h1 id="struct-scyiuser">struct <code>scy::IUser</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public std::string username() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::string password() const</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-stdstring-username-const"><code>public std::string username() const</code></h4>
-<h4 id="public-stdstring-password-const"><code>public std::string password() const</code></h4>
+<h4 id="group__util_1gab1897a1d6cd4507762cb93b1a8144c3c"><code>public std::string username() const</code> </h4>
+<h4 id="group__util_1gad90f6bab88fd34f0a1644c2ec43b5e5f"><code>public std::string password() const</code> </h4>
 
                                 
                                 </section>
@@ -1871,7 +1208,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Util","level":"2.15","depth":1,"next":{"title":"UV","level":"2.16","depth":1,"path":"api-uv.md","ref":"api-uv.md","articles":[]},"previous":{"title":"TURN","level":"2.14","depth":1,"path":"api-turn.md","ref":"api-turn.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-util.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Util","level":"2.15","depth":1,"next":{"title":"UV","level":"2.16","depth":1,"path":"api-uv.md","ref":"api-uv.md","articles":[]},"previous":{"title":"TURN","level":"2.14","depth":1,"path":"api-turn.md","ref":"api-turn.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-util.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

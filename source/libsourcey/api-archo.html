@@ -485,17 +485,9 @@
 <td><code>namespace</code><a href="#namespacescy_1_1archo"><code>scy::archo</code></a></td>
 <td></td>
 </tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>scy::archo::ZipFile::FileInfo</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1archo_1_1ZipFile"><code>scy::archo::ZipFile</code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h1 id="namespace-scyarcho">namespace <code>scy::archo</code></h1>
+<h1 id="namespacescy_1_1archo">namespace <code>scy::archo</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -511,7 +503,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="struct-scyarchozipfile">struct <code>scy::archo::ZipFile</code></h1>
+<h1 id="structscy_1_1archo_1_1ZipFile">struct <code>scy::archo::ZipFile</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -522,7 +514,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public std::vector&lt;</code><a href="#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code></td>
+<td><code>public std::vector&lt;</code><a href="api-archo.html#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code></td>
 <td></td>
 </tr>
 <tr>
@@ -584,139 +576,22 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-stdvectorfileinfo-info"><code>public std::vector&lt;</code><a href="#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code></h4>
-<h4 id="public-unzfile-fp"><code>public unzFile fp</code></h4>
-<h4 id="public--zipfile"><code>public  ZipFile()</code></h4>
-<h4 id="public--zipfileconst-stdstring--file"><code>public  ZipFile(const std::string &amp; file)</code></h4>
-<h4 id="public--zipfile"><code>public  ~ZipFile()</code></h4>
-<h4 id="public-void-openconst-stdstring--file"><code>public void open(const std::string &amp; file)</code></h4>
-<h4 id="public-bool-opened-const"><code>public bool opened() const</code></h4>
-<h4 id="public-void-close"><code>public void close()</code></h4>
-<h4 id="public-void-extractconst-stdstring--path"><code>public void extract(const std::string &amp; path)</code></h4>
+<h4 id="group__archo_1ga031d3193c306c10b0092e5815aead8cb"><code>public std::vector&lt;</code><a href="api-archo.html#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code> </h4>
+<h4 id="group__archo_1gaf810f2266baaef1a7c693a1a5df6768e"><code>public unzFile fp</code> </h4>
+<h4 id="group__archo_1gafbd603f7e87970b25761dde6ee43ed53"><code>public  ZipFile()</code> </h4>
+<h4 id="group__archo_1ga83472457ecd60b679786812154a48b2f"><code>public  ZipFile(const std::string &amp; file)</code> </h4>
+<h4 id="group__archo_1ga3526297ee66287bd3392b5496e29e296"><code>public  ~ZipFile()</code> </h4>
+<h4 id="group__archo_1ga4505de4a4b0258c1be3640370790b3e5"><code>public void open(const std::string &amp; file)</code> </h4>
+<h4 id="group__archo_1ga2cb3083919bf19fdc8440681095ad52b"><code>public bool opened() const</code> </h4>
+<h4 id="group__archo_1gad5f16432c7097c4f0f3376ec06d9b8aa"><code>public void close()</code> </h4>
+<h4 id="group__archo_1ga729b7bfd554bf838c855ad42b9e4039d"><code>public void extract(const std::string &amp; path)</code> </h4>
 <p>Extracts the archive contents to the given directory path.</p>
-<h4 id="public-bool-extractcurrentfileconst-stdstring--pathbool-whiny"><code>public bool extractCurrentFile(const std::string &amp; path,bool whiny)</code></h4>
-<h4 id="public-bool-gotofirstfile"><code>public bool goToFirstFile()</code></h4>
-<h4 id="public-bool-gotonextfile"><code>public bool goToNextFile()</code></h4>
-<h4 id="public-void-opencurrentfile"><code>public void openCurrentFile()</code></h4>
-<h4 id="public-void-closecurrentfile"><code>public void closeCurrentFile()</code></h4>
-<h4 id="public-stdstring-currentfilename"><code>public std::string currentFileName()</code></h4>
-<h1 id="struct-scyarchozipfilefileinfo">struct <code>scy::archo::ZipFile::FileInfo</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public std::string path</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::size_t compressedSize</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::size_t uncompressedSize</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-stdstring-path"><code>public std::string path</code></h4>
-<h4 id="public-stdsizet-compressedsize"><code>public std::size_t compressedSize</code></h4>
-<h4 id="public-stdsizet-uncompressedsize"><code>public std::size_t uncompressedSize</code></h4>
-<h1 id="struct-scyarchozipfile">struct <code>scy::archo::ZipFile</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public std::vector&lt;</code><a href="#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public unzFile fp</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  ZipFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  ZipFile(const std::string &amp; file)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  ~ZipFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void open(const std::string &amp; file)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool opened() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void close()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void extract(const std::string &amp; path)</code></td>
-<td>Extracts the archive contents to the given directory path.</td>
-</tr>
-<tr>
-<td><code>public bool extractCurrentFile(const std::string &amp; path,bool whiny)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool goToFirstFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool goToNextFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void openCurrentFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void closeCurrentFile()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::string currentFileName()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-stdvectorfileinfo-info"><code>public std::vector&lt;</code><a href="#structscy_1_1archo_1_1ZipFile_1_1FileInfo"><code>FileInfo</code></a><code>&gt; info</code></h4>
-<h4 id="public-unzfile-fp"><code>public unzFile fp</code></h4>
-<h4 id="public--zipfile"><code>public  ZipFile()</code></h4>
-<h4 id="public--zipfileconst-stdstring--file"><code>public  ZipFile(const std::string &amp; file)</code></h4>
-<h4 id="public--zipfile"><code>public  ~ZipFile()</code></h4>
-<h4 id="public-void-openconst-stdstring--file"><code>public void open(const std::string &amp; file)</code></h4>
-<h4 id="public-bool-opened-const"><code>public bool opened() const</code></h4>
-<h4 id="public-void-close"><code>public void close()</code></h4>
-<h4 id="public-void-extractconst-stdstring--path"><code>public void extract(const std::string &amp; path)</code></h4>
-<p>Extracts the archive contents to the given directory path.</p>
-<h4 id="public-bool-extractcurrentfileconst-stdstring--pathbool-whiny"><code>public bool extractCurrentFile(const std::string &amp; path,bool whiny)</code></h4>
-<h4 id="public-bool-gotofirstfile"><code>public bool goToFirstFile()</code></h4>
-<h4 id="public-bool-gotonextfile"><code>public bool goToNextFile()</code></h4>
-<h4 id="public-void-opencurrentfile"><code>public void openCurrentFile()</code></h4>
-<h4 id="public-void-closecurrentfile"><code>public void closeCurrentFile()</code></h4>
-<h4 id="public-stdstring-currentfilename"><code>public std::string currentFileName()</code></h4>
+<h4 id="group__archo_1gac5f1b12cfb628a7fba60abc3fca6e9dc"><code>public bool extractCurrentFile(const std::string &amp; path,bool whiny)</code> </h4>
+<h4 id="group__archo_1gaa70485384e6dbcc5783b3228e9b9f942"><code>public bool goToFirstFile()</code> </h4>
+<h4 id="group__archo_1gaa197ae9f0e8e670d365f0cb5e4f2cb94"><code>public bool goToNextFile()</code> </h4>
+<h4 id="group__archo_1ga084ce7163c3a21c4bb905dab42aee7ba"><code>public void openCurrentFile()</code> </h4>
+<h4 id="group__archo_1gaef2d3fd19db8f1d24987e949b413b927"><code>public void closeCurrentFile()</code> </h4>
+<h4 id="group__archo_1ga4ed5731ad68cd4a8be42342963f245ac"><code>public std::string currentFileName()</code> </h4>
 
                                 
                                 </section>
@@ -760,7 +635,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Archo","level":"2.1","depth":1,"next":{"title":"AV","level":"2.2","depth":1,"path":"api-av.md","ref":"api-av.md","articles":[]},"previous":{"title":"Examples","level":"1.4","depth":1,"path":"examples.md","ref":"examples.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-archo.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Archo","level":"2.1","depth":1,"next":{"title":"AV","level":"2.2","depth":1,"path":"api-av.md","ref":"api-av.md","articles":[]},"previous":{"title":"Examples","level":"1.4","depth":1,"path":"examples.md","ref":"examples.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-archo.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

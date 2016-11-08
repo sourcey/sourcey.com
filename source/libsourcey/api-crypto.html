@@ -486,24 +486,12 @@
 <td></td>
 </tr>
 <tr>
-<td><code>class</code><a href="#classscy_1_1crypto_1_1Cipher"><code>scy::crypto::Cipher</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1crypto_1_1Hash"><code>scy::crypto::Hash</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>scy::crypto::X509Certificate</code></a></td>
-<td>This class represents a X509 Certificate.</td>
-</tr>
-<tr>
 <td><code>struct</code><a href="#structCRYPTO__dynlock__value"><code>CRYPTO_dynlock_value</code></a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h1 id="namespace-scycrypto">namespace <code>scy::crypto</code></h1>
+<h1 id="namespacescy_1_1crypto">namespace <code>scy::crypto</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -527,7 +515,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="class-scycryptocipher">class <code>scy::crypto::Cipher</code></h1>
+<h1 id="classscy_1_1crypto_1_1Cipher">class <code>scy::crypto::Cipher</code> </h1>
 <p>Provides symmetric algorithms for encryption and decryption. The algorithms that are available depend on the particular version of OpenSSL that is installed.</p>
 <h2 id="summary">Summary</h2>
 <table>
@@ -552,15 +540,15 @@
 </tr>
 <tr>
 <td><code>public  ~Cipher()</code></td>
-<td>Destroys the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Destroys the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public void initEncryptor()</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for encryption.</td>
+<td>Initializes the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a> for encryption.</td>
 </tr>
 <tr>
 <td><code>public void initDecryptor()</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for decryption.</td>
+<td>Initializes the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a> for decryption.</td>
 </tr>
 <tr>
 <td><code>public int update(const unsigned char * input,int inputLength,unsigned char * output,int outputLength)</code></td>
@@ -604,11 +592,11 @@
 </tr>
 <tr>
 <td><code>public template&lt;typename T&gt;</code>  <br><code>inline void setKey(const T &amp; key)</code></td>
-<td>Sets the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Sets the key for the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public template&lt;typename T&gt;</code>  <br><code>inline void setIV(const T &amp; iv)</code></td>
-<td>Sets the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Sets the initialization vector (IV) for the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public int setPadding(int padding)</code></td>
@@ -616,27 +604,27 @@
 </tr>
 <tr>
 <td><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getKey() const</code></td>
-<td>Returns the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the key for the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getIV() const</code></td>
-<td>Returns the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the initialization vector (IV) for the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public const std::string &amp; name() const</code></td>
-<td>Returns the name of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the name of the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public int blockSize() const</code></td>
-<td>Returns the block size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the block size of the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public int keySize() const</code></td>
-<td>Returns the key size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the key size of the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public int ivSize() const</code></td>
-<td>Returns the IV size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
+<td>Returns the IV size of the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
 </tr>
 <tr>
 <td><code>public const EVP_CIPHER * cipher()</code></td>
@@ -696,84 +684,84 @@
 </tr>
 <tr>
 <td><code>protected void initialize(bool encrypt)</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> using the given direction.</td>
+<td>Initializes the <a href="api-crypto.html#classscy_1_1crypto_1_1Cipher">Cipher</a> using the given direction.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--cipherconst-stdstring--name"><code>public  Cipher(const std::string &amp; name)</code></h4>
+<h4 id="group__crypto_1ga29c00ec7db3b341e2a40fb34324a6d00"><code>public  Cipher(const std::string &amp; name)</code> </h4>
 <p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object. Auto initializes the key and initialization vector with random bytes.</p>
-<h4 id="public--cipherconst-stdstring--nameconstbytevec-keyconstbytevec-iv"><code>public  Cipher(const std::string &amp; name,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; key,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; iv)</code></h4>
+<h4 id="group__crypto_1ga3084b42100789d88220012f926e60504"><code>public  Cipher(const std::string &amp; name,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; key,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; iv)</code> </h4>
 <p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object, using the given cipher name, key and initialization vector.</p>
-<h4 id="public--cipherconst-stdstring--nameconst-stdstring--passphraseconst-stdstring--saltint-iterationcount"><code>public  Cipher(const std::string &amp; name,const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></h4>
+<h4 id="group__crypto_1gafa9fbfd0ac80c3e5fe6ee9d939e44907"><code>public  Cipher(const std::string &amp; name,const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code> </h4>
 <p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object, using the given cipher name, passphrase, salt value and iteration count.</p>
-<h4 id="public--cipher"><code>public  ~Cipher()</code></h4>
+<h4 id="group__crypto_1gabae774949c196156b08b3e62c997516f"><code>public  ~Cipher()</code> </h4>
 <p>Destroys the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-void-initencryptor"><code>public void initEncryptor()</code></h4>
+<h4 id="group__crypto_1ga144dd6c25b7d3d0ec97da382829cf636"><code>public void initEncryptor()</code> </h4>
 <p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for encryption.</p>
-<h4 id="public-void-initdecryptor"><code>public void initDecryptor()</code></h4>
+<h4 id="group__crypto_1ga0677c7dac45328f0517b35cb32e3d48c"><code>public void initDecryptor()</code> </h4>
 <p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for decryption.</p>
-<h4 id="public-int-updateconst-unsigned-char--inputint-inputlengthunsigned-char--outputint-outputlength"><code>public int update(const unsigned char * input,int inputLength,unsigned char * output,int outputLength)</code></h4>
+<h4 id="group__crypto_1ga641b7553ec5f282a77d89def7ae54f12"><code>public int update(const unsigned char * input,int inputLength,unsigned char * output,int outputLength)</code> </h4>
 <p>Encrypts data in a streaming fashion. Hand consecutive blocks of data to the update method in order to encrypt it. Returns the encrypted data chunk. When done, the output of <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> should be additionally added to the result.</p>
-<h4 id="public-templatetypename-itypename-o--inline-int-updateconst-i--inputo--output"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int update(const I &amp; input,O &amp; output)</code></h4>
+<h4 id="group__crypto_1ga7d87b66b0f3c68f2c167bc6283e5246a"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int update(const I &amp; input,O &amp; output)</code> </h4>
 <p>Alias for <a href="#group__crypto_1ga641b7553ec5f282a77d89def7ae54f12">update()</a> which accepts a range of buffer types.</p>
-<h4 id="public-int-finalunsigned-char--outputint-length"><code>public int final(unsigned char * output,int length)</code></h4>
+<h4 id="group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f"><code>public int final(unsigned char * output,int length)</code> </h4>
 <p>Returns the remaining data held in the cipher object. Further calls to <a href="#group__crypto_1ga641b7553ec5f282a77d89def7ae54f12">update()</a> or <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> will return garbage.</p>
 <p>See EVP_CipherFinal_ex for further information.</p>
-<h4 id="public-templatetypename-o--inline-int-finalo--output"><code>public template&lt;typename O&gt;</code>  <br><code>inline int final(O &amp; output)</code></h4>
+<h4 id="group__crypto_1gafa479af83094e2e9209058ed8a9b0cfb"><code>public template&lt;typename O&gt;</code>  <br><code>inline int final(O &amp; output)</code> </h4>
 <p>Alias for <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> which accepts a range of buffer types.</p>
-<h4 id="public-int-encryptconst-unsigned-char--inbufstdsizet-inlenunsigned-char--outbufstdsizet-outlenencodingencoding"><code>public int encrypt(const unsigned char * inbuf,std::size_t inlen,unsigned char * outbuf,std::size_t outlen,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1ga9dcc959e7adb68f9d3201162e4566493"><code>public int encrypt(const unsigned char * inbuf,std::size_t inlen,unsigned char * outbuf,std::size_t outlen,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Encrypts a buffer and encode it using the given encoding. This method performs the encryption, and calls <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> internally.</p>
-<h4 id="public-templatetypename-itypename-o--inline-int-encryptconst-i--inputo--outputencodingencoding"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int encrypt(const I &amp; input,O &amp; output,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1ga0ad0d099abd1007a6bd1c33ab5b8d84d"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int encrypt(const I &amp; input,O &amp; output,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Alias for <a href="#group__crypto_1ga9dcc959e7adb68f9d3201162e4566493">encrypt()</a> which accepts a range of buffer types.</p>
-<h4 id="public-virtual-stdstring-encryptstringconst-stdstring--strencodingencoding"><code>public virtual std::string encryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1ga8c440edf0d347751a1d1b9f43e99bd43"><code>public virtual std::string encryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Encrypts a string and encodes it using the given encoding.</p>
-<h4 id="public-virtual-stdstring-decryptstringconst-stdstring--strencodingencoding"><code>public virtual std::string decryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1gaa51a187bd02ae8d71aa58686f738ff9b"><code>public virtual std::string decryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Decrypts a string that is encoded with the given encoding.</p>
-<h4 id="public-virtual-void-encryptstreamstdistream--sourcestdostream--sinkencodingencoding"><code>public virtual void encryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1ga77107e1458845773e1ea7d3a81a6a3c3"><code>public virtual void encryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Encrypts an input stream and encodes it using the given encoding.</p>
-<h4 id="public-virtual-void-decryptstreamstdistream--sourcestdostream--sinkencodingencoding"><code>public virtual void decryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
+<h4 id="group__crypto_1gada68a82360e3eb8853efe26e55fee509"><code>public virtual void decryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code> </h4>
 <p>Decrypts an input stream that is encoded with the given encoding.</p>
-<h4 id="public-templatetypename-t--inline-void-setkeyconst-t--key"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setKey(const T &amp; key)</code></h4>
+<h4 id="group__crypto_1gaeec7a89c1fc12a93e00f2a119d67fc58"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setKey(const T &amp; key)</code> </h4>
 <p>Sets the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-templatetypename-t--inline-void-setivconst-t--iv"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setIV(const T &amp; iv)</code></h4>
+<h4 id="group__crypto_1ga0368e6675a26e93d69beea3a090b7908"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setIV(const T &amp; iv)</code> </h4>
 <p>Sets the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-setpaddingint-padding"><code>public int setPadding(int padding)</code></h4>
+<h4 id="group__crypto_1ga4f8d10556e26c93af353a79d4f5bf65f"><code>public int setPadding(int padding)</code> </h4>
 <p>Enables or disables padding. By default encryption operations are padded using standard block padding and the padding is checked and removed when decrypting. If the pad parameter is zero then no padding is performed, the total amount of data encrypted or decrypted must then be a multiple of the block size or an error will occur.</p>
 <p>See EVP_CIPHER_CTX_set_padding for further information.</p>
-<h4 id="public-constbytevec-getkey-const"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getKey() const</code></h4>
+<h4 id="group__crypto_1gad9b197b9bc698da0defede327f66aad6"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getKey() const</code> </h4>
 <p>Returns the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-constbytevec-getiv-const"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getIV() const</code></h4>
+<h4 id="group__crypto_1gacb5497a7ce6d4a39a57147cdf0b39f7c"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getIV() const</code> </h4>
 <p>Returns the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-const-stdstring--name-const"><code>public const std::string &amp; name() const</code></h4>
+<h4 id="group__crypto_1ga845591809aab05eef583ce02fd139495"><code>public const std::string &amp; name() const</code> </h4>
 <p>Returns the name of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-blocksize-const"><code>public int blockSize() const</code></h4>
+<h4 id="group__crypto_1gaddae447539926bb35a9394ad96dec391"><code>public int blockSize() const</code> </h4>
 <p>Returns the block size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-keysize-const"><code>public int keySize() const</code></h4>
+<h4 id="group__crypto_1ga25f3530bbbd017c9fc219c538a50726e"><code>public int keySize() const</code> </h4>
 <p>Returns the key size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-ivsize-const"><code>public int ivSize() const</code></h4>
+<h4 id="group__crypto_1ga50eab14578b8d9404f38276136514ea2"><code>public int ivSize() const</code> </h4>
 <p>Returns the IV size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-const-evpcipher--cipher"><code>public const EVP_CIPHER * cipher()</code></h4>
+<h4 id="group__crypto_1gae0e917584002004e1ac5b31bce64f733"><code>public const EVP_CIPHER * cipher()</code> </h4>
 <p>Returns the cipher object.</p>
-<h4 id="protected-bool-initialized"><code>protected bool _initialized</code></h4>
-<h4 id="protected-bool-encrypt"><code>protected bool _encrypt</code></h4>
-<h4 id="protected-const-evpcipher--cipher"><code>protected const EVP_CIPHER * _cipher</code></h4>
-<h4 id="protected-stdstring-name"><code>protected std::string _name</code></h4>
-<h4 id="protected-evpcipherctx-ctx"><code>protected EVP_CIPHER_CTX _ctx</code></h4>
-<h4 id="protectedbyteveckey"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_key</code></h4>
-<h4 id="protectedbyteveciv"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_iv</code></h4>
-<h4 id="protected--cipher"><code>protected  Cipher()</code></h4>
-<h4 id="protected--cipherconstcipher"><code>protected  Cipher(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></h4>
-<h4 id="protectedcipher-operatorconstcipher"><code>protected</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></h4>
-<h4 id="protected-void-generatekeyconst-stdstring--passphraseconst-stdstring--saltint-iterationcount"><code>protected void generateKey(const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></h4>
+<h4 id="group__crypto_1gaef37db5562b977395a89945b02e3b684"><code>protected bool _initialized</code> </h4>
+<h4 id="group__crypto_1ga234fb383e465ae6c7f322a4be0ba6a2f"><code>protected bool _encrypt</code> </h4>
+<h4 id="group__crypto_1ga6234e02c10a2a4be511fb2caaa7180b0"><code>protected const EVP_CIPHER * _cipher</code> </h4>
+<h4 id="group__crypto_1gae8bceb0c5aab20317421d37ccdf9b046"><code>protected std::string _name</code> </h4>
+<h4 id="group__crypto_1gadac11f2be56d934d02109dfbc49ef5c8"><code>protected EVP_CIPHER_CTX _ctx</code> </h4>
+<h4 id="group__crypto_1ga88a997190e8cd5880718fdbe4a613109"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_key</code> </h4>
+<h4 id="group__crypto_1ga9fb992dd64b02eaa38cac541d5072ac3"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_iv</code> </h4>
+<h4 id="group__crypto_1gaf9ea63a13bf17d5c8b74db6e5e382ca7"><code>protected  Cipher()</code> </h4>
+<h4 id="group__crypto_1gad155e284a60f65add5a96be985120f7c"><code>protected  Cipher(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code> </h4>
+<h4 id="group__crypto_1gac2a5a2e06c104fecff051c62948076e1"><code>protected</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code> </h4>
+<h4 id="group__crypto_1ga6edba619802b9ca520bc4f8dd1b5d8b2"><code>protected void generateKey(const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code> </h4>
 <p>Generates and sets the key and IV from a password and optional salt string.</p>
-<h4 id="protected-void-setrandomkey"><code>protected void setRandomKey()</code></h4>
+<h4 id="group__crypto_1gad71d5cde5fea40cfeab6b08518ddbc95"><code>protected void setRandomKey()</code> </h4>
 <p>Generates and sets key from random data.</p>
-<h4 id="protected-void-setrandomiv"><code>protected void setRandomIV()</code></h4>
+<h4 id="group__crypto_1gab3206763d10ce4674eb7e05f0390913a"><code>protected void setRandomIV()</code> </h4>
 <p>Generates and sets IV from random data.</p>
-<h4 id="protected-void-initializebool-encrypt"><code>protected void initialize(bool encrypt)</code></h4>
+<h4 id="group__crypto_1ga20620b556634ea17605847fd26d1bce3"><code>protected void initialize(bool encrypt)</code> </h4>
 <p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> using the given direction.</p>
-<h1 id="class-scycryptohash">class <code>scy::crypto::Hash</code></h1>
+<h1 id="classscy_1_1crypto_1_1Hash">class <code>scy::crypto::Hash</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -842,26 +830,26 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--hashconst-stdstring--algorithm"><code>public  Hash(const std::string &amp; algorithm)</code></h4>
-<h4 id="public--hash"><code>public  ~Hash()</code></h4>
-<h4 id="public-void-updatechar-data"><code>public void update(char data)</code></h4>
-<h4 id="public-void-updateconst-stdstring--data"><code>public void update(const std::string &amp; data)</code></h4>
-<h4 id="public-void-updateconst-void--dataunsigned-length"><code>public void update(const void * data,unsigned length)</code></h4>
+<h4 id="group__crypto_1gaed22bcaf84b35efc1815a03903541da4"><code>public  Hash(const std::string &amp; algorithm)</code> </h4>
+<h4 id="group__crypto_1gaf1bea9c52e354b7b97550e1715105ee0"><code>public  ~Hash()</code> </h4>
+<h4 id="group__crypto_1ga7389984a20183881be045ff427036ce8"><code>public void update(char data)</code> </h4>
+<h4 id="group__crypto_1ga8b68b47d859b92608a2ac7295c3ef702"><code>public void update(const std::string &amp; data)</code> </h4>
+<h4 id="group__crypto_1ga1b9b8626b6259cb050a8917b8539e59b"><code>public void update(const void * data,unsigned length)</code> </h4>
 <p>This function may (and normally will) be called many times for large blocks of data.</p>
-<h4 id="public-constbytevec-digest"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; digest()</code></h4>
+<h4 id="group__crypto_1gacbc12b3d6816140c2e5033fe32efafca"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; digest()</code> </h4>
 <p>Finish up the digest operation and return the result.</p>
-<h4 id="public-stdstring-digeststr"><code>public std::string digestStr()</code></h4>
+<h4 id="group__crypto_1gad11ff9012ce5157206e0a05a7c3f7347"><code>public std::string digestStr()</code> </h4>
 <p>Finish up the digest operation and return the result as a string.</p>
-<h4 id="public-void-reset"><code>public void reset()</code></h4>
+<h4 id="group__crypto_1ga58abad9c8210a2882d69dceb3883a973"><code>public void reset()</code> </h4>
 <p>Resets the engine and digest state ready for the next computation.</p>
-<h4 id="public-const-stdstring--algorithmvoid-const"><code>public const std::string &amp; algorithm(void) const</code></h4>
+<h4 id="group__crypto_1ga6f4e22146b390772a4d2c1d4ef6352c7"><code>public const std::string &amp; algorithm(void) const</code> </h4>
 <p>Returns the hash algorithm being used.</p>
-<h4 id="protected-evpmdctx-ctx"><code>protected EVP_MD_CTX _ctx</code></h4>
-<h4 id="protected-const-evpmd--md"><code>protected const EVP_MD * _md</code></h4>
-<h4 id="protectedcryptobytevecdigest"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>crypto::ByteVec</code></a><code>_digest</code></h4>
-<h4 id="protected-stdstring-algorithm"><code>protected std::string _algorithm</code></h4>
-<h4 id="protectedhash-operatorhashconst-"><code>protected</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>&amp; operator=(</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>const &amp;)</code></h4>
-<h1 id="class-scycryptox509certificate">class <code>scy::crypto::X509Certificate</code></h1>
+<h4 id="group__crypto_1gaa41b5af95e2c28fe59bba1871e60eb8b"><code>protected EVP_MD_CTX _ctx</code> </h4>
+<h4 id="group__crypto_1gada899a7cc6726572e494dfa2e0aa4838"><code>protected const EVP_MD * _md</code> </h4>
+<h4 id="group__crypto_1gaa8321b86e61d992786de9a8be63630a7"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>crypto::ByteVec</code></a><code>_digest</code> </h4>
+<h4 id="group__crypto_1ga778a1b93ea54aff4e5b1b1b80ccbcb6f"><code>protected std::string _algorithm</code> </h4>
+<h4 id="group__crypto_1ga3352d55f48656da5726b58e3c663aef8"><code>protected</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>&amp; operator=(</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>const &amp;)</code> </h4>
+<h1 id="classscy_1_1crypto_1_1X509Certificate">class <code>scy::crypto::X509Certificate</code> </h1>
 <p>This class represents a X509 Certificate.</p>
 <h2 id="summary">Summary</h2>
 <table>
@@ -902,7 +890,7 @@
 </tr>
 <tr>
 <td><code>public  ~X509Certificate()</code></td>
-<td>Destroys the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a>.</td>
+<td>Destroys the <a href="api-crypto.html#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a>.</td>
 </tr>
 <tr>
 <td><code>public const std::string &amp; issuerName() const</code></td>
@@ -967,56 +955,55 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--explicit-x509certificateconst-char--datastdsizet-length"><code>public  explicit X509Certificate(const char * data,std::size_t length)</code></h4>
+<h4 id="group__crypto_1ga625706c3ae74397104ce475816934374"><code>public  explicit X509Certificate(const char * data,std::size_t length)</code> </h4>
 <p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> object by reading a certificate in PEM format from the given buffer.</p>
-<h4 id="public--explicit-x509certificateconst-stdstring--path"><code>public  explicit X509Certificate(const std::string &amp; path)</code></h4>
+<h4 id="group__crypto_1ga417bdf3f76dfecef89626b6cb71a9a32"><code>public  explicit X509Certificate(const std::string &amp; path)</code> </h4>
 <p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> object by reading a certificate in PEM format from a file.</p>
-<h4 id="public--explicit-x509certificatex509--pcert"><code>public  explicit X509Certificate(X509 * pCert)</code></h4>
+<h4 id="group__crypto_1ga2aa7feaea1f6c99c994fcc6fb7bea0ac"><code>public  explicit X509Certificate(X509 * pCert)</code> </h4>
 <p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> from an existing OpenSSL certificate. Ownership is taken of the certificate.</p>
-<h4 id="public--x509certificatex509--pcertbool-shared"><code>public  X509Certificate(X509 * pCert,bool shared)</code></h4>
+<h4 id="group__crypto_1gaf7e31eac8d3095866847b5af0db366fa"><code>public  X509Certificate(X509 * pCert,bool shared)</code> </h4>
 <p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> from an existing OpenSSL certificate. Ownership is taken of the certificate. If shared is true, the certificate&apos;s reference count is incremented.</p>
-<h4 id="public--x509certificateconstx509certificate-cert"><code>public  X509Certificate(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
+<h4 id="group__crypto_1ga9aaeb1e01fbc97752b90be697230a504"><code>public  X509Certificate(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code> </h4>
 <p>Creates the certificate by copying another one.</p>
-<h4 id="publicx509certificate-operatorconstx509certificate-cert"><code>public</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
+<h4 id="group__crypto_1ga1516b536eadd451c76ecafa299f63d7c"><code>public</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code> </h4>
 <p>Assigns a certificate.</p>
-<h4 id="public-void-swapx509certificate-cert"><code>public void swap(</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
+<h4 id="group__crypto_1gac487d92721c8e2bca13f0d13edcf942d"><code>public void swap(</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code> </h4>
 <p>Exchanges the certificate with another one.</p>
-<h4 id="public--x509certificate"><code>public  ~X509Certificate()</code></h4>
+<h4 id="group__crypto_1ga9bca014de92bf3dcb7988eea0a41b92f"><code>public  ~X509Certificate()</code> </h4>
 <p>Destroys the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a>.</p>
-<h4 id="public-const-stdstring--issuername-const"><code>public const std::string &amp; issuerName() const</code></h4>
+<h4 id="group__crypto_1ga59be81cc1b19268c8c3f9b1fd046b20d"><code>public const std::string &amp; issuerName() const</code> </h4>
 <p>Returns the certificate issuer&apos;s distinguished name.</p>
-<h4 id="public-stdstring-issuernamenidnid-const"><code>public std::string issuerName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></h4>
+<h4 id="group__crypto_1gade700582f523d36f9ba35b4ff42ae9da"><code>public std::string issuerName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code> </h4>
 <p>Extracts the information specified by the given NID (name identifier) from the certificate issuer&apos;s distinguished name.</p>
-<h4 id="public-const-stdstring--subjectname-const"><code>public const std::string &amp; subjectName() const</code></h4>
+<h4 id="group__crypto_1ga08cbb2a291c084ac15d427f2a75bed51"><code>public const std::string &amp; subjectName() const</code> </h4>
 <p>Returns the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-stdstring-subjectnamenidnid-const"><code>public std::string subjectName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></h4>
+<h4 id="group__crypto_1ga448f08e983b8fc5e93bbd1de5f33d0ca"><code>public std::string subjectName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code> </h4>
 <p>Extracts the information specified by the given NID (name identifier) from the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-stdstring-commonname-const"><code>public std::string commonName() const</code></h4>
+<h4 id="group__crypto_1ga5c8fd7098b3c4114b414a737ad5b10f8"><code>public std::string commonName() const</code> </h4>
 <p>Returns the common name stored in the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-void-extractnamesstdstring--commonnamestdset-stdstring---domainnames-const"><code>public void extractNames(std::string &amp; commonName,std::set&lt; std::string &gt; &amp; domainNames) const</code></h4>
+<h4 id="group__crypto_1gacfd53defe5a0eb4329622b02f0725221"><code>public void extractNames(std::string &amp; commonName,std::set&lt; std::string &gt; &amp; domainNames) const</code> </h4>
 <p>Extracts the common name and the alias domain names from the certificate.</p>
-<h4 id="publicdatetimevalidfrom-const"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>validFrom() const</code></h4>
+<h4 id="group__crypto_1ga79d4899027eb85cfad01e892f3595e33"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>validFrom() const</code> </h4>
 <p>Returns the date and time the certificate is valid from.</p>
-<h4 id="publicdatetimeexpireson-const"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>expiresOn() const</code></h4>
+<h4 id="group__crypto_1gad2d8ba7bc9502843db12690f6ed24646"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>expiresOn() const</code> </h4>
 <p>Returns the date and time the certificate expires.</p>
-<h4 id="public-void-savestdostream--stream-const"><code>public void save(std::ostream &amp; stream) const</code></h4>
+<h4 id="group__crypto_1gaf0aaafac5aa2869c52d19b34f8768c0b"><code>public void save(std::ostream &amp; stream) const</code> </h4>
 <p>Writes the certificate to the given stream. The certificate is written in PEM format.</p>
-<h4 id="public-void-saveconst-stdstring--path-const"><code>public void save(const std::string &amp; path) const</code></h4>
+<h4 id="group__crypto_1ga0cea8f317ad0371de4a05ae1f4c4387d"><code>public void save(const std::string &amp; path) const</code> </h4>
 <p>Writes the certificate to the file given by path. The certificate is written in PEM format.</p>
-<h4 id="public-bool-issuedbyconstx509certificate-issuercertificate-const"><code>public bool issuedBy(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; issuerCertificate) const</code></h4>
+<h4 id="group__crypto_1ga8e93fd651db9982f6178b5fae9447fcc"><code>public bool issuedBy(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; issuerCertificate) const</code> </h4>
 <p>Checks whether the certificate has been issued by the issuer given by issuerCertificate. This can be used to validate a certificate chain.</p>
 <p>Verifies if the certificate has been signed with the issuer&apos;s private key, using the public key from the issuer certificate.</p>
 <p>Returns true if verification against the issuer certificate was successful, false otherwise.</p>
-<h4 id="public-const-x509--certificate-const"><code>public const X509 * certificate() const</code></h4>
+<h4 id="group__crypto_1ga351a6a8c90b667597ab6ddb1233be511"><code>public const X509 * certificate() const</code> </h4>
 <p>Returns the underlying OpenSSL certificate.</p>
-<h4 id="protected-void-loadconst-char--datastdsizet-length"><code>protected void load(const char * data,std::size_t length)</code></h4>
+<h4 id="group__crypto_1gaf492e6a184085172b88509a004f69bf5"><code>protected void load(const char * data,std::size_t length)</code> </h4>
 <p>Loads the certificate from the given buffer. The certificate must be in PEM format.</p>
-<h4 id="protected-void-loadconst-stdstring--path"><code>protected void load(const std::string &amp; path)</code></h4>
+<h4 id="group__crypto_1ga3d18050527eb8fd86b4b63924ecc7ca5"><code>protected void load(const std::string &amp; path)</code> </h4>
 <p>Loads the certificate from the given file. The certificate must be in PEM format.</p>
-<h4 id="protected-void-init"><code>protected void init()</code></h4>
+<h4 id="group__crypto_1gaaf8694ec9aa62ec67324253b9456ba2e"><code>protected void init()</code> </h4>
 <p>Extracts issuer and subject name from the certificate.</p>
-<h1 id="class-scycryptocipher">class <code>scy::crypto::Cipher</code></h1>
-<p>Provides symmetric algorithms for encryption and decryption. The algorithms that are available depend on the particular version of OpenSSL that is installed.</p>
+<h1 id="structCRYPTO__dynlock__value">struct <code>CRYPTO_dynlock_value</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -1027,500 +1014,13 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public  Cipher(const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  Cipher(const std::string &amp; name,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; key,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; iv)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  Cipher(const std::string &amp; name,const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  ~Cipher()</code></td>
-<td>Destroys the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public void initEncryptor()</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for encryption.</td>
-</tr>
-<tr>
-<td><code>public void initDecryptor()</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for decryption.</td>
-</tr>
-<tr>
-<td><code>public int update(const unsigned char * input,int inputLength,unsigned char * output,int outputLength)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int update(const I &amp; input,O &amp; output)</code></td>
-<td>Alias for <a href="#group__crypto_1ga641b7553ec5f282a77d89def7ae54f12">update()</a> which accepts a range of buffer types.</td>
-</tr>
-<tr>
-<td><code>public int final(unsigned char * output,int length)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename O&gt;</code>  <br><code>inline int final(O &amp; output)</code></td>
-<td>Alias for <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> which accepts a range of buffer types.</td>
-</tr>
-<tr>
-<td><code>public int encrypt(const unsigned char * inbuf,std::size_t inlen,unsigned char * outbuf,std::size_t outlen,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int encrypt(const I &amp; input,O &amp; output,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td>Alias for <a href="#group__crypto_1ga9dcc959e7adb68f9d3201162e4566493">encrypt()</a> which accepts a range of buffer types.</td>
-</tr>
-<tr>
-<td><code>public virtual std::string encryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td>Encrypts a string and encodes it using the given encoding.</td>
-</tr>
-<tr>
-<td><code>public virtual std::string decryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td>Decrypts a string that is encoded with the given encoding.</td>
-</tr>
-<tr>
-<td><code>public virtual void encryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td>Encrypts an input stream and encodes it using the given encoding.</td>
-</tr>
-<tr>
-<td><code>public virtual void decryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></td>
-<td>Decrypts an input stream that is encoded with the given encoding.</td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline void setKey(const T &amp; key)</code></td>
-<td>Sets the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline void setIV(const T &amp; iv)</code></td>
-<td>Sets the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public int setPadding(int padding)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getKey() const</code></td>
-<td>Returns the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getIV() const</code></td>
-<td>Returns the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public const std::string &amp; name() const</code></td>
-<td>Returns the name of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public int blockSize() const</code></td>
-<td>Returns the block size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public int keySize() const</code></td>
-<td>Returns the key size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public int ivSize() const</code></td>
-<td>Returns the IV size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</td>
-</tr>
-<tr>
-<td><code>public const EVP_CIPHER * cipher()</code></td>
-<td>Returns the cipher object.</td>
-</tr>
-<tr>
-<td><code>protected bool _initialized</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected bool _encrypt</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected const EVP_CIPHER * _cipher</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _name</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected EVP_CIPHER_CTX _ctx</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_key</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_iv</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected  Cipher()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected  Cipher(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected void generateKey(const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></td>
-<td>Generates and sets the key and IV from a password and optional salt string.</td>
-</tr>
-<tr>
-<td><code>protected void setRandomKey()</code></td>
-<td>Generates and sets key from random data.</td>
-</tr>
-<tr>
-<td><code>protected void setRandomIV()</code></td>
-<td>Generates and sets IV from random data.</td>
-</tr>
-<tr>
-<td><code>protected void initialize(bool encrypt)</code></td>
-<td>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> using the given direction.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--cipherconst-stdstring--name"><code>public  Cipher(const std::string &amp; name)</code></h4>
-<p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object. Auto initializes the key and initialization vector with random bytes.</p>
-<h4 id="public--cipherconst-stdstring--nameconstbytevec-keyconstbytevec-iv"><code>public  Cipher(const std::string &amp; name,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; key,const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; iv)</code></h4>
-<p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object, using the given cipher name, key and initialization vector.</p>
-<h4 id="public--cipherconst-stdstring--nameconst-stdstring--passphraseconst-stdstring--saltint-iterationcount"><code>public  Cipher(const std::string &amp; name,const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></h4>
-<p>Creates a new <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> object, using the given cipher name, passphrase, salt value and iteration count.</p>
-<h4 id="public--cipher"><code>public  ~Cipher()</code></h4>
-<p>Destroys the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-void-initencryptor"><code>public void initEncryptor()</code></h4>
-<p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for encryption.</p>
-<h4 id="public-void-initdecryptor"><code>public void initDecryptor()</code></h4>
-<p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> for decryption.</p>
-<h4 id="public-int-updateconst-unsigned-char--inputint-inputlengthunsigned-char--outputint-outputlength"><code>public int update(const unsigned char * input,int inputLength,unsigned char * output,int outputLength)</code></h4>
-<p>Encrypts data in a streaming fashion. Hand consecutive blocks of data to the update method in order to encrypt it. Returns the encrypted data chunk. When done, the output of <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> should be additionally added to the result.</p>
-<h4 id="public-templatetypename-itypename-o--inline-int-updateconst-i--inputo--output"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int update(const I &amp; input,O &amp; output)</code></h4>
-<p>Alias for <a href="#group__crypto_1ga641b7553ec5f282a77d89def7ae54f12">update()</a> which accepts a range of buffer types.</p>
-<h4 id="public-int-finalunsigned-char--outputint-length"><code>public int final(unsigned char * output,int length)</code></h4>
-<p>Returns the remaining data held in the cipher object. Further calls to <a href="#group__crypto_1ga641b7553ec5f282a77d89def7ae54f12">update()</a> or <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> will return garbage.</p>
-<p>See EVP_CipherFinal_ex for further information.</p>
-<h4 id="public-templatetypename-o--inline-int-finalo--output"><code>public template&lt;typename O&gt;</code>  <br><code>inline int final(O &amp; output)</code></h4>
-<p>Alias for <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> which accepts a range of buffer types.</p>
-<h4 id="public-int-encryptconst-unsigned-char--inbufstdsizet-inlenunsigned-char--outbufstdsizet-outlenencodingencoding"><code>public int encrypt(const unsigned char * inbuf,std::size_t inlen,unsigned char * outbuf,std::size_t outlen,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Encrypts a buffer and encode it using the given encoding. This method performs the encryption, and calls <a href="#group__crypto_1gadfe313d58ac2e4fb224d596a2f03862f">final()</a> internally.</p>
-<h4 id="public-templatetypename-itypename-o--inline-int-encryptconst-i--inputo--outputencodingencoding"><code>public template&lt;typename I,typename O&gt;</code>  <br><code>inline int encrypt(const I &amp; input,O &amp; output,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Alias for <a href="#group__crypto_1ga9dcc959e7adb68f9d3201162e4566493">encrypt()</a> which accepts a range of buffer types.</p>
-<h4 id="public-virtual-stdstring-encryptstringconst-stdstring--strencodingencoding"><code>public virtual std::string encryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Encrypts a string and encodes it using the given encoding.</p>
-<h4 id="public-virtual-stdstring-decryptstringconst-stdstring--strencodingencoding"><code>public virtual std::string decryptString(const std::string &amp; str,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Decrypts a string that is encoded with the given encoding.</p>
-<h4 id="public-virtual-void-encryptstreamstdistream--sourcestdostream--sinkencodingencoding"><code>public virtual void encryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Encrypts an input stream and encodes it using the given encoding.</p>
-<h4 id="public-virtual-void-decryptstreamstdistream--sourcestdostream--sinkencodingencoding"><code>public virtual void decryptStream(std::istream &amp; source,std::ostream &amp; sink,</code><a href="#group__crypto_1ga44fda7872beb30a68bbc8f2cac9271ae"><code>Encoding</code></a><code>encoding)</code></h4>
-<p>Decrypts an input stream that is encoded with the given encoding.</p>
-<h4 id="public-templatetypename-t--inline-void-setkeyconst-t--key"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setKey(const T &amp; key)</code></h4>
-<p>Sets the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-templatetypename-t--inline-void-setivconst-t--iv"><code>public template&lt;typename T&gt;</code>  <br><code>inline void setIV(const T &amp; iv)</code></h4>
-<p>Sets the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-setpaddingint-padding"><code>public int setPadding(int padding)</code></h4>
-<p>Enables or disables padding. By default encryption operations are padded using standard block padding and the padding is checked and removed when decrypting. If the pad parameter is zero then no padding is performed, the total amount of data encrypted or decrypted must then be a multiple of the block size or an error will occur.</p>
-<p>See EVP_CIPHER_CTX_set_padding for further information.</p>
-<h4 id="public-constbytevec-getkey-const"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getKey() const</code></h4>
-<p>Returns the key for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-constbytevec-getiv-const"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; getIV() const</code></h4>
-<p>Returns the initialization vector (IV) for the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-const-stdstring--name-const"><code>public const std::string &amp; name() const</code></h4>
-<p>Returns the name of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-blocksize-const"><code>public int blockSize() const</code></h4>
-<p>Returns the block size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-keysize-const"><code>public int keySize() const</code></h4>
-<p>Returns the key size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-int-ivsize-const"><code>public int ivSize() const</code></h4>
-<p>Returns the IV size of the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a>.</p>
-<h4 id="public-const-evpcipher--cipher"><code>public const EVP_CIPHER * cipher()</code></h4>
-<p>Returns the cipher object.</p>
-<h4 id="protected-bool-initialized"><code>protected bool _initialized</code></h4>
-<h4 id="protected-bool-encrypt"><code>protected bool _encrypt</code></h4>
-<h4 id="protected-const-evpcipher--cipher"><code>protected const EVP_CIPHER * _cipher</code></h4>
-<h4 id="protected-stdstring-name"><code>protected std::string _name</code></h4>
-<h4 id="protected-evpcipherctx-ctx"><code>protected EVP_CIPHER_CTX _ctx</code></h4>
-<h4 id="protectedbyteveckey"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_key</code></h4>
-<h4 id="protectedbyteveciv"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>_iv</code></h4>
-<h4 id="protected--cipher"><code>protected  Cipher()</code></h4>
-<h4 id="protected--cipherconstcipher"><code>protected  Cipher(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></h4>
-<h4 id="protectedcipher-operatorconstcipher"><code>protected</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1Cipher"><code>Cipher</code></a><code>&amp;)</code></h4>
-<h4 id="protected-void-generatekeyconst-stdstring--passphraseconst-stdstring--saltint-iterationcount"><code>protected void generateKey(const std::string &amp; passphrase,const std::string &amp; salt,int iterationCount)</code></h4>
-<p>Generates and sets the key and IV from a password and optional salt string.</p>
-<h4 id="protected-void-setrandomkey"><code>protected void setRandomKey()</code></h4>
-<p>Generates and sets key from random data.</p>
-<h4 id="protected-void-setrandomiv"><code>protected void setRandomIV()</code></h4>
-<p>Generates and sets IV from random data.</p>
-<h4 id="protected-void-initializebool-encrypt"><code>protected void initialize(bool encrypt)</code></h4>
-<p>Initializes the <a href="#classscy_1_1crypto_1_1Cipher">Cipher</a> using the given direction.</p>
-<h1 id="class-scycryptohash">class <code>scy::crypto::Hash</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  Hash(const std::string &amp; algorithm)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  ~Hash()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void update(char data)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void update(const std::string &amp; data)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void update(const void * data,unsigned length)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; digest()</code></td>
-<td>Finish up the digest operation and return the result.</td>
-</tr>
-<tr>
-<td><code>public std::string digestStr()</code></td>
-<td>Finish up the digest operation and return the result as a string.</td>
-</tr>
-<tr>
-<td><code>public void reset()</code></td>
-<td>Resets the engine and digest state ready for the next computation.</td>
-</tr>
-<tr>
-<td><code>public const std::string &amp; algorithm(void) const</code></td>
-<td>Returns the hash algorithm being used.</td>
-</tr>
-<tr>
-<td><code>protected EVP_MD_CTX _ctx</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected const EVP_MD * _md</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>crypto::ByteVec</code></a><code>_digest</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _algorithm</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>&amp; operator=(</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>const &amp;)</code></td>
+<td><code>public</code><a href="api-thread.md#classscy_1_1Mutex"><code>scy::Mutex</code></a><code>_mutex</code></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--hashconst-stdstring--algorithm"><code>public  Hash(const std::string &amp; algorithm)</code></h4>
-<h4 id="public--hash"><code>public  ~Hash()</code></h4>
-<h4 id="public-void-updatechar-data"><code>public void update(char data)</code></h4>
-<h4 id="public-void-updateconst-stdstring--data"><code>public void update(const std::string &amp; data)</code></h4>
-<h4 id="public-void-updateconst-void--dataunsigned-length"><code>public void update(const void * data,unsigned length)</code></h4>
-<p>This function may (and normally will) be called many times for large blocks of data.</p>
-<h4 id="public-constbytevec-digest"><code>public const</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>ByteVec</code></a><code>&amp; digest()</code></h4>
-<p>Finish up the digest operation and return the result.</p>
-<h4 id="public-stdstring-digeststr"><code>public std::string digestStr()</code></h4>
-<p>Finish up the digest operation and return the result as a string.</p>
-<h4 id="public-void-reset"><code>public void reset()</code></h4>
-<p>Resets the engine and digest state ready for the next computation.</p>
-<h4 id="public-const-stdstring--algorithmvoid-const"><code>public const std::string &amp; algorithm(void) const</code></h4>
-<p>Returns the hash algorithm being used.</p>
-<h4 id="protected-evpmdctx-ctx"><code>protected EVP_MD_CTX _ctx</code></h4>
-<h4 id="protected-const-evpmd--md"><code>protected const EVP_MD * _md</code></h4>
-<h4 id="protectedcryptobytevecdigest"><code>protected</code><a href="#group__crypto_1ga54c835992b731d8c7ec3e6a3c991ec97"><code>crypto::ByteVec</code></a><code>_digest</code></h4>
-<h4 id="protected-stdstring-algorithm"><code>protected std::string _algorithm</code></h4>
-<h4 id="protectedhash-operatorhashconst-"><code>protected</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>&amp; operator=(</code><a href="#classscy_1_1crypto_1_1Hash"><code>Hash</code></a><code>const &amp;)</code></h4>
-<h1 id="class-scycryptox509certificate">class <code>scy::crypto::X509Certificate</code></h1>
-<p>This class represents a X509 Certificate.</p>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  explicit X509Certificate(const char * data,std::size_t length)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  explicit X509Certificate(const std::string &amp; path)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  explicit X509Certificate(X509 * pCert)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  X509Certificate(X509 * pCert,bool shared)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  X509Certificate(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></td>
-<td>Creates the certificate by copying another one.</td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></td>
-<td>Assigns a certificate.</td>
-</tr>
-<tr>
-<td><code>public void swap(</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></td>
-<td>Exchanges the certificate with another one.</td>
-</tr>
-<tr>
-<td><code>public  ~X509Certificate()</code></td>
-<td>Destroys the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a>.</td>
-</tr>
-<tr>
-<td><code>public const std::string &amp; issuerName() const</code></td>
-<td>Returns the certificate issuer&apos;s distinguished name.</td>
-</tr>
-<tr>
-<td><code>public std::string issuerName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public const std::string &amp; subjectName() const</code></td>
-<td>Returns the certificate subject&apos;s distinguished name.</td>
-</tr>
-<tr>
-<td><code>public std::string subjectName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::string commonName() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void extractNames(std::string &amp; commonName,std::set&lt; std::string &gt; &amp; domainNames) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>validFrom() const</code></td>
-<td>Returns the date and time the certificate is valid from.</td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>expiresOn() const</code></td>
-<td>Returns the date and time the certificate expires.</td>
-</tr>
-<tr>
-<td><code>public void save(std::ostream &amp; stream) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void save(const std::string &amp; path) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public bool issuedBy(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; issuerCertificate) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public const X509 * certificate() const</code></td>
-<td>Returns the underlying OpenSSL certificate.</td>
-</tr>
-<tr>
-<td><code>protected void load(const char * data,std::size_t length)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected void load(const std::string &amp; path)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected void init()</code></td>
-<td>Extracts issuer and subject name from the certificate.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--explicit-x509certificateconst-char--datastdsizet-length"><code>public  explicit X509Certificate(const char * data,std::size_t length)</code></h4>
-<p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> object by reading a certificate in PEM format from the given buffer.</p>
-<h4 id="public--explicit-x509certificateconst-stdstring--path"><code>public  explicit X509Certificate(const std::string &amp; path)</code></h4>
-<p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> object by reading a certificate in PEM format from a file.</p>
-<h4 id="public--explicit-x509certificatex509--pcert"><code>public  explicit X509Certificate(X509 * pCert)</code></h4>
-<p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> from an existing OpenSSL certificate. Ownership is taken of the certificate.</p>
-<h4 id="public--x509certificatex509--pcertbool-shared"><code>public  X509Certificate(X509 * pCert,bool shared)</code></h4>
-<p>Creates the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a> from an existing OpenSSL certificate. Ownership is taken of the certificate. If shared is true, the certificate&apos;s reference count is incremented.</p>
-<h4 id="public--x509certificateconstx509certificate-cert"><code>public  X509Certificate(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
-<p>Creates the certificate by copying another one.</p>
-<h4 id="publicx509certificate-operatorconstx509certificate-cert"><code>public</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
-<p>Assigns a certificate.</p>
-<h4 id="public-void-swapx509certificate-cert"><code>public void swap(</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; cert)</code></h4>
-<p>Exchanges the certificate with another one.</p>
-<h4 id="public--x509certificate"><code>public  ~X509Certificate()</code></h4>
-<p>Destroys the <a href="#classscy_1_1crypto_1_1X509Certificate">X509Certificate</a>.</p>
-<h4 id="public-const-stdstring--issuername-const"><code>public const std::string &amp; issuerName() const</code></h4>
-<p>Returns the certificate issuer&apos;s distinguished name.</p>
-<h4 id="public-stdstring-issuernamenidnid-const"><code>public std::string issuerName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></h4>
-<p>Extracts the information specified by the given NID (name identifier) from the certificate issuer&apos;s distinguished name.</p>
-<h4 id="public-const-stdstring--subjectname-const"><code>public const std::string &amp; subjectName() const</code></h4>
-<p>Returns the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-stdstring-subjectnamenidnid-const"><code>public std::string subjectName(</code><a href="#group__crypto_1gaf15888f0ebe57ab7978cb91f7bbd40d7"><code>NID</code></a><code>nid) const</code></h4>
-<p>Extracts the information specified by the given NID (name identifier) from the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-stdstring-commonname-const"><code>public std::string commonName() const</code></h4>
-<p>Returns the common name stored in the certificate subject&apos;s distinguished name.</p>
-<h4 id="public-void-extractnamesstdstring--commonnamestdset-stdstring---domainnames-const"><code>public void extractNames(std::string &amp; commonName,std::set&lt; std::string &gt; &amp; domainNames) const</code></h4>
-<p>Extracts the common name and the alias domain names from the certificate.</p>
-<h4 id="publicdatetimevalidfrom-const"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>validFrom() const</code></h4>
-<p>Returns the date and time the certificate is valid from.</p>
-<h4 id="publicdatetimeexpireson-const"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>expiresOn() const</code></h4>
-<p>Returns the date and time the certificate expires.</p>
-<h4 id="public-void-savestdostream--stream-const"><code>public void save(std::ostream &amp; stream) const</code></h4>
-<p>Writes the certificate to the given stream. The certificate is written in PEM format.</p>
-<h4 id="public-void-saveconst-stdstring--path-const"><code>public void save(const std::string &amp; path) const</code></h4>
-<p>Writes the certificate to the file given by path. The certificate is written in PEM format.</p>
-<h4 id="public-bool-issuedbyconstx509certificate-issuercertificate-const"><code>public bool issuedBy(const</code><a href="#classscy_1_1crypto_1_1X509Certificate"><code>X509Certificate</code></a><code>&amp; issuerCertificate) const</code></h4>
-<p>Checks whether the certificate has been issued by the issuer given by issuerCertificate. This can be used to validate a certificate chain.</p>
-<p>Verifies if the certificate has been signed with the issuer&apos;s private key, using the public key from the issuer certificate.</p>
-<p>Returns true if verification against the issuer certificate was successful, false otherwise.</p>
-<h4 id="public-const-x509--certificate-const"><code>public const X509 * certificate() const</code></h4>
-<p>Returns the underlying OpenSSL certificate.</p>
-<h4 id="protected-void-loadconst-char--datastdsizet-length"><code>protected void load(const char * data,std::size_t length)</code></h4>
-<p>Loads the certificate from the given buffer. The certificate must be in PEM format.</p>
-<h4 id="protected-void-loadconst-stdstring--path"><code>protected void load(const std::string &amp; path)</code></h4>
-<p>Loads the certificate from the given file. The certificate must be in PEM format.</p>
-<h4 id="protected-void-init"><code>protected void init()</code></h4>
-<p>Extracts issuer and subject name from the certificate.</p>
-<h1 id="struct-cryptodynlockvalue">struct <code>CRYPTO_dynlock_value</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1Mutex"><code>scy::Mutex</code></a><code>_mutex</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publicscymutexmutex"><code>public</code><a href="#classscy_1_1Mutex"><code>scy::Mutex</code></a><code>_mutex</code></h4>
+<h4 id="group__crypto_1ga9bfa006e68b7b9a92ef3ca9db96d9d01"><code>public</code><a href="api-thread.md#classscy_1_1Mutex"><code>scy::Mutex</code></a><code>_mutex</code> </h4>
 
                                 
                                 </section>
@@ -1564,7 +1064,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Crypto","level":"2.4","depth":1,"next":{"title":"HTTP","level":"2.5","depth":1,"path":"api-http.md","ref":"api-http.md","articles":[]},"previous":{"title":"Base","level":"2.3","depth":1,"path":"api-base.md","ref":"api-base.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-crypto.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Crypto","level":"2.4","depth":1,"next":{"title":"HTTP","level":"2.5","depth":1,"path":"api-http.md","ref":"api-http.md","articles":[]},"previous":{"title":"Base","level":"2.3","depth":1,"path":"api-base.md","ref":"api-base.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-crypto.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

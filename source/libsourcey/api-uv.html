@@ -486,17 +486,9 @@
 <td><code>namespace</code><a href="#namespacescy_1_1uv"><code>scy::uv</code></a></td>
 <td></td>
 </tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1uv_1_1Handle"><code>scy::uv::Handle</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1uv_1_1ShutdownCmd"><code>scy::uv::ShutdownCmd</code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h1 id="namespace-scyuv">namespace <code>scy::uv</code></h1>
+<h1 id="namespacescy_1_1uv">namespace <code>scy::uv</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -508,7 +500,7 @@
 <tbody>
 <tr>
 <td><code>class</code><a href="#classscy_1_1uv_1_1Handle"><code>scy::uv::Handle</code></a></td>
-<td></td>
+<td>UV <a href="#classscy_1_1uv_1_1Handle">Handle</a>.</td>
 </tr>
 <tr>
 <td><code>struct</code><a href="#structscy_1_1uv_1_1ShutdownCmd"><code>scy::uv::ShutdownCmd</code></a></td>
@@ -516,8 +508,9 @@
 </tr>
 </tbody>
 </table>
-<h1 id="class-scyuvhandle">class <code>scy::uv::Handle</code></h1>
-<p>A base class for managing a libuv handle during it&apos;s lifecycle and safely handling its asynchronous destruction mechanism.</p>
+<h1 id="classscy_1_1uv_1_1Handle">class <code>scy::uv::Handle</code> </h1>
+<p>UV <a href="#classscy_1_1uv_1_1Handle">Handle</a>.</p>
+<p>A base class for managing a <code>libuv</code> handle during it&apos;s lifecycle and safely handling its asynchronous destruction mechanism.</p>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -541,15 +534,15 @@
 </tr>
 <tr>
 <td><code>public virtual uv_loop_t * loop() const</code></td>
-<td>Returns a cast pointer to the managed libuv handle.</td>
+<td>Returns a cast pointer to the managed <code>libuv</code> handle.</td>
 </tr>
 <tr>
 <td><code>public template&lt;class T&gt;</code>  <br><code>inline T * ptr() const</code></td>
-<td></td>
+<td>Returns a typecasted pointer to the managed <code>libuv</code> handle.</td>
 </tr>
 <tr>
 <td><code>public virtual uv_handle_t * ptr() const</code></td>
-<td>Returns a pointer to the managed libuv handle.</td>
+<td>Returns a pointer to the managed <code>libuv</code> handle.</td>
 </tr>
 <tr>
 <td><code>public virtual bool active() const</code></td>
@@ -593,7 +586,7 @@
 </tr>
 <tr>
 <td><code>public virtual void close()</code></td>
-<td>Closes and destroys the associated libuv handle.</td>
+<td>Closes and destroys the associated <code>libuv</code> handle.</td>
 </tr>
 <tr>
 <td><code>public void assertThread() const</code></td>
@@ -608,7 +601,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></td>
+<td><code>protected</code><a href="api-base.html#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></td>
 <td></td>
 </tr>
 <tr>
@@ -638,51 +631,52 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--handleuvloopt--loopvoid--handle"><code>public  Handle(uv_loop_t * loop,void * handle)</code></h4>
-<h4 id="public-virtual--handle"><code>public virtual  ~Handle()</code></h4>
-<h4 id="public-virtual-void-setloopuvloopt--loop"><code>public virtual void setLoop(uv_loop_t * loop)</code></h4>
+<h4 id="group__uv_1ga1d481d014e0a8b92fa9023639c9a23f3"><code>public  Handle(uv_loop_t * loop,void * handle)</code> </h4>
+<h4 id="group__uv_1gaeca46ff28ef0a19565154eac4018912e"><code>public virtual  ~Handle()</code> </h4>
+<h4 id="group__uv_1gacb579307642d06ac22d481ec4fa40a95"><code>public virtual void setLoop(uv_loop_t * loop)</code> </h4>
 <p>The event loop may be set before the handle is initialized.</p>
-<h4 id="public-virtual-uvloopt--loop-const"><code>public virtual uv_loop_t * loop() const</code></h4>
-<p>Returns a cast pointer to the managed libuv handle.</p>
-<h4 id="public-templateclass-t--inline-t--ptr-const"><code>public template&lt;class T&gt;</code>  <br><code>inline T * ptr() const</code></h4>
-<h4 id="public-virtual-uvhandlet--ptr-const"><code>public virtual uv_handle_t * ptr() const</code></h4>
-<p>Returns a pointer to the managed libuv handle.</p>
-<h4 id="public-virtual-bool-active-const"><code>public virtual bool active() const</code></h4>
-<p>Returns true when the handle is active. This method should be used instead of <a href="#group__uv_1ga102cbff669d0f4d710d8eac02fd7f5d0">closed()</a> to determine the veracity of the libuv handle for stream io operations.</p>
-<h4 id="public-virtual-bool-closed-const"><code>public virtual bool closed() const</code></h4>
+<h4 id="group__uv_1ga6eda3e6f7593bf910eaa9694671544ad"><code>public virtual uv_loop_t * loop() const</code> </h4>
+<p>Returns a cast pointer to the managed <code>libuv</code> handle.</p>
+<h4 id="group__uv_1ga1be86c8fb7206e2f1bb9571221d16f30"><code>public template&lt;class T&gt;</code>  <br><code>inline T * ptr() const</code> </h4>
+<p>Returns a typecasted pointer to the managed <code>libuv</code> handle.</p>
+<h4 id="group__uv_1ga69db247c9c09a21a760464cb52344e50"><code>public virtual uv_handle_t * ptr() const</code> </h4>
+<p>Returns a pointer to the managed <code>libuv</code> handle.</p>
+<h4 id="group__uv_1ga05add736becb3fa70de08071b6f8cc1e"><code>public virtual bool active() const</code> </h4>
+<p>Returns true when the handle is active. This method should be used instead of <a href="#group__uv_1ga102cbff669d0f4d710d8eac02fd7f5d0">closed()</a> to determine the veracity of the <code>libuv</code> handle for stream io operations.</p>
+<h4 id="group__uv_1ga102cbff669d0f4d710d8eac02fd7f5d0"><code>public virtual bool closed() const</code> </h4>
 <p>Returns true after <a href="#group__uv_1ga299a571ac2e23a62521675e21d96780a">close()</a> has been called.</p>
-<h4 id="public-bool-ref"><code>public bool ref()</code></h4>
+<h4 id="group__uv_1gae8a79268466e9b8b5440cf736dceaaee"><code>public bool ref()</code> </h4>
 <p>Reference main loop again, once unref&apos;d.</p>
-<h4 id="public-bool-unref"><code>public bool unref()</code></h4>
+<h4 id="group__uv_1ga7ffde9a69582156a985232f170f4c5a1"><code>public bool unref()</code> </h4>
 <p>Unreference the main loop after initialized.</p>
-<h4 id="public-uvthreadt-tid-const"><code>public uv_thread_t tid() const</code></h4>
+<h4 id="group__uv_1ga76200c3c4f93dd1d9be947013a50b4d1"><code>public uv_thread_t tid() const</code> </h4>
 <p>Returns the parent thread ID.</p>
-<h4 id="public-constscyerror-error-const"><code>public const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error() const</code></h4>
+<h4 id="group__uv_1ga108ab93af11444ce829340bf727f3131"><code>public const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error() const</code> </h4>
 <p>Returns the error context if any.</p>
-<h4 id="public-virtual-void-setandthrowerrorconst-stdstring--prefixint-errorno"><code>public virtual void setAndThrowError(const std::string &amp; prefix,int errorno)</code></h4>
-<p>Sets and throws the last error. Should never be called inside libuv callbacks.</p>
-<h4 id="public-virtual-void-throwerrorconst-stdstring--prefixint-errorno-const"><code>public virtual void throwError(const std::string &amp; prefix,int errorno) const</code></h4>
+<h4 id="group__uv_1gafc830f59dbb4e20e61d2d1383861112b"><code>public virtual void setAndThrowError(const std::string &amp; prefix,int errorno)</code> </h4>
+<p>Sets and throws the last error. Should never be called inside <code>libuv</code> callbacks.</p>
+<h4 id="group__uv_1ga4066f1521db02db28d4c94c7ae31a31e"><code>public virtual void throwError(const std::string &amp; prefix,int errorno) const</code> </h4>
 <p>Throws the last error. This function is const so it can be used for invalid getter operations on closed handles. The actual error would be set on the next iteraton.</p>
-<h4 id="public-virtual-void-setuverrorconst-stdstring--prefixint-errorno"><code>public virtual void setUVError(const std::string &amp; prefix,int errorno)</code></h4>
-<p>Sets the last error and sends relevant callbacks. This method can be called inside libuv callbacks.</p>
-<h4 id="public-virtual-void-seterrorconstscyerror-err"><code>public virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; err)</code></h4>
+<h4 id="group__uv_1ga42dd550b32180fecc2f500c79072b043"><code>public virtual void setUVError(const std::string &amp; prefix,int errorno)</code> </h4>
+<p>Sets the last error and sends relevant callbacks. This method can be called inside <code>libuv</code> callbacks.</p>
+<h4 id="group__uv_1ga2192b88da4ffbc7e46f82763360b1a66"><code>public virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; err)</code> </h4>
 <p>Sets the error content and triggers callbacks.</p>
-<h4 id="public-virtual-void-close"><code>public virtual void close()</code></h4>
-<p>Closes and destroys the associated libuv handle.</p>
-<h4 id="public-void-assertthread-const"><code>public void assertThread() const</code></h4>
+<h4 id="group__uv_1ga299a571ac2e23a62521675e21d96780a"><code>public virtual void close()</code> </h4>
+<p>Closes and destroys the associated <code>libuv</code> handle.</p>
+<h4 id="group__uv_1ga5d26f45bfa9e71bd1f5c5e568f813d56"><code>public void assertThread() const</code> </h4>
 <p>Make sure we are calling from the event loop thread.</p>
-<h4 id="protected-uvloopt--loop"><code>protected uv_loop_t * _loop</code></h4>
-<h4 id="protected-uvhandlet--ptr"><code>protected uv_handle_t * _ptr</code></h4>
-<h4 id="protectedscyerrorerror"><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></h4>
-<h4 id="protected-uvthreadt-tid"><code>protected uv_thread_t _tid</code></h4>
-<h4 id="protected-bool-closed"><code>protected bool _closed</code></h4>
-<h4 id="protected-virtual-void-onerrorconstscyerror"><code>protected virtual void onError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp;)</code></h4>
+<h4 id="group__uv_1gaa16cb36922409fb818eca4a693e9991c"><code>protected uv_loop_t * _loop</code> </h4>
+<h4 id="group__uv_1ga31ecf02ffa1644ecdce020a65dfd2309"><code>protected uv_handle_t * _ptr</code> </h4>
+<h4 id="group__uv_1gac0e5b3021a4588cb29786d1552981b74"><code>protected</code><a href="api-base.html#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code> </h4>
+<h4 id="group__uv_1ga046fa5bcd961b4c27d0c253ecaaf6ba2"><code>protected uv_thread_t _tid</code> </h4>
+<h4 id="group__uv_1ga72af4825d7e6fbdd0f51de69e6fddd73"><code>protected bool _closed</code> </h4>
+<h4 id="group__uv_1ga8c7fd89959f9017379d4c34c5df43a63"><code>protected virtual void onError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp;)</code> </h4>
 <p>Override to handle errors. The error may be a UV error, or a custom error.</p>
-<h4 id="protected-virtual-void-onclose"><code>protected virtual void onClose()</code></h4>
+<h4 id="group__uv_1gabaa78e11ef78067eabc9faf4550c66bc"><code>protected virtual void onClose()</code> </h4>
 <p>Override to handle closure.</p>
-<h4 id="protected--handleconsthandle"><code>protected  Handle(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></h4>
-<h4 id="protectedhandle-operatorconsthandle"><code>protected</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></h4>
-<h1 id="struct-scyuvshutdowncmd">struct <code>scy::uv::ShutdownCmd</code></h1>
+<h4 id="group__uv_1ga1f258c7f7e1331bd54d57ce7060414c4"><code>protected  Handle(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code> </h4>
+<h4 id="group__uv_1ga83ba9fc3f18a22452194317c044ae34b"><code>protected</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code> </h4>
+<h1 id="structscy_1_1uv_1_1ShutdownCmd">struct <code>scy::uv::ShutdownCmd</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -703,197 +697,8 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-void--opaque"><code>public void * opaque</code></h4>
-<h4 id="public-stdfunction-voidvoid--callback"><code>public std::function&lt; void(void *)&gt; callback</code></h4>
-<h1 id="class-scyuvhandle">class <code>scy::uv::Handle</code></h1>
-<p>A base class for managing a libuv handle during it&apos;s lifecycle and safely handling its asynchronous destruction mechanism.</p>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  Handle(uv_loop_t * loop,void * handle)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~Handle()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void setLoop(uv_loop_t * loop)</code></td>
-<td>The event loop may be set before the handle is initialized.</td>
-</tr>
-<tr>
-<td><code>public virtual uv_loop_t * loop() const</code></td>
-<td>Returns a cast pointer to the managed libuv handle.</td>
-</tr>
-<tr>
-<td><code>public template&lt;class T&gt;</code>  <br><code>inline T * ptr() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual uv_handle_t * ptr() const</code></td>
-<td>Returns a pointer to the managed libuv handle.</td>
-</tr>
-<tr>
-<td><code>public virtual bool active() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool closed() const</code></td>
-<td>Returns true after <a href="#group__uv_1ga299a571ac2e23a62521675e21d96780a">close()</a> has been called.</td>
-</tr>
-<tr>
-<td><code>public bool ref()</code></td>
-<td>Reference main loop again, once unref&apos;d.</td>
-</tr>
-<tr>
-<td><code>public bool unref()</code></td>
-<td>Unreference the main loop after initialized.</td>
-</tr>
-<tr>
-<td><code>public uv_thread_t tid() const</code></td>
-<td>Returns the parent thread ID.</td>
-</tr>
-<tr>
-<td><code>public const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error() const</code></td>
-<td>Returns the error context if any.</td>
-</tr>
-<tr>
-<td><code>public virtual void setAndThrowError(const std::string &amp; prefix,int errorno)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void throwError(const std::string &amp; prefix,int errorno) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void setUVError(const std::string &amp; prefix,int errorno)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; err)</code></td>
-<td>Sets the error content and triggers callbacks.</td>
-</tr>
-<tr>
-<td><code>public virtual void close()</code></td>
-<td>Closes and destroys the associated libuv handle.</td>
-</tr>
-<tr>
-<td><code>public void assertThread() const</code></td>
-<td>Make sure we are calling from the event loop thread.</td>
-</tr>
-<tr>
-<td><code>protected uv_loop_t * _loop</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected uv_handle_t * _ptr</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected uv_thread_t _tid</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected bool _closed</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void onError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void onClose()</code></td>
-<td>Override to handle closure.</td>
-</tr>
-<tr>
-<td><code>protected  Handle(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--handleuvloopt--loopvoid--handle"><code>public  Handle(uv_loop_t * loop,void * handle)</code></h4>
-<h4 id="public-virtual--handle"><code>public virtual  ~Handle()</code></h4>
-<h4 id="public-virtual-void-setloopuvloopt--loop"><code>public virtual void setLoop(uv_loop_t * loop)</code></h4>
-<p>The event loop may be set before the handle is initialized.</p>
-<h4 id="public-virtual-uvloopt--loop-const"><code>public virtual uv_loop_t * loop() const</code></h4>
-<p>Returns a cast pointer to the managed libuv handle.</p>
-<h4 id="public-templateclass-t--inline-t--ptr-const"><code>public template&lt;class T&gt;</code>  <br><code>inline T * ptr() const</code></h4>
-<h4 id="public-virtual-uvhandlet--ptr-const"><code>public virtual uv_handle_t * ptr() const</code></h4>
-<p>Returns a pointer to the managed libuv handle.</p>
-<h4 id="public-virtual-bool-active-const"><code>public virtual bool active() const</code></h4>
-<p>Returns true when the handle is active. This method should be used instead of <a href="#group__uv_1ga102cbff669d0f4d710d8eac02fd7f5d0">closed()</a> to determine the veracity of the libuv handle for stream io operations.</p>
-<h4 id="public-virtual-bool-closed-const"><code>public virtual bool closed() const</code></h4>
-<p>Returns true after <a href="#group__uv_1ga299a571ac2e23a62521675e21d96780a">close()</a> has been called.</p>
-<h4 id="public-bool-ref"><code>public bool ref()</code></h4>
-<p>Reference main loop again, once unref&apos;d.</p>
-<h4 id="public-bool-unref"><code>public bool unref()</code></h4>
-<p>Unreference the main loop after initialized.</p>
-<h4 id="public-uvthreadt-tid-const"><code>public uv_thread_t tid() const</code></h4>
-<p>Returns the parent thread ID.</p>
-<h4 id="public-constscyerror-error-const"><code>public const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; error() const</code></h4>
-<p>Returns the error context if any.</p>
-<h4 id="public-virtual-void-setandthrowerrorconst-stdstring--prefixint-errorno"><code>public virtual void setAndThrowError(const std::string &amp; prefix,int errorno)</code></h4>
-<p>Sets and throws the last error. Should never be called inside libuv callbacks.</p>
-<h4 id="public-virtual-void-throwerrorconst-stdstring--prefixint-errorno-const"><code>public virtual void throwError(const std::string &amp; prefix,int errorno) const</code></h4>
-<p>Throws the last error. This function is const so it can be used for invalid getter operations on closed handles. The actual error would be set on the next iteraton.</p>
-<h4 id="public-virtual-void-setuverrorconst-stdstring--prefixint-errorno"><code>public virtual void setUVError(const std::string &amp; prefix,int errorno)</code></h4>
-<p>Sets the last error and sends relevant callbacks. This method can be called inside libuv callbacks.</p>
-<h4 id="public-virtual-void-seterrorconstscyerror-err"><code>public virtual void setError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp; err)</code></h4>
-<p>Sets the error content and triggers callbacks.</p>
-<h4 id="public-virtual-void-close"><code>public virtual void close()</code></h4>
-<p>Closes and destroys the associated libuv handle.</p>
-<h4 id="public-void-assertthread-const"><code>public void assertThread() const</code></h4>
-<p>Make sure we are calling from the event loop thread.</p>
-<h4 id="protected-uvloopt--loop"><code>protected uv_loop_t * _loop</code></h4>
-<h4 id="protected-uvhandlet--ptr"><code>protected uv_handle_t * _ptr</code></h4>
-<h4 id="protectedscyerrorerror"><code>protected</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>_error</code></h4>
-<h4 id="protected-uvthreadt-tid"><code>protected uv_thread_t _tid</code></h4>
-<h4 id="protected-bool-closed"><code>protected bool _closed</code></h4>
-<h4 id="protected-virtual-void-onerrorconstscyerror"><code>protected virtual void onError(const</code><a href="#structscy_1_1Error"><code>scy::Error</code></a><code>&amp;)</code></h4>
-<p>Override to handle errors. The error may be a UV error, or a custom error.</p>
-<h4 id="protected-virtual-void-onclose"><code>protected virtual void onClose()</code></h4>
-<p>Override to handle closure.</p>
-<h4 id="protected--handleconsthandle"><code>protected  Handle(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></h4>
-<h4 id="protectedhandle-operatorconsthandle"><code>protected</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp; operator=(const</code><a href="#classscy_1_1uv_1_1Handle"><code>Handle</code></a><code>&amp;)</code></h4>
-<h1 id="struct-scyuvshutdowncmd">struct <code>scy::uv::ShutdownCmd</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public void * opaque</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::function&lt; void(void *)&gt; callback</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-void--opaque"><code>public void * opaque</code></h4>
-<h4 id="public-stdfunction-voidvoid--callback"><code>public std::function&lt; void(void *)&gt; callback</code></h4>
+<h4 id="group__uv_1ga07de360e98f67a6a52122dd425bd7cfe"><code>public void * opaque</code> </h4>
+<h4 id="group__uv_1ga6e7a0420591daed9802cd9f1ae8516cb"><code>public std::function&lt; void(void *)&gt; callback</code> </h4>
 
                                 
                                 </section>
@@ -937,7 +742,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"UV","level":"2.16","depth":1,"next":{"title":"WebRTC","level":"2.17","depth":1,"path":"api-webrtc.md","ref":"api-webrtc.md","articles":[]},"previous":{"title":"Util","level":"2.15","depth":1,"path":"api-util.md","ref":"api-util.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-uv.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"UV","level":"2.16","depth":1,"next":{"title":"WebRTC","level":"2.17","depth":1,"path":"api-webrtc.md","ref":"api-webrtc.md","articles":[]},"previous":{"title":"Util","level":"2.15","depth":1,"path":"api-util.md","ref":"api-util.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-uv.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -485,17 +485,9 @@
 <td><code>namespace</code><a href="#namespacescy_1_1json"><code>scy::json</code></a></td>
 <td></td>
 </tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1json_1_1Configuration"><code>scy::json::Configuration</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1json_1_1ISerializable"><code>scy::json::ISerializable</code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h1 id="namespace-scyjson">namespace <code>scy::json</code></h1>
+<h1 id="namespacescy_1_1json">namespace <code>scy::json</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -515,7 +507,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="class-scyjsonconfiguration">class <code>scy::json::Configuration</code></h1>
+<h1 id="classscy_1_1json_1_1Configuration">class <code>scy::json::Configuration</code> </h1>
 <pre><code>class scy::json::Configuration
   : public scy::Configuration
 </code></pre><h2 id="summary">Summary</h2>
@@ -537,7 +529,7 @@
 </tr>
 <tr>
 <td><code>public virtual  ~Configuration()</code></td>
-<td>Destroys the <a href="#classscy_1_1json_1_1Configuration">Configuration</a>.</td>
+<td>Destroys the <a href="api-json.html#classscy_1_1json_1_1Configuration">Configuration</a>.</td>
 </tr>
 <tr>
 <td><code>public virtual void load(const std::string &amp; path,bool create)</code></td>
@@ -588,7 +580,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
+<td><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
 <td></td>
 </tr>
 <tr>
@@ -602,31 +594,31 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-jsonvalue-root"><code>public json::Value root</code></h4>
+<h4 id="group__json_1ga65f130ba02d9aa9d19f78531c4209bbf"><code>public json::Value root</code> </h4>
 <p>See IConfiguration for data accessors.</p>
-<h4 id="public--configuration"><code>public  Configuration()</code></h4>
-<h4 id="public-virtual--configuration"><code>public virtual  ~Configuration()</code></h4>
+<h4 id="group__json_1gac214c65bca41dbeb2b93de599bf33860"><code>public  Configuration()</code> </h4>
+<h4 id="group__json_1ga041eaafa3e57334159495db3f7c8f31a"><code>public virtual  ~Configuration()</code> </h4>
 <p>Destroys the <a href="#classscy_1_1json_1_1Configuration">Configuration</a>.</p>
-<h4 id="public-virtual-void-loadconst-stdstring--pathbool-create"><code>public virtual void load(const std::string &amp; path,bool create)</code></h4>
-<h4 id="public-virtual-void-loadbool-create"><code>public virtual void load(bool create)</code></h4>
-<h4 id="public-virtual-void-save"><code>public virtual void save()</code></h4>
-<h4 id="public-virtual-bool-removeconst-stdstring--key"><code>public virtual bool remove(const std::string &amp; key)</code></h4>
-<h4 id="public-virtual-void-removeallconst-stdstring--basekey"><code>public virtual void removeAll(const std::string &amp; baseKey)</code></h4>
-<h4 id="public-virtual-void-replaceconst-stdstring--fromconst-stdstring--to"><code>public virtual void replace(const std::string &amp; from,const std::string &amp; to)</code></h4>
-<h4 id="public-virtual-void-keysstdvector-stdstring---keysconst-stdstring--basekey"><code>public virtual void keys(std::vector&lt; std::string &gt; &amp; keys,const std::string &amp; baseKey)</code></h4>
-<h4 id="public-virtual-void-printstdostream--ost"><code>public virtual void print(std::ostream &amp; ost)</code></h4>
-<h4 id="public-virtual-stdstring-path"><code>public virtual std::string path()</code></h4>
-<h4 id="public-virtual-bool-loaded"><code>public virtual bool loaded()</code></h4>
-<h4 id="protected-bool-loaded"><code>protected bool _loaded</code></h4>
-<h4 id="protected-stdstring-path"><code>protected std::string _path</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-virtual-bool-getrawconst-stdstring--keystdstring--value-const"><code>protected virtual bool getRaw(const std::string &amp; key,std::string &amp; value) const</code></h4>
+<h4 id="group__json_1gaa92c45c4c4628a4edb8a3d7652e07750"><code>public virtual void load(const std::string &amp; path,bool create)</code> </h4>
+<h4 id="group__json_1ga28c81762c1884c20e06818b09d2ea74a"><code>public virtual void load(bool create)</code> </h4>
+<h4 id="group__json_1ga561f1c272c7e613c15b4827b5be26112"><code>public virtual void save()</code> </h4>
+<h4 id="group__json_1gaf79b732c4b7700e0aa93fe276e7e11d7"><code>public virtual bool remove(const std::string &amp; key)</code> </h4>
+<h4 id="group__json_1gaef6d50b63ce07b1137162050e5181520"><code>public virtual void removeAll(const std::string &amp; baseKey)</code> </h4>
+<h4 id="group__json_1ga81c6e1be7c048f7df27f45b04fe4c80b"><code>public virtual void replace(const std::string &amp; from,const std::string &amp; to)</code> </h4>
+<h4 id="group__json_1gaeb8525cb4022f0c4925e7152c0153af4"><code>public virtual void keys(std::vector&lt; std::string &gt; &amp; keys,const std::string &amp; baseKey)</code> </h4>
+<h4 id="group__json_1ga248b47860e2324f01700bf297946c5ea"><code>public virtual void print(std::ostream &amp; ost)</code> </h4>
+<h4 id="group__json_1ga6950af9e99dc2356093aed42c82590c6"><code>public virtual std::string path()</code> </h4>
+<h4 id="group__json_1gaf4f7ea24a9de424f59d67691aa5c5f06"><code>public virtual bool loaded()</code> </h4>
+<h4 id="group__json_1gabec246e99680f82539c83c0f3a6337ee"><code>protected bool _loaded</code> </h4>
+<h4 id="group__json_1gafb9956baead97160a9feb7a1e06d8ae5"><code>protected std::string _path</code> </h4>
+<h4 id="group__json_1ga909b4a58f1164ff9ee8748aaf32d6294"><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code> </h4>
+<h4 id="group__json_1ga57bd50c0cb6030db96a1750756e647b1"><code>protected virtual bool getRaw(const std::string &amp; key,std::string &amp; value) const</code> </h4>
 <p>If the property with the given key exists, stores the property&apos;s value in value and returns true. Otherwise, returns false.</p>
 <p>Must be overridden by subclasses.</p>
-<h4 id="protected-virtual-void-setrawconst-stdstring--keyconst-stdstring--value"><code>protected virtual void setRaw(const std::string &amp; key,const std::string &amp; value)</code></h4>
+<h4 id="group__json_1gaab4c2e8ef140e16e3646fe896fa62cde"><code>protected virtual void setRaw(const std::string &amp; key,const std::string &amp; value)</code> </h4>
 <p>Sets the property with the given key to the given value. An already existing value for the key is overwritten.</p>
 <p>The implementation is responsible for emitting the PropertyChanged signal.</p>
-<h1 id="class-scyjsoniserializable">class <code>scy::json::ISerializable</code></h1>
+<h1 id="classscy_1_1json_1_1ISerializable">class <code>scy::json::ISerializable</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -651,148 +643,9 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inline-virtual--iserializable"><code>public inline virtual  ~ISerializable()</code></h4>
-<h4 id="public-void-serializejsonvalue--root"><code>public void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-void-deserializejsonvalue--root"><code>public void deserialize(json::Value &amp; root)</code></h4>
-<h1 id="class-scyjsonconfiguration">class <code>scy::json::Configuration</code></h1>
-<pre><code>class scy::json::Configuration
-  : public scy::Configuration
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public json::Value root</code></td>
-<td>See IConfiguration for data accessors.</td>
-</tr>
-<tr>
-<td><code>public  Configuration()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~Configuration()</code></td>
-<td>Destroys the <a href="#classscy_1_1json_1_1Configuration">Configuration</a>.</td>
-</tr>
-<tr>
-<td><code>public virtual void load(const std::string &amp; path,bool create)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void load(bool create)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void save()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool remove(const std::string &amp; key)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void removeAll(const std::string &amp; baseKey)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void replace(const std::string &amp; from,const std::string &amp; to)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void keys(std::vector&lt; std::string &gt; &amp; keys,const std::string &amp; baseKey)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void print(std::ostream &amp; ost)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual std::string path()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool loaded()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected bool _loaded</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _path</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual bool getRaw(const std::string &amp; key,std::string &amp; value) const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void setRaw(const std::string &amp; key,const std::string &amp; value)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-jsonvalue-root"><code>public json::Value root</code></h4>
-<p>See IConfiguration for data accessors.</p>
-<h4 id="public--configuration"><code>public  Configuration()</code></h4>
-<h4 id="public-virtual--configuration"><code>public virtual  ~Configuration()</code></h4>
-<p>Destroys the <a href="#classscy_1_1json_1_1Configuration">Configuration</a>.</p>
-<h4 id="public-virtual-void-loadconst-stdstring--pathbool-create"><code>public virtual void load(const std::string &amp; path,bool create)</code></h4>
-<h4 id="public-virtual-void-loadbool-create"><code>public virtual void load(bool create)</code></h4>
-<h4 id="public-virtual-void-save"><code>public virtual void save()</code></h4>
-<h4 id="public-virtual-bool-removeconst-stdstring--key"><code>public virtual bool remove(const std::string &amp; key)</code></h4>
-<h4 id="public-virtual-void-removeallconst-stdstring--basekey"><code>public virtual void removeAll(const std::string &amp; baseKey)</code></h4>
-<h4 id="public-virtual-void-replaceconst-stdstring--fromconst-stdstring--to"><code>public virtual void replace(const std::string &amp; from,const std::string &amp; to)</code></h4>
-<h4 id="public-virtual-void-keysstdvector-stdstring---keysconst-stdstring--basekey"><code>public virtual void keys(std::vector&lt; std::string &gt; &amp; keys,const std::string &amp; baseKey)</code></h4>
-<h4 id="public-virtual-void-printstdostream--ost"><code>public virtual void print(std::ostream &amp; ost)</code></h4>
-<h4 id="public-virtual-stdstring-path"><code>public virtual std::string path()</code></h4>
-<h4 id="public-virtual-bool-loaded"><code>public virtual bool loaded()</code></h4>
-<h4 id="protected-bool-loaded"><code>protected bool _loaded</code></h4>
-<h4 id="protected-stdstring-path"><code>protected std::string _path</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-virtual-bool-getrawconst-stdstring--keystdstring--value-const"><code>protected virtual bool getRaw(const std::string &amp; key,std::string &amp; value) const</code></h4>
-<p>If the property with the given key exists, stores the property&apos;s value in value and returns true. Otherwise, returns false.</p>
-<p>Must be overridden by subclasses.</p>
-<h4 id="protected-virtual-void-setrawconst-stdstring--keyconst-stdstring--value"><code>protected virtual void setRaw(const std::string &amp; key,const std::string &amp; value)</code></h4>
-<p>Sets the property with the given key to the given value. An already existing value for the key is overwritten.</p>
-<p>The implementation is responsible for emitting the PropertyChanged signal.</p>
-<h1 id="class-scyjsoniserializable">class <code>scy::json::ISerializable</code></h1>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline virtual  ~ISerializable()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void serialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void deserialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inline-virtual--iserializable"><code>public inline virtual  ~ISerializable()</code></h4>
-<h4 id="public-void-serializejsonvalue--root"><code>public void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-void-deserializejsonvalue--root"><code>public void deserialize(json::Value &amp; root)</code></h4>
+<h4 id="group__json_1ga881bfa8114ca76527fd464f4b3f4f270"><code>public inline virtual  ~ISerializable()</code> </h4>
+<h4 id="group__json_1ga30a08de7d54b74c98fd2a5ff7424021c"><code>public void serialize(json::Value &amp; root)</code> </h4>
+<h4 id="group__json_1ga47453d8279115db3542fff205608d287"><code>public void deserialize(json::Value &amp; root)</code> </h4>
 
                                 
                                 </section>
@@ -836,7 +689,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON","level":"2.6","depth":1,"next":{"title":"Net","level":"2.7","depth":1,"path":"api-net.md","ref":"api-net.md","articles":[]},"previous":{"title":"HTTP","level":"2.5","depth":1,"path":"api-http.md","ref":"api-http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-json.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON","level":"2.6","depth":1,"next":{"title":"Net","level":"2.7","depth":1,"path":"api-net.md","ref":"api-net.md","articles":[]},"previous":{"title":"HTTP","level":"2.5","depth":1,"path":"api-http.md","ref":"api-http.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-json.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

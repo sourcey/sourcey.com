@@ -184,6 +184,7 @@ after_build do |builder|
   `find build -name "index.html" -print0 | xargs -0 sed -i 's|href="https://github.com|rel="nofollow" href="https://github.com|g'`
 
   # Replace Gitbook sources to use middleman pretty directory srticture
+  `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="\\([^"]*\\)\\.html\\([^"]*\\)"|="/libsourcey/\\1/\\2"|g'`
   `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="\\([^"]*\\)\\.html"|="/libsourcey/\\1/"|g'`
   `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="./"|="/libsourcey/"|g'`
 end

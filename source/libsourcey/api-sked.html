@@ -485,37 +485,9 @@
 <td><code>namespace</code><a href="#namespacescy_1_1sked"><code>scy::sked</code></a></td>
 <td></td>
 </tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1sked_1_1Scheduler"><code>scy::sked::Scheduler</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1sked_1_1Task"><code>scy::sked::Task</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>class</code><a href="#classscy_1_1sked_1_1TaskFactory"><code>scy::sked::TaskFactory</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1sked_1_1Trigger"><code>scy::sked::Trigger</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1sked_1_1OnceOnlyTrigger"><code>scy::sked::OnceOnlyTrigger</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1sked_1_1IntervalTrigger"><code>scy::sked::IntervalTrigger</code></a></td>
-<td></td>
-</tr>
-<tr>
-<td><code>struct</code><a href="#structscy_1_1sked_1_1DailyTrigger"><code>scy::sked::DailyTrigger</code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<h1 id="namespace-scysked">namespace <code>scy::sked</code></h1>
+<h1 id="namespacescy_1_1sked">namespace <code>scy::sked</code> </h1>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -555,7 +527,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="class-scyskedscheduler">class <code>scy::sked::Scheduler</code></h1>
+<h1 id="classscy_1_1sked_1_1Scheduler">class <code>scy::sked::Scheduler</code> </h1>
 <pre><code>class scy::sked::Scheduler
   : public scy::TaskRunner
   : public scy::json::ISerializable
@@ -612,19 +584,19 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--scheduler"><code>public  Scheduler()</code></h4>
-<h4 id="public-virtual--scheduler"><code>public virtual  ~Scheduler()</code></h4>
-<h4 id="public-virtual-void-scheduleskedtask-task"><code>public virtual void schedule(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></h4>
-<h4 id="public-virtual-void-cancelskedtask-task"><code>public virtual void cancel(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></h4>
-<h4 id="public-virtual-void-clear"><code>public virtual void clear()</code></h4>
+<h4 id="group__sked_1ga514a0aa9634b1951ae56a99564caeb33"><code>public  Scheduler()</code> </h4>
+<h4 id="group__sked_1ga48b23def7201e4a5037a35a673cb3f97"><code>public virtual  ~Scheduler()</code> </h4>
+<h4 id="group__sked_1gacc21c6934f5af42c17f00f8eaeb779c8"><code>public virtual void schedule(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code> </h4>
+<h4 id="group__sked_1ga0c63154c5dd7f3f7d78409102fa761f4"><code>public virtual void cancel(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code> </h4>
+<h4 id="group__sked_1ga8df4c68754fab027eb3e30f44311df1e"><code>public virtual void clear()</code> </h4>
 <p>Destroys and clears all manages tasks.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-printstdostream--ost"><code>public virtual void print(std::ostream &amp; ost)</code></h4>
-<h4 id="protected-virtual-void-run"><code>protected virtual void run()</code></h4>
+<h4 id="group__sked_1gadd053ba59d1f38a08e041f3a42b8f9e2"><code>public virtual void serialize(json::Value &amp; root)</code> </h4>
+<h4 id="group__sked_1gaa6b3a781c8e69f6de99ad05b7b1d1d63"><code>public virtual void deserialize(json::Value &amp; root)</code> </h4>
+<h4 id="group__sked_1gaaab06d2eb415e90490cd565d749c5638"><code>public virtual void print(std::ostream &amp; ost)</code> </h4>
+<h4 id="group__sked_1ga74363bb7cb688746b40d479d950f6975"><code>protected virtual void run()</code> </h4>
 <p>Called by the async context to run the next task.</p>
-<h4 id="protected-virtual-void-update"><code>protected virtual void update()</code></h4>
-<h1 id="class-scyskedtask">class <code>scy::sked::Task</code></h1>
+<h4 id="group__sked_1ga67269cfef7d229e4a24f5bfc92bc339d"><code>protected virtual void update()</code> </h4>
+<h1 id="classscy_1_1sked_1_1Task">class <code>scy::sked::Task</code> </h1>
 <pre><code>class scy::sked::Task
   : public scy::Task
   : public scy::json::ISerializable
@@ -695,15 +667,15 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected</code><a href="#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code></td>
+<td><code>protected</code><a href="api-sked.html#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code></td>
 <td></td>
 </tr>
 <tr>
-<td><code>protected</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code></td>
+<td><code>protected</code><a href="api-sked.html#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code></td>
 <td></td>
 </tr>
 <tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
+<td><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
 <td></td>
 </tr>
 <tr>
@@ -725,35 +697,35 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--taskconst-stdstring--typeconst-stdstring--name"><code>public  Task(const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public--taskscheduler-schedulerconst-stdstring--typeconst-stdstring--name"><code>public  Task(</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler,const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
+<h4 id="group__sked_1ga386a15d521531a67fdb090824da93890"><code>public  Task(const std::string &amp; type,const std::string &amp; name)</code> </h4>
+<h4 id="group__sked_1gab06c7ef2f60c5486229cd426919cc36c"><code>public  Task(</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler,const std::string &amp; type,const std::string &amp; name)</code> </h4>
+<h4 id="group__sked_1ga2d10fe6de9492ad784039a4e257eced5"><code>public virtual void serialize(json::Value &amp; root)</code> </h4>
 <p>Serializes the task to JSON.</p>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
+<h4 id="group__sked_1gac0c3e0cfa2b24a12d2f72488f62b4d09"><code>public virtual void deserialize(json::Value &amp; root)</code> </h4>
 <p>Deserializes the task from JSON.</p>
-<h4 id="public-templatetypename-t--inline-t--createtrigger"><code>public template&lt;typename T&gt;</code>  <br><code>inline T * createTrigger()</code></h4>
-<h4 id="public-void-settriggerskedtrigger-trigger"><code>public void setTrigger(</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* trigger)</code></h4>
-<h4 id="publicskedtrigger-trigger"><code>public</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>&amp; trigger()</code></h4>
+<h4 id="group__sked_1ga1a8b7a4f4fc7e1dcc06b5c4454c875ab"><code>public template&lt;typename T&gt;</code>  <br><code>inline T * createTrigger()</code> </h4>
+<h4 id="group__sked_1ga3d72bcdb505450e88522b17dddd9b73b"><code>public void setTrigger(</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* trigger)</code> </h4>
+<h4 id="group__sked_1ga79f463a50c3a8ee9cd482f7bce8d67ea"><code>public</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>&amp; trigger()</code> </h4>
 <p>Returns a reference to the associated <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> or throws an exception.</p>
-<h4 id="publicscheduler-scheduler"><code>public</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler()</code></h4>
+<h4 id="group__sked_1ga8d439f1522684b89f81b3852348019bd"><code>public</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler()</code> </h4>
 <p>Returns a reference to the associated <a href="#classscy_1_1sked_1_1Scheduler">Scheduler</a> or throws an exception.</p>
-<h4 id="public-stdint64t-remaining-const"><code>public std::int64_t remaining() const</code></h4>
+<h4 id="group__sked_1ga35f659f3ebe2737385595564402d0f54"><code>public std::int64_t remaining() const</code> </h4>
 <p>Returns the milliseconds remaining until the next scheduled timeout. An <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> must be associated or an exception will be thrown.</p>
-<h4 id="public-stdstring-type-const"><code>public std::string type() const</code></h4>
-<h4 id="public-stdstring-name-const"><code>public std::string name() const</code></h4>
-<h4 id="public-void-setnameconst-stdstring--name"><code>public void setName(const std::string &amp; name)</code></h4>
-<h4 id="protected-stdstring-type"><code>protected std::string _type</code></h4>
-<h4 id="protected-stdstring-name"><code>protected std::string _name</code></h4>
-<h4 id="protectedskedscheduler-scheduler"><code>protected</code><a href="#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code></h4>
-<h4 id="protectedskedtrigger-trigger"><code>protected</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-virtual--task"><code>protected virtual  ~Task()</code></h4>
+<h4 id="group__sked_1ga83e6c392d631a66fd5f803a806e9e502"><code>public std::string type() const</code> </h4>
+<h4 id="group__sked_1gac054517b6cd13fa107c629465e36c8bd"><code>public std::string name() const</code> </h4>
+<h4 id="group__sked_1ga0d1f0b5a756774917f742f38acc7cefe"><code>public void setName(const std::string &amp; name)</code> </h4>
+<h4 id="group__sked_1ga593c8a61cdc6f5775aa26c83699f7acc"><code>protected std::string _type</code> </h4>
+<h4 id="group__sked_1ga0cff879b589e588e38589eef0f8329b2"><code>protected std::string _name</code> </h4>
+<h4 id="group__sked_1ga7a67dcc93b0781f5e8579bb888951c6d"><code>protected</code><a href="api-sked.html#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code> </h4>
+<h4 id="group__sked_1ga29d12af7fc6b09ae0ea2120a21179f4a"><code>protected</code><a href="api-sked.html#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code> </h4>
+<h4 id="group__sked_1gacc6e9cb2c3332ce7e3856ad20053fd4f"><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code> </h4>
+<h4 id="group__sked_1ga27c4083f96354bccaa7b2b24b5404e7b"><code>protected virtual  ~Task()</code> </h4>
 <p>Should remain protected.</p>
-<h4 id="protected-virtual-bool-beforerun"><code>protected virtual bool beforeRun()</code></h4>
-<h4 id="protected-void-run"><code>protected void run()</code></h4>
+<h4 id="group__sked_1gaa4e46a5d56fe059de12ebec07538b343"><code>protected virtual bool beforeRun()</code> </h4>
+<h4 id="group__sked_1gaa9b1a4ffaa4e3e9d1ec795b1af35c0b9"><code>protected void run()</code> </h4>
 <p>Called by the <a href="#classscy_1_1TaskRunner">TaskRunner</a> to run the task. Override this method to implement task action. Returning true means the true should be called again, and false will cause the task to be destroyed. The task will similarly be destroyed id <a href="#group__base_1gaecd8a85018f8f75ae802dcbf3749bdef">destroy()</a> was called during the current task iteration.</p>
-<h4 id="protected-virtual-bool-afterrun"><code>protected virtual bool afterRun()</code></h4>
-<h1 id="class-scyskedtaskfactory">class <code>scy::sked::TaskFactory</code></h1>
+<h4 id="group__sked_1gaf1e8643d12b32391169a1fa66cd9532b"><code>protected virtual bool afterRun()</code> </h4>
+<h1 id="classscy_1_1sked_1_1TaskFactory">class <code>scy::sked::TaskFactory</code> </h1>
 <p>The <a href="#classscy_1_1sked_1_1TaskFactory">TaskFactory</a> can dynamically instantiate registered <a href="#classscy_1_1sked_1_1Task">sked::Task</a> and <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> classes from named strings.</p>
 <h2 id="summary">Summary</h2>
 <table>
@@ -797,7 +769,7 @@
 <td></td>
 </tr>
 <tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
+<td><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
 <td></td>
 </tr>
 <tr>
@@ -811,18 +783,18 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-inlineskedtask-createtaskconst-stdstring--type"><code>public inline</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* createTask(const std::string &amp; type)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertaskconst-stdstring--type"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTask(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-void-unregistertaskconst-stdstring--type"><code>public inline void unregisterTask(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-taskmap-tasks-const"><code>public inline TaskMap tasks() const</code></h4>
-<h4 id="public-inlineskedtrigger-createtriggerconst-stdstring--type"><code>public inline</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* createTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertriggerconst-stdstring--type"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-void-unregistertriggerconst-stdstring--type"><code>public inline void unregisterTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-triggermap-triggers-const"><code>public inline TriggerMap triggers() const</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-taskmap-tasks"><code>protected TaskMap _tasks</code></h4>
-<h4 id="protected-triggermap-triggers"><code>protected TriggerMap _triggers</code></h4>
-<h1 id="struct-scyskeddailytrigger">struct <code>scy::sked::DailyTrigger</code></h1>
+<h4 id="group__sked_1gaf2c3154913174136d643907915637772"><code>public inline</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* createTask(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1ga6abe68ae8192c8a724bfb8297dc2fb83"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTask(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1ga9279b37d8ed19efce7ed4a44fe14bcdb"><code>public inline void unregisterTask(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1ga1810c49aadc9105cc18f4fd4eee54e8d"><code>public inline TaskMap tasks() const</code> </h4>
+<h4 id="group__sked_1ga6b74f8b76c41cfa76b2b966dc4f04728"><code>public inline</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* createTrigger(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1gad7739778b7ea92b9164fabfd61f3162c"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTrigger(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1gaa82d4cb06fab8254b68fe95040dd0772"><code>public inline void unregisterTrigger(const std::string &amp; type)</code> </h4>
+<h4 id="group__sked_1ga54a36cb63df452507f257c9bd02a31ea"><code>public inline TriggerMap triggers() const</code> </h4>
+<h4 id="group__sked_1gaba4115abe13876bea87f674ce7354295"><code>protected mutable</code><a href="api-thread.md#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code> </h4>
+<h4 id="group__sked_1ga83f4f9401b6f52622ca74c4d884d4e77"><code>protected TaskMap _tasks</code> </h4>
+<h4 id="group__sked_1ga7f0a4e67c56a5f0a997cd2caa993b187"><code>protected TriggerMap _triggers</code> </h4>
+<h1 id="structscy_1_1sked_1_1DailyTrigger">struct <code>scy::sked::DailyTrigger</code> </h1>
 <pre><code>struct scy::sked::DailyTrigger
   : public scy::sked::Trigger
 </code></pre><h2 id="summary">Summary</h2>
@@ -835,7 +807,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code></td>
 <td></td>
 </tr>
 <tr>
@@ -853,14 +825,14 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="publicdatetimetimeofday"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code></h4>
+<h4 id="group__sked_1ga0f50994338086f658223bb591aaa855b"><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code> </h4>
 <p>This value represents the time of day the task will trigger. The date part of the timestamp is redundant.</p>
-<h4 id="public-stdvectordaysoftheweek-daysexcluded"><code>public std::vector&lt;</code><a href="#group__sked_1gafaf09924bf11ff91312d278879efc364"><code>DaysOfTheWeek</code></a><code>&gt; daysExcluded</code></h4>
+<h4 id="group__sked_1gaeecee22b3f9a186f36b37c3967c84261"><code>public std::vector&lt;</code><a href="#group__sked_1gafaf09924bf11ff91312d278879efc364"><code>DaysOfTheWeek</code></a><code>&gt; daysExcluded</code> </h4>
 <p>Days of the week can be excluded by adding the appropriate bit flag here.</p>
-<h4 id="public--dailytrigger"><code>public  DailyTrigger()</code></h4>
-<h4 id="public-virtual-void-update"><code>public virtual void update()</code></h4>
+<h4 id="group__sked_1gaefddcdf43f7dd40d2fd9c4973aa16f5c"><code>public  DailyTrigger()</code> </h4>
+<h4 id="group__sked_1ga56d431a340ef90a63c3a9ef7c5fecdac"><code>public virtual void update()</code> </h4>
 <p>Updates the scheduleAt value to the next scheduled time.</p>
-<h1 id="struct-scyskedintervaltrigger">struct <code>scy::sked::IntervalTrigger</code></h1>
+<h1 id="structscy_1_1sked_1_1IntervalTrigger">struct <code>scy::sked::IntervalTrigger</code> </h1>
 <pre><code>struct scy::sked::IntervalTrigger
   : public scy::sked::Trigger
 </code></pre><h2 id="summary">Summary</h2>
@@ -873,7 +845,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>public</code><a href="#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code></td>
 <td></td>
 </tr>
 <tr>
@@ -903,18 +875,18 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="publictimespaninterval"><code>public</code><a href="#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code></h4>
+<h4 id="group__sked_1ga8f86f84623d9cdd251cb596d1b9cd7ea"><code>public</code><a href="api-base.html#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code> </h4>
 <p>This value represents the interval to wait before running the task.</p>
-<h4 id="public-int-maxtimes"><code>public int maxTimes</code></h4>
+<h4 id="group__sked_1ga8e40cfaeaa7e36c6e8fecb557fa6fe4a"><code>public int maxTimes</code> </h4>
 <p>The maximum number of times the task will be run before it is destroyed. 0 for no effect.</p>
-<h4 id="public--intervaltrigger"><code>public  IntervalTrigger()</code></h4>
-<h4 id="public-virtual-void-update"><code>public virtual void update()</code></h4>
+<h4 id="group__sked_1ga2a6fcdbba2933d6f1a0c2e60e75a1afa"><code>public  IntervalTrigger()</code> </h4>
+<h4 id="group__sked_1ga01c689ed43d5fb9981303ca9a57a2623"><code>public virtual void update()</code> </h4>
 <p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
+<h4 id="group__sked_1gae9ebbb2da9675cf0f861105b406ec827"><code>public virtual bool expired()</code> </h4>
 <p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h1 id="struct-scyskedonceonlytrigger">struct <code>scy::sked::OnceOnlyTrigger</code></h1>
+<h4 id="group__sked_1gabae55c2745920c5b40daa2ff5fc23b66"><code>public virtual void serialize(json::Value &amp; root)</code> </h4>
+<h4 id="group__sked_1ga345231c106ed12e9a2ff6c30c91b3280"><code>public virtual void deserialize(json::Value &amp; root)</code> </h4>
+<h1 id="structscy_1_1sked_1_1OnceOnlyTrigger">struct <code>scy::sked::OnceOnlyTrigger</code> </h1>
 <pre><code>struct scy::sked::OnceOnlyTrigger
   : public scy::sked::Trigger
 </code></pre><h2 id="summary">Summary</h2>
@@ -941,12 +913,12 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public--onceonlytrigger"><code>public  OnceOnlyTrigger()</code></h4>
-<h4 id="public-inline-virtual-void-update"><code>public inline virtual void update()</code></h4>
+<h4 id="group__sked_1ga415a7be1c65cda0e938c2c71947650e5"><code>public  OnceOnlyTrigger()</code> </h4>
+<h4 id="group__sked_1ga357a04a19f44aec0fff439398b574634"><code>public inline virtual void update()</code> </h4>
 <p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
+<h4 id="group__sked_1ga578595dc276d57bce1a54e7ba3fd3da1"><code>public virtual bool expired()</code> </h4>
 <p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h1 id="struct-scyskedtrigger">struct <code>scy::sked::Trigger</code></h1>
+<h1 id="structscy_1_1sked_1_1Trigger">struct <code>scy::sked::Trigger</code> </h1>
 <pre><code>struct scy::sked::Trigger
   : public scy::json::ISerializable
 </code></pre><h2 id="summary">Summary</h2>
@@ -971,15 +943,15 @@
 <td></td>
 </tr>
 <tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code></td>
 <td>The time the task was created.</td>
 </tr>
 <tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code></td>
 <td>The time the task is scheduled to run.</td>
 </tr>
 <tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code></td>
+<td><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code></td>
 <td>The time the task was last run.</td>
 </tr>
 <tr>
@@ -1013,510 +985,29 @@
 </tbody>
 </table>
 <h2 id="members">Members</h2>
-<h4 id="public-stdstring-type"><code>public std::string type</code></h4>
+<h4 id="group__sked_1ga7cc1c5928a3bf2de63df3e6e7d4cd413"><code>public std::string type</code> </h4>
 <p>The type of this trigger class.</p>
-<h4 id="public-stdstring-name"><code>public std::string name</code></h4>
+<h4 id="group__sked_1gaa49fe31e4a8bc141f9ded29e305ca322"><code>public std::string name</code> </h4>
 <p>The display name of this trigger class.</p>
-<h4 id="public-int-timesrun"><code>public int timesRun</code></h4>
+<h4 id="group__sked_1ga9d336b4c320364d7a86762039418531c"><code>public int timesRun</code> </h4>
 <p>The number of times the task has run since creation;</p>
-<h4 id="publicdatetimecreatedat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code></h4>
+<h4 id="group__sked_1gaf0f5c1e386f877fd8f2d099d441093f3"><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code> </h4>
 <p>The time the task was created.</p>
-<h4 id="publicdatetimescheduleat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code></h4>
+<h4 id="group__sked_1ga1063f958b835c6d033c8ff389b2e94f0"><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code> </h4>
 <p>The time the task is scheduled to run.</p>
-<h4 id="publicdatetimelastrunat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code></h4>
+<h4 id="group__sked_1ga3fdacd4cae9a26840ff138aa48bbe4e1"><code>public</code><a href="api-base.html#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code> </h4>
 <p>The time the task was last run.</p>
-<h4 id="public--triggerconst-stdstring--typeconst-stdstring--name"><code>public  Trigger(const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public-void-update"><code>public void update()</code></h4>
+<h4 id="group__sked_1ga6c5824c78e581a00b0d440466584bd22"><code>public  Trigger(const std::string &amp; type,const std::string &amp; name)</code> </h4>
+<h4 id="group__sked_1gaf1f2ee5a783e1c9190430b07fc89f8da"><code>public void update()</code> </h4>
 <p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-stdint64t-remaining"><code>public virtual std::int64_t remaining()</code></h4>
+<h4 id="group__sked_1ga01473ad840be6c629fc360a3d4750eca"><code>public virtual std::int64_t remaining()</code> </h4>
 <p>Returns the milliseconds remaining until the next scheduled timeout.</p>
-<h4 id="public-virtual-bool-timeout"><code>public virtual bool timeout()</code></h4>
+<h4 id="group__sked_1gadb3c28f4bb3af12a90422eff0c42dece"><code>public virtual bool timeout()</code> </h4>
 <p>Returns true if the task is ready to be run, false otherwise.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
+<h4 id="group__sked_1ga2c6d97224c1bd3aaa8cb7fd70b6bc1c1"><code>public virtual bool expired()</code> </h4>
 <p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h1 id="class-scyskedscheduler">class <code>scy::sked::Scheduler</code></h1>
-<pre><code>class scy::sked::Scheduler
-  : public scy::TaskRunner
-  : public scy::json::ISerializable
-</code></pre><p>The <a href="#classscy_1_1sked_1_1Scheduler">Scheduler</a> manages and runs tasks that need to be executed at specific times.</p>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  Scheduler()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual  ~Scheduler()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void schedule(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void cancel(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void clear()</code></td>
-<td>Destroys and clears all manages tasks.</td>
-</tr>
-<tr>
-<td><code>public virtual void serialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void deserialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void print(std::ostream &amp; ost)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual void run()</code></td>
-<td>Called by the async context to run the next task.</td>
-</tr>
-<tr>
-<td><code>protected virtual void update()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--scheduler"><code>public  Scheduler()</code></h4>
-<h4 id="public-virtual--scheduler"><code>public virtual  ~Scheduler()</code></h4>
-<h4 id="public-virtual-void-scheduleskedtask-task"><code>public virtual void schedule(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></h4>
-<h4 id="public-virtual-void-cancelskedtask-task"><code>public virtual void cancel(</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* task)</code></h4>
-<h4 id="public-virtual-void-clear"><code>public virtual void clear()</code></h4>
-<p>Destroys and clears all manages tasks.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-printstdostream--ost"><code>public virtual void print(std::ostream &amp; ost)</code></h4>
-<h4 id="protected-virtual-void-run"><code>protected virtual void run()</code></h4>
-<p>Called by the async context to run the next task.</p>
-<h4 id="protected-virtual-void-update"><code>protected virtual void update()</code></h4>
-<h1 id="class-scyskedtask">class <code>scy::sked::Task</code></h1>
-<pre><code>class scy::sked::Task
-  : public scy::Task
-  : public scy::json::ISerializable
-</code></pre><p>This class extends the <a href="#classscy_1_1sked_1_1Task">Task</a> class to implement scheduling capabilities.</p>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  Task(const std::string &amp; type,const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  Task(</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler,const std::string &amp; type,const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void serialize(json::Value &amp; root)</code></td>
-<td>Serializes the task to JSON.</td>
-</tr>
-<tr>
-<td><code>public virtual void deserialize(json::Value &amp; root)</code></td>
-<td>Deserializes the task from JSON.</td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline T * createTrigger()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void setTrigger(</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* trigger)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>&amp; trigger()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::int64_t remaining() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::string type() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::string name() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void setName(const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _type</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected std::string _name</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual  ~Task()</code></td>
-<td>Should remain protected.</td>
-</tr>
-<tr>
-<td><code>protected virtual bool beforeRun()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected void run()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected virtual bool afterRun()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--taskconst-stdstring--typeconst-stdstring--name"><code>public  Task(const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public--taskscheduler-schedulerconst-stdstring--typeconst-stdstring--name"><code>public  Task(</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler,const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<p>Serializes the task to JSON.</p>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<p>Deserializes the task from JSON.</p>
-<h4 id="public-templatetypename-t--inline-t--createtrigger"><code>public template&lt;typename T&gt;</code>  <br><code>inline T * createTrigger()</code></h4>
-<h4 id="public-void-settriggerskedtrigger-trigger"><code>public void setTrigger(</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* trigger)</code></h4>
-<h4 id="publicskedtrigger-trigger"><code>public</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>&amp; trigger()</code></h4>
-<p>Returns a reference to the associated <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> or throws an exception.</p>
-<h4 id="publicscheduler-scheduler"><code>public</code><a href="#classscy_1_1sked_1_1Scheduler"><code>Scheduler</code></a><code>&amp; scheduler()</code></h4>
-<p>Returns a reference to the associated <a href="#classscy_1_1sked_1_1Scheduler">Scheduler</a> or throws an exception.</p>
-<h4 id="public-stdint64t-remaining-const"><code>public std::int64_t remaining() const</code></h4>
-<p>Returns the milliseconds remaining until the next scheduled timeout. An <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> must be associated or an exception will be thrown.</p>
-<h4 id="public-stdstring-type-const"><code>public std::string type() const</code></h4>
-<h4 id="public-stdstring-name-const"><code>public std::string name() const</code></h4>
-<h4 id="public-void-setnameconst-stdstring--name"><code>public void setName(const std::string &amp; name)</code></h4>
-<h4 id="protected-stdstring-type"><code>protected std::string _type</code></h4>
-<h4 id="protected-stdstring-name"><code>protected std::string _name</code></h4>
-<h4 id="protectedskedscheduler-scheduler"><code>protected</code><a href="#classscy_1_1sked_1_1Scheduler"><code>sked::Scheduler</code></a><code>* _scheduler</code></h4>
-<h4 id="protectedskedtrigger-trigger"><code>protected</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* _trigger</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-virtual--task"><code>protected virtual  ~Task()</code></h4>
-<p>Should remain protected.</p>
-<h4 id="protected-virtual-bool-beforerun"><code>protected virtual bool beforeRun()</code></h4>
-<h4 id="protected-void-run"><code>protected void run()</code></h4>
-<p>Called by the <a href="#classscy_1_1TaskRunner">TaskRunner</a> to run the task. Override this method to implement task action. Returning true means the true should be called again, and false will cause the task to be destroyed. The task will similarly be destroyed id <a href="#group__base_1gaecd8a85018f8f75ae802dcbf3749bdef">destroy()</a> was called during the current task iteration.</p>
-<h4 id="protected-virtual-bool-afterrun"><code>protected virtual bool afterRun()</code></h4>
-<h1 id="class-scyskedtaskfactory">class <code>scy::sked::TaskFactory</code></h1>
-<p>The <a href="#classscy_1_1sked_1_1TaskFactory">TaskFactory</a> can dynamically instantiate registered <a href="#classscy_1_1sked_1_1Task">sked::Task</a> and <a href="#structscy_1_1sked_1_1Trigger">sked::Trigger</a> classes from named strings.</p>
-<h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public inline</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* createTask(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTask(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline void unregisterTask(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline TaskMap tasks() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* createTrigger(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTrigger(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline void unregisterTrigger(const std::string &amp; type)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline TriggerMap triggers() const</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected TaskMap _tasks</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>protected TriggerMap _triggers</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-inlineskedtask-createtaskconst-stdstring--type"><code>public inline</code><a href="#classscy_1_1sked_1_1Task"><code>sked::Task</code></a><code>* createTask(const std::string &amp; type)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertaskconst-stdstring--type"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTask(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-void-unregistertaskconst-stdstring--type"><code>public inline void unregisterTask(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-taskmap-tasks-const"><code>public inline TaskMap tasks() const</code></h4>
-<h4 id="public-inlineskedtrigger-createtriggerconst-stdstring--type"><code>public inline</code><a href="#structscy_1_1sked_1_1Trigger"><code>sked::Trigger</code></a><code>* createTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-templatetypename-t--inline-void-registertriggerconst-stdstring--type"><code>public template&lt;typename T&gt;</code>  <br><code>inline void registerTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-void-unregistertriggerconst-stdstring--type"><code>public inline void unregisterTrigger(const std::string &amp; type)</code></h4>
-<h4 id="public-inline-triggermap-triggers-const"><code>public inline TriggerMap triggers() const</code></h4>
-<h4 id="protected-mutablemutexmutex"><code>protected mutable</code><a href="#classscy_1_1Mutex"><code>Mutex</code></a><code>_mutex</code></h4>
-<h4 id="protected-taskmap-tasks"><code>protected TaskMap _tasks</code></h4>
-<h4 id="protected-triggermap-triggers"><code>protected TriggerMap _triggers</code></h4>
-<h1 id="struct-scyskedtrigger">struct <code>scy::sked::Trigger</code></h1>
-<pre><code>struct scy::sked::Trigger
-  : public scy::json::ISerializable
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public std::string type</code></td>
-<td>The type of this trigger class.</td>
-</tr>
-<tr>
-<td><code>public std::string name</code></td>
-<td>The display name of this trigger class.</td>
-</tr>
-<tr>
-<td><code>public int timesRun</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code></td>
-<td>The time the task was created.</td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code></td>
-<td>The time the task is scheduled to run.</td>
-</tr>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code></td>
-<td>The time the task was last run.</td>
-</tr>
-<tr>
-<td><code>public  Trigger(const std::string &amp; type,const std::string &amp; name)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public void update()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual std::int64_t remaining()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool timeout()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool expired()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void serialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void deserialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public-stdstring-type"><code>public std::string type</code></h4>
-<p>The type of this trigger class.</p>
-<h4 id="public-stdstring-name"><code>public std::string name</code></h4>
-<p>The display name of this trigger class.</p>
-<h4 id="public-int-timesrun"><code>public int timesRun</code></h4>
-<p>The number of times the task has run since creation;</p>
-<h4 id="publicdatetimecreatedat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>createdAt</code></h4>
-<p>The time the task was created.</p>
-<h4 id="publicdatetimescheduleat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>scheduleAt</code></h4>
-<p>The time the task is scheduled to run.</p>
-<h4 id="publicdatetimelastrunat"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>lastRunAt</code></h4>
-<p>The time the task was last run.</p>
-<h4 id="public--triggerconst-stdstring--typeconst-stdstring--name"><code>public  Trigger(const std::string &amp; type,const std::string &amp; name)</code></h4>
-<h4 id="public-void-update"><code>public void update()</code></h4>
-<p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-stdint64t-remaining"><code>public virtual std::int64_t remaining()</code></h4>
-<p>Returns the milliseconds remaining until the next scheduled timeout.</p>
-<h4 id="public-virtual-bool-timeout"><code>public virtual bool timeout()</code></h4>
-<p>Returns true if the task is ready to be run, false otherwise.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
-<p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h1 id="struct-scyskedonceonlytrigger">struct <code>scy::sked::OnceOnlyTrigger</code></h1>
-<pre><code>struct scy::sked::OnceOnlyTrigger
-  : public scy::sked::Trigger
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public  OnceOnlyTrigger()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public inline virtual void update()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool expired()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="public--onceonlytrigger"><code>public  OnceOnlyTrigger()</code></h4>
-<h4 id="public-inline-virtual-void-update"><code>public inline virtual void update()</code></h4>
-<p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
-<p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h1 id="struct-scyskedintervaltrigger">struct <code>scy::sked::IntervalTrigger</code></h1>
-<pre><code>struct scy::sked::IntervalTrigger
-  : public scy::sked::Trigger
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public int maxTimes</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  IntervalTrigger()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void update()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual bool expired()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void serialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void deserialize(json::Value &amp; root)</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publictimespaninterval"><code>public</code><a href="#classscy_1_1Timespan"><code>Timespan</code></a><code>interval</code></h4>
-<p>This value represents the interval to wait before running the task.</p>
-<h4 id="public-int-maxtimes"><code>public int maxTimes</code></h4>
-<p>The maximum number of times the task will be run before it is destroyed. 0 for no effect.</p>
-<h4 id="public--intervaltrigger"><code>public  IntervalTrigger()</code></h4>
-<h4 id="public-virtual-void-update"><code>public virtual void update()</code></h4>
-<p>Updates the scheduleAt value to the next scheduled time.</p>
-<h4 id="public-virtual-bool-expired"><code>public virtual bool expired()</code></h4>
-<p>Returns true if the task is expired and should be destroyed. Returns false by default.</p>
-<h4 id="public-virtual-void-serializejsonvalue--root"><code>public virtual void serialize(json::Value &amp; root)</code></h4>
-<h4 id="public-virtual-void-deserializejsonvalue--root"><code>public virtual void deserialize(json::Value &amp; root)</code></h4>
-<h1 id="struct-scyskeddailytrigger">struct <code>scy::sked::DailyTrigger</code></h1>
-<pre><code>struct scy::sked::DailyTrigger
-  : public scy::sked::Trigger
-</code></pre><h2 id="summary">Summary</h2>
-<table>
-<thead>
-<tr>
-<th>Members</th>
-<th>Descriptions                                </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public std::vector&lt;</code><a href="#group__sked_1gafaf09924bf11ff91312d278879efc364"><code>DaysOfTheWeek</code></a><code>&gt; daysExcluded</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public  DailyTrigger()</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>public virtual void update()</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="members">Members</h2>
-<h4 id="publicdatetimetimeofday"><code>public</code><a href="#classscy_1_1DateTime"><code>DateTime</code></a><code>timeOfDay</code></h4>
-<p>This value represents the time of day the task will trigger. The date part of the timestamp is redundant.</p>
-<h4 id="public-stdvectordaysoftheweek-daysexcluded"><code>public std::vector&lt;</code><a href="#group__sked_1gafaf09924bf11ff91312d278879efc364"><code>DaysOfTheWeek</code></a><code>&gt; daysExcluded</code></h4>
-<p>Days of the week can be excluded by adding the appropriate bit flag here.</p>
-<h4 id="public--dailytrigger"><code>public  DailyTrigger()</code></h4>
-<h4 id="public-virtual-void-update"><code>public virtual void update()</code></h4>
-<p>Updates the scheduleAt value to the next scheduled time.</p>
+<h4 id="group__sked_1ga263a8007f39041e235c835b967a61f93"><code>public virtual void serialize(json::Value &amp; root)</code> </h4>
+<h4 id="group__sked_1ga480d0f52b3319d765e5c6b809c946609"><code>public virtual void deserialize(json::Value &amp; root)</code> </h4>
 
                                 
                                 </section>
@@ -1560,7 +1051,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sked","level":"2.10","depth":1,"next":{"title":"SocketIO","level":"2.11","depth":1,"path":"api-socketio.md","ref":"api-socketio.md","articles":[]},"previous":{"title":"Pluga","level":"2.9","depth":1,"path":"api-pluga.md","ref":"api-pluga.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-sked.md","mtime":"2016-11-07T13:07:33.584Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-07T14:09:14.782Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sked","level":"2.10","depth":1,"next":{"title":"SocketIO","level":"2.11","depth":1,"path":"api-socketio.md","ref":"api-socketio.md","articles":[]},"previous":{"title":"Pluga","level":"2.9","depth":1,"path":"api-pluga.md","ref":"api-pluga.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LibSourcey","gitbook":"3.2.x"},"file":{"path":"api-sked.md","mtime":"2016-11-08T19:27:49.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T19:29:00.396Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
