@@ -187,6 +187,8 @@ after_build do |builder|
   `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="\\([^"]*\\)\\.html\\([^"]*\\)"|="/libsourcey/\\1/\\2"|g'`
   `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="\\([^"]*\\)\\.html"|="/libsourcey/\\1/"|g'`
   `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="./"|="/libsourcey/"|g'`
+  `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="gitbook/|="/libsourcey/gitbook/|g'`
+  `find build/libsourcey -name "index.html" -print0 | xargs -0 sed -i 's|="styles/|="/libsourcey/styles/|g'`
 end
 
 set :css_dir, 'stylesheets'
