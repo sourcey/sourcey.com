@@ -18,7 +18,7 @@ struct Version
 {
   int major = 0, minor = 0, revision = 0, build = 0;
 
-	Version(const std::string& version)
+	Version(std::string version)
 	{
 		std::sscanf(version.c_str(), "%d.%d.%d.%d", &major, &minor, &revision, &build);
 	}
