@@ -17,11 +17,11 @@ def setup_summary_generator(
     if length
       rendered = rendered.sub(/<div[^>]*>(.*)<\/div>/im, '').sub(%r{<h1 id=\".+\">.+</h1>}, '').gsub(%r{</?[^>]+?>}, '')
       summary = TruncateHTML.truncate_html(rendered, length, ellipsis)
-      # Add a read more-link if  the original text was longer then the summary...
-      #unless summary.strip == rendered.strip
-      #  summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
-      #end
-      summary = "<p>" + summary + "<p>"
+      # Add a read more-link if the original text was longer then the summary...
+      # unless summary.strip == rendered.strip
+      #   summary = summary + " " + link_to(readmore_text, resource, class: 'more-link')
+      # end
+      summary = "<p>" + summary + "</p>"
       summary    # return
     else
       rendered   # return
