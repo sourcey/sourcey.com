@@ -4,7 +4,7 @@
 
 # Time.zone = "UTC"
 
-set :protocol, "http://"
+set :protocol, "https://"
 set :host, "sourcey.com"
 set :port, 80
 
