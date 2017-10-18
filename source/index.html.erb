@@ -1,12 +1,12 @@
-<%= partial "header" %>   
+<%= partial "header" %>
 
 <div id="welcome">
-  <a href="http://sourcey.com">Sourcey</a> works with forward thinking <br class="show-for-medium-up">  startups to realise their vision by providing code <br class="show-for-medium-up"> like graphene and infrastructure strong like limpet's teeth.
-    <!--
-    <a href="http://sourcey.com">Sourcey</a> works with forward thinking<br class="show-for-medium-up"> startups to realise their vision through code like<br class="show-for-medium-up"> graphene and infrastructure built strong like limpet's teeth.
-    We're building a better Internet.
-    <br class="show-for-medium-up"><span class="show-for-medium-up"><a href="mailto:hello@sourcey.com">Get in touch</a> with us today for assistance on a project.</span>
-    <a href="http://sourcey.com">Sourcey</a> works with forward thinking<br class="show-for-medium-up"> startups to build the future of the internet.-->
+  <!-- <a href="http://sourcey.com">Sourcey</a> works with forward thinking <br class="show-for-medium-up">  startups to realise their vision by providing code <br class="show-for-medium-up"> like graphene and infrastructure strong like limpet's teeth. -->
+  <!--
+  <a href="http://sourcey.com">Sourcey</a> works with forward thinking<br class="show-for-medium-up"> startups to realise their vision through code like<br class="show-for-medium-up"> graphene and infrastructure built strong like limpet's teeth.
+  We're building a better Internet.
+  <br class="show-for-medium-up"><span class="show-for-medium-up"><a href="mailto:hello@sourcey.com">Get in touch</a> with us today for assistance on a project.</span>
+  <a href="http://sourcey.com">Sourcey</a> works with forward thinking<br class="show-for-medium-up"> startups to build the future of the internet.-->
 
   <!--, because our passion is your success
   groundbreaking beautiful
@@ -15,90 +15,115 @@
   We're an Australian developer<br>
   collective that builds open source code and<br>beautiful websites for brilliant technology startups.
   -->
+  <a href="http://sourcey.com">Sourcey</a> works with forward thinking <br class="show-for-medium-up"> startups to realise their vision with code like <br class="show-for-medium-up"> graphene and infrastructure strong like limpet's teeth.
 </div>
 
 <div id="projects">
   <div class="row">
     <div class="large-4 columns">
+      <a href="/spectacle" class="spectacle" title="Spectacle: The gentleman at REST">
+        <%= image_tag('logos/spectacle-76x100.png') %>
+        <span class="title">Spectacle</span>
+        <span class="strap">The gentleman at REST</span>
+        <span class="intro">Beautiful static HTML5 documentation generator for REST APIs with OpenAPI/Swagger 2.0 specifications.</span>
+      </a>
+    </div>
+    <div class="large-4 columns">
       <a href="http://stompstart.com" target="_blank" class="stompstart" title="StompStart: Promote your startup">
-        <span class="icon"></span>
+        <%= image_tag('logos/stompstart-80x80.png') %>
         <span class="title">StompStart</span>
         <span class="strap">Promote your startup</span>
         <span class="intro">A platform for showcasing, promoting and discovering the latest startup gold.</span>
       </a>
     </div>
     <div class="large-4 columns">
-      <a href="http://gardn.net" target="_blank" class="gardn" rel="nofollow" title="Gardn: SEO 2.0 super juice">
-        <span class="icon"></span>
-        <span class="title">Gardn</span>
-        <span class="strap">SEO 2.0 super juice</span>
-        <span class="intro">Grow your content into great blooming trees with the power of community driven SEO 2.0.</span>
-      </a>
-    </div>
-    <div class="large-4 columns">
-      <a href="http://gofrantic.com" class="frantic" title="Frantic: Location-Aware Shopping Companion">
-        <span class="icon"><%= image_tag("logos/frantic-96x96.png", height: 80, width: 80, title: "Frantic", alt: "Frantic") %></span>
-        <span class="title">Frantic</span>
-        <span class="strap">Location-aware shopping companion</span>
-        <span class="intro">Next-gen shopping app that lets you browse products in shops around you.</span>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-4 columns">
       <a href="/libsourcey" class="libsourcey" title="LibSourcey: C++ networking evolved">
-        <span class="icon"></span>
+        <%= image_tag('logos/libsourcey-80x80.png') %>
         <span class="title">LibSourcey</span>
         <span class="strap">C++ networking evolved</span>
         <span class="intro">Open source C++ library for rapid development of real-time media streaming, computer vision and networking applications.</span>
      </a>
     </div>
+  </div>
+  <div class="row">
     <div class="large-4 columns">
-      <a href="/anionu" class="anionu" title="Anionu: Cloud video surveillance">
-        <span class="icon"></span>
-        <span class="title">Anionu</span>
-        <span class="strap">Cloud video surveillance</span>
-        <span class="intro">Cloud-based video surveillance web application that's changing the way people view the industry.</span>
+      <a href="/symple" class="symple" title="Symple: Messaging made symple">
+        <%= image_tag('logos/symple-80x80.png') %>
+        <span class="title">Symple</span>
+        <span class="strap">Messaging made symple</span>
+        <span class="intro">Flexible message protocol for real-time communication between desktop and web applications.</span>
       </a>
     </div>
     <div class="large-4 columns">
       <a href="http://budokin.com" rel="nofollow" target="_blank" class="budokin" title="BudoKin: Redefining martial arts">
-        <span class="icon"></span>
+        <%= image_tag('logos/budokin-80x80.png') %>
         <span class="title">BudoKin</span>
         <span class="strap">Redefining martial arts</span>
         <span class="intro">Where real martial artists come to separate the cream from the milk and put words to action.</span>
       </a>
     </div>
+    <div class="large-4 columns">
+      <a href="/recliner" class="recliner" title="Recliner.js: Ultimate lazy loader">
+        <%= image_tag('logos/recliner-70x93.png') %>
+        <span class="title">Recliner.js</span>
+        <span class="strap">Ultimate lazy loader</span>
+        <span class="intro">The ultimate lightweight 1KB JavaScript lazy loader for all content and media types.</span>
+      </a>
+    </div>
   </div>
   <div class="row">
     <div class="large-4 columns">
-      <a href="/mesh" class="mesh" title="Mesh: Elegant, modern design">
-        <span class="icon"></span>
+      <a href="http://gofrantic.com" class="frantic" title="Frantic: Location-Aware Shopping Companion">
+        <%= image_tag('logos/frantic-96x96.png', title: 'Frantic', alt: 'Frantic') %>
+        <span class="title">Frantic</span>
+        <span class="strap">Location-aware shopping companion</span>
+        <span class="intro">Next-gen shopping app that lets you browse products in shops around you.</span>
+      </a>
+    </div>
+    <div class="large-4 columns">
+      <a href="/precompiled-webrtc-libraries" class="webrtc" title="WebRTC: Precompiled static libraries">
+        <%= image_tag('logos/webrtc-80x80.png') %>
+        <span class="title">WebRTC</span>
+        <span class="strap">Precompiled static libraries</span>
+        <span class="intro">Precompiled static WebRTC to get you started developing with WebRTC in a flash.</span>
+      </a>
+    </div>
+    <div class="large-4 columns">
+      <a href="http://gardn.net" target="_blank" class="gardn" rel="nofollow" title="Gardn: SEO 2.0 super juice">
+        <%= image_tag('logos/gardn-80x80.png') %>
+        <span class="title">Gardn</span>
+        <span class="strap">SEO 2.0 super juice</span>
+        <span class="intro">Grow your content into great blooming trees with the power of community driven SEO 2.0.</span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <a href="/mesh" class="mesh" title="Mesh: Modern layout framework">
+        <%= image_tag('logos/mesh-80x80.png') %>
         <span class="title">Mesh</span>
-        <span class="strap">Elegant, modern design</span>
+        <span class="strap">Modern layout framework</span>
         <span class="intro">Modular JavaScript layout and utility framework for cross-browser CSS3 and HTML5 support.</span>
       </a>
     </div>
     <div class="large-4 columns">
       <a href="/pacm" class="pacm" title="Pacm: Redistributable package manager">
-        <span class="icon"></span>
+        <%= image_tag('logos/pacm-80x80.png') %>
         <span class="title">Pacm</span>
         <span class="strap">Redistributable package manager</span>
         <span class="intro">Redistributable package manager written in C++ that speaks JSON with the server. We even use it ourselves.</span>
       </a>
     </div>
     <div class="large-4 columns">
-      <a href="/symple" class="symple" title="Symple: Messaging made symple">
-        <span class="icon"></span>
-        <span class="title">Symple</span>
-        <span class="strap">Messaging made symple</span>
-        <span class="intro">Flexible message protocol for real-time communication between desktop and web applications.</span>
+      <a href="/anionu" class="anionu" title="Anionu: Cloud video surveillance">
+        <%= image_tag('logos/anionu-100x80.png') %>
+        <span class="title">Anionu</span>
+        <span class="strap">Cloud video surveillance</span>
+        <span class="intro">Cloud-based video surveillance web application that's changing the way people view the industry.</span>
       </a>
     </div>
   </div>
 </div>
-<!--
--->
 
 <div id="articles">
   <h2>Recent Articles</h2>
@@ -132,11 +157,6 @@
         <% slice.each do |article| %>
           <div class="large-3 columns">
             <%= link_to(image_tag(article.data.image), article) if article.data.image && article.data.featured %>
-            <!--
-            obj.data.send(:featured) ? true : false
-            obj.data.featured
-            raise
-            -->
             <div class="container">
               <h3 class="title"><%= link_to article.title, article %></h3>
               <!--<time><%= article.date.strftime('%b %e') %></time>-->

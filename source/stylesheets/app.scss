@@ -362,6 +362,13 @@ body.index #projects a .icon {
   height: 80px;
 }
 
+body.index #projects a img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  max-width: 80px;
+}
+
 
 body.index #projects a span.title {
   display: block;
@@ -392,31 +399,34 @@ body.index #projects a span.intro {
 }
 
 /* Icons */
-body.index #projects a.symple .icon {
-  background: url(/images/logos/symple-80x80.png) no-repeat;
-}
-body.index #projects a.anionu .icon {
-  width: 100px;
-  background: url(/images/logos/anionu-100x80.png) no-repeat;
-}
-body.index #projects a.pacm .icon {
-  background: url(/images/logos/pacm-80x80.png) no-repeat;
-}
-body.index #projects a.libsourcey .icon {
-  background: url(/images/logos/libsourcey-80x80.png) no-repeat;
-}
-body.index #projects a.mesh .icon {
-  background: url(/images/logos/mesh-80x80.png) no-repeat;
-}
-body.index #projects a.stompstart .icon {
-  background: url(/images/logos/stompstart-80x80.png) no-repeat;
-}
-body.index #projects a.gardn .icon {
-  background: url(/images/logos/gardn-80x80.png) no-repeat;
-}
-body.index #projects a.budokin .icon {
-  background: url(/images/logos/budokin-80x80.png) no-repeat;
-}
+// body.index #projects a.symple .icon {
+//   background: url(/images/logos/symple-80x80.png) no-repeat;
+// }
+// body.index #projects a.anionu .icon {
+//   width: 100px;
+//   background: url(/images/logos/anionu-100x80.png) no-repeat;
+// }
+// body.index #projects a.pacm .icon {
+//   background: url(/images/logos/pacm-80x80.png) no-repeat;
+// }
+// body.index #projects a.libsourcey .icon {
+//   background: url(/images/logos/libsourcey-80x80.png) no-repeat;
+// }
+// body.index #projects a.mesh .icon {
+//   background: url(/images/logos/mesh-80x80.png) no-repeat;
+// }
+// body.index #projects a.spectacle .icon {
+//   background: url(/images/logos/spectacle-91x120.png) no-repeat;
+// }
+// body.index #projects a.stompstart .icon {
+//   background: url(/images/logos/stompstart-80x80.png) no-repeat;
+// }
+// body.index #projects a.gardn .icon {
+//   background: url(/images/logos/gardn-80x80.png) no-repeat;
+// }
+// body.index #projects a.budokin .icon {
+//   background: url(/images/logos/budokin-80x80.png) no-repeat;
+// }
 
 @media only screen and (min-width: 64.063em) {
   body.index #projects .columns a {

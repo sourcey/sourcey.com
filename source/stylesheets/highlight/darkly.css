@@ -1,19 +1,19 @@
-/* 
+/*
   Darkly Pygments Theme
   (c) 2014 Sourcey
   http://sourcey.com
 */
 
-.highlight{
-  overflow: auto; 
-  white-space: pre; 
+pre.highlight{
+  overflow: auto;
+  white-space: pre;
   word-wrap: normal;
-  padding: 20px; 
+  padding: 20px;
   color: #C1C2C3;
   display: block;
   background: #343642;
-  -moz-border-radius: 3px; 
-  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 .highlight .hll{background-color:#ffc;}
