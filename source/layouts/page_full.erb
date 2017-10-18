@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <%= partial "head" %>
+  <body class="page <%= page_classes %>">
+    <%= partial "nav" %>  
+    <div id="main" role="main">
+      <%
+        #content = yield #Nokogiri::HTML(yield)
+      %>
+      <article>
+        <header class="article-header">
+          <h1><%= current_article.data.title %></h1>
+          <% if current_article.data.subtitle %>
+            <h2 class="subtitle"><%= current_article.data.subtitle %></h2>
+          <% end %>
+        </header>
+        <div class="article-wrap row">
+          <div class="content">
+            <%= yield %>
+          </div>
+        </div>
+      </article>
+    </div>
+    <%= partial "footer" %>
+  </body>
+</html>

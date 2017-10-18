@@ -11,6 +11,9 @@
       <article>
         <header class="article-header">
           <h1><%= current_article.data.title %></h1>
+          <% if current_article.data.subtitle %>
+            <h2 class="subtitle"><%= current_article.data.subtitle %></h2>
+          <% end %>
         </header>
         <div class="article-wrap row">
           <div class="large-9 columns">
@@ -21,6 +24,17 @@
           <div class="large-3 columns">
             <div class="sidebar sidebar-float">
               <%= sidebar_content %>
+              <div class="sidebar-section ad ad-300x250">
+                <!--<h4>Advertisment</h4>-->
+                <!-- Sourcey (MRec) -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-1397369873900370"
+                     data-ad-slot="3472500885"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
             </div>
           </div>
         </div>
